@@ -2,8 +2,12 @@
 
 @import "lib/bootstrap.min.css";
 @import "lib/daterangepicker.css";
-@import "components/color";
+
+@import "components/variable";
 @import "components/config";
+@import "components/guide";
+
+@import "components/fonts";
 @import "components/button";
 @import "components/layout";
 @import "components/modal";

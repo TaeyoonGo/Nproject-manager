@@ -3,29 +3,31 @@ data.guide = {
     title: '가이드',
     list: [
         {
-            stateClass: 'working',
-            url: 'color',
+            stateClass: 'complete',
+            url: 'grid',
             category: 'guide',
-            page: 'color'
+            page: 'grid'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'font',
             category: 'guide',
             page: 'font'
         },
+        {
+            stateClass: 'complete',
+            url: 'color',
+            category: 'guide',
+            page: 'color'
+        },
+
         {
             stateClass: 'working',
             url: 'layout',
             category: 'guide',
             page: 'layout'
         },
-        {
-            stateClass: 'working',
-            url: 'grid',
-            category: 'guide',
-            page: 'grid'
-        },
+
         {
             stateClass: 'working',
             url: 'button',
