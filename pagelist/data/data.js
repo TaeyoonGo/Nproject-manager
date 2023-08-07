@@ -4,9 +4,27 @@ data.guide = {
     list: [
         {
             stateClass: 'working',
+            url: 'color',
+            category: 'guide',
+            page: 'color'
+        },
+        {
+            stateClass: 'working',
+            url: 'font',
+            category: 'guide',
+            page: 'font'
+        },
+        {
+            stateClass: 'working',
             url: 'layout',
             category: 'guide',
             page: 'layout'
+        },
+        {
+            stateClass: 'working',
+            url: 'grid',
+            category: 'guide',
+            page: 'grid'
         },
         {
             stateClass: 'working',
