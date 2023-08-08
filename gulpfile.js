@@ -38,6 +38,7 @@ function copyLibJs() {
         'src/js/lib/bootstrap.min.js',
         'src/js/lib/moment.min.js',
         'src/js/lib/daterangepicker.min.js',
+        'src/js/lib/index.global.min.js',
 
     ];
 

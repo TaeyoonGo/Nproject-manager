@@ -1,0 +1,18 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.ico-account-btn{
+    @include background-img ($width: 32px, $height: 32px, $category: 'icon', $img: 'ico_account_btn.png');
+}
+.ico-footer-logo{
+    @include background-img ($width: 63px, $height: 19px, $category: 'icon', $img: 'ico_footer_logo.png');
+}
+.ico-day{
+    @include background-img ($width: 16px, $height: 16px, $category: 'icon', $img: 'ico_day.png');
+}

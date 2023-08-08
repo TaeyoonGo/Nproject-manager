@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html lang="ko">
+@@include('../include/head.html')
 <body>
+
+<div class="wrap">
+    @@include('../include/header.html')
+    <main>
+        @@include('../include/aside.html')
+        <!-- 컨텐츠 s-->
+        <article class="content-container">
+            <section>
+                <div id='calendar'></div>
+            </section>
+        </article>
+        <!-- 컨텐츠 e-->
+    </main>
+    @@include('../include/footer.html')
+</div>
 
 </body>
 </html>
