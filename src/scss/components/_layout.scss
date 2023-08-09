@@ -3,40 +3,42 @@
 |   레이아웃 관련 css 입니다.                 |
 #=========================================#
 */
-.wrap{
+.wrap {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-header{
+header {
     position: fixed;
     z-index: 901;
-    width:100%;
+    width: 100%;
     background-color: $gray-fff;
-    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
-    .header{
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+
+    .header {
         margin: 0 30px;
         display: flex;
-        top: 0;
-        left: 0;
         align-items: center;
         height: 54px;
         padding: 12px 0;
         justify-content: space-between;
 
-        .logo{
+        .logo {
             margin: 0;
-            font-size:0;
+            font-size: 0;
         }
-        .btn-area{
+
+        .btn-area {
             cursor: pointer;
         }
     }
 }
 
 
-.aside{
+.aside {
     position: fixed;
     width: 240px;
     height: calc(100vh - 54px);
@@ -45,12 +47,12 @@ header{
     left: 0;
     z-index: 900;
     color: $gray-fff;
-    .layout{
-        padding: 32px 28px;
+
+    .layout {
+        padding: 70px 14px;
         height: 100%;
-        .one_depth{
-            .title{
-                margin-bottom: 15px;
+        .one-depth {
+            .title {
                 cursor: pointer;
                 border-radius: 7px;
                 width: 100%;
@@ -59,74 +61,101 @@ header{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                svg{
+                &.active {
+                    svg {
+                        rotate: -180deg;
+                        stroke: #fff;
+                    }
+                }
+
+                &:hover {
+                    background-color: #3B3B42;
+                }
+
+
+
+                svg {
+                    transition: all 0.3s;
                     rotate: 0;
                     stroke-width: 2;
                     stroke: #565359;
                 }
-                &:hover{
-                    background-color: #3B3B42;
-                }
-            }
-            &.active{
-                svg{
-                    rotate: 180deg;
-                    stroke: #fff;
-                }
+
             }
         }
-        .two_depth{
-            transition: all 2s;
-            height:0;
-            overflow: hidden;
-            visibility: hidden;
-            .link{
+        .two_depth {
+            display: none;
+            .link {
                 font-size: 15px;
-                margin-bottom: 14px;
-                padding: 0px 16px;
-                a{
-                    color: $gray-fff;
+                padding: 10px 16px;
+
+                a {
+
                     display: flex;
                     align-items: center;
                     width: 100%;
+                   span{
+                       color: $gray-fff;
+                   }
+                    svg {
+                        fill: #5C595F;
+                        margin-right: 9px;
+                    }
+
                 }
-                &:nth-last-child(1){
-                    margin-bottom: 0;
-                }
-                .icon{
-                    margin-right: 9px;
+                &:hover{
+                    a{
+                        span{
+                            color: $purple-200;
+                        }
+
+                        svg{
+                            color : $purple-200;
+                            fill: $purple-200;
+                            stroke: $purple-200;
+                        }
+                    }
                 }
 
             }
-            &.active{
+
+            &.active {
                 overflow: visible;
                 height: 100%;
                 visibility: visible;
             }
         }
+
+        .three_depth {
+
+        }
     }
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: $gray-fff;
-    .footer{
+
+    .footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0 28px 0 264px;
         padding: 12px 0;
-        .copyright{
+
+        .copyright {
             color: $gray-100;
             font-size: 18px;
         }
-        .logo-text{
+
+        .logo-text {
             font-size: 18px;
             color: $gray-100;
-            .icon{
+
+            .icon {
                 margin-left: 8px;
             }
         }
@@ -134,8 +163,7 @@ footer{
 }
 
 
-
-.content-container{
+.content-container {
     margin-left: 240px;
     width: calc(100% - 264px);
     padding: 98px 24px 56px;
