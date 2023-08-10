@@ -47,10 +47,20 @@ header {
     left: 0;
     z-index: 900;
     color: $gray-fff;
-
+    .btn_open_depths{
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        top: 18px;
+        right: -17px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: $purple-100;
+    }
     .layout {
         padding: 70px 14px;
         height: 100%;
+
         .one-depth {
             .title {
                 cursor: pointer;
@@ -61,6 +71,7 @@ header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
                 &.active {
                     svg {
                         rotate: -180deg;
@@ -73,7 +84,6 @@ header {
                 }
 
 
-
                 svg {
                     transition: all 0.3s;
                     rotate: 0;
@@ -82,7 +92,33 @@ header {
                 }
 
             }
+
+            &.main-link {
+                padding: 10px 5px;
+
+                span {
+                    display: flex;
+                    width: 42px;
+                    height: 42px;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 8px;
+
+                    &:hover {
+                        background-color: #3B3B42;
+                    }
+                }
+
+                a {
+                    display: inline-block;
+
+                }
+
+
+            }
+
         }
+
         .two_depth {
             display: none;
             .link {
@@ -90,31 +126,44 @@ header {
                 padding: 10px 16px;
 
                 a {
-
                     display: flex;
                     align-items: center;
                     width: 100%;
-                   span{
-                       color: $gray-fff;
-                   }
-                    svg {
-                        fill: #5C595F;
-                        margin-right: 9px;
+
+                    span {
+                        color: $gray-fff;
                     }
+
 
                 }
-                &:hover{
-                    a{
-                        span{
+
+                svg {
+                    fill: #5C595F;
+                    margin-right: 9px;
+                }
+
+                &:hover {
+                    a {
+                        span {
                             color: $purple-200;
                         }
-
-                        svg{
-                            color : $purple-200;
-                            fill: $purple-200;
-                            stroke: $purple-200;
-                        }
                     }
+
+                    svg {
+                        fill: $purple-200;
+                        stroke: $purple-200;
+                    }
+                }
+
+            }
+            .link-title{
+                font-size: 15px;
+                padding: 10px 16px;
+                display: flex;
+                align-items: center;
+                svg {
+                    fill: #5C595F;
+                    margin-right: 9px;
                 }
 
             }
@@ -126,8 +175,41 @@ header {
             }
         }
 
-        .three_depth {
+        .thr_depth {
+            .link {
+                font-size: 15px;
+                padding: 10px 0px 10px 40px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    span {
+                        color: $gray-fff;
+                    }
 
+
+                }
+
+                svg {
+                    fill: #5C595F;
+                    margin-right: 9px;
+                }
+
+                &:hover {
+                    a {
+                        span {
+                            color: $purple-200;
+                        }
+                    }
+
+                    svg {
+
+                        fill: $purple-200;
+                        stroke: $purple-200;
+                    }
+                }
+
+            }
         }
     }
 }

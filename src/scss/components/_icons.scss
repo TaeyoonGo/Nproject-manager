@@ -13,6 +13,6 @@
 .ico-footer-logo{
     @include background-img ($width: 63px, $height: 19px, $category: 'icon', $img: 'ico_footer_logo.png');
 }
-.ico-day{
-    @include background-img ($width: 16px, $height: 16px, $category: 'icon', $img: 'ico_day.png');
+.ico-white-home{
+    @include background-img ($width: 24px, $height: 22px, $category: 'icon', $img: 'ico_white_home.png');
 }
