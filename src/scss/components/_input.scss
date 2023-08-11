@@ -1,0 +1,58 @@
+/*
+#=========================================#
+|   input 관련 CSS 입니다.              |
+#=========================================#
+*/
+
+.select_box {
+    position: relative;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+    .icon {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &.active {
+        border: 1px solid $purple-100;
+        .options {
+            display: block;
+            overflow: hidden;
+        }
+        .icon {
+            background-image: url("https://image.payple.kr/onboard/icon/ico_select_arrow_up.png");
+        }
+    }
+
+    .select_value {
+        background-color: $gray-fff;
+        color: rgb(31, 31, 31);
+    }
+
+    .options {
+        top: 40px;
+        left: 0;
+        display: none;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        background-color: $gray-fff;
+        border: 1px solid #CED4DA;
+        z-index: 1000;
+        border-radius: 7px;
+        .option {
+            padding: 8px 12px;
+            font-size: 15px;
+            background-color: $gray-fff;
+            &:hover {
+                background-color: $purple-100;
+            }
+        }
+
+    }
+}

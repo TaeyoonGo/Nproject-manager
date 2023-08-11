@@ -6,6 +6,7 @@
 
 .guide-section{
     padding: 30px;
+    height: 100vh;
     .grid{
         display: flex;
         width: 100%;
@@ -54,7 +55,7 @@
         margin-bottom: 30px;
         border-radius: 15px;
         padding: 30px;
-        overflow: hidden;
+
     }
     .color-pallet{
         display: flex;

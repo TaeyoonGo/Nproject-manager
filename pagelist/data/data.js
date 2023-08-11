@@ -27,6 +27,12 @@ data.guide = {
             category: 'guide',
             page: 'layout'
         },
+        {
+            stateClass: 'working',
+            url: 'input',
+            category: 'guide',
+            page: 'input'
+        },
 
         {
             stateClass: 'working',
@@ -53,12 +59,7 @@ data.guide = {
             category: 'guide',
             page: 'tab'
         },
-        {
-            stateClass: 'working',
-            url: 'input',
-            category: 'guide',
-            page: 'input'
-        },
+
         {
             stateClass: 'working',
             url: 'calender',

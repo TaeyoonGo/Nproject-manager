@@ -61,7 +61,7 @@ header {
         padding: 70px 14px;
         height: 100%;
 
-        .one-depth {
+        .one_depth {
             .title {
                 cursor: pointer;
                 border-radius: 7px;
@@ -93,7 +93,7 @@ header {
 
             }
 
-            &.main-link {
+            &.main_link {
                 padding: 10px 5px;
 
                 span {
@@ -156,7 +156,7 @@ header {
                 }
 
             }
-            .link-title{
+            .link_title{
                 font-size: 15px;
                 padding: 10px 16px;
                 display: flex;
@@ -233,7 +233,7 @@ footer {
             font-size: 18px;
         }
 
-        .logo-text {
+        .logo_text {
             font-size: 18px;
             color: $gray-100;
 
@@ -245,7 +245,7 @@ footer {
 }
 
 
-.content-container {
+.content_container {
     margin-left: 240px;
     width: calc(100% - 264px);
     padding: 98px 24px 56px;
