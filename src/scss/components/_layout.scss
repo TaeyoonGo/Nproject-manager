@@ -47,6 +47,59 @@ header {
     left: 0;
     z-index: 900;
     color: $gray-fff;
+    transition: all 0.3s;
+    &.active{
+        width: 56px;
+        .active_none{
+            display: none;
+        }
+        .btn_open_depths{
+            rotate: 180deg;
+        }
+        .layout{
+            padding: 70px 0;
+            .one_depth{
+                padding: 0;
+                &.main_link{
+                    span{
+                        position: relative;
+                        display: inline-block;
+                        width: 44px;
+                        height: 42px;
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+                }
+                .title{
+                    padding: 10px 6px;
+                    text-align: center;
+                    display: inline-block;
+                    font-size: 14px;
+                    svg{
+                        display: none;
+                    }
+                }
+            }
+            .two_depth{
+                .link{
+                    position: relative;
+                    svg{
+                        margin-right: 0;
+                    }
+                    a{
+                        display: inline-block;
+                        .text{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .btn_open_depths{
         position: absolute;
         width: 34px;
@@ -55,12 +108,18 @@ header {
         right: -17px;
         border-radius: 50%;
         cursor: pointer;
-        background-color: $purple-100;
+        transition: all 0.3s;
+        &.active{
+            rotate: 180deg;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
     .layout {
         padding: 70px 14px;
         height: 100%;
-
         .one_depth {
             .title {
                 cursor: pointer;
@@ -86,7 +145,6 @@ header {
 
                 svg {
                     transition: all 0.3s;
-                    rotate: 0;
                     stroke-width: 2;
                     stroke: #565359;
                 }
@@ -220,19 +278,19 @@ footer {
     left: 0;
     width: 100%;
     background-color: $gray-fff;
-
     .footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0 28px 0 264px;
         padding: 12px 0;
-
+        &.active{
+            margin: 0 28px 0 86px;
+        }
         .copyright {
             color: $gray-100;
             font-size: 18px;
         }
-
         .logo_text {
             font-size: 18px;
             color: $gray-100;

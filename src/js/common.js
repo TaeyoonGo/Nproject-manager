@@ -9,6 +9,17 @@ function asideSlideBtn() {
     })
 }
 
+//Aside open UI
+function openAsideBtn(){
+    let openAsideBtn = $('._btn_open_depths')
+    openAsideBtn.on('click',function(){
+        $(this).parent('.aside').toggleClass('active')
+        $('.footer').toggleClass('active')
+    })
+}
+
+
+
 //selectBox
 function selectBox() {
     let selectBox = $('._select_box')
@@ -35,6 +46,9 @@ function selectBox() {
 
 
 }
+
+
+
 
 //달력
 function calender(){
@@ -91,5 +105,6 @@ function calender(){
 $(document).ready(function(){
     calender();
     asideSlideBtn();
+    openAsideBtn();
     selectBox();
 })
