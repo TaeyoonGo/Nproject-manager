@@ -22,3 +22,11 @@
 .ico_white_home{
     @include background-img ($width: 24px, $height: 22px, $category: 'icon', $img: 'ico_white_home.png');
 }
+
+.ico_select_arrow_down{
+    @include background-img ($width: 30px, $height: 30px, $category: 'icon', $img: 'ico_select_arrow_down.png');
+}
+
+.ico_search_gray{
+    @include background-img ($width: 16px, $height: 16px, $category: 'icon', $img: 'ico_search_gray.png');
+}
