@@ -13,8 +13,8 @@ function asideSlideBtn() {
 function openAsideBtn(){
     let openAsideBtn = $('._btn_open_depths')
     openAsideBtn.on('click',function(){
-        $(this).parent('.aside').toggleClass('active')
-        $('.footer').toggleClass('active')
+        $(this).parent('.aside').toggleClass('on')
+        $('.footer').toggleClass('on')
     })
 }
 

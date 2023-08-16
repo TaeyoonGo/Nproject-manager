@@ -48,7 +48,7 @@ header {
     z-index: 900;
     color: $gray-fff;
     transition: all 0.3s;
-    &.active{
+    &.on{
         width: 56px;
         .active_none{
             display: none;
@@ -85,7 +85,19 @@ header {
                 }
             }
             .two_depth{
+                .link_title{
+                    justify-content: center;
+                    svg{
+                        margin-right: 0;
+
+                    }
+                    .text{
+                        display: none;
+                    }
+
+                }
                 .link{
+                    text-align: center;
                     position: relative;
                     svg{
                         margin-right: 0;
@@ -96,6 +108,16 @@ header {
                             display: none;
                         }
                     }
+                }
+            }
+            .thr_depth{
+                background-color: #3B3B42;
+                border-radius: 44px;
+                margin: 10px 14px;
+
+                .link{
+                    padding: 10px 0;
+                    text-align: center;
                 }
             }
         }
@@ -284,7 +306,7 @@ footer {
         justify-content: space-between;
         margin: 0 28px 0 264px;
         padding: 12px 0;
-        &.active{
+        &.on{
             margin: 0 28px 0 86px;
         }
         .copyright {
