@@ -3,3 +3,17 @@
 |   버튼 관련 CSS 입니다.              |
 #=========================================#
 */
+
+.btn{
+    
+    &-primary{
+        background-color: $purple-300;
+        color: $purple-100;
+    }
+    &-danger{
+        background-color: $red-200;
+        background-color: $red-100;
+    }
+
+
+}

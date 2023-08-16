@@ -22,7 +22,7 @@ data.guide = {
         },
 
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'layout',
             category: 'guide',
             page: 'layout'
