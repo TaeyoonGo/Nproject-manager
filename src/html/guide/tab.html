@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    @@include('../include/header.html')
+    <main>
+        @@include('../include/aside.html')
+        <!-- 컨텐츠 s-->
+        <article class="content_container">
+            <section>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-toggle="tab" data-target="#dummy1" type="button" role="tab" aria-controls="dummy1">일자별</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link"  data-toggle="tab" data-target="#dummy2" type="button" role="tab">결제수단별</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link"  data-toggle="tab" data-target="#dummy3" type="button" role="tab">건별</button>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="dummy1" role="tabpanel">탭리스트1</div>
+                    <div class="tab-pane" id="dummy2" role="tabpanel">탭리스트2</div>
+                    <div class="tab-pane" id="dummy3" role="tabpanel">탭리스트3</div>
+                </div>
+            </section>
+        </article>
+        <!-- 컨텐츠 e-->
+    </main>
+    @@include('../include/footer.html')
+</div>
+</body>
+</html>

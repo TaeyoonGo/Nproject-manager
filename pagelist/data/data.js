@@ -54,7 +54,7 @@ data.guide = {
             page: 'modal'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'tab',
             category: 'guide',
             page: 'tab'

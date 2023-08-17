@@ -51,9 +51,30 @@
             <!--검색 input s -->
             <div class="form-group">
                 <label>
-                    <input class="form-control" type="text" placeholder="Default input">
+                    <input class="form-control" type="text" placeholder="Default input" id="daterange">
                 </label>
+                <button id="customBtn">Custom Range</button>
             </div>
+            <script>
+                $(document).ready(function() {
+                    // daterangepicker 인스턴스 생성
+                    $('#daterange').daterangepicker();
+
+
+
+
+
+                    // 7일 전부터 오늘까지로 기본 설정
+                    $('#customBtn').on('click',function() {
+                        const startDate = moment().subtract(1, 'days');
+                        const endDate = moment();
+                        $('#daterange').data('daterangepicker').setStartDate(startDate);
+                        $('#daterange').data('daterangepicker').setEndDate(endDate);
+                    });
+
+                    $('#customBBtn').click
+                });
+            </script>
             <!--검색 input e -->
         </div>
     </div>

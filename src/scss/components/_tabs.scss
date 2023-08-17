@@ -1,0 +1,24 @@
+/*
+#=========================================#
+|   tab 관련 css 입니다.                    |
+#=========================================#
+*/
+
+.nav-tabs{
+    border: none;
+    margin-bottom: 24px;
+    .nav-item{
+        border-bottom: 1px solid $gray-200;
+        .nav-link{
+            border: none;
+            color: $gray-100;
+            font-size: 18px;
+            &.active{
+                background-color: inherit;
+                font-weight: 600;
+                color: $purple-100;
+                border-bottom: 3px solid $purple-100;
+            }
+        }
+    }
+}
