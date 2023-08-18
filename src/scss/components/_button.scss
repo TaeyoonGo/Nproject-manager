@@ -5,15 +5,24 @@
 */
 
 .btn{
-    
     &-primary{
+        border-color: $purple-300;
         background-color: $purple-300;
         color: $purple-100;
     }
     &-danger{
         background-color: $red-200;
-        background-color: $red-100;
+        color: $red-100;
     }
-
-
+    &-secondary{
+        background-color: $gray-300;
+        color: $gray-100;
+        border-color: $gray-300;
+        &:hover,&:focus{
+            border-color: $purple-100;
+            background-color: $purple-100;
+            color: $gray-fff;
+            box-shadow: none;
+        }
+    }
 }

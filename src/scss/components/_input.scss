@@ -31,7 +31,7 @@
 
     .select_value {
         background-color: $gray-fff;
-        color: rgb(31, 31, 31);
+        color: $gray-000;
     }
     .options {
         top: 40px;
@@ -53,5 +53,28 @@
             }
         }
 
+    }
+}
+
+
+
+.form-control{
+    padding: 8px 12px;
+    height: auto;
+    font-size: 15px;
+    color: $gray-000;
+    border-radius: 7px;
+    &:focus{
+        box-shadow: none;
+        border-color: $purple-100;
+        color: inherit;
+    }
+
+    &.search{
+        padding: 8px 12px 8px 32px;
+        background-image: url("../img/icon/ico_search_gray.png");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: 8px center;
     }
 }
