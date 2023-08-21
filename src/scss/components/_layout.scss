@@ -41,7 +41,7 @@ header {
 .aside {
     position: fixed;
     width: 240px;
-    height: calc(100vh - 54px);
+    height: 100%;
     background-color: #28282E;
     top: 54px;
     left: 0;
@@ -68,6 +68,10 @@ header {
     .layout {
         padding: 70px 14px;
         height: 100%;
+        >ul{
+
+            height: 100%;
+        }
         .one_depth {
             .title {
                 cursor: pointer;

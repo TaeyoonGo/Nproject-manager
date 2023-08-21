@@ -3,3 +3,69 @@
 |   modal 관련 css 입니다.              |
 #=========================================#
 */
+
+
+
+.calender_modal{
+    max-width: max-content;
+    .modal-content{
+        border-radius: 15px;
+    }
+    .modal-body{
+        padding: 30px;
+    }
+    .daterangepicker{
+        font-family: Pretendard;
+        position: static;
+        border: none;
+        margin-top: 0;
+
+        &:before,&:after{
+           display: none;
+        }
+        .drp-calendar{
+            padding: 0;
+            max-width:max-content;
+            &.left{
+
+                .calendar-table{
+                    padding-right: 0;
+                }
+            }
+            &.right{
+
+            }
+        }
+        .calendar-table{
+            thead{
+                .month{
+                    font-size: 20px;
+                }
+                tr{
+                    &:nth-child(2){
+                        th{
+                            font-weight: 400;
+                            &:nth-child(1){
+                                color: $red-100;
+                            }
+                        }
+                    }
+                }
+
+            }
+            th{
+                width: 50px;
+                height: 43px;
+                font-size: 16px;
+            }
+            td{
+                width: 50px;
+                height: 43px;
+                font-size: 16px;
+            }
+
+
+        }
+
+    }
+}

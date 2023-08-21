@@ -50,7 +50,7 @@
             <h5 class="font-weight-semi-bold">달력</h5>
             <!--검색 input s -->
             <div class="form-group">
-                <label>
+                <label class="mb-0 calender_input">
                     <input class="form-control" type="text" placeholder="Default input" name="modalDataPickerBtn">
                 </label>
                 <button class="btn btn-secondary" id="lastMonthBtn">지난달</button>
@@ -60,20 +60,10 @@
             </div>
 
             <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered calender_modal">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
                         <div class="modal-body">
                             <div id="modalDataPicker"></div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
