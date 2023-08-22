@@ -17,7 +17,6 @@ header {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
     top: 0;
     left: 0;
-
     .header {
         margin: 0 30px;
         display: flex;
@@ -25,6 +24,43 @@ header {
         height: 54px;
         padding: 12px 0;
         justify-content: space-between;
+        .aside_button {
+            cursor: pointer;
+            display: none;
+            &.active {
+                div {
+                    &:first-child {
+                        transform: rotate(-45deg) translate(-6px, 5px);
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:last-child {
+                        transform: rotate(45deg) translate(-8px, -7px);
+                    }
+                }
+
+            }
+
+            div {
+                border: 1px solid #BABAC2;
+                width: 22px;
+                height: 2px;
+                transition: all 0.3s;
+
+                &:nth-child(2) {
+                    margin-top: 7px;
+                    margin-bottom: 7px;
+                }
+
+            }
+
+            @include res-sm {
+                display: block;
+            }
+        }
 
         .logo {
             margin: 0;
@@ -48,6 +84,7 @@ header {
     z-index: 900;
     color: $gray-fff;
     transition: all 0.3s;
+
     .btn_open_depths{
         position: absolute;
         width: 34px;
@@ -63,6 +100,9 @@ header {
         img{
             width: 100%;
             height: auto;
+        }
+        @include res-sm{
+            display: none;
         }
     }
     .layout {
@@ -350,6 +390,11 @@ header {
             }
         }
     }
+    @include res-sm{
+        width: 100%;
+        transition: all 0.3s;
+        left: -100%;
+    }
 }
 
 footer {
@@ -362,10 +407,10 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 28px 0 264px;
+        margin: 0 30px 0 262px;
         padding: 12px 0;
         &.on{
-            margin: 0 28px 0 86px;
+            margin: 0 30px 0 84px;
         }
         .copyright {
             color: $gray-100;
@@ -377,6 +422,18 @@ footer {
 
             .icon {
                 margin-left: 8px;
+            }
+        }
+        @include res-sm{
+            margin: 0 30px;
+            .copyright{
+                font-size: 14px;
+            }
+            .logo_text{
+                font-size: 14px;
+                a{
+                    display: inline-block;
+                }
             }
         }
     }

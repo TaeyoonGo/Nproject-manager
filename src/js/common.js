@@ -112,19 +112,31 @@ function dataRangePicker() {
     });
 }
 
-//slideModal
 
+//slideModal
 function openSlideModal(){
     $('._open_slide_modal').on('click',function(){
         $('.slide_modal_backdrop').addClass('on');
     })
 }
-
 function closeSlideModal(){
     $('._close_slide_modal').on('click',function(){
         $('._slide_modal_backdrop').removeClass('on');
     })
 }
+
+//Aside ToolTip
+function asideTooltip(){
+    let links =$('.link');
+    links.mouseover(function() {
+        var hoverTitle = $(this).find('a');
+        var top = hoverTitle[0].getBoundingClientRect().top;
+        var arrow = $(this).find('.arrow_box');
+        arrow.css('top', top + 10 + 'px');
+    });
+}
+
+fun
 
 
 //달력
@@ -165,4 +177,5 @@ $(document).ready(function () {
     selectBox();
     openSlideModal();
     closeSlideModal();
+    asideTooltip();
 })
