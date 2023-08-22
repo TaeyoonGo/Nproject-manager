@@ -30,3 +30,7 @@
 .ico_search_gray{
     @include background-img ($width: 16px, $height: 16px, $category: 'icon', $img: 'ico_search_gray.png');
 }
+
+.ico_close_btn{
+    @include background-img ($width: 28px, $height: 28px, $category: 'icon', $img: 'ico_close_btn.png');
+}

@@ -19,7 +19,6 @@ function openAsideBtn() {
     })
 }
 
-
 //selectBox
 function selectBox() {
     let selectBox = $('._select_box')
@@ -113,6 +112,20 @@ function dataRangePicker() {
     });
 }
 
+//slideModal
+
+function openSlideModal(){
+    $('._open_slide_modal').on('click',function(){
+        $('.slide_modal_backdrop').addClass('on');
+    })
+}
+
+function closeSlideModal(){
+    $('._close_slide_modal').on('click',function(){
+        $('._slide_modal_backdrop').removeClass('on');
+    })
+}
+
 
 //달력
 // function calender(){
@@ -150,4 +163,6 @@ $(document).ready(function () {
     asideSlideBtn();
     openAsideBtn();
     selectBox();
+    openSlideModal();
+    closeSlideModal();
 })

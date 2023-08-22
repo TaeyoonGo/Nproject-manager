@@ -69,8 +69,19 @@ header {
         padding: 70px 14px;
         height: 100%;
         >ul{
-
+            overflow-y: auto;
             height: 100%;
+            &::-webkit-scrollbar {
+                width: 2px;  /* 스크롤바의 너비 */
+            }
+            &::-webkit-scrollbar-thumb {
+                height: 30%; /* 스크롤바의 길이 */
+                background: #217af4; /* 스크롤바의 색상 */
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track {
+                background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+            }
         }
         .one_depth {
             .title {
@@ -224,7 +235,7 @@ header {
     }
     .arrow_box {
         visibility: hidden;
-        position: absolute;
+        position: fixed;
         background-color: $purple-200;
         padding: 6px 12px;
         left: 50px;

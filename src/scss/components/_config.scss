@@ -28,7 +28,27 @@
     background-size: cover;
 }
 
-.img{
-    width: 100%;
-    height: auto;
+
+
+@mixin res-sm {
+    @media screen and (min-width: 0px) and (max-width: $res_sm) {
+        @content;
+    }
 }
+@mixin res-md {
+    @media screen and (min-width: 0px) and (max-width:$res_md ) {
+        @content;
+    }
+}
+@mixin res-lg {
+    @media screen and (min-width: 0px) and (max-width:$res_lg ) {
+        @content;
+    }
+}
+@mixin res-xl {
+    @media screen and (min-width: 0px) and (max-width:$res_xl ) {
+        @content;
+    }
+}
+
+
