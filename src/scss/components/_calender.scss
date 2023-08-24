@@ -1,5 +1,31 @@
 
 
-.fc-license-message{
-    display: none;
+
+.fc{
+    .fc-scrollgrid-sync-inner{
+       background-color: #fff;
+    }
+    .fc-daygrid-day-top{
+        flex-direction: row;
+    }
+    .fc-license-message{
+        display: none;
+    }
+    .fc-daygrid-day-number{
+        padding: 16px 20px;
+        font-weight: 600;
+        color: $gray-200;
+    }
+    .fc-day-today{
+        .fc-daygrid-day-number{
+            color: $purple-100;
+            &:after{
+                content: 'Today';
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 10px;
+            }
+        }
+    }
 }
+

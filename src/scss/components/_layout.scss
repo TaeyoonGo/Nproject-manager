@@ -124,6 +124,9 @@ header {
             }
         }
         .one_depth {
+            @include res-sm{
+
+            }
             .title {
                 cursor: pointer;
                 border-radius: 7px;
@@ -144,16 +147,12 @@ header {
                 &:hover {
                     background-color: #3B3B42;
                 }
-
-
                 svg {
                     transition: all 0.3s;
                     stroke-width: 2;
                     stroke: #565359;
                 }
-
             }
-
             &.main_link {
                 padding: 10px 5px;
 
@@ -185,6 +184,9 @@ header {
             .link {
                 font-size: 15px;
                 padding: 10px 16px;
+                @include res-sm{
+                    padding: 10px 30px;
+                }
 
                 a {
                     display: flex;
@@ -222,6 +224,9 @@ header {
                 padding: 10px 16px;
                 display: flex;
                 align-items: center;
+                @include res-sm{
+                    padding: 10px 30px;
+                }
                 svg {
                     fill: #5C595F;
                     margin-right: 9px;
@@ -239,7 +244,10 @@ header {
         .thr_depth {
             .link {
                 font-size: 15px;
-                padding: 10px 0px 10px 40px;
+                padding: 10px 0 10px 40px;
+                @include res-sm{
+                    padding: 10px 0 10px 54px;
+                }
                 a {
                     display: flex;
                     align-items: center;

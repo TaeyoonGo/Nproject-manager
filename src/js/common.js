@@ -29,8 +29,8 @@ function selectBox() {
         let selectBox = $(this);
         selectBox.find('.option').on('click', function () {
             let text = $(this).text();
-            let value = $(this).val();
-            $(this).parent().parent().find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
+            let value = $(this).attr("value");
+            $(this).closest('._select_box').find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
         });
     })
 
@@ -42,8 +42,6 @@ function selectBox() {
             }
         });
     });
-
-
 }
 
 // dataPickerRange
@@ -136,7 +134,18 @@ function asideTooltip(){
     });
 }
 
-fun
+//mobile Aside Btn
+function asideMobileBtn(){
+    $('._aside_button').on('click',function(){
+        $(this).toggleClass('active');
+        if( $(this).hasClass('active')  ){
+            $('.aside').css({'left' : 0})
+        }else{
+            $('.aside').css({'left' : -100 + '%'})
+        }
+    })
+}
+
 
 
 //달력
@@ -178,4 +187,5 @@ $(document).ready(function () {
     openSlideModal();
     closeSlideModal();
     asideTooltip();
+    asideMobileBtn();
 })

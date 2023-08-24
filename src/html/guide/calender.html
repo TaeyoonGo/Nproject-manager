@@ -10,7 +10,9 @@
         <!-- 컨텐츠 s-->
         <article class="content_container">
             <section>
-                <div id='calendar'></div>
+                <div id='calendar'>
+
+                </div>
             </section>
         </article>
         <!-- 컨텐츠 e-->
@@ -23,23 +25,114 @@
 <!--풀캘린더 함수의 경우 전역으로 넣을시 에러가 발생해서 페이지 별로 스크립트 분리-->
 <script>
     // full calender
-    (function(){
+    (function () {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
+
             headerToolbar: {
                 right: 'prev,next,today',
                 center: 'title',
                 left: ''
             },
+
             nowIndicator: true,
             locale: 'ko', // 한국어 설정
             weekNumberCalculation: 'ISO',
-            editable: true,
+            editable: false,
             selectable: true,
             dayMaxEvents: true, // allow "more" link when too many events
-            events: [
-
+            eventSources: [
+                {
+                    events: [
+                        {
+                            title: '920,000',
+                            start: '2023-08-11',
+                            end: '2023-08-11'
+                        },
+                    ],
+                    color: "#fff",
+                    textColor: "#28282E"
+                },
+                {
+                    events: [
+                        {
+                            title: 92000,
+                            start: '2023-08-11',
+                            end: '2023-08-11'
+                        },
+                    ],
+                    color: "#fff",
+                    textColor: "#28282E"
+                },
+                {
+                    events: [
+                        {
+                            title: 92000,
+                            start: '2023-08-11',
+                            end: '2023-08-11'
+                        },
+                    ],
+                    color: "#fff",
+                    textColor: "#28282E"
+                },
+                {
+                    events: [
+                        {
+                            title: 92000,
+                            start: '2023-08-11',
+                            end: '2023-08-11'
+                        },
+                    ],
+                    color: "#fff",
+                    textColor: "#28282E"
+                },
+                {
+                    events: [
+                        {
+                            title: 92000,
+                            start: '2023-08-11',
+                            end: '2023-08-11'
+                        },
+                    ],
+                    color: "#fff",
+                    textColor: "28282E"
+                },
+                {
+                    events: [
+                        {
+                            title: 92000,
+                            start: '2023-08-11',
+                            end: '2023-08-11'
+                        },
+                    ],
+                    color: "#fff",
+                    textColor: "#28282E"
+                },
+                {
+                    events: [
+                        {
+                            title: 92000,
+                            start: '2023-08-11',
+                            end: '2023-08-11'
+                        },
+                    ],
+                    color: "#fff",
+                    textColor: "#28282E"
+                },
+                {
+                    events: [
+                        {
+                            title: 92000,
+                            start: '2023-08-11',
+                            end: '2023-08-11'
+                        },
+                    ],
+                    color: "#fff",
+                    textColor: "#28282E"
+                },
             ]
+
+
         });
 
         calendar.render();
