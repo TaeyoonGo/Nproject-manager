@@ -5,99 +5,30 @@
 <div class="wrap">
     <div class="guide-section">
         <div class="card">
-            <h5 class="font-weight-semi-bold">셀렉트박스 : 기본 Value X</h5>
+            <h5 class="font-weight-semi-bold">셀렉트박스</h5>
             <!--셀렉트 박스 기본 value O s-->
             <div class="form-group">
-                <div class="select_box _select_box">
-                    <ul>
-                        <li class="select_value">placeHolder</li>
-                    </ul>
+                <label class="select_box _select_box">
+                    <input type="hidden" class="select_value" value="0">
+                    <span class="value_text">전체</span>
                     <i class="icon ico_select_arrow_down">아래화살표</i>
                     <ul class="options">
-                        <li class="option" value="1">Value1</li>
-                        <li class="option" value="2">Value2</li>
-                        <li class="option" value="3">Value3</li>
-                        <li class="option" value="4">Value4</li>
+                        <li class="option" value="0">전체</li>
+                        <li class="option" value="1">성공</li>
+                        <li class="option" value="2">실패</li>
                     </ul>
-                </div>
+                </label>
             </div>
             <!--셀렉트 박스 기본 value O e-->
-            <h5 class="font-weight-semi-bold">셀렉트박스 : 기본 Value O</h5>
-            <!--셀렉트 박스 기본 value X s-->
-            <div class="form-group">
-                <div class="select_box _select_box" >
-                    <ul>
-                        <li class="select_value" value="text1">Value1(전체)</li>
-                    </ul>
-                    <i class="icon ico_select_arrow_down">아래화살표</i>
-                    <ul class="options">
-                        <li class="option" value="text1">Value1(전체)</li>
-                        <li class="option" value="text2">Value2</li>
-                        <li class="option" value="text3">Value3</li>
-                        <li class="option" value="text4">Value4</li>
-                    </ul>
-                </div>
-            </div>
-            <!--셀렉트 박스 기본 value X e-->
-            <h5 class="font-weight-semi-bold">검색Input</h5>
             <!--검색 input s -->
+            <h5 class="font-weight-semi-bold">검색Input</h5>
+
             <div class="form-group">
                 <label class="w-100 mb-0">
                     <input class="form-control search" type="text">
                 </label>
             </div>
             <!--검색 input e -->
-
-
-
-            <style>
-                .selectBox {
-                    position: relative;
-                    width: 150px;
-                    height: 35px;
-                    border-radius: 4px;
-                    border: 2px solid lightcoral;
-                }
-                .selectBox .select {
-                    width: inherit;
-                    height: inherit;
-                    background: transparent;
-                    border: 0 none;
-                    outline: 0 none;
-                    padding: 0 5px;
-                    position: relative;
-                    z-index: 3; // select가 위로 올라와야 함
-                }
-                .selectBox .select option {
-                    background: lightcoral;
-                    color: #fff;
-                    padding: 3px 0;
-                    font-size: 16px;
-                }
-                .selectBox .icoArrow {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    z-index: 1;
-                    width: 35px;
-                    height: inherit;
-                    border-left: 2px solid lightcoral;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .selectBox .icoArrow img {
-                    width: 50%;
-                    transition: .3s;
-                }
-
-                .selectBox .select:focus + .icoArrow img {
-                    transform: rotate(180deg);
-                }
-            </style>
-
-
 
             <h5 class="font-weight-semi-bold">달력</h5>
             <!--달력 input s-->

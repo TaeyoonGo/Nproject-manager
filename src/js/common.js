@@ -25,24 +25,27 @@ function selectBox() {
     selectBox.on('click', function () {
         $(this).toggleClass('active');
     })
-    selectBox.each(function () {
-        let selectBox = $(this);
-        selectBox.find('.option').on('click', function () {
-            let text = $(this).text();
-            let value = $(this).attr("value");
-            $(this).closest('._select_box').find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
-        });
-    })
 
-    $(document).on('click', function (event) {
-        let target = $(event.target);
+    selectBox.find('.option').on('click', function () {
+        let text = $(this).text();
+        let value = $(this).val();
+        let selectBoxValue =  $(this).closest('._select_box')
+
+        selectBoxValue.find('.select_value').attr('value', value);
+        selectBoxValue.find('.value_text').text(text).css({'color': '#1F1F1F'});
+    });
+
+    $(document).on('click', function (e) {
+        let target = $(e.target);
         selectBox.each(function () {
             if (!target.is(this) && !target.closest(this).length) {
                 $(this).removeClass('active');
             }
         });
     });
+
 }
+
 
 // dataPickerRange
 function dataRangePicker() {
