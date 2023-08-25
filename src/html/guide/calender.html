@@ -24,17 +24,37 @@
 
 <!--풀캘린더 함수의 경우 전역으로 넣을시 에러가 발생해서 페이지 별로 스크립트 분리-->
 <script>
+
     // full calender
     (function () {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
+        let calendarEl = document.getElementById('calendar');
+        let calendar = new FullCalendar.Calendar(calendarEl, {
+            customButtons: {
+                blackText: {
+                    text: '정산액',
+                    click: function() {
+                        alert('clicked the custom button!');
+                    }
+                },
+                blueText: {
+                    text: '예정 정산액',
+                    click: function() {
+                        alert('clicked the custom button!');
+                    }
+                },
+                orangeText: {
+                    text: '보류액',
+                    click: function() {
+                        alert('clicked the custom button!');
+                    }
+                }
 
+            },
             headerToolbar: {
                 right: 'prev,next,today',
                 center: 'title',
-                left: ''
+                left: 'blackText,blueText,orangeText'
             },
-
             nowIndicator: true,
             locale: 'ko', // 한국어 설정
             weekNumberCalculation: 'ISO',
@@ -131,11 +151,10 @@
                     textColor: "#28282E"
                 },
             ]
-
-
         });
 
         calendar.render();
+
     }());
 </script>
 </html>

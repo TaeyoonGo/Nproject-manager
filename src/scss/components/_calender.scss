@@ -1,7 +1,25 @@
 
-
-
+.fc-theme-standard{
+    td{
+        border-bottom: 1px solid #C2B5FF;
+    }
+}
 .fc{
+    .fc-header-toolbar{
+        .fc-toolbar-chunk{
+            &:nth-child(1){
+                .fc-button-group{
+                    button{
+                        appearance: none;
+                    }
+                }
+
+            }
+        }
+    }
+    .fc-view-harness{
+        z-index: 0;
+    }
     .fc-scrollgrid-sync-inner{
        background-color: #fff;
     }
@@ -28,4 +46,5 @@
         }
     }
 }
+
 
