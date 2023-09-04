@@ -325,7 +325,7 @@ header {
             rotate: 180deg;
         }
         .layout{
-            padding: 70px 0;
+                padding: 70px 0;
             .one_depth{
                 padding: 0;
                 text-align: center;
@@ -397,6 +397,11 @@ header {
                 }
             }
         }
+        +.content_container{
+            margin-left: 0;
+            width: 100%;
+            padding: 98px 24px 56px 80px;
+        }
     }
     @include res-sm{
         width: 100%;
@@ -452,6 +457,14 @@ footer {
     margin-left: 240px;
     width: calc(100% - 264px);
     padding: 98px 24px 56px;
+    .main-title{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .fillter-title{
+
+    }
 }
 
 

@@ -4,21 +4,24 @@
 #=========================================#
 */
 
-.btn{
-    &-primary{
+.btn {
+    &-primary {
         border-color: $purple-300;
         background-color: $purple-300;
         color: $purple-100;
     }
-    &-danger{
+
+    &-danger {
         background-color: $red-200;
         color: $red-100;
     }
-    &-secondary{
+
+    &-secondary {
         background-color: $gray-300;
         color: $gray-100;
         border-color: $gray-300;
-        &:hover,&:focus{
+
+        &:hover, &:focus {
             border-color: $purple-100;
             background-color: $purple-100;
             color: $gray-fff;
@@ -26,3 +29,30 @@
         }
     }
 }
+
+
+.btn-group{
+    .radio_label {
+        vertical-align: middle;
+        appearance: none;
+        + label {
+            display: inline-block;
+            margin-bottom: 0;
+            padding: 5px;
+            background-color: #e2e2e2;
+            text-align: center;
+            color: $gray-100;
+        }
+
+        &:checked, &:focus-visible, &:focus ,&:hover{
+            + label {
+                border-color: $purple-100;
+                background-color: $purple-100;
+                color: $gray-fff;
+            }
+        }
+
+    }
+}
+
+

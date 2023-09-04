@@ -5,12 +5,72 @@
     }
 }
 .fc{
+    thead{
+        .fc-scrollgrid-sync-inner{
+            text-align: left;
+            padding: 16px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            a{
+                color: $gray-100;
+            }
+
+
+        }
+    }
+
+
+
+    .fc-highlight{
+        background:none;
+    }
     .fc-header-toolbar{
         .fc-toolbar-chunk{
             &:nth-child(1){
                 .fc-button-group{
                     button{
                         appearance: none;
+                        background: inherit ;
+                        border:none;
+                        box-shadow:none;
+                        border-radius:0;
+                        padding:0;
+                        overflow:visible;
+                        cursor:auto;
+                        font-size: 15px;
+                        margin-right: 25px;
+                        &:before{
+                            content: '';
+                            display: inline-block;
+                            border: 1px solid;
+                            margin-right: 7px;
+                            width: 14px;
+                            height: 12px;
+                            border-radius: 50%;
+                        }
+                        &:nth-child(1){
+                            color: #28282E;
+
+                            &:before{
+                                border-color: #28282e;
+                                background-color:#28282e;
+                            }
+                        }
+                        &:nth-child(2){
+                            color: $blue-100;
+                            &:before{
+                                border-color: $blue-100;
+                                background-color: $blue-100;
+                            }
+                        }
+                        &:nth-child(3){
+                            color: $orange-100;
+                            margin-right: 0;
+                            &:before{
+                                border-color: $orange-100;
+                                background-color: $orange-100;
+                            }
+                        }
                     }
                 }
 
@@ -19,6 +79,10 @@
     }
     .fc-view-harness{
         z-index: 0;
+    }
+    .fc-event-title{
+        font-weight: 600;
+        font-size: 16px;
     }
     .fc-scrollgrid-sync-inner{
        background-color: #fff;
@@ -47,4 +111,30 @@
     }
 }
 
+.data_block{
+    padding: 2px 0px;
+}
+
+.hold_amount{
+    border: none;
+    border-bottom: 1px solid #DEDEDE;
+    position: relative;
+    &:before{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        content: '국';
+        text-align: center;
+        line-height: 20px;
+        width: 22px;
+        font-size: 11px;
+        font-weight: 600;
+        height: 20px;
+        background-color: #F0F0F0;
+        color: $gray-100;
+
+    }
+}
 

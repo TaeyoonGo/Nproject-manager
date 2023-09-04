@@ -69,6 +69,17 @@ data.guide = {
 
     ]
 }
+data.teamManager = {
+    title:'팀관리자',
+    list:[
+        {
+            stateClass: 'working',
+            url: '결제내역-국내',
+            category: 'teammanager',
+            page: '결제내역-국내'
+        },
+    ]
+}
 
 
 

@@ -29,24 +29,16 @@
     (function () {
         let calendarEl = document.getElementById('calendar');
         let calendar = new FullCalendar.Calendar(calendarEl, {
+
             customButtons: {
                 blackText: {
                     text: '정산액',
-                    click: function() {
-                        alert('clicked the custom button!');
-                    }
                 },
                 blueText: {
                     text: '예정 정산액',
-                    click: function() {
-                        alert('clicked the custom button!');
-                    }
                 },
                 orangeText: {
                     text: '보류액',
-                    click: function() {
-                        alert('clicked the custom button!');
-                    }
                 }
 
             },
@@ -60,101 +52,144 @@
             weekNumberCalculation: 'ISO',
             editable: false,
             selectable: true,
-            dayMaxEvents: true, // allow "more" link when too many events
+            dayMaxEvents: false,
+            dateClick: function() {
+                alert('모달나오면 열거에요');
+            },
             eventSources: [
                 {
                     events: [
                         {
-                            title: '920,000',
+                            id:'test1',
+                            classNames: 'settlement_amount data_block',
+                            title: '5,000',
                             start: '2023-08-11',
-                            end: '2023-08-11'
+                            end: '2023-08-11',
+                            display: 'block',
                         },
                     ],
-                    color: "#fff",
-                    textColor: "#28282E"
+                    backgroundColor: "#fff",
+                    textColor: "#28282E",
+                    borderColor : "#fff",
+
                 },
                 {
                     events: [
                         {
-                            title: 92000,
+                            id: 'test2',
+                            classNames: 'hold_amount data_block',
+                            title: '5,000',
                             start: '2023-08-11',
-                            end: '2023-08-11'
+                            end: '2023-08-11',
                         },
                     ],
-                    color: "#fff",
-                    textColor: "#28282E"
+                    backgroundColor: "#fff",
+                    textColor: "#FF6F42",
+
                 },
                 {
                     events: [
                         {
-                            title: 92000,
+                            id:'test1',
+                            classNames: 'settlement_amount data_block',
+                            title: '5,000',
                             start: '2023-08-11',
-                            end: '2023-08-11'
+                            end: '2023-08-11',
+                            display: 'block',
                         },
                     ],
-                    color: "#fff",
-                    textColor: "#28282E"
+                    backgroundColor: "#fff",
+                    textColor: "#28282E",
+                    borderColor : "#fff",
+
                 },
                 {
                     events: [
                         {
-                            title: 92000,
+                            id:'test1',
+                            classNames: 'settlement_amount data_block',
+                            title: '5,000',
                             start: '2023-08-11',
-                            end: '2023-08-11'
+                            end: '2023-08-11',
+                            display: 'block',
                         },
                     ],
-                    color: "#fff",
-                    textColor: "#28282E"
+                    backgroundColor: "#fff",
+                    textColor: "#28282E",
+                    borderColor : "#fff",
+
                 },
                 {
                     events: [
                         {
-                            title: 92000,
+                            id:'test1',
+                            classNames: 'settlement_amount data_block',
+                            title: '5,000',
                             start: '2023-08-11',
-                            end: '2023-08-11'
+                            end: '2023-08-11',
+                            display: 'block',
                         },
                     ],
-                    color: "#fff",
-                    textColor: "28282E"
+                    backgroundColor: "#fff",
+                    textColor: "#28282E",
+                    borderColor : "#fff",
+
                 },
                 {
                     events: [
                         {
-                            title: 92000,
+                            id:'test1',
+                            classNames: 'settlement_amount data_block',
+                            title: '5,000',
                             start: '2023-08-11',
-                            end: '2023-08-11'
+                            end: '2023-08-11',
+                            display: 'block',
                         },
                     ],
-                    color: "#fff",
-                    textColor: "#28282E"
+                    backgroundColor: "#fff",
+                    textColor: "#28282E",
+                    borderColor : "#fff",
+
                 },
                 {
                     events: [
                         {
-                            title: 92000,
+                            id:'test1',
+                            classNames: 'settlement_amount data_block',
+                            title: '5,000',
                             start: '2023-08-11',
-                            end: '2023-08-11'
+                            end: '2023-08-11',
+                            display: 'block',
                         },
                     ],
-                    color: "#fff",
-                    textColor: "#28282E"
+                    backgroundColor: "#fff",
+                    textColor: "#28282E",
+                    borderColor : "#fff",
+
                 },
                 {
                     events: [
                         {
-                            title: 92000,
+                            id:'test1',
+                            classNames: 'settlement_amount data_block',
+                            title: '5,000',
                             start: '2023-08-11',
-                            end: '2023-08-11'
+                            end: '2023-08-11',
+                            display: 'block',
                         },
                     ],
-                    color: "#fff",
-                    textColor: "#28282E"
+                    backgroundColor: "#fff",
+                    textColor: "#28282E",
+                    borderColor : "#fff",
+
                 },
+
             ]
         });
-
         calendar.render();
 
+        console.log(calendar.getEventById('amount'))
     }());
 </script>
+
 </html>
