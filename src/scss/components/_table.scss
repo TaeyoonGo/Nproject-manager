@@ -1,19 +1,47 @@
 /*
 #=========================================#
-|   modal 관련 css 입니다.              |
+|   table 관련 css 입니다.              |
 #=========================================#
 */
 
 .table-responsive{
     th,td{
+        font-weight: 400;
         padding: 12px 14px;
-    }
-    th{
-        font-size: 16px;
-    }
-    td{
         font-size: 13px;
-
+        color: $gray-000;
     }
 
+}
+.a-reset{
+    color: $blue-100;
+    text-decoration: underline;
+    &:hover{
+        color: $blue-100;
+    }
+}
+
+
+.table-fixed{
+    table-layout: fixed;
+}
+
+.table-spread{
+    tr {
+        &.table-tr-title{
+            background-color: #E0E0E0;
+        }
+        &.table-tr-list{
+            &:nth-child(even){
+                background-color: #fff;
+            }
+            &:nth-child(odd){
+                background-color: #F5F5F5;
+            }
+            &:hover{
+                background-color: $purple-300;
+            }
+
+        }
+    }
 }

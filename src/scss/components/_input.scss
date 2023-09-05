@@ -4,7 +4,7 @@
 #=========================================#
 */
 
-.select_box {
+.select-box {
     position: relative;
     cursor: pointer;
     width: 100%;
@@ -24,7 +24,7 @@
         border: 1px solid $purple-100;
         .options {
             display: block;
-            overflow: hidden;
+
         }
         .icon {
             background-image: url("https://image.payple.kr/onboard/icon/ico_select_arrow_up.png");
@@ -41,6 +41,8 @@
         display: none;
         position: absolute;
         width: 100%;
+        overflow-y: auto;
+        height: 160px;
         margin: 0;
         background-color: $gray-fff;
         border: 1px solid #CED4DA;
@@ -57,10 +59,6 @@
 
     }
 }
-
-
-
-
 
 .form-control{
     padding: 8px 12px;
@@ -80,5 +78,8 @@
         background-repeat: no-repeat;
         background-size: 16px 16px;
         background-position: 8px center;
+        &.question{
+            padding: 8px 32px 8px 32px;
+        }
     }
 }

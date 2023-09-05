@@ -14,6 +14,7 @@
     &-danger {
         background-color: $red-200;
         color: $red-100;
+        border-color: $red-200;
     }
 
     &-secondary {
@@ -28,13 +29,38 @@
             box-shadow: none;
         }
     }
+
+    &-dark {
+        background-color: #28282E;
+        color: #fff;
+        border-color: #28282E;
+    }
+
+    &-round {
+        border-radius: 38px;
+    }
+
+    &-md {
+        min-width: 100px;
+    }
+
+    &-reset {
+        background: inherit;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        overflow: visible;
+        cursor: pointer
+    }
 }
 
 
-.btn-group{
+.btn-group {
     .radio_label {
         vertical-align: middle;
         appearance: none;
+
         + label {
             display: inline-block;
             margin-bottom: 0;
@@ -44,7 +70,7 @@
             color: $gray-100;
         }
 
-        &:checked, &:focus-visible, &:focus ,&:hover{
+        &:checked, &:focus-visible, &:focus, &:hover {
             + label {
                 border-color: $purple-100;
                 background-color: $purple-100;

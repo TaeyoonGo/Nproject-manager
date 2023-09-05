@@ -7,18 +7,315 @@
     <main>
         @@include('../include/aside.html')
         <!-- 컨텐츠 s-->
-        <article class="content_container">
+        <article class="content-container">
             <section class="payment-history-section">
-                <h3 class="main-title">결제내역-국내</h3>
+                <h3 class="main-title font-weight-bold">결제내역-국내</h3>
                 <div class="card">
-                    <h5 class="sub-title">
-                        <i class="icon"></i>
+                    <h5 class="filter-title font-weight-semi-bold">
+                        <i class="icon ico_filter"></i>
                         <span>검색 필터</span>
                     </h5>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <div class="btn-group w-100">
+                                    <input class="radio_label" type="radio" name="example1" id="test1" checked="">
+                                    <label class="btn btn-secondary" for="test1">거래일</label>
+                                    <input class="radio_label" type="radio" name="example1" id="test2">
+                                    <label class="btn btn-secondary" for="test2">정산일</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <div>
+                                    <button class="btn btn-secondary" id="threeMonthAgoBtn">3개월</button>
+                                    <button class="btn btn-secondary" id="lastMonthBtn">지난달</button>
+                                    <button class="btn btn-secondary" id="thisMonthBtn">이번달</button>
+                                    <button class="btn btn-secondary" id="yesterdayBtn">어제</button>
+                                    <button class="btn btn-secondary" id="todayBtn">오늘</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="calender_input mb-0 w-100">
+                                    <input class="form-control" type="text" placeholder="Default input"
+                                           name="modalDataPickerBtn">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-xl empty">
+                            &nbsp;
+                        </div>
+                        <div class="col-xl empty">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <div class="btn-group w-100">
+                                    <input class="radio_label" type="radio" name="example2" id="test3" checked="">
+                                    <label class="btn btn-secondary" for="test3">결제완료</label>
+                                    <input class="radio_label" type="radio" name="example2" id="test4">
+                                    <label class="btn btn-secondary" for="test4">취소(환불)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="select-box _select-box">
+                                    <input type="hidden" class="select_value" value="0">
+                                    <span class="value_text">결제수단(전체)</span>
+                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                    <ul class="options">
+                                        <li class="option" value="0">결제수단(전체)</li>
+                                        <li class="option" value="1">카드 - 앱카드</li>
+                                        <li class="option" value="2">카드 - 키인</li>
+                                        <li class="option" value="3">카드 - 빌링</li>
+                                        <li class="option" value="4">카드 - 간편</li>
+                                        <li class="option" value="5">계좌 - 빌링</li>
+                                        <li class="option" value="6">계좌 - 간편</li>
+                                        <li class="option" value="7">네이버페이</li>
+                                        <li class="option" value="8">카카오페이</li>
+                                        <li class="option" value="9">애플페이</li>
+                                        <li class="option" value="10">가상계좌</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="select-box _select-box">
+                                    <input type="hidden" class="select_value" value="0">
+                                    <span class="value_text">카드사(전체)</span>
+                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                    <ul class="options">
+                                        <li class="option" value="0">카드사(전체)</li>
+                                        <li class="option" value="1">신한카드</li>
+                                        <li class="option" value="2">삼성카드</li>
+                                        <li class="option" value="3">KB국민카드</li>
+                                        <li class="option" value="4">현대카드</li>
+                                        <li class="option" value="5">BC카드</li>
+                                        <li class="option" value="6">하나카드</li>
+                                        <li class="option" value="7">롯데카드</li>
+                                        <li class="option" value="8">NH농협카드</li>
+                                        <li class="option" value="9">우리카드</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="select-box _select-box">
+                                    <input type="hidden" class="select_value" value="0">
+                                    <span class="value_text">원천사(전체)</span>
+                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                    <ul class="options h-auto">
+                                        <li class="option" value="0">원천사(전체)</li>
+                                        <li class="option" value="1">나이스</li>
+                                        <li class="option" value="2">다날</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl empty">&nbsp;</div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="승인번호 입력">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="주문자명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="상품명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="서비스 MID">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl empty">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="카드번호 입력">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="주문번호">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="상호명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="빌링키">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl empty">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="거래액">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="휴대폰 번호">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="서비스명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="OPID">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="PID">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="float-right">
+                            <a class="a-reset align-bottom" href="">Clear all</a>
+                            <button class="btn btn-dark btn-round ml-3 btn-md">조회하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="result-title-area d-flex justify-content-between align-items-center">
+                        <h5 class="result-title font-weight-semi-bold">
+                            <i class="icon ico_bs_list"></i>
+                            <span>조회결과</span>
+                        </h5>
+                        <div>
+                            <button class="btn-reset"><i class="icon ico_excel">엑셀출력</i></button>
+                        </div>
+                    </div>
+                    <div class="table-responsive" >
+                        <table class="table table-spread table-fixed">
+                            <colgroup>
+                                <col style="width: 50px">
+                                <col style="width: 133px">
+                                <col style="width: 133px">
+                                <col style="width: 169px">
+                                <col style="width: 74px">
+                                <col style="width: 112px">
+                                <col style="width: 162px">
+                                <col style="width: 162px">
+                                <col style="width: 102px">
+                                <col style="width: 126px">
+                                <col style="width: 112px">
+                                <col style="width: 229px">
+                                <col style="width: 80px">
+                                <col style="width: 105px">
+                                <col style="width: 99px">
+                                <col style="width: 161px">
+                                <col style="width: 91px">
+                                <col style="width: 80px">
+                                <col style="width: 80px">
+                            </colgroup>
+                            <tr class="table-tr-title">
+                                <th class="text-center">No</th>
+                                <th>상호명</th>
+                                <th>서비스명</th>
+                                <th>서비스 MID</th>
+                                <th>상태</th>
+                                <th>결제수단</th>
+                                <th>PID(OPID)</th>
+                                <th>주문번호</th>
+                                <th>거래일시</th>
+                                <th class="text-center">거래액</th>
+                                <th class="text-center">수수료</th>
+                                <th>상품명</th>
+                                <th>주문자명</th>
+                                <th>휴대폰번호</th>
+                                <th>카드사/은행</th>
+                                <th>카드/계좌번호</th>
+                                <th>승인번호</th>
+                                <th>상담관리</th>
+                                <th>취소하기</th>
+                            </tr>
+                            <tr class="table-tr-list">
+                                <td class="text-center">20</td>
+                                <td>벨루가</td>
+                                <td>벨루가</td>
+                                <td>Service0010012345678</td>
+                                <td>취소</td>
+                                <td>카드-앱카드</td>
+                                <td>
+                                    <a class="a-reset" href="javascript:void(0)">ONDOCTOR47598PURCHASE2308291016146099</a>
+                                    <span>(ONDOCTOR47598PURCHASE23)</span>
+                                </td>
+                                <td>19397981</td>
+                                <td>
+                                    2023-07-28<br>
+                                    12:05:55
+                                </td>
+                                <td class="text-right">100,000</td>
+                                <td class="text-right">2,500</td>
+                                <td>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</td>
+                                <td>김*김</td>
+                                <td>010****3111</td>
+                                <td>KB국민카드</td>
+                                <td>1234-56**-****-0987</td>
+                                <td>54265853</td>
+                                <td class="text-center "><button class="btn-reset"><i class="icon ico_consulting"></i></button></td>
+                                <td class="text-center  ">
+                                    <button class="btn btn-danger btn-sm">취소</button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
                 </div>
             </section>
         </article>
@@ -26,5 +323,16 @@
     </main>
     @@include('../include/footer.html')
 </div>
+<!--달력 s-->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered calender_modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="modalDataPicker"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--달력 e-->
 </body>
 </html>

@@ -21,7 +21,7 @@ function openAsideBtn() {
 
 //selectBox
 function selectBox() {
-    let selectBox = $('._select_box')
+    let selectBox = $('._select-box')
     selectBox.on('click', function () {
         $(this).toggleClass('active');
     })
@@ -29,7 +29,7 @@ function selectBox() {
     selectBox.find('.option').on('click', function () {
         let text = $(this).text();
         let value = $(this).val();
-        let selectBoxValue =  $(this).closest('._select_box')
+        let selectBoxValue =  $(this).closest('._select-box')
 
         selectBoxValue.find('.select_value').attr('value', value);
         selectBoxValue.find('.value_text').text(text).css({'color': '#1F1F1F'});

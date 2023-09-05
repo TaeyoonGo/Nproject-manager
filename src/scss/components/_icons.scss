@@ -34,3 +34,17 @@
 .ico_close_btn{
     @include background-img ($width: 28px, $height: 28px, $category: 'icon', $img: 'ico_close_btn.png');
 }
+
+.ico_bs_list{
+    @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_bs_list.png');
+}
+
+.ico_excel{
+    @include background-img ($width: 36px, $height: 36px, $category: 'icon', $img: 'ico_excel.png');
+}
+.ico_consulting{
+    @include background-img ($width: 20px, $height: 25px, $category: 'icon', $img: 'ico_consulting.png');
+}
+.ico_filter{
+    @include background-img ($width: 16px, $height: 16px, $category: 'icon', $img: 'ico_filter.png');
+}
