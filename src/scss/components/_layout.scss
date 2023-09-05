@@ -491,6 +491,10 @@ footer {
     +.card{
         margin-top: 30px;
     }
+    .filter-button-area{
+        margin-top: 44px;
+    }
+
 }
 
 
@@ -499,5 +503,32 @@ footer {
        @include res-xl{
            display: none;
        }
+    }
+}
+
+
+.pagination-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 16px;
+    .pagination-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 400;
+        color: $gray-200;
+        li{
+            margin: 0 18px;
+            cursor: pointer;
+            &.pagination-icon{
+                margin: 0 8px;
+            }
+            &.active{
+                font-weight: 700;
+                color: $gray-100;
+            }
+        }
     }
 }

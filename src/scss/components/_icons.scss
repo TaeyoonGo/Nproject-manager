@@ -48,3 +48,18 @@
 .ico_filter{
     @include background-img ($width: 16px, $height: 16px, $category: 'icon', $img: 'ico_filter.png');
 }
+.ico_question_gray{
+    @include background-img ($width: 14px, $height: 14px, $category: 'icon', $img: 'ico_question_gray.png');
+}
+.ico_first_page{
+    @include background-img ($width: 24px, $height: 24px, $category: 'icon', $img: 'ico_first_page.png');
+}
+.ico_last_page{
+    @include background-img ($width: 24px, $height: 24px, $category: 'icon', $img: 'ico_last_page.png');
+}
+.ico_next_page{
+    @include background-img ($width: 24px, $height: 24px, $category: 'icon', $img: 'ico_next_page.png');
+}
+.ico_previous_page{
+    @include background-img ($width: 24px, $height: 24px, $category: 'icon', $img: 'ico_previous_page.png');
+}

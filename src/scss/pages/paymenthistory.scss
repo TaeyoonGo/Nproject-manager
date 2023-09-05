@@ -1,0 +1,17 @@
+.payment-history-section{
+    .input_ico_hover{
+        position: absolute;
+        right: 11px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .input_caption{
+        display: none;
+        position: absolute;
+        font-size: 12px;
+        color: $gray-200;
+        left: 11px;
+        top: calc(100% + 6px);
+    }
+}

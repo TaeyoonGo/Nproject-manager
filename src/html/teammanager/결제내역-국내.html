@@ -210,20 +210,24 @@
                         </div>
                         <div class="col-xl">
                             <div class="form-group">
-                                <label class="w-100 mb-0">
-                                    <input class="form-control search" type="text" placeholder="OPID">
+                                <label class="w-100 mb-0 position-relative">
+                                    <input class="form-control search question" type="text" placeholder="OPID">
+                                    <i class="icon ico_question_gray input_ico_hover _input_ico_hover"></i>
+                                    <span class="input_caption _input_cation">거래마다 다르며 결제, 취소(환불)의 OPID는 동일</span>
                                 </label>
                             </div>
                         </div>
                         <div class="col-xl">
                             <div class="form-group">
-                                <label class="w-100 mb-0">
+                                <label class="w-100 mb-0 position-relative">
                                     <input class="form-control search" type="text" placeholder="PID">
+                                    <i class="icon ico_question_gray input_ico_hover _input_ico_hover pid"></i>
+                                    <span class="input_caption _input_cation">거래마다 다르며 결제, 취소(환불) 모두 다른 PID</span>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="clearfix">
+                    <div class="clearfix filter-button-area">
                         <div class="float-right">
                             <a class="a-reset align-bottom" href="">Clear all</a>
                             <button class="btn btn-dark btn-round ml-3 btn-md">조회하기</button>
@@ -284,6 +288,36 @@
                                 <th>상담관리</th>
                                 <th>취소하기</th>
                             </tr>
+
+                            <!--데이터 있는 경우 s-->
+                            <!--<tr class="table-tr-list">
+                                <td class="text-center">20</td>
+                                <td>벨루가</td>
+                                <td>벨루가</td>
+                                <td>Service0010012345678</td>
+                                <td>취소</td>
+                                <td>카드-앱카드</td>
+                                <td>
+                                    <a class="a-reset" href="javascript:void(0)">ONDOCTOR47598PURCHASE2308291016146099</a>
+                                </td>
+                                <td>19397981</td>
+                                <td>
+                                    2023-07-28<br>
+                                    12:05:55
+                                </td>
+                                <td class="text-right">100,000</td>
+                                <td class="text-right">2,500</td>
+                                <td>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</td>
+                                <td>김*김</td>
+                                <td>010****3111</td>
+                                <td>KB국민카드</td>
+                                <td>1234-56**-****-0987</td>
+                                <td>54265853</td>
+                                <td class="text-center "><button class="btn-reset"><i class="icon ico_consulting"></i></button></td>
+                                <td class="text-center  ">
+                                    <button class="btn btn-danger btn-sm">취소</button>
+                                </td>
+                            </tr>
                             <tr class="table-tr-list">
                                 <td class="text-center">20</td>
                                 <td>벨루가</td>
@@ -313,10 +347,169 @@
                                     <button class="btn btn-danger btn-sm">취소</button>
                                 </td>
                             </tr>
+                            <tr class="table-tr-list">
+                                <td class="text-center">20</td>
+                                <td>벨루가</td>
+                                <td>벨루가</td>
+                                <td>Service0010012345678</td>
+                                <td>취소</td>
+                                <td>카드-앱카드</td>
+                                <td>
+                                    <a class="a-reset" href="javascript:void(0)">ONDOCTOR47598PURCHASE2308291016146099</a>
+                                    <span>(ONDOCTOR47598PURCHASE23)</span>
+                                </td>
+                                <td>19397981</td>
+                                <td>
+                                    2023-07-28<br>
+                                    12:05:55
+                                </td>
+                                <td class="text-right">100,000</td>
+                                <td class="text-right">2,500</td>
+                                <td>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</td>
+                                <td>김*김</td>
+                                <td>010****3111</td>
+                                <td>KB국민카드</td>
+                                <td>1234-56**-****-0987</td>
+                                <td>54265853</td>
+                                <td class="text-center "><button class="btn-reset"><i class="icon ico_consulting"></i></button></td>
+                                <td class="text-center  ">
+                                    <button class="btn btn-danger btn-sm">취소</button>
+                                </td>
+                            </tr>
+                            <tr class="table-tr-list">
+                                <td class="text-center">20</td>
+                                <td>벨루가</td>
+                                <td>벨루가</td>
+                                <td>Service0010012345678</td>
+                                <td>취소</td>
+                                <td>카드-앱카드</td>
+                                <td>
+                                    <a class="a-reset" href="javascript:void(0)">ONDOCTOR47598PURCHASE2308291016146099</a>
+                                    <span>(ONDOCTOR47598PURCHASE23)</span>
+                                </td>
+                                <td>19397981</td>
+                                <td>
+                                    2023-07-28<br>
+                                    12:05:55
+                                </td>
+                                <td class="text-right">100,000</td>
+                                <td class="text-right">2,500</td>
+                                <td>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</td>
+                                <td>김*김</td>
+                                <td>010****3111</td>
+                                <td>KB국민카드</td>
+                                <td>1234-56**-****-0987</td>
+                                <td>54265853</td>
+                                <td class="text-center "><button class="btn-reset"><i class="icon ico_consulting"></i></button></td>
+                                <td class="text-center  ">
+                                    <button class="btn btn-danger btn-sm">취소</button>
+                                </td>
+                            </tr>
+                            <tr class="table-tr-list">
+                                <td class="text-center">20</td>
+                                <td>벨루가</td>
+                                <td>벨루가</td>
+                                <td>Service0010012345678</td>
+                                <td>취소</td>
+                                <td>카드-앱카드</td>
+                                <td>
+                                    <a class="a-reset" href="javascript:void(0)">ONDOCTOR47598PURCHASE2308291016146099</a>
+                                    <span>(ONDOCTOR47598PURCHASE23)</span>
+                                </td>
+                                <td>19397981</td>
+                                <td>
+                                    2023-07-28<br>
+                                    12:05:55
+                                </td>
+                                <td class="text-right">100,000</td>
+                                <td class="text-right">2,500</td>
+                                <td>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</td>
+                                <td>김*김</td>
+                                <td>010****3111</td>
+                                <td>KB국민카드</td>
+                                <td>1234-56**-****-0987</td>
+                                <td>54265853</td>
+                                <td class="text-center "><button class="btn-reset"><i class="icon ico_consulting"></i></button></td>
+                                <td class="text-center  ">
+                                    <button class="btn btn-danger btn-sm">취소</button>
+                                </td>
+                            </tr>
+                            <tr class="table-tr-list">
+                                <td class="text-center">20</td>
+                                <td>벨루가</td>
+                                <td>벨루가</td>
+                                <td>Service0010012345678</td>
+                                <td>취소</td>
+                                <td>카드-앱카드</td>
+                                <td>
+                                    <a class="a-reset" href="javascript:void(0)">ONDOCTOR47598PURCHASE2308291016146099</a>
+                                    <span>(ONDOCTOR47598PURCHASE23)</span>
+                                </td>
+                                <td>19397981</td>
+                                <td>
+                                    2023-07-28<br>
+                                    12:05:55
+                                </td>
+                                <td class="text-right">100,000</td>
+                                <td class="text-right">2,500</td>
+                                <td>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</td>
+                                <td>김*김</td>
+                                <td>010****3111</td>
+                                <td>KB국민카드</td>
+                                <td>1234-56**-****-0987</td>
+                                <td>54265853</td>
+                                <td class="text-center "><button class="btn-reset"><i class="icon ico_consulting"></i></button></td>
+                                <td class="text-center  ">
+                                    <button class="btn btn-danger btn-sm">취소</button>
+                                </td>
+                            </tr>
+                            <tr class="table-tr-list">
+                                <td class="text-center">20</td>
+                                <td>벨루가</td>
+                                <td>벨루가</td>
+                                <td>Service0010012345678</td>
+                                <td>취소</td>
+                                <td>카드-앱카드</td>
+                                <td>
+                                    <a class="a-reset" href="javascript:void(0)">ONDOCTOR47598PURCHASE2308291016146099</a>
+                                    <span>(ONDOCTOR47598PURCHASE23)</span>
+                                </td>
+                                <td>19397981</td>
+                                <td>
+                                    2023-07-28<br>
+                                    12:05:55
+                                </td>
+                                <td class="text-right">100,000</td>
+                                <td class="text-right">2,500</td>
+                                <td>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</td>
+                                <td>김*김</td>
+                                <td>010****3111</td>
+                                <td>KB국민카드</td>
+                                <td>1234-56**-****-0987</td>
+                                <td>54265853</td>
+                                <td class="text-center "><button class="btn-reset"><i class="icon ico_consulting"></i></button></td>
+                                <td class="text-center  ">
+                                    <button class="btn btn-danger btn-sm">취소</button>
+                                </td>
+                            </tr>-->
+                            <!--데이터 있는 경우 e-->
 
+                            <!--데이터 없을경우 s-->
+                            <tr class="table-tr-list empty-data _empty-data">
+                                <td class="text-center" colspan="19">
+                                    <div class="empty-data-area">
+                                        <i class="bg-box"></i>
+                                        <p class="text">조회결과가 없습니다.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--데이터 있을경우 e-->
                         </table>
                     </div>
+                    @@include('../include/pagenation.html')
                 </div>
+
+
             </section>
         </article>
         <!-- 컨텐츠 e-->
