@@ -79,27 +79,36 @@ function dataRangePicker() {
     dateRangePicker.on('hide.daterangepicker', function (ev, picker) {
         $('#myModal').modal('hide')
     });
+    // three Month 버튼 클릭 시 지난달 범위 선택
+    $('#threeMonthAgoBtn').on('click', function () {
+        const startDate = moment().subtract(3, 'month');
+        const endDate = moment();
+        dateRangePicker.data('daterangepicker').setStartDate(startDate);
+        dateRangePicker.data('daterangepicker').setEndDate(endDate);
+    });
+
+
 
     // Last Month 버튼 클릭 시 지난달 범위 선택
     $('#lastMonthBtn').on('click', function () {
-        var startDate = moment().subtract(1, 'month').startOf('month');
-        var endDate = moment().subtract(1, 'month').endOf('month');
+        const startDate = moment().subtract(1, 'month');
+        const endDate = moment();
         dateRangePicker.data('daterangepicker').setStartDate(startDate);
         dateRangePicker.data('daterangepicker').setEndDate(endDate);
     });
 
     // This Month 버튼 클릭 시 이번달 범위 선택
     $('#thisMonthBtn').click(function () {
-        var startDate = moment().startOf('month');
-        var endDate = moment().endOf('month');
+        const startDate = moment().startOf('month');
+        const endDate =  moment();
         dateRangePicker.data('daterangepicker').setStartDate(startDate);
         dateRangePicker.data('daterangepicker').setEndDate(endDate);
     });
 
     // Yesterday 버튼 클릭 시 어제 범위 선택
     $('#yesterdayBtn').click(function () {
-        var startDate = moment().subtract(1, 'day');
-        var endDate = moment().subtract(1, 'day');
+        const startDate = moment().subtract(1, 'day');
+        const endDate = moment().subtract(1, 'day');
         dateRangePicker.data('daterangepicker').setStartDate(startDate);
         dateRangePicker.data('daterangepicker').setEndDate(endDate);
     });
