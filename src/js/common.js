@@ -29,7 +29,7 @@ function selectBox() {
     selectBox.find('.option').on('click', function () {
         let text = $(this).text();
         let value = $(this).val();
-        let selectBoxValue =  $(this).closest('._select-box')
+        let selectBoxValue = $(this).closest('._select-box')
 
         selectBoxValue.find('.select_value').attr('value', value);
         selectBoxValue.find('.value_text').text(text).css({'color': '#1F1F1F'});
@@ -115,21 +115,22 @@ function dataRangePicker() {
 
 
 //slideModal
-function openSlideModal(){
-    $('._open_slide_modal').on('click',function(){
+function openSlideModal() {
+    $('._open_slide_modal').on('click', function () {
         $('.slide_modal_backdrop').addClass('on');
     })
 }
-function closeSlideModal(){
-    $('._close_slide_modal').on('click',function(){
+
+function closeSlideModal() {
+    $('._close_slide_modal').on('click', function () {
         $('._slide_modal_backdrop').removeClass('on');
     })
 }
 
 //Aside ToolTip
-function asideTooltip(){
-    let links =$('.link');
-    links.mouseover(function() {
+function asideTooltip() {
+    let links = $('.link');
+    links.mouseover(function () {
         var hoverTitle = $(this).find('a');
         var top = hoverTitle[0].getBoundingClientRect().top;
         var arrow = $(this).find('.arrow_box');
@@ -138,17 +139,27 @@ function asideTooltip(){
 }
 
 //mobile Aside Btn
-function asideMobileBtn(){
-    $('._aside_button').on('click',function(){
+function asideMobileBtn() {
+    $('._aside_button').on('click', function () {
         $(this).toggleClass('active');
-        if( $(this).hasClass('active')  ){
-            $('.aside').css({'left' : 0})
-        }else{
-            $('.aside').css({'left' : -100 + '%'})
+        if ($(this).hasClass('active')) {
+            $('.aside').css({'left': 0})
+        } else {
+            $('.aside').css({'left': -100 + '%'})
         }
     })
 }
 
+function inputIcoHover() {
+    $('._input_ico_hover').hover(
+        function () {
+            $(this).siblings('._input_cation').css('display','block')
+        },
+        function () {
+            $(this).siblings('._input_cation').css('display','none')
+        }
+    )
+}
 
 
 //달력
@@ -191,4 +202,5 @@ $(document).ready(function () {
     closeSlideModal();
     asideTooltip();
     asideMobileBtn();
+    inputIcoHover();
 })
