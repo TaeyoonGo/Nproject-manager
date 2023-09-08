@@ -85,6 +85,9 @@
         visibility: visible;
         .slide_modal{
             right: 0;
+            &.slide_modal_md{
+                right: 0;
+            }
         }
     }
     .slide_modal{
@@ -95,10 +98,22 @@
         height: 100%;
         background-color: $gray-fff;
         transition: all 0.3s;
+        // 취소 모달
+        &.slide_modal_md{
+            width: 476px;
+            right: -476px;
+            .modal_header{
+                height: 110px;
+                .ico_close_btn{
+                    top: 40px;
+                    right: 40px;
+
+                }
+            }
+        }
         .modal_header{
-            padding: 20px 20px;
+            padding: 40px;
             position: relative;
-            height: 60px;
             .ico_close_btn{
                 position: absolute;
                 right: 20px;
@@ -106,7 +121,7 @@
             }
         }
         .modal_body{
-
+            padding: 40px;
         }
         .modal_footer{
 

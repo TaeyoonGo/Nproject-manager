@@ -16,7 +16,7 @@
                         <span>검색 필터</span>
                     </h5>
                     <div class="row">
-                        <div class="col-xl">
+                        <div class="col-xl" style="flex:0 0 20%">
                             <div class="form-group">
                                 <div class="btn-group w-100">
                                     <input class="radio_label" type="radio" name="example1" id="test1" checked="">
@@ -26,8 +26,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl">
-                            <div class="form-group">
+                        <div class="d-flex" style="flex: 1 1 80%">
+                            <div class="form-group" style="padding: 0 15px; min-width: 25%">
                                 <div>
                                     <button class="btn btn-secondary" id="threeMonthAgoBtn">3개월</button>
                                     <button class="btn btn-secondary" id="lastMonthBtn">지난달</button>
@@ -36,27 +36,20 @@
                                     <button class="btn btn-secondary" id="todayBtn">오늘</button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl">
-                            <div class="form-group">
+                            <div class="form-group" style="padding: 0 15px; min-width: 25%">
                                 <label class="calender_input mb-0 w-100">
                                     <input class="form-control" type="text" placeholder="Default input"
                                            name="modalDataPickerBtn">
                                 </label>
                             </div>
                         </div>
-
-                        <div class="col-xl empty">
-                            &nbsp;
-                        </div>
-                        <div class="col-xl empty">
-                            &nbsp;
-                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xl">
                             <div class="form-group">
                                 <div class="btn-group w-100">
+                                    <input class="radio_label" type="radio" name="example2" id="test5" checked="">
+                                    <label class="btn btn-secondary" for="test5">전체</label>
                                     <input class="radio_label" type="radio" name="example2" id="test3" checked="">
                                     <label class="btn btn-secondary" for="test3">결제완료</label>
                                     <input class="radio_label" type="radio" name="example2" id="test4">
@@ -125,13 +118,7 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-xl">
-                            <div class="form-group">
-                                <label class="w-100 mb-0">
-                                    <input class="form-control search" type="text" placeholder="승인번호 입력">
-                                </label>
-                            </div>
-                        </div>
+
                         <div class="col-xl">
                             <div class="form-group">
                                 <label class="w-100 mb-0">
@@ -150,6 +137,13 @@
                             <div class="form-group">
                                 <label class="w-100 mb-0">
                                     <input class="form-control search" type="text" placeholder="서비스 MID">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control search" type="text" placeholder="승인번호 입력">
                                 </label>
                             </div>
                         </div>
@@ -320,7 +314,9 @@
                                     <button class="btn-reset"><i class="icon ico_consulting"></i></button>
                                 </td>
                                 <td class="text-center  align-middle">
-                                    <button class="btn btn-danger btn-sm">취소</button>
+                                    <button class="btn btn-danger btn-sm _open_slide_modal" onclick="openSlideModal()">
+                                        취소
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
@@ -422,5 +418,57 @@
     </div>
 </div>
 <!--달력 e-->
+
+<!--취소 모달 s-->
+<div class="slide_modal_backdrop _slide_modal_backdrop">
+    <div class="slide_modal slide_modal_md">
+        <div class="modal_header">
+            <h3 class="title font-weight-bold">취소하기</h3>
+            <i class="ico_close_btn _close_slide_modal"></i>
+        </div>
+        <div class="modal_body">
+            <div class="payment_cancel">
+                <div>
+                    <p><span>취소액</span><span>8,000</span>원</p>
+                    <table>
+                        <tr>
+                            <th>주문번호</th>
+                            <td>1111aaaa</td>
+                        </tr>
+                        <tr>
+                            <th>상품명</th>
+                            <td>상품명입니다.</td>
+                        </tr>
+                        <tr>
+                            <th>주문자명</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>원 거래일시</th>
+                            <td>2023-08-20 11:01:55</td>
+                        </tr>
+                        <tr>
+                            <th>원 거래액</th>
+                            <td>10,000</td>
+                        </tr>
+                        <tr>
+                            <th>취소 가능액</th>
+                            <td>8,000</td>
+                        </tr>
+                    </table>
+                    <p>취소가 진행되면 <span class="">수정할 수 없습니다.</span><br>취소를 진행할까요?</p>
+                    <!--취소하기 성공시 s-->
+                    <p>취소처리가 완료 되었습니다.</p>
+                    <!--취소하기 성공시 e-->
+                </div>
+            </div>
+        </div>
+        <div class="modal_footer">
+
+        </div>
+    </div>
+</div>
+<!--취소 모달 e-->
+
 </body>
 </html>
