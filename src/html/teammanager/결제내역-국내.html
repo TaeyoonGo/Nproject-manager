@@ -311,10 +311,13 @@
                                 <td class="align-middle"><span>1234-56**-****-0987</span></td>
                                 <td class="align-middle"><span>54265853</span></td>
                                 <td class="text-center align-middle">
-                                    <button class="btn-reset"><i class="icon ico_consulting"></i></button>
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide_modal_backdrop','_consulting')"><i
+                                            class="icon ico_consulting"></i></button>
                                 </td>
                                 <td class="text-center  align-middle">
-                                    <button class="btn btn-danger btn-sm _open_slide_modal" onclick="openSlideModal()">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide_modal_backdrop','_cancel')">
                                         취소
                                     </button>
                                 </td>
@@ -419,8 +422,9 @@
 </div>
 <!--달력 e-->
 
+
 <!--취소 모달 s-->
-<div class="slide_modal_backdrop _slide_modal_backdrop">
+<div class="slide_modal_backdrop _slide_modal_backdrop _slide_modal_backdrop_cancel">
     <div class="slide-modal slide-modal-md">
         <div class="modal_header">
             <h3 class="title font-weight-bold">취소하기</h3>
@@ -488,11 +492,11 @@
 
                     <!--탭 문구-->
                     <div class="tab_area">
-                        <p class="title">가상계좌 환불을 위한 계좌인증</p>
+                        <p class="main-title font-weight-semi-bold">가상계좌 환불을 위한 계좌인증</p>
                         <div class="tab_list">
-                            <div>
-                                <div>구분</div>
-                                <div>
+                            <div class="list_row">
+                                <div class="title">구분</div>
+                                <div class="content">
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link active" data-toggle="tab" data-target="#dummy1"
@@ -510,68 +514,79 @@
                             <div class="tab-content">
                                 <!--개인(사업자) - 생년월일 s-->
                                 <div class="tab-pane active" id="dummy1" role="tabpanel">
-                                    <div>생년월일</div>
-                                    <div>
-                                        <label>
-                                            <input class="form-control">
-                                        </label>
+                                    <div class="list_row">
+                                        <div class="title">생년월일</div>
+                                        <div class="content">
+                                            <label class="mb-0 w-100">
+                                                <input class="form-control" placeholder="YYMMDD">
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <!--개인(사업자) - 생년월일 e-->
 
                                 <!--법인 - 사업자번호 s-->
                                 <div class="tab-pane" id="dummy2" role="tabpanel">
-                                    <div class="">
-                                        <div>사업자번호</div>
-                                        <div>
-                                            <label>
-                                                <input class="form-control">
+                                    <div class="list_row">
+                                        <div class="title">사업자번호</div>
+                                        <div class="content">
+                                            <label class="mb-0 w-100">
+                                                <input class="form-control" placeholder="사업자번호10자리">
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                                 <!--법인 - 사업자번호 e-->
                             </div>
-                            <div>
-
-                            </div>
-
-
-                            <div class="">
-                                <div>은행</div>
-                                <div>
+                            <div class="list_row">
+                                <div class="title">은행</div>
+                                <div class="content">
                                     <label class="select-box _select-box">
-                                        <input type="hidden" class="select_value" value="0">
-                                        <span class="value_text">결제수단(전체)</span>
+                                        <input type="hidden" class="select_value" disabled>
+                                        <span class="value_text" style="color:#BABAC2">은행선택</span>
                                         <i class="icon ico_select_arrow_down">아래화살표</i>
                                         <ul class="options">
-                                            <li class="option" value="0">결제수단(전체)</li>
-                                            <li class="option" value="1">카드 - 앱카드</li>
-                                            <li class="option" value="2">카드 - 키인</li>
-                                            <li class="option" value="3">카드 - 빌링</li>
-                                            <li class="option" value="4">카드 - 간편</li>
-                                            <li class="option" value="5">계좌 - 빌링</li>
-                                            <li class="option" value="6">계좌 - 간편</li>
-                                            <li class="option" value="7">네이버페이</li>
-                                            <li class="option" value="8">카카오페이</li>
-                                            <li class="option" value="9">애플페이</li>
-                                            <li class="option" value="10">가상계좌</li>
+                                            <li class="option" value="1">KDB산업은행</li>
+                                            <li class="option" value="2">IBK기업은행</li>
+                                            <li class="option" value="3">KB국민은행</li>
+                                            <li class="option" value="4">수협은행(수협중앙회)</li>
+                                            <li class="option" value="5">NH농협은행</li>
+                                            <li class="option" value="6">농협중앙회(단위농축협)</li>
+                                            <li class="option" value="7">우리은행</li>
+                                            <li class="option" value="8">SC제일은행</li>
+                                            <li class="option" value="9">한국시티은행</li>
+                                            <li class="option" value="10">대구은행</li>
+                                            <li class="option" value="11">부산은행</li>
+                                            <li class="option" value="12">광주은행</li>
+                                            <li class="option" value="13">제주은행</li>
+                                            <li class="option" value="14">전북은행</li>
+                                            <li class="option" value="15">경남은행</li>
+                                            <li class="option" value="16">하나은행</li>
+                                            <li class="option" value="17">신한은행</li>
+                                            <li class="option" value="18">케이뱅크</li>
+                                            <li class="option" value="19">카카오뱅크</li>
+                                            <li class="option" value="20">토스뱅크</li>
+                                            <li class="option" value="21">새마을금고중앙회</li>
+                                            <li class="option" value="22">신협중앙회</li>
+                                            <li class="option" value="23">저축은행중앙회</li>
+                                            <li class="option" value="24">산림조합중앙회</li>
+                                            <li class="option" value="25">우정사업본부(우체국)</li>
                                         </ul>
                                     </label>
                                 </div>
                             </div>
-                            <div>
-                                <div>계좌번호</div>
-                                <div>
-                                    <label>
+                            <div class="list_row">
+                                <div class="title">계좌번호</div>
+                                <div class="content">
+                                    <label class="mb-0 w-100">
                                         <input class="form-control">
                                     </label>
                                 </div>
                             </div>
-                            <div>
-                                <div>예금주명</div>
-                                <div>
-                                    <label>
+                            <div class="list_row">
+                                <div class="title">예금주명</div>
+                                <div class="content">
+                                    <label class="mb-0 w-100">
                                         <input class="form-control">
                                     </label>
                                 </div>
@@ -579,16 +594,28 @@
                         </div>
                     </div>
 
-                    <!--가상계좌 - 취소시 재확인 문구 s-->
-                    <p class="caption font-weight-normal">취소가 진행되면 <span>수정할 수 없습니다.</span><br>
-                        취소를 진행할까요?</p>
-                    <!--가상계좌 - 취소시 재확인 문구 e-->
+                    <!--가상계좌 외  취소시 재확인 문구 s-->
+                    <!--<p class="caption font-weight-semi-bold">취소가 진행되면 <span class="underline">수정할 수 없습니다.</span><br>취소를 진행할까요?</p>-->
+                    <!--가상계좌 외  취소시 재확인 문구 e-->
+
+                    <!--가상 계좌(개인) 처리 시 문구 s-->
+                    <p class="caption font-weight-semi-bold">인증이 완료되었습니다.<br>
+                        취소가 진행되면 <span class="underline">수정할 수 없습니다.</span><br>
+                        취소를 진행할까요?
+                    </p>
+                    <!--가상 계좌(개인) 처리 시 문구 e-->
+
+                    <!--가상 계좌(개인) 처리 시 문구 s-->
+                    <!--<p class="caption font-weight-semi-bold">인증이 완료되었습니다.<br>
+                          예금주명 <span>정다운(페이앱)</span>으로 취소를 진행할까요?<br>
+                          취소가 진행되면 <span class="underline">수정할 수 없습니다.</span>
+                      </p>-->
+                    <!--가상 계좌(개인) 처리 시 문구 e-->
+
 
                     <!--취소처리 완료시 s-->
-                    <!--<p class="caption font-weight-normal">취소처리가 완료 되었습니다.</p>-->
+                    <!--<p class="caption font-weight-semi-bold">취소처리가 완료 되었습니다.</p>-->
                     <!--취소처리 완료시 e-->
-
-
                 </div>
                 <!--취소하기 시작 e-->
             </div>
@@ -596,7 +623,6 @@
         <div class="modal_footer clearfix">
             <div class="float-right">
                 <!--<button class="btn btn-primary font-weight-bold btn-md">진행하기</button>-->
-
                 <!--계좌인증 disabled-->
                 <button class="btn btn-primary font-weight-bold btn-md" disabled>계좌인증</button>
                 <!--계좌인증 disabled-->
@@ -605,6 +631,53 @@
     </div>
 </div>
 <!--취소 모달 e-->
+
+<!--상담 모달 s-->
+<div class="slide_modal_backdrop _slide_modal_backdrop _slide_modal_backdrop_consulting">
+    <div class="slide-modal slide-modal-lg">
+        <div class="modal_header">
+            <h3 class="title font-weight-bold">상담관리</h3>
+            <i class="ico_close_btn _close_slide_modal"></i>
+        </div>
+        <div class="modal_body">
+            <div class="">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-toggle="tab" data-target="#tab01" type="button" role="tab"
+                                aria-controls="dummy1">일자별
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-toggle="tab" data-target="#tab02" type="button" role="tab">
+                            결제수단별
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-toggle="tab" data-target="#tab03" type="button" role="tab">건별
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-toggle="tab" data-target="#tab04" type="button" role="tab">건별
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab01" role="tabpanel">탭리스트1</div>
+                    <div class="tab-pane" id="tab02" role="tabpanel">탭리스트2</div>
+                    <div class="tab-pane" id="tab03" role="tabpanel">탭리스트3</div>
+                    <div class="tab-pane" id="tab04" role="tabpanel">탭리스트3</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal_footer clearfix">
+            <div class="float-right">
+                <button class="btn btn-primary font-weight-bold btn-md">등록하기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--상담 모달 e-->
+
 
 </body>
 </html>

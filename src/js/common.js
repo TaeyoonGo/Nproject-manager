@@ -35,6 +35,16 @@ function selectBox() {
         selectBoxValue.find('.value_text').text(text).css({'color': '#1F1F1F'});
     });
 
+    //disabled 처리
+    if ($(".select_value").is(':disabled')) {
+        $(".select_value:disabled").parent('._select-box').css({
+            "background": "#F8F8F8",
+            "border": "1px solid #CED4DA"
+        })
+        $(".select_value:disabled").parent('._select-box').off('click');
+    }
+
+
     $(document).on('click', function (e) {
         let target = $(e.target);
         selectBox.each(function () {
@@ -88,7 +98,6 @@ function dataRangePicker() {
     });
 
 
-
     // Last Month 버튼 클릭 시 지난달 범위 선택
     $('#lastMonthBtn').on('click', function () {
         const startDate = moment().subtract(1, 'month');
@@ -100,7 +109,7 @@ function dataRangePicker() {
     // This Month 버튼 클릭 시 이번달 범위 선택
     $('#thisMonthBtn').click(function () {
         const startDate = moment().startOf('month');
-        const endDate =  moment();
+        const endDate = moment();
         dateRangePicker.data('daterangepicker').setStartDate(startDate);
         dateRangePicker.data('daterangepicker').setEndDate(endDate);
     });
@@ -124,10 +133,8 @@ function dataRangePicker() {
 
 
 //slideModal
-function openSlideModal() {
-    $('._open_slide_modal').on('click', function () {
-        $('.slide_modal_backdrop').addClass('on');
-    })
+function openSlideModal(modalName,i) {
+    $("." + modalName + i).addClass('on');
 }
 
 function closeSlideModal() {
@@ -162,10 +169,10 @@ function asideMobileBtn() {
 function inputIcoHover() {
     $('._input_ico_hover').hover(
         function () {
-            $(this).siblings('._input_cation').css('display','block')
+            $(this).siblings('._input_cation').css('display', 'block')
         },
         function () {
-            $(this).siblings('._input_cation').css('display','none')
+            $(this).siblings('._input_cation').css('display', 'none')
         }
     )
 }
@@ -207,7 +214,6 @@ $(document).ready(function () {
     asideSlideBtn();
     openAsideBtn();
     selectBox();
-    openSlideModal();
     closeSlideModal();
     asideTooltip();
     asideMobileBtn();

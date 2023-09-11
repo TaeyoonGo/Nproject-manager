@@ -85,9 +85,6 @@
         visibility: visible;
         .slide-modal{
             right: 0;
-            &.slide-modal-md{
-                right: 0;
-            }
         }
     }
     .slide-modal{
@@ -98,8 +95,8 @@
         height: 100%;
         background-color: $gray-fff;
         transition: all 0.3s;
-        // 취소 모달
-        &.slide-modal-md{
+        // 중간 모달
+        &-md{
             width: 476px;
             right: -476px;
             .modal_header{
@@ -113,6 +110,22 @@
                 padding: 0 40px;
             }
         }
+        &-lg{
+            transition: all 0.5s;
+            width: 1185px;
+            right: -1185px;
+            .modal_header{
+                height: 110px;
+                .ico_close_btn{
+                    top: 40px;
+                    right: 40px;
+                }
+            }
+            .modal_footer{
+                padding: 0 40px;
+            }
+        }
+
         .modal_header{
             padding: 40px;
             position: relative;

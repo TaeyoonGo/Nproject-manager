@@ -34,7 +34,8 @@
         color: $gray-000;
         margin-top: 40px;
         font-size: 18px;
-        span{
+        line-height: 1.8;
+        .underline{
             text-decoration: underline;
         }
     }
@@ -71,6 +72,64 @@
             }
             .text{
                 visibility: visible;
+            }
+        }
+    }
+    .tab_area{
+        .main-title{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        .tab-content{
+            margin-bottom: 24px;
+        }
+        .list_row{
+            display: flex;
+            margin-bottom: 24px;
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
+            .title{
+                flex: 1 1 25%;
+                font-size: 16px;
+            }
+            .content{
+                flex: 1 1 75%;
+                .nav{
+                    margin-bottom: 0;
+                    .nav-item{
+                        width: 50%;
+                        margin-bottom: 0;
+                        border: none;
+                        overflow: hidden;
+                        &:first-child{
+                            border: 1px solid #CED4DA;
+                            border-top-left-radius : 7px;
+                            border-bottom-left-radius:7px;
+                        }
+                        &:last-child{
+                            border: 1px solid #CED4DA;
+                            border-top-right-radius : 7px;
+                            border-bottom-right-radius:7px;
+                            border-left: none;
+                        }
+
+                        .nav-link{
+                            background-color: #fff;
+                            border-top-right-radius : 0;
+                            border-top-left-radius:0;
+                            width: 100%;
+                            padding: 9px;
+                            font-size: 16px;
+                            color: $gray-000;
+                            &.active{
+                                border-color: $purple-100;
+                                background-color: $purple-100;
+                                color: $gray-fff;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
