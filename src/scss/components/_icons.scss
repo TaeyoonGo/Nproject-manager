@@ -63,3 +63,7 @@
 .ico_previous_page{
     @include background-img ($width: 24px, $height: 24px, $category: 'icon', $img: 'ico_previous_page.png');
 }
+
+.ico_danger{
+    @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_danger.png');
+}

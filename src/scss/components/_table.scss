@@ -85,3 +85,29 @@
         }
     }
 }
+
+
+.data-table{
+    width: 100%;
+
+    tr{
+        font-size: 16px;
+        font-weight: 500;
+        border-top: 1px solid $gray-400;
+        &:first-child{
+            border-top: 2px solid $gray-100;
+        }
+        &:last-child{
+            border-bottom: 1px solid $gray-400;
+        }
+        th,td{
+            word-break: break-all;
+            padding: 12px 14px;
+            font-weight: 400;
+        }
+        th{
+            background-color: $gray-500;
+            border-right: 1px solid $gray-400;
+        }
+    }
+}

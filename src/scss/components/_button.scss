@@ -5,10 +5,32 @@
 */
 
 .btn {
+    font-size: 16px;
+    font-weight: 700;
     &-primary {
-        border-color: $purple-300;
-        background-color: $purple-300;
-        color: $purple-100;
+        border-color: $purple-100;
+        background-color: $purple-100;
+        color: $gray-fff;
+        &:hover, &:focus,{
+            border-color: $purple-100;
+            background-color: $purple-100;
+            color: $gray-fff;
+            box-shadow: none;
+        }
+        &:not(:disabled):not(.disabled) {
+            &.active, &:active {
+                border-color: $purple-100;
+                background-color: $purple-100;
+                color: $gray-fff;
+                outline: none;
+                box-shadow: none;
+            }
+    }
+        &:disabled{
+            background-color: $gray-200;
+            color: $gray-fff;
+            border: 1px solid $gray-200;
+        }
     }
 
     &-danger {
