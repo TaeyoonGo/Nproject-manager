@@ -95,6 +95,20 @@
         height: 100%;
         background-color: $gray-fff;
         transition: all 0.3s;
+        .modal_header{
+            padding: 40px;
+            position: relative;
+            .ico_close_btn{
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+        .modal_body{
+            padding: 40px;
+        }
+        .modal_footer{
+            padding: 40px;
+        }
         // 중간 모달
         &-md{
             width: 476px;
@@ -126,20 +140,6 @@
             }
         }
 
-        .modal_header{
-            padding: 40px;
-            position: relative;
-            .ico_close_btn{
-                position: absolute;
-                right: 20px;
-                cursor: pointer;
-            }
-        }
-        .modal_body{
-            padding: 40px;
-        }
-        .modal_footer{
-            padding: 40px;
-        }
+
     }
 }

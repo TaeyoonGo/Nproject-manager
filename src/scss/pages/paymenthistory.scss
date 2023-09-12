@@ -133,4 +133,71 @@
             }
         }
     }
+    .validation{
+        position: absolute;
+        bottom: -60px;
+        font-size: 15px;
+        margin-left: 10px;
+        &:before{
+            content: '*';
+            display: inline-block;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10px;
+            position: absolute;
+        }
+    }
+    .management_content{
+        .nav-tabs{
+            width: 100%;
+            border-bottom: 1px solid #babac2;
+            .nav-item{
+                border: none;
+            }
+        }
+        .tab-content-area{
+            .select-box_container,.text-area_container{
+                margin-bottom: 42px;
+            }
+            .form-group-list{
+                display: flex;
+            }
+            .text-area{
+                height: 320px;
+                resize: none;
+            }
+            .title{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .form-group-row{
+                .desc{
+                    margin-left:10px; margin-right: 42px
+                }
+            }
+        }
+    }
+    .payment-list{
+        .list-area{
+            margin-bottom: 60px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .title{
+                margin-bottom: 42px;
+            }
+            .data-table{
+                tr{
+                    th,td{
+                        border-right: 1px solid #ced4da;
+                        &:nth-last-child(1){
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
 }
