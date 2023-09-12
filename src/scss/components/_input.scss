@@ -48,6 +48,9 @@
         border: 1px solid #CED4DA;
         z-index: 1000;
         border-radius: 7px;
+        &.h-320{
+            height: 320px;
+        }
         .option {
             padding: 8px 12px;
             font-size: 15px;
