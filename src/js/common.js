@@ -148,9 +148,9 @@ function closeSlideModal() {
 function asideTooltip() {
     let links = $('.link');
     links.mouseover(function () {
-        var hoverTitle = $(this).find('a');
-        var top = hoverTitle[0].getBoundingClientRect().top;
-        var arrow = $(this).find('.arrow_box');
+        const hoverTitle = $(this).find('a');
+        const top = hoverTitle[0].getBoundingClientRect().top;
+        const arrow = $(this).find('.arrow_box');
         arrow.css('top', top + 10 + 'px');
     });
 }
