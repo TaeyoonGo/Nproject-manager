@@ -10,7 +10,7 @@
     width: 100%;
     margin-bottom: 0;
     border-radius: 7px;
-    padding: 8px 12px;
+    padding: 6px 12px;
     background-color: #fff;
     border: 1px solid #ced4da;
     font-size: 15px;
@@ -64,7 +64,7 @@
 }
 
 .form-control{
-    padding: 8px 12px;
+    padding: 6px 12px;
     height: auto;
     font-size: 15px;
     color: $gray-000;
@@ -76,7 +76,7 @@
     }
 
     &.search{
-        padding: 8px 12px 8px 32px;
+        padding: 6px 12px 6px 32px;
         background-image: url("../img/icon/ico_search_gray.png");
         background-repeat: no-repeat;
         background-size: 16px 16px;

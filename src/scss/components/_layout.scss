@@ -87,10 +87,10 @@ header {
 
     .btn_open_depths{
         position: absolute;
-        width: 34px;
-        height: 34px;
-        top: 18px;
-        right: -17px;
+        width: 30px;
+        height: 30px;
+        top: 25px;
+        right: -13px;
         border-radius: 50%;
         cursor: pointer;
         transition: all 0.3s;
@@ -458,8 +458,8 @@ footer {
     width: calc(100% - 264px);
     padding: 98px 24px 56px;
     .main-title{
-        font-size: 30px;
-        margin-bottom: 20px;
+        font-size: 23px;
+        margin-bottom: 30px;
     }
     .filter-title{
         display: flex;
@@ -494,7 +494,31 @@ footer {
     .filter-button-area{
         margin-top: 44px;
     }
+    .card-title{
+        margin-bottom: 12px;
+    }
+    .btn-group-month{
+        .btn{
+            margin-right: 5px;
+            border-radius: 28px;
+            font-size: 14px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .calender-input{
+        width: 230px;
+        position: relative;
+        .icon{
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right:5px;
+            cursor: pointer;
+        }
 
+    }
 }
 
 

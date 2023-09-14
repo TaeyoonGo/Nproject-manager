@@ -80,28 +80,43 @@
 
 
 .btn-group {
-    .radio_label {
-        vertical-align: middle;
-        appearance: none;
-
-        + label {
-            display: inline-block;
-            margin-bottom: 0;
-            padding: 5px;
-            background-color: #e2e2e2;
-            text-align: center;
-            color: $gray-100;
-        }
-
-        &:checked, &:focus-visible, &:focus, &:hover {
-            + label {
-                border-color: $purple-100;
-                background-color: $purple-100;
-                color: $gray-fff;
+    .btn{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    &.custom-radio-container{
+        margin-bottom: 0;
+        .custom-radio-group{
+            flex: 1 1 auto;
+            font-size: 0;
+            &:first-child{
+                border-radius: 28px 0 0 28px;
+                overflow: hidden;
             }
+            &:last-child{
+                border-radius: 0 28px 28px 0;
+                overflow: hidden;
+            }
+            label{
+                width: 100%;
+            }
+            .radio-input {
+                appearance: none;
+                &:checked{
+                    +label{
+                        border: 1px solid $purple-100;
+                        background-color: $purple-100;
+                        color: $gray-fff;
+                    }
+                }
+            }
+        }
+        .btn{
+            border-radius: 0;
         }
 
     }
+
 }
 
 

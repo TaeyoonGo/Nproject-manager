@@ -13,110 +13,82 @@
                 <div class="card">
                     <h5 class="filter-title font-weight-semi-bold">
                         <i class="icon ico_filter"></i>
-                        <span>검색 필터</span>
+                        <span>필터</span>
                     </h5>
+
+
                     <div class="row">
-                        <div class="col-xl" style="flex:0 0 20%">
-                            <div class="form-group">
-                                <div class="btn-group w-100">
-                                    <input class="radio_label" type="radio" name="example1" id="test1" checked="">
-                                    <label class="btn btn-secondary" for="test1">거래일</label>
-                                    <input class="radio_label" type="radio" name="example1" id="test2">
-                                    <label class="btn btn-secondary" for="test2">정산일</label>
+                        <div class="col-xl-auto">
+                            <p class="card-title font-weight-semi-bold">기간</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group mb-0">
+                                        <div class="btn-group w-100 custom-radio-container">
+                                            <div class="custom-radio-group fsz-0">
+                                                <input class="radio-input" type="radio" name="example1" checked
+                                                       id="customRadio1">
+                                                <label for="customRadio1" class="btn btn-secondary">거래일</label>
+                                            </div>
+                                            <div class="custom-radio-group fsz-0">
+                                                <input class="radio-input" type="radio" name="example1"
+                                                       id="customRadio2">
+                                                <label for="customRadio2" class="btn btn-secondary">정산일</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-auto">
+                                    <div class="form-group mb-0">
+                                        <div class="btn-group-month">
+                                            <button class="btn btn-secondary" id="threeMonthAgoBtn">3개월</button>
+                                            <button class="btn btn-secondary" id="lastMonthBtn">지난달</button>
+                                            <button class="btn btn-secondary" id="thisMonthBtn">이번달</button>
+                                            <button class="btn btn-secondary" id="yesterdayBtn">어제</button>
+                                            <button class="btn btn-secondary" id="todayBtn">오늘</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-auto">
+                                    <div class="form-group mb-0">
+                                        <label class="calender-input mb-0">
+                                            <input class="form-control _dataPickerRange" type="text">
+                                            <i class="icon ico_calendar" onclick="$('._modal-calendar').modal('show')">달력이미지</i>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex" style="flex: 1 1 80%">
-                            <div class="form-group" style="padding: 0 15px; min-width: 25%">
-                                <div>
-                                    <button class="btn btn-secondary" id="threeMonthAgoBtn">3개월</button>
-                                    <button class="btn btn-secondary" id="lastMonthBtn">지난달</button>
-                                    <button class="btn btn-secondary" id="thisMonthBtn">이번달</button>
-                                    <button class="btn btn-secondary" id="yesterdayBtn">어제</button>
-                                    <button class="btn btn-secondary" id="todayBtn">오늘</button>
+                        <div class="col-xl-auto">
+                            <p class="font-weight-semi-bold card-title">결제상태</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group mb-0">
+                                        <div class="btn-group w-100 custom-radio-container">
+                                            <div class="custom-radio-group">
+                                                <input class="radio-input" type="radio" name="example2" checked
+                                                       id="customRadio3">
+                                                <label for="customRadio3" class="btn btn-secondary btn-md">전체</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example2"
+                                                       id="customRadio4">
+                                                <label for="customRadio4" class="btn btn-secondary btn-md">결제완료</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example2"
+                                                       id="customRadio5">
+                                                <label for="customRadio5"
+                                                       class="btn btn-secondary btn-md">취소(환불)</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group" style="padding: 0 15px; min-width: 25%">
-                                <label class="calender_input mb-0 w-100">
-                                    <input class="form-control" type="text" placeholder="Default input"
-                                           name="modalDataPickerBtn">
-                                </label>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl">
-                            <div class="form-group">
-                                <div class="btn-group w-100">
-                                    <input class="radio_label" type="radio" name="example2" id="test5" checked="">
-                                    <label class="btn btn-secondary" for="test5">전체</label>
-                                    <input class="radio_label" type="radio" name="example2" id="test3" checked="">
-                                    <label class="btn btn-secondary" for="test3">결제완료</label>
-                                    <input class="radio_label" type="radio" name="example2" id="test4">
-                                    <label class="btn btn-secondary" for="test4">취소(환불)</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl">
-                            <div class="form-group">
-                                <label class="select-box _select-box">
-                                    <input type="hidden" class="select_value" value="0">
-                                    <span class="value_text">결제수단(전체)</span>
-                                    <i class="icon ico_select_arrow_down">아래화살표</i>
-                                    <ul class="options">
-                                        <li class="option" value="0">결제수단(전체)</li>
-                                        <li class="option" value="1">카드 - 앱카드</li>
-                                        <li class="option" value="2">카드 - 키인</li>
-                                        <li class="option" value="3">카드 - 빌링</li>
-                                        <li class="option" value="4">카드 - 간편</li>
-                                        <li class="option" value="5">계좌 - 빌링</li>
-                                        <li class="option" value="6">계좌 - 간편</li>
-                                        <li class="option" value="7">네이버페이</li>
-                                        <li class="option" value="8">카카오페이</li>
-                                        <li class="option" value="9">애플페이</li>
-                                        <li class="option" value="10">가상계좌</li>
-                                    </ul>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-xl">
-                            <div class="form-group">
-                                <label class="select-box _select-box">
-                                    <input type="hidden" class="select_value" value="0">
-                                    <span class="value_text">카드사(전체)</span>
-                                    <i class="icon ico_select_arrow_down">아래화살표</i>
-                                    <ul class="options">
-                                        <li class="option" value="0">카드사(전체)</li>
-                                        <li class="option" value="1">신한카드</li>
-                                        <li class="option" value="2">삼성카드</li>
-                                        <li class="option" value="3">KB국민카드</li>
-                                        <li class="option" value="4">현대카드</li>
-                                        <li class="option" value="5">BC카드</li>
-                                        <li class="option" value="6">하나카드</li>
-                                        <li class="option" value="7">롯데카드</li>
-                                        <li class="option" value="8">NH농협카드</li>
-                                        <li class="option" value="9">우리카드</li>
-                                    </ul>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-xl">
-                            <div class="form-group">
-                                <label class="select-box _select-box">
-                                    <input type="hidden" class="select_value" value="0">
-                                    <span class="value_text">원천사(전체)</span>
-                                    <i class="icon ico_select_arrow_down">아래화살표</i>
-                                    <ul class="options h-auto">
-                                        <li class="option" value="0">원천사(전체)</li>
-                                        <li class="option" value="1">나이스</li>
-                                        <li class="option" value="2">다날</li>
-                                    </ul>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-xl empty">&nbsp;</div>
-                    </div>
+
                     <hr>
+                    <p class="font-weight-semi-bold card-title">상세검색</p>
                     <div class="row">
 
                         <div class="col-xl">
@@ -211,6 +183,66 @@
                                 </label>
                             </div>
                         </div>
+                        <div class="col-xl empty">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="select-box _select-box">
+                                    <input type="hidden" class="select_value" value="0">
+                                    <span class="value_text">결제수단(전체)</span>
+                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                    <ul class="options">
+                                        <li class="option" value="0">결제수단(전체)</li>
+                                        <li class="option" value="1">카드 - 앱카드</li>
+                                        <li class="option" value="2">카드 - 키인</li>
+                                        <li class="option" value="3">카드 - 빌링</li>
+                                        <li class="option" value="4">카드 - 간편</li>
+                                        <li class="option" value="5">계좌 - 빌링</li>
+                                        <li class="option" value="6">계좌 - 간편</li>
+                                        <li class="option" value="7">네이버페이</li>
+                                        <li class="option" value="8">카카오페이</li>
+                                        <li class="option" value="9">애플페이</li>
+                                        <li class="option" value="10">가상계좌</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="select-box _select-box">
+                                    <input type="hidden" class="select_value" value="0">
+                                    <span class="value_text">카드사(전체)</span>
+                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                    <ul class="options">
+                                        <li class="option" value="0">카드사(전체)</li>
+                                        <li class="option" value="1">신한카드</li>
+                                        <li class="option" value="2">삼성카드</li>
+                                        <li class="option" value="3">KB국민카드</li>
+                                        <li class="option" value="4">현대카드</li>
+                                        <li class="option" value="5">BC카드</li>
+                                        <li class="option" value="6">하나카드</li>
+                                        <li class="option" value="7">롯데카드</li>
+                                        <li class="option" value="8">NH농협카드</li>
+                                        <li class="option" value="9">우리카드</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="select-box _select-box">
+                                    <input type="hidden" class="select_value" value="0">
+                                    <span class="value_text">원천사(전체)</span>
+                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                    <ul class="options h-auto">
+                                        <li class="option" value="0">원천사(전체)</li>
+                                        <li class="option" value="1">나이스</li>
+                                        <li class="option" value="2">다날</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
                         <div class="col-xl">
                             <div class="form-group">
                                 <label class="w-100 mb-0 position-relative">
@@ -220,6 +252,7 @@
                                 </label>
                             </div>
                         </div>
+                        <div class="col-xl empty">&nbsp;</div>
                     </div>
                     <div class="clearfix filter-button-area">
                         <div class="float-right">
@@ -403,8 +436,6 @@
                     </div>
                     @@include('../include/pagenation.html')
                 </div>
-
-
             </section>
         </article>
         <!-- 컨텐츠 e-->
@@ -412,11 +443,11 @@
     @@include('../include/footer.html')
 </div>
 <!--달력 s-->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade _modal-calendar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered calender_modal">
         <div class="modal-content">
             <div class="modal-body">
-                <div id="modalDataPicker"></div>
+                <div class="_modalDataPicker"></div>
             </div>
         </div>
     </div>
@@ -425,7 +456,7 @@
 
 
 <!--취소 모달 s-->
-<div class="slide_modal_backdrop _slide_modal_backdrop _slide_modal_backdrop_cancel">
+<div class="slide-modal-backdrop _slide_modal_backdrop _slide_modal_backdrop_cancel">
     <div class="slide-modal slide-modal-md">
         <div class="modal_header">
             <h3 class="title font-weight-bold">취소하기</h3>
@@ -459,7 +490,7 @@
                     <!--취소금액 text e-->
 
                     <!--취소 영수증 테이블 s-->
-                   <table class="data-table">
+                    <table class="data-table">
                         <colgroup>
                             <col style="width:30%">
                             <col style="width:70%">
@@ -600,10 +631,10 @@
                     <!--카드 취소시 재확인 문구 e-->
 
                     <!--가상 계좌(개인) 처리 시 문구 s-->
-<!--                                        <p class="caption font-weight-semi-bold">인증이 완료되었습니다.<br>-->
-<!--                                            취소가 진행되면 <span class="underline">수정할 수 없습니다.</span><br>-->
-<!--                                            취소를 진행할까요?-->
-<!--                                        </p>-->
+                    <!--                                        <p class="caption font-weight-semi-bold">인증이 완료되었습니다.<br>-->
+                    <!--                                            취소가 진행되면 <span class="underline">수정할 수 없습니다.</span><br>-->
+                    <!--                                            취소를 진행할까요?-->
+                    <!--                                        </p>-->
                     <!--가상 계좌(개인) 처리 시 문구 e-->
 
                     <!--가상 계좌(개인) 처리 시 문구 s-->
@@ -638,7 +669,7 @@
 <!--취소 모달 e-->
 
 <!--상담 모달 s-->
-<div class="slide_modal_backdrop _slide_modal_backdrop _slide_modal_backdrop_consulting">
+<div class="slide-modal-backdrop _slide_modal_backdrop _slide_modal_backdrop_consulting">
     <div class="slide-modal slide-modal-lg">
         <div class="modal_header">
             <h3 class="title font-weight-bold">상담관리</h3>
@@ -840,7 +871,7 @@
 <!--상담 모달 e-->
 
 <!--거래 이력 s-->
-<div class="slide_modal_backdrop _slide_modal_backdrop _slide_modal_backdrop_payment">
+<div class="slide-modal-backdrop _slide_modal_backdrop _slide_modal_backdrop_payment">
     <div class="slide-modal slide-modal-lg">
         <div class="modal_header">
             <i class="ico_close_btn _close_slide_modal"></i>

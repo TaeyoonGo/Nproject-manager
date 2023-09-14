@@ -40,7 +40,7 @@ function selectBox() {
         $(".select_value:disabled").parent('._select-box').css({
             "background": "#F8F8F8",
             "border": "1px solid #CED4DA",
-            "cursor" : "auto"
+            "cursor": "auto"
         })
         $(".select_value:disabled").parent('._select-box').off('click');
     }
@@ -60,8 +60,8 @@ function selectBox() {
 
 // dataPickerRange
 function dataRangePicker() {
-    const modalDataPicker = $('#modalDataPicker');
-    let dateRangePicker = $('input[name=modalDataPickerBtn]');
+    const modalDataPicker = $('._modalDataPicker');
+    const dateRangePicker = $('._dataPickerRange');
     dateRangePicker.daterangepicker(
         {
             linkedCalendars: true,
@@ -84,12 +84,10 @@ function dataRangePicker() {
         function (start, end, label) {
 
         });
-    dateRangePicker.on('show.daterangepicker', function (ev, picker) {
-        $('#myModal').modal('show')
-    });
     dateRangePicker.on('hide.daterangepicker', function (ev, picker) {
-        $('#myModal').modal('hide')
+        $('._modal-calendar').modal('hide')
     });
+
     // three Month 버튼 클릭 시 지난달 범위 선택
     $('#threeMonthAgoBtn').on('click', function () {
         const startDate = moment().subtract(3, 'month');
@@ -134,7 +132,7 @@ function dataRangePicker() {
 
 
 //slideModal
-function openSlideModal(modalName,i) {
+function openSlideModal(modalName, i) {
     $("." + modalName + i).addClass('on');
 }
 

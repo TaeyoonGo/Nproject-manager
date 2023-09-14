@@ -24,7 +24,7 @@
 }
 
 .ico_select_arrow_down{
-    @include background-img ($width: 30px, $height: 30px, $category: 'icon', $img: 'ico_select_arrow_down.png');
+    @include background-img ($width: 26px, $height: 26px, $category: 'icon', $img: 'ico_select_arrow_down.png');
 }
 
 .ico_search_gray{
@@ -66,4 +66,7 @@
 
 .ico_danger{
     @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_danger.png');
+}
+.ico_calendar{
+    @include background-img ($width: 26px, $height: 26px, $category: 'icon', $img: 'ico_calendar.png');
 }
