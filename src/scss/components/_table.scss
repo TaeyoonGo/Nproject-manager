@@ -7,7 +7,7 @@
 .table-responsive {
     th, td {
         font-weight: 400;
-        padding: 12px 14px;
+        padding: 12px 10px;
         font-size: 13px;
         color: $gray-000;
     }
@@ -40,20 +40,26 @@
                 }
             }
         }
+
     }
     tbody{
         tr{
             border-bottom: 1px solid $gray-400;
+            &.color-red-100{
+                td{
+                    color: $red-100;
+                }
+            }
             &:nth-last-child(1){
                 border-bottom: none;
             }
 
-            &:nth-child(even){
-                background-color: #fff;
-            }
-            &:nth-child(odd){
-                background-color: #F5F5F5;
-            }
+            //&:nth-child(even){
+            //    background-color: #fff;
+            //}
+            //&:nth-child(odd){
+            //    background-color: #F5F5F5;
+            //}
             &:hover {
                 background-color: $purple-300;
             }
