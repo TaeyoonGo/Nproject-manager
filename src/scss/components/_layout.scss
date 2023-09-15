@@ -464,9 +464,8 @@ footer {
     .filter-title{
         display: flex;
         align-items: center;
-        margin-bottom: 30px;
         font-size: 18px;
-        span{
+        span,a{
             margin-left: 9px;
         }
     }
@@ -491,10 +490,18 @@ footer {
     +.card{
         margin-top: 30px;
     }
+    .detail-search{
+        display: none;
+
+    }
     .filter-button-area{
         position: absolute;
         bottom: 40px;
         right: 24px;
+        @include res-xl{
+            margin-top: 14px;
+            position: static;
+        }
     }
     .card-title{
         margin-bottom: 12px;

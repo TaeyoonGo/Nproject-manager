@@ -58,6 +58,12 @@ function selectBox() {
 }
 
 
+function moreSearch(){
+    $('._more-search-btn').on('click',function(){
+        $('.detail-search').toggleClass('d-block')
+    })
+}
+
 // dataPickerRange
 function dataRangePicker() {
     const modalDataPicker = $('._modalDataPicker');
@@ -217,4 +223,5 @@ $(document).ready(function () {
     asideTooltip();
     asideMobileBtn();
     inputIcoHover();
+    moreSearch();
 })

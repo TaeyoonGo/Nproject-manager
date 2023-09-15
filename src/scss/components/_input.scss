@@ -86,3 +86,24 @@
         }
     }
 }
+
+.input-ico-hover{
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.speech-bubble{
+    display: none;
+    word-break: keep-all;
+    padding: 5px 10px;
+    position: absolute;
+    font-size: 12px;
+    color: $gray-100;
+    right: -100px;
+    top: -10px;
+    background-color: $gray-fff;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
