@@ -80,6 +80,18 @@
             }
         }
     }
+    &.test{
+        tbody{
+            tr{
+                &:nth-child(even){
+                    background-color: #fff;
+                }
+                &:nth-child(odd){
+                    background-color: #F5F5F5;
+                }
+            }
+        }
+    }
 }
 
 

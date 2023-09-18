@@ -401,6 +401,9 @@ header {
             margin-left: 0;
             width: 100%;
             padding: 98px 24px 56px 80px;
+            @include res-md{
+                padding: 98px 24px 56px 24px;
+            }
         }
     }
     @include res-md{

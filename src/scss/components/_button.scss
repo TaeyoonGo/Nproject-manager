@@ -99,6 +99,7 @@ a{
         .custom-radio-group{
             flex: 1 1 auto;
             font-size: 0;
+            border-right: 1px solid $gray-200;
             &:first-child{
                 border-radius: 28px 0 0 28px;
                 overflow: hidden;
@@ -106,6 +107,7 @@ a{
             &:last-child{
                 border-radius: 0 28px 28px 0;
                 overflow: hidden;
+                border-right: none;
             }
             label{
                 width: 100%;
