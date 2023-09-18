@@ -48,7 +48,8 @@
                                         <div class="title">생년월일</div>
                                         <div class="content">
                                             <label class="mb-0 w-100">
-                                                <input class="form-control" placeholder="YYMMDD" value="920906">
+                                                <input class="form-control" placeholder="YYMMDD" value="920906"
+                                                       disabled>
                                             </label>
                                         </div>
                                     </div>
@@ -61,7 +62,8 @@
                                         <div class="title">사업자번호</div>
                                         <div class="content">
                                             <label class="mb-0 w-100">
-                                                <input class="form-control" placeholder="사업자번호10자리" value="1234567890">
+                                                <input class="form-control" placeholder="사업자번호10자리" value="1234567890"
+                                                       disabled>
                                             </label>
                                         </div>
                                     </div>
@@ -72,10 +74,10 @@
                                 <div class="title">은행</div>
                                 <div class="content">
                                     <label class="select-box _select-box">
-                                        <input type="hidden" class="select_value">
+                                        <input type="hidden" class="select_value" disabled>
                                         <span class="value_text">KDB산업은행</span>
                                         <i class="icon ico_select_arrow_down">아래화살표</i>
-                                        <ul class="options">
+                                        <ul class="options view-8">
                                             <li class="option" value="1">KDB산업은행</li>
                                             <li class="option" value="2">IBK기업은행</li>
                                             <li class="option" value="3">KB국민은행</li>
@@ -109,7 +111,7 @@
                                 <div class="title">계좌번호</div>
                                 <div class="content">
                                     <label class="mb-0 w-100">
-                                        <input class="form-control" value="100254564545646">
+                                        <input class="form-control" value="100254564545646" disabled>
                                     </label>
                                 </div>
                             </div>
@@ -117,19 +119,23 @@
                                 <div class="title">예금주명</div>
                                 <div class="content">
                                     <label class="mb-0 w-100">
-                                        <input class="form-control" value="정다운">
+                                        <input class="form-control" value="정다운" disabled>
                                     </label>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <p class="caption font-weight-semi-bold">인증이 완료되었습니다.<br>
+                        취소가 진행되면 <span class="underline">수정할 수 없습니다.</span><br>
+                        취소를 진행할까요?
+                    </p>
                 </div>
                 <!--취소하기 시작 e-->
             </div>
         </div>
         <div class="modal_footer clearfix">
             <div class="float-right">
-                <button class="btn btn-primary font-weight-bold btn-md">계좌인증</button>
+                <button class="btn btn-primary font-weight-bold btn-md">취소하기</button>
             </div>
         </div>
     </div>

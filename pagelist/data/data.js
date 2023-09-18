@@ -98,39 +98,39 @@ data.teamManager = {
         },
         {
             stateClass: 'complete',
-            url: '계좌_취소',
+            url: '가상계좌_취소',
             category: 'teammanager',
-            page: '계좌_취소'
+            page: '가상계좌_취소'
         },
         {
             stateClass: 'complete',
-            url: '계좌_취소_입력값입력시',
+            url: '가상계좌_취소_입력값입력시',
             category: 'teammanager',
-            page: '계좌_취소_입력값입력시'
+            page: '가상계좌_취소_입력값입력시'
         },
         {
             stateClass: 'complete',
-            url: '계좌_취소_입력값오류',
+            url: '가상계좌_취소_입력값오류',
             category: 'teammanager',
-            page: '계좌_취소_입력값오류'
+            page: '가상계좌_취소_입력값오류'
         },
         {
             stateClass: 'complete',
-            url: '계좌_취소_더블체크_개인',
+            url: '가상계좌_취소_더블체크_개인',
             category: 'teammanager',
-            page: '계좌_취소_더블체크_개인'
+            page: '가상계좌_취소_더블체크_개인'
         },
         {
             stateClass: 'complete',
-            url: '계좌_취소_더블체크_법인',
+            url: '가상계좌_취소_더블체크_법인',
             category: 'teammanager',
-            page: '계좌_취소_더블체크_법인'
+            page: '가상계좌_취소_더블체크_법인'
         },
         {
             stateClass: 'complete',
             url: '카드_계좌_취소_완료',
             category: 'teammanager',
-            page: '카드_계좌_취소_완료'
+            page: '카드_가상계좌_취소_완료'
         },
         {
             stateClass: 'complete',

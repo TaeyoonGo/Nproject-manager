@@ -38,7 +38,7 @@ function selectBox() {
     //disabled 처리
     if ($(".select_value").is(':disabled')) {
         $(".select_value:disabled").parent('._select-box').css({
-            "background": "#F8F8F8",
+            "background": "#e9ecef",
             "border": "1px solid #CED4DA",
             "cursor": "auto"
         })
