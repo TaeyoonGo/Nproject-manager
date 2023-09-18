@@ -57,7 +57,7 @@ header {
 
             }
 
-            @include res-sm {
+            @include res-md {
                 display: block;
             }
         }
@@ -101,7 +101,7 @@ header {
             width: 100%;
             height: auto;
         }
-        @include res-sm{
+        @include res-md{
             display: none;
         }
     }
@@ -403,7 +403,7 @@ header {
             padding: 98px 24px 56px 80px;
         }
     }
-    @include res-sm{
+    @include res-md{
         width: 100%;
         transition: all 0.3s;
         left: -100%;
@@ -437,7 +437,7 @@ footer {
                 margin-left: 8px;
             }
         }
-        @include res-sm{
+        @include res-md{
             margin: 0 30px;
             .copyright{
                 font-size: 14px;
@@ -481,63 +481,16 @@ footer {
             margin-left: 9px;
         }
     }
-}
-
-
-.card{
-    border-radius: 18px;
-    padding: 24px;
-    +.card{
-        margin-top: 30px;
-    }
-    .detail-search{
-        display: none;
-
-    }
-    .filter-button-area{
-        position: absolute;
-        bottom: 40px;
-        right: 24px;
-        @include res-xl{
-            margin-top: 14px;
-            position: static;
-        }
-    }
-    .card-title{
-        margin-bottom: 12px;
-    }
-    .btn-group-month{
-        .btn{
-            margin-right: 5px;
-            border-radius: 28px;
-            font-size: 14px;
-            &:last-child{
-                margin-right: 0;
-            }
-        }
-    }
-    .calender-input{
-        width: 230px;
-        position: relative;
-        .icon{
-            top: 50%;
-            transform: translateY(-50%);
-            position: absolute;
-            right:5px;
-            cursor: pointer;
-        }
-
+    @include res-md{
+        width: 100%;
+        margin-left: 0;
     }
 }
 
 
-.col-xl{
-    &.empty{
-       @include res-xl{
-           display: none;
-       }
-    }
-}
+
+
+
 
 
 .pagination-area{
@@ -563,5 +516,23 @@ footer {
                 color: $gray-100;
             }
         }
+    }
+}
+
+
+
+
+.col-xl-d-none{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    @include res-xl{
+        display: none;
     }
 }

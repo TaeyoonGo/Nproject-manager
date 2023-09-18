@@ -66,7 +66,7 @@
 .form-control{
     padding: 6px 12px;
     height: auto;
-    font-size: 15px;
+    font-size: 14px;
     color: $gray-000;
     border-radius: 7px;
     &:focus{
@@ -76,10 +76,10 @@
     }
 
     &.search{
-        padding: 6px 12px 6px 32px;
+        padding: 6px 12px 6px 28px;
         background-image: url("../img/icon/ico_search_gray.png");
         background-repeat: no-repeat;
-        background-size: 16px 16px;
+        background-size: 12px 12px;
         background-position: 8px center;
         &.question{
             padding: 8px 32px 8px 32px;
@@ -94,6 +94,7 @@
     transform: translateY(-50%);
     cursor: pointer;
 }
+
 .speech-bubble{
     display: none;
     word-break: keep-all;

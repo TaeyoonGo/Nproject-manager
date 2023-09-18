@@ -1,0 +1,65 @@
+/*
+#=========================================#
+|   레이아웃 카드 관련 CSS 입니다.             |
+#=========================================#
+*/
+
+.card{
+    border-radius: 18px;
+    padding: 24px;
+    +.card{
+        margin-top: 30px;
+    }
+    .detail-search{
+        display: none;
+
+    }
+    .filter-button-area{
+        position: absolute;
+        bottom: 40px;
+        right: 24px;
+        @include res-xl{
+            margin-top: 14px;
+            position: static;
+        }
+    }
+    .card-title{
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    .btn-group-month{
+        .btn{
+            margin-right: 5px;
+            border-radius: 28px;
+            font-size: 14px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .calender-input{
+        width: 230px;
+        position: relative;
+        .icon{
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right:5px;
+            cursor: pointer;
+        }
+
+    }
+    .card-number-input{
+        display: flex;
+        justify-content: space-between;
+        .first-number{
+            min-width: 190px;
+            flex: 0 1 100%;
+        }
+        .last-number{
+            min-width: 112px;
+            max-width: 112px;
+            margin-left: 10px;
+        }
+    }
+}
