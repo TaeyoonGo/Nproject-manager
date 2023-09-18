@@ -150,6 +150,14 @@ function dataRangePicker() {
 }
 
 
+function nodataTable() {
+   if($('tr').hasClass('_empty-data') === true){
+        $('._empty-data').closest('table').removeClass('table-fixed')
+        $('._empty-data').closest('table').find($('colgroup')).empty()
+        $('._empty-data').closest('table').find($('thead')).empty()
+   }
+}
+
 //slideModal
 function openSlideModal(modalName, i) {
     $("." + modalName + i).addClass('on');
@@ -237,4 +245,5 @@ $(document).ready(function () {
     asideMobileBtn();
     inputIcoHover();
     moreSearch();
+    nodataTable();
 })

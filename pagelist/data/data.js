@@ -74,9 +74,15 @@ data.teamManager = {
     list:[
         {
             stateClass: 'working',
-            url: '결제내역_국내',
+            url: '결제내역_국내_조회결과있음',
             category: 'teammanager',
             page: '결제내역_국내'
+        },
+        {
+            stateClass: 'complete',
+            url: '결제내역_국내_조회결과없음',
+            category: 'teammanager',
+            page: '결제내역_국내_조회결과없음'
         },
         {
             stateClass: 'complete',

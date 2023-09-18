@@ -70,3 +70,6 @@
 .ico_calendar{
     @include background-img ($width: 26px, $height: 26px, $category: 'icon', $img: 'ico_calendar.png');
 }
+.ico_document_gray{
+    @include background-img ($width: 35px, $height: 44px, $category: 'icon', $img: 'ico_document_gray.png');
+}

@@ -12,7 +12,7 @@
     border-radius: 7px;
     padding: 6px 12px;
     background-color: #fff;
-    border: 1px solid #ced4da;
+    border: 1px solid $gray-400;
     font-size: 15px;
     .icon {
         position: absolute;
@@ -45,7 +45,7 @@
         height: 160px;
         margin: 0;
         background-color: $gray-fff;
-        border: 1px solid #CED4DA;
+        border: 1px solid $gray-400;
         z-index: 1000;
         border-radius: 7px;
         &.view-8{
