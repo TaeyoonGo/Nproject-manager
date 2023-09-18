@@ -80,12 +80,6 @@ data.teamManager = {
         },
         {
             stateClass: 'confirm',
-            url: '결제내역_type2',
-            category: 'teammanager',
-            page: '결제내역_type2'
-        },
-        {
-            stateClass: 'confirm',
             url: '결제내역_국내_조회결과없음',
             category: 'teammanager',
             page: '결제내역_국내_조회결과없음'

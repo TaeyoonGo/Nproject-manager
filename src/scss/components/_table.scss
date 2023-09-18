@@ -47,12 +47,12 @@
                 border-bottom: none;
             }
 
-            //&:nth-child(even){
-            //    background-color: #fff;
-            //}
-            //&:nth-child(odd){
-            //    background-color: #F5F5F5;
-            //}
+            &:nth-child(odd){
+                background-color: #fff;
+            }
+            &:nth-child(even){
+                background-color: #F5F5F5;
+            }
             &:hover {
                 background-color: $purple-300;
             }
@@ -76,18 +76,6 @@
                         font-size: 16px;
                         color: $gray-000;
                     }
-                }
-            }
-        }
-    }
-    &.test{
-        tbody{
-            tr{
-                &:nth-child(even){
-                    background-color: #fff;
-                }
-                &:nth-child(odd){
-                    background-color: #F5F5F5;
                 }
             }
         }
