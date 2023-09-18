@@ -103,8 +103,19 @@
     font-size: 12px;
     color: $gray-100;
     right: -100px;
-    top: -10px;
+    top: -20px;
     background-color: $gray-fff;
-    border: 1px solid blue;
     border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+    &:after{
+        position: absolute;
+        content: '';
+        border-top: 10px solid $gray-fff;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 0 solid transparent;
+        left: 50%;
+        transform: translateY(-50%);
+        bottom: -10px;
+    }
 }
