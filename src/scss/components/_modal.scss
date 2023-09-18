@@ -202,9 +202,10 @@
         .tab-content{
             margin-bottom: 24px;
         }
-        .list_row{
+        .list-row{
             display: flex;
             margin-bottom: 24px;
+            align-items: center;
             &:nth-last-child(1){
                 margin-bottom: 0;
             }

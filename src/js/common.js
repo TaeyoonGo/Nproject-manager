@@ -70,11 +70,6 @@ function moreSearch(){
             moreSearchBtn.text('Close Search');
         }
     })
-
-
-
-
-
 }
 
 // dataPickerRange
@@ -192,6 +187,8 @@ function asideMobileBtn() {
     })
 }
 
+
+/*input buttno*/
 function inputIcoHover() {
     $('._input_ico_hover').hover(
         function () {
@@ -204,36 +201,12 @@ function inputIcoHover() {
 }
 
 
-//달력
-// function calender(){
-//     const parentElement = $('#datepickerParent');
-//     let dateRangePicker = $('input[name=dateRangePicker]');
-//     dateRangePicker.daterangepicker(
-//       ,
-//
-//         function (start, end, label) {
-//         console.log('선택된 날짜: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-//     });
-//     dateRangePicker.on('hide.daterangepicker', function (ev, picker) {
-//         let modals = $('.modal')
-//         modals.removeClass('fade')
-//         setTimeout(function () {
-//             modals.removeClass('show')
-//         }, 200)
-//     });
-//
-//     dateRangePicker.on('showCalendar.daterangepicker', function (ev, picker) {
-//         const trList = $('.daterangepicker').find("tr");
-//         trList.each(function() {
-//             var offEndsAvailableCount = $(this).find(".off.ends.available").length;
-//             if (offEndsAvailableCount === 7) {
-//                 $(this).hide();
-//             }
-//         });
-//     });
-//
-// }
-
+/*only-number*/
+function onlyNumber(){
+    $('._only-number').on('input',function(){
+        this.value =  this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+    })
+}
 
 $(document).ready(function () {
     dataRangePicker();
@@ -246,4 +219,5 @@ $(document).ready(function () {
     inputIcoHover();
     moreSearch();
     nodataTable();
+    onlyNumber();
 })
