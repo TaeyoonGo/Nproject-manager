@@ -73,6 +73,10 @@ header {
     }
 }
 
+main{
+    min-height: calc(100vh - 44px);
+    height: auto;
+}
 
 .aside {
     position: fixed;
@@ -420,6 +424,7 @@ header {
 footer {
     width: 100%;
     background-color: $gray-fff;
+    height: 44px;
     .footer {
         display: flex;
 

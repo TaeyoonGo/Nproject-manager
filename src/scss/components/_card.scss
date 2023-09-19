@@ -22,27 +22,43 @@
         }
     }
     .row{
-        &.period-3{
+        &.row-col-3{
             > div{
                 &:first-child{
                     padding-right: 8px;
+                    @include res-xl{
+                        padding-right: 15px;
+                    }
                 }
                 &:nth-child(2){
                     padding-left: 8px;
                     padding-right: 8px;
+                    @include res-xl{
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
                 }
                 &:last-child{
                     padding-left: 8px;
+                    @include res-xl{
+                        padding-left: 15px;
+                    }
                 }
             }
         }
-        &.period-2{
+        &.row-col-2{
             > div{
                 &:first-child{
                     padding-right: 8px;
+                    @include res-xl{
+                        padding-right: 15px;
+                    }
                 }
                 &:last-child{
                     padding-left: 8px;
+                    @include res-xl{
+                        padding-left: 15px;
+                    }
                 }
             }
         }
