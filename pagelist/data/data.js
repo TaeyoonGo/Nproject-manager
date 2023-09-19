@@ -86,6 +86,12 @@ data.teamManager = {
         },
         {
             stateClass: 'confirm',
+            url: '결제내역_국내_요청,실패내역',
+            category: 'teammanager',
+            page: '결제내역_국내_요청,실패내역'
+        },
+        {
+            stateClass: 'confirm',
             url: '결재내역_취소버튼클릭시',
             category: 'teammanager',
             page: '결재내역_취소버튼클릭시'
