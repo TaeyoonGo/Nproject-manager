@@ -85,7 +85,7 @@ data.teamManager = {
             page: '결제내역_국내_요청실패내역'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '결제내역_국내_등록해지정보',
             category: 'teammanager',
             page: '결제내역_국내_등록해지정보'
