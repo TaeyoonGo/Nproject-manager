@@ -22,13 +22,23 @@
         }
     }
     .row{
-        &.period{
+        &.period-3{
             > div{
                 &:first-child{
                     padding-right: 8px;
                 }
                 &:nth-child(2){
                     padding-left: 8px;
+                    padding-right: 8px;
+                }
+                &:last-child{
+                    padding-left: 8px;
+                }
+            }
+        }
+        &.period-2{
+            > div{
+                &:first-child{
                     padding-right: 8px;
                 }
                 &:last-child{

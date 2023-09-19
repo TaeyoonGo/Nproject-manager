@@ -43,9 +43,7 @@
                     color: $red-100;
                 }
             }
-            &:nth-last-child(1){
-                border-bottom: none;
-            }
+
 
             &:nth-child(odd){
                 background-color: #fff;
@@ -64,7 +62,7 @@
                 }
             }
             &.empty-data {
-
+                border-bottom: 0;
                 background-color: $gray-fff;
                 td{
                     border: none;

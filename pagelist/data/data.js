@@ -80,15 +80,21 @@ data.teamManager = {
         },
         {
             stateClass: 'confirm',
-            url: '결제내역_국내_조회결과없음',
+            url: '결제내역_국내_요청실패내역',
             category: 'teammanager',
-            page: '결제내역_국내_조회결과없음'
+            page: '결제내역_국내_요청실패내역'
         },
         {
             stateClass: 'confirm',
-            url: '결제내역_국내_요청,실패내역',
+            url: '결제내역_국내_등록해지정보',
             category: 'teammanager',
-            page: '결제내역_국내_요청,실패내역'
+            page: '결제내역_국내_등록해지정보'
+        },
+        {
+            stateClass: 'confirm',
+            url: '결제내역_국내_조회결과없음',
+            category: 'teammanager',
+            page: '결제내역_국내_조회결과없음'
         },
         {
             stateClass: 'confirm',
