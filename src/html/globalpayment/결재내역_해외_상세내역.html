@@ -5,56 +5,112 @@
 <div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-cancel show">
     <div class="slide-modal slide-modal-lg">
         <div class="slide-modal-header">
-            <h3 class="title font-weight-bold">취소하기</h3>
+            <h3 class="title font-weight-bold">상세내역</h3>
             <i class="ico_close_btn _close-slide-modal-btn"></i>
         </div>
         <div class="slide-modal-body">
-            <div class="cancel-content position-relative">
-                <div class="alert-error show">
-                    <p class="text-left"><i class="icon ico_danger"></i><span class="text">취소할 금액을 입력해주세요.</span>
-                    </p>
+            <div class="details-content">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-toggle="tab" data-target="#dummy1" type="button" role="tab"
+                                aria-controls="dummy1">거래
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-toggle="tab" data-target="#dummy2" aria-controls="dummy1">DM
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-toggle="tab" data-target="#dummy3" type="button" role="tab">DCC
+                        </button>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="dummy1" role="tabpanel">
+                        <p class="font-weight-semi-bold">거래 정보</p>
+                        <div class="custom-response-table">
+                            <div class="table-row">
+                                <div class="data-area">
+                                    <div class="title"><span>주문번호</span></div>
+                                    <div class="content"><span>asdasd</span></div>
+                                </div>
+                                <div class="data-area">
+                                    <div class="title"><span>가맹점번호</span></div>
+                                    <div class="content"><span>asdasd</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area">
+                                    <div class="title"><span>링크결제 여부</span></div>
+                                    <div class="content"><span>N</span></div>
+                                </div>
+                                <div class="data-area">
+                                    <div class="title"><span>브랜드</span></div>
+                                    <div class="content"><span>VISA Credit</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area">
+                                    <div class="title"><span>매입사</span></div>
+                                    <div class="content"><span>하나카드</span></div>
+                                </div>
+                                <div class="data-area">
+                                    <div class="title"><span>카드 발행국가</span></div>
+                                    <div class="content"><span>US</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area one">
+                                    <div class="title"><span>빌링키</span></div>
+                                    <div class="content"><span>kkkkkk</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="font-weight-semi-bold">개인 정보</p>
+                        <div class="custom-response-table">
+                            <div class="table-row">
+                                <div class="data-area">
+                                    <div class="title"><span>주문번호</span></div>
+                                    <div class="content"><span>asdasd</span></div>
+                                </div>
+                                <div class="data-area">
+                                    <div class="title"><span>가맹점번호</span></div>
+                                    <div class="content"><span>asdasd</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area">
+                                    <div class="title"><span>링크결제 여부</span></div>
+                                    <div class="content"><span>N</span></div>
+                                </div>
+                                <div class="data-area">
+                                    <div class="title"><span>브랜드</span></div>
+                                    <div class="content"><span>VISA Credit</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area">
+                                    <div class="title"><span>매입사</span></div>
+                                    <div class="content"><span>하나카드</span></div>
+                                </div>
+                                <div class="data-area">
+                                    <div class="title"><span>카드 발행국가</span></div>
+                                    <div class="content"><span>US</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area one">
+                                    <div class="title"><span>빌링키</span></div>
+                                    <div class="content"><span>kkkkkk</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="dummy2" role="tabpanel"></div>
+                    <div class="tab-pane" id="dummy3" role="tabpanel"></div>
                 </div>
-                <p class="account-text font-weight-semi-bold"><span class="title">취소액</span>
-                    <label class="mb-0">
-                        <input class="form-control">
-                    </label>
-
-                </p>
-                <table class="table-data">
-                    <colgroup>
-                        <col style="width:30%">
-                        <col style="width:70%">
-                    </colgroup>
-                    <tr>
-                        <th>주문번호</th>
-                        <td>1111aaaa</td>
-                    </tr>
-                    <tr>
-                        <th>상품명</th>
-                        <td>상품명입니다.</td>
-                    </tr>
-                    <tr>
-                        <th>주문자명</th>
-                        <td>김*철</td>
-                    </tr>
-                    <tr>
-                        <th>원 거래일시</th>
-                        <td>2023-08-20 11:01:55</td>
-                    </tr>
-                    <tr>
-                        <th>승인통화</th>
-                        <td>USD</td>
-                    </tr>
-                    <tr>
-                        <th>원 거래액</th>
-                        <td>$250.00</td>
-                    </tr>
-                    <tr>
-                        <th>취소 가능액</th>
-                        <td>$250.00</td>
-                    </tr>
-                </table>
-                <!--취소 영수증 테이블 e-->
             </div>
         </div>
         <div class="slide-modal-footer"></div>

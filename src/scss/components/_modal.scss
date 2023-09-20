@@ -93,9 +93,13 @@
     transition: all 0.3s;
     .slide-modal-header{
         padding: 40px;
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title{
+            margin-bottom: 0;
+        }
         .ico_close_btn{
-            position: absolute;
             cursor: pointer;
         }
     }
@@ -111,7 +115,6 @@
         width: 476px;
         right: -476px;
         .slide-modal-header{
-            height: 110px;
             .ico_close_btn{
                 top: 40px;
                 right: 40px;
@@ -126,7 +129,6 @@
         width: 1185px;
         right: -1185px;
         .slide-modal-header{
-            height: 110px;
             .ico_close_btn{
                 top: 40px;
                 right: 40px;
