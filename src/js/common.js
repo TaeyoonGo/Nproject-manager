@@ -12,7 +12,7 @@ function asideSlideBtn() {
 
 //Aside open UI
 function openAsideBtn() {
-    let openAsideBtn = $('._btn_open_depths')
+    let openAsideBtn = $('._btn-open-depths')
     openAsideBtn.on('click', function () {
         $(this).parent('.aside').toggleClass('on')
         $('.footer').toggleClass('on')
@@ -31,18 +31,19 @@ function selectBox() {
         let value = $(this).val();
         let selectBoxValue = $(this).closest('._select-box')
 
-        selectBoxValue.find('.select_value').attr('value', value);
-        selectBoxValue.find('.value_text').text(text).css({'color': '#1F1F1F'});
+        selectBoxValue.find('._select-value').attr('value', value);
+        selectBoxValue.find('._value-text').text(text).css({'color': '#1F1F1F'});
     });
 
     //disabled 처리
-    if ($(".select_value").is(':disabled')) {
-        $(".select_value:disabled").parent('._select-box').css({
+    if ($("._select-value").is(':disabled')) {
+        const disableSelectBox = $("._select-value:disabled")
+        disableSelectBox.parent('._select-box').css({
             "background": "#e9ecef",
             "border": "1px solid #CED4DA",
             "cursor": "auto"
         })
-        $(".select_value:disabled").parent('._select-box').off('click');
+        disableSelectBox.parent('._select-box').off('click');
     }
 
 
@@ -159,8 +160,8 @@ function openSlideModal(modalName, i) {
 }
 
 function closeSlideModal() {
-    $('._close_slide_modal').on('click', function () {
-        $('._slide_modal_backdrop').removeClass('show');
+    $('._close-slide-modal-btn').on('click', function () {
+        $('._slide-modal-wrap').removeClass('show');
     })
 }
 
@@ -170,7 +171,7 @@ function asideTooltip() {
     links.mouseover(function () {
         const hoverTitle = $(this).find('a');
         const top = hoverTitle[0].getBoundingClientRect().top;
-        const arrow = $(this).find('.arrow_box');
+        const arrow = $(this).find('.arrow-box');
         arrow.css('top', top + 10 + 'px');
     });
 }

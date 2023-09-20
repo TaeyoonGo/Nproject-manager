@@ -3,12 +3,15 @@
 |   레이아웃 관련 css 입니다.                 |
 #=========================================#
 */
+
+/*wrap*/
 .wrap {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
+/*header*/
 header {
     position: fixed;
     z-index: 901;
@@ -32,11 +35,9 @@ header {
                     &:first-child {
                         transform: rotate(-45deg) translate(-6px, 5px);
                     }
-
                     &:nth-child(2) {
                         opacity: 0;
                     }
-
                     &:last-child {
                         transform: rotate(45deg) translate(-8px, -7px);
                     }
@@ -73,11 +74,13 @@ header {
     }
 }
 
+/*main*/
 main{
     min-height: calc(100vh - 44px);
     height: auto;
 }
 
+/*aside*/
 .aside {
     position: fixed;
     width: 240px;
@@ -93,7 +96,7 @@ main{
             text-decoration: none;
         }
     }
-    .btn_open_depths{
+    .btn-open-depths{
         position: absolute;
         width: 30px;
         height: 30px;
@@ -131,7 +134,7 @@ main{
                 background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
             }
         }
-        .one_depth {
+        .one-depth {
             @include res-sm{
 
             }
@@ -161,7 +164,7 @@ main{
                     stroke: #565359;
                 }
             }
-            &.main_link {
+            &.main-link {
                 padding: 10px 5px;
 
                 span {
@@ -186,8 +189,7 @@ main{
             }
 
         }
-
-        .two_depth {
+        .two-depth {
             display: none;
             .link {
                 font-size: 15px;
@@ -227,7 +229,7 @@ main{
                 }
 
             }
-            .link_title{
+            .link-title{
                 font-size: 15px;
                 padding: 10px 16px;
                 display: flex;
@@ -248,8 +250,7 @@ main{
                 visibility: visible;
             }
         }
-
-        .thr_depth {
+        .three-depth {
             .link {
                 font-size: 15px;
                 padding: 10px 0 10px 40px;
@@ -289,7 +290,7 @@ main{
             }
         }
     }
-    .arrow_box {
+    .arrow-box {
         visibility: hidden;
         position: fixed;
         background-color: $purple-200;
@@ -321,23 +322,21 @@ main{
             margin-top: -7px;
         }
     }
-
-
-    // active_btn
+    // active-btn
     &.on{
         width: 56px;
-        .active_none{
+        .active-none{
             display: none;
         }
-        .btn_open_depths{
+        .btn-open-depths{
             rotate: 180deg;
         }
         .layout{
                 padding: 70px 0;
-            .one_depth{
+            .one-depth{
                 padding: 0;
                 text-align: center;
-                &.main_link{
+                &.main-link{
                     span{
                         position: relative;
                         display: inline-block;
@@ -361,8 +360,8 @@ main{
                     }
                 }
             }
-            .two_depth{
-                .link_title{
+            .two-depth{
+                .link-title{
                     justify-content: center;
                     svg{
                         margin-right: 0;
@@ -387,7 +386,7 @@ main{
                     }
                 }
             }
-            .thr_depth{
+            .three-depth{
                 background-color: #3B3B42;
                 border-radius: 44px;
                 margin: 10px 14px;
@@ -399,7 +398,7 @@ main{
             }
             .link{
                 &:hover{
-                    .arrow_box{
+                    .arrow-box{
                         visibility: visible;
                     }
                 }
@@ -421,13 +420,13 @@ main{
     }
 }
 
+/*footer*/
 footer {
     width: 100%;
     background-color: $gray-fff;
     height: 44px;
     .footer {
         display: flex;
-
         align-items: center;
         justify-content: space-between;
         margin: 0 30px 0 262px;
@@ -439,7 +438,7 @@ footer {
             color: $gray-100;
             font-size: 13px;
         }
-        .logo_text {
+        .logo-text {
             font-size: 13px;
             color: $gray-100;
 
@@ -452,7 +451,7 @@ footer {
             .copyright{
                 font-size: 13px;
             }
-            .logo_text{
+            .logo-text{
                 font-size: 13px;
                 a{
                     display: inline-block;
@@ -462,8 +461,7 @@ footer {
     }
 }
 
-
-
+/*content*/
 .content-container {
     margin-left: 240px;
     width: calc(100% - 264px);
@@ -491,6 +489,8 @@ footer {
         margin-left: 0;
     }
 }
+
+/*페이지 네이션 작업*/
 .pagination-area{
     display: flex;
     align-items: center;

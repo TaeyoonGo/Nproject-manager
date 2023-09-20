@@ -65,7 +65,7 @@
 
     }
 }
-.slide-modal-backdrop{
+.slide-modal-wrap{
     position: fixed;
     background: rgba(0,0,0,0);
     width: 100%;
@@ -276,7 +276,7 @@
             }
         }
         .tab-content-area{
-            .select-box_container,.text-area_container{
+            .select-box-container,.text-area_container{
                 margin-bottom: 42px;
             }
             .form-group-list{

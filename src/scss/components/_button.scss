@@ -4,6 +4,7 @@
 #=========================================#
 */
 
+/*a 태그*/
 a{
     color: $blue-100;
     &:hover,&:focus {
@@ -11,10 +12,13 @@ a{
         color: $blue-100;
     }
 }
+
 .btn {
     font-size: 16px;
     font-weight: 700;
     border-radius: 7px;
+
+    /*색상별 작업*/
     &-primary {
         border-color: $purple-100;
         background-color: $purple-100;
@@ -40,7 +44,6 @@ a{
             border: 1px solid $gray-200;
         }
     }
-
     &-danger {
         background-color: $red-200;
         color: $red-100;
@@ -51,7 +54,6 @@ a{
             border-color: $red-100;
         }
     }
-
     &-secondary {
         background-color: $gray-300;
         color: $gray-100;
@@ -64,21 +66,23 @@ a{
             box-shadow: none;
         }
     }
-
     &-dark {
         background-color: #28282E;
         color: #fff;
         border-color: #28282E;
     }
 
+    /*라운드 버튼*/
     &-round {
         border-radius: 38px;
     }
 
+    /*버튼 크기*/
     &-md {
         min-width: 100px;
     }
 
+    /*버튼초기화*/
     &-reset {
         background: inherit;
         border: none;
@@ -89,6 +93,7 @@ a{
         cursor: pointer
     }
 }
+
 .btn-group {
     .btn{
         font-size: 14px;
@@ -130,6 +135,8 @@ a{
     }
 
 }
+
+/*카드 상세검색 버튼*/
 .more-search-btn{
     font-weight: 400;
     font-size: 14px;
