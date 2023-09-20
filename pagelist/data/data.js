@@ -175,10 +175,16 @@ data.globalPayment = {
             page: '결제내역_해외_조회결과있음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '결재내역_취소버튼클릭시',
             category: 'globalpayment',
             page: '결재내역_취소버튼클릭시'
+        },
+        {
+            stateClass: 'confirm',
+            url: '결재내역_취소버튼클릭시_에러',
+            category: 'globalpayment',
+            page: '결재내역_취소버튼클릭시_에러'
         },
     ]
 }
