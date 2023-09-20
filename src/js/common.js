@@ -155,12 +155,12 @@ function nodataTable() {
 
 //slideModal
 function openSlideModal(modalName, i) {
-    $("." + modalName + i).addClass('on');
+    $("." + modalName + i).addClass('show');
 }
 
 function closeSlideModal() {
     $('._close_slide_modal').on('click', function () {
-        $('._slide_modal_backdrop').removeClass('on');
+        $('._slide_modal_backdrop').removeClass('show');
     })
 }
 

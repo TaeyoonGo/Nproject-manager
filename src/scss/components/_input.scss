@@ -48,12 +48,6 @@
         border: 1px solid $gray-400;
         z-index: 1000;
         border-radius: 7px;
-        &.view-8{
-            height: 320px;
-        }
-        &.view-auto{
-            height: auto;
-        }
         .option {
             padding: 8px 12px;
             font-size: 15px;
@@ -65,7 +59,6 @@
 
     }
 }
-
 .form-control{
     padding: 6px 12px;
     height: auto;
@@ -89,7 +82,6 @@
         }
     }
 }
-
 .input-ico-hover{
     position: absolute;
     right: 11px;
@@ -97,9 +89,9 @@
     transform: translateY(-50%);
     cursor: pointer;
 }
-
 .speech-bubble{
     display: none;
+    z-index: 1004;
     word-break: keep-all;
     padding: 5px 10px;
     position: absolute;

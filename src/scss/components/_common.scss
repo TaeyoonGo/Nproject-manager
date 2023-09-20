@@ -1,0 +1,51 @@
+/*
+#=========================================#
+|   공통으로 쓰이는 css 모음입니다.            |
+#=========================================#
+*/
+
+
+.fsz-0{
+    font-size: 0;
+}
+
+.min-w-190{
+    min-width: 190px !important;
+}
+
+.col-xl-d-none{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    @include res-xl{
+        display: none;
+    }
+}
+
+.h-320px{
+    height: 320px !important;
+}
+
+.underline-text{
+    position: relative;
+    &:after{
+        position: absolute;
+        bottom: 0;
+        width: calc(100% + 2px);
+        content: '';
+        height: 3px;
+        left: 0;
+    }
+    &.bg-200{
+        &:after{
+            background-color: $red-200;
+        }
+
+    }
+}

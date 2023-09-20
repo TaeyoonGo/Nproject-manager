@@ -169,10 +169,16 @@ data.globalPayment = {
     title:'결제내역-해외',
     list:[
         {
+            stateClass: 'confirm',
+            url: '결제내역_해외_조회결과있음',
+            category: 'globalpayment',
+            page: '결제내역_해외_조회결과있음'
+        },
+        {
             stateClass: 'working',
-            url: '결제내역_국내_조회결과있음',
-            category: 'domesticpayment',
-            page: '결제내역_국내_조회결과있음'
+            url: '결재내역_취소버튼클릭시',
+            category: 'globalpayment',
+            page: '결재내역_취소버튼클릭시'
         },
     ]
 }

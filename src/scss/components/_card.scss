@@ -7,11 +7,9 @@
 .card{
     border-radius: 18px;
     padding: 24px;
-
     +.card{
         margin-top: 30px;
     }
-
     .filter-title{
         display: flex;
         align-items: center;
@@ -115,4 +113,5 @@
             margin-left: 10px;
         }
     }
+
 }

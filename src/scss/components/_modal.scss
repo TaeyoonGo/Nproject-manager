@@ -74,70 +74,70 @@
     top: 0;
     left: 0;
     visibility: hidden;
-    &.on{
+    &.show{
         background: rgba(0,0,0,0.5);
         visibility: visible;
         .slide-modal{
             right: 0;
         }
     }
-    .slide-modal{
-        position: absolute;
-        right: -30%;
-        top:0;
-        width: 30%;
-        height: 100%;
-        background-color: $gray-fff;
-        transition: all 0.3s;
-        .modal_header{
-            padding: 40px;
-            position: relative;
-            .ico_close_btn{
-                position: absolute;
-                cursor: pointer;
-            }
-        }
-        .modal_body{
-            padding: 40px;
-        }
-        .modal_footer{
-            padding: 40px;
-        }
-        // 중간 모달
-        &-md{
-            width: 476px;
-            right: -476px;
-            .modal_header{
-                height: 110px;
-                .ico_close_btn{
-                    top: 40px;
-                    right: 40px;
-                }
-            }
-            .modal_footer{
-                padding: 0 40px;
-            }
-        }
-        &-lg{
-            transition: all 0.5s;
-            width: 1185px;
-            right: -1185px;
-            .modal_header{
-                height: 110px;
-                .ico_close_btn{
-                    top: 40px;
-                    right: 40px;
-                }
-            }
-            .modal_footer{
-                padding: 0 40px;
-            }
-        }
-
-
-    }
 }
 .slide-modal{
+    /*default 값*/
+    position: absolute;
+    right: -30%;
+    top:0;
+    width: 30%;
+    height: 100%;
+    background-color: $gray-fff;
+    transition: all 0.3s;
+    .modal_header{
+        padding: 40px;
+        position: relative;
+        .ico_close_btn{
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+    .modal_body{
+        padding: 40px;
+    }
+    .modal_footer{
+        padding: 40px;
+    }
+
+    /*사이즈별*/
+    &-md{
+        width: 476px;
+        right: -476px;
+        .modal_header{
+            height: 110px;
+            .ico_close_btn{
+                top: 40px;
+                right: 40px;
+            }
+        }
+        .modal_footer{
+            padding: 0 40px;
+        }
+    }
+    &-lg{
+        transition: all 0.5s;
+        width: 1185px;
+        right: -1185px;
+        .modal_header{
+            height: 110px;
+            .ico_close_btn{
+                top: 40px;
+                right: 40px;
+            }
+        }
+        .modal_footer{
+            padding: 0 40px;
+        }
+    }
+
+    /*기능별*/
     .account-text{
         margin-bottom: 25px;
         font-size: 20px;
