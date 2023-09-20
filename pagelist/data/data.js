@@ -186,6 +186,18 @@ data.globalPayment = {
             category: 'globalpayment',
             page: '결재내역_취소버튼클릭시_에러'
         },
+        {
+            stateClass: 'confirm',
+            url: '취소_더블체크',
+            category: 'globalpayment',
+            page: '취소_더블체크'
+        },
+        {
+            stateClass: 'confirm',
+            url: '취소_완료',
+            category: 'globalpayment',
+            page: '취소_완료'
+        },
     ]
 }
 
