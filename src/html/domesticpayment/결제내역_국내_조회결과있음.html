@@ -749,53 +749,49 @@
             <i class="ico_close_btn _close_slide_modal"></i>
         </div>
         <div class="modal_body">
-            <div class="payment_cancel_wrap">
-                <!--취소하기 시작 s-->
-                <div class="payment_cancel_area position-relative">
-                    <div class="alert-error">
-                        <p class="text-left"><i class="icon ico_danger"></i><span class="text">취소할 금액을 입력해주세요.</span>
-                        </p>
-                    </div>
-                    <p class="account-text font-weight-semi-bold"><span class="title">취소액</span>
-                        <label class="mb-0"><input class="form-control"></label>
-                        <span class="unit">원</span>
+            <div class="cancel-content position-relative">
+                <div class="alert-error">
+                    <p class="text-left"><i class="icon ico_danger"></i><span class="text">취소할 금액을 입력해주세요.</span>
                     </p>
-                    <!--취소 영수증 테이블 s-->
-                    <table class="table-data">
-                        <colgroup>
-                            <col style="width:30%">
-                            <col style="width:70%">
-                        </colgroup>
-                        <tr>
-                            <th>주문번호</th>
-                            <td>1111aaaa</td>
-                        </tr>
-                        <tr>
-                            <th>상품명</th>
-                            <td>상품명입니다.</td>
-                        </tr>
-                        <tr>
-                            <th>주문자명</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th>원 거래일시</th>
-                            <td>2023-08-20 11:01:55</td>
-                        </tr>
-                        <tr>
-                            <th>원 거래액</th>
-                            <td>10,000</td>
-                        </tr>
-                        <tr>
-                            <th>취소 가능액</th>
-                            <td>8,000</td>
-                        </tr>
-                    </table>
-                    <!--취소 영수증 테이블 e-->
-                    <!--validation 문구-->
-                    <p class="validation color-red-100"><span>사업자번호 오류</span></p>
                 </div>
-                <!--취소하기 시작 e-->
+                <p class="account-text font-weight-semi-bold"><span class="title">취소액</span>
+                    <label class="mb-0"><input class="form-control"></label>
+                    <span class="unit">원</span>
+                </p>
+                <!--취소 영수증 테이블 s-->
+                <table class="table-data">
+                    <colgroup>
+                        <col style="width:30%">
+                        <col style="width:70%">
+                    </colgroup>
+                    <tr>
+                        <th>주문번호</th>
+                        <td>1111aaaa</td>
+                    </tr>
+                    <tr>
+                        <th>상품명</th>
+                        <td>상품명입니다.</td>
+                    </tr>
+                    <tr>
+                        <th>주문자명</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>원 거래일시</th>
+                        <td>2023-08-20 11:01:55</td>
+                    </tr>
+                    <tr>
+                        <th>원 거래액</th>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <th>취소 가능액</th>
+                        <td>8,000</td>
+                    </tr>
+                </table>
+                <!--취소 영수증 테이블 e-->
+                <!--validation 문구-->
+                <p class="validation color-red-100"><span>사업자번호 오류</span></p>
             </div>
         </div>
         <div class="modal_footer clearfix">
@@ -1019,7 +1015,7 @@
             <i class="ico_close_btn _close_slide_modal"></i>
         </div>
         <div class="modal_body">
-            <div class="payment-list">
+            <div class="details-content">
                 <div class="list-area">
                     <h3 class="font-weight-bold title">거래내역</h3>
                     <table class="table-data">

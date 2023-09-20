@@ -198,6 +198,12 @@ data.globalPayment = {
             category: 'globalpayment',
             page: '취소_완료'
         },
+        {
+            stateClass: 'working',
+            url: '결재내역_해외_상세내역',
+            category: 'globalpayment',
+            page: '결재내역_해외_상세내역'
+        },
     ]
 }
 
