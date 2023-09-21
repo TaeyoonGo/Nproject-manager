@@ -211,13 +211,13 @@ data.globalPayment = {
             page: '승인_요청_실패내역'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '매입_실패내역',
             category: 'globalpayment',
             page: '매입_실패내역'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '해외_등록_해지정보',
             category: 'globalpayment',
             page: '해외_등록_해지정보'
