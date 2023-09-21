@@ -223,7 +223,7 @@ data.globalPayment = {
             page: '해외_등록_해지정보'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '해외_1달러_인증',
             category: 'globalpayment',
             page: '해외_1달러_인증'
