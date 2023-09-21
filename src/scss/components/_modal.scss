@@ -115,10 +115,24 @@
         width: 476px;
         right: -476px;
         .slide-modal-header{
-
+            @include res-sm{
+                padding: 40px 20px;
+            }
+        }
+        .slide-modal-body{
+            @include res-sm{
+                padding: 40px 20px;
+            }
         }
         .slide-modal-footer{
             padding: 0 40px;
+            @include res-sm{
+                padding: 0 20px;
+            }
+        }
+        @include res-sm{
+            width: 100%;
+            right: -100%;
         }
     }
     &-lg{
