@@ -205,7 +205,7 @@ data.globalPayment = {
             page: '결재내역_해외_상세내역'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '승인_요청_실패내역',
             category: 'globalpayment',
             page: '승인_요청_실패내역'
