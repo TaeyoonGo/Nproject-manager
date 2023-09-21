@@ -204,6 +204,30 @@ data.globalPayment = {
             category: 'globalpayment',
             page: '결재내역_해외_상세내역'
         },
+        {
+            stateClass: 'working',
+            url: '승인_요청_실패내역',
+            category: 'globalpayment',
+            page: '승인_요청_실패내역'
+        },
+        {
+            stateClass: 'working',
+            url: '매입_실패내역',
+            category: 'globalpayment',
+            page: '매입_실패내역'
+        },
+        {
+            stateClass: 'working',
+            url: '해외_등록_해지정보',
+            category: 'globalpayment',
+            page: '해외_등록_해지정보'
+        },
+        {
+            stateClass: 'working',
+            url: '해외_1달러_인증',
+            category: 'globalpayment',
+            page: '해외_1달러_인증'
+        },
     ]
 }
 
