@@ -137,8 +137,12 @@
     }
     &-lg{
         transition: all 0.5s;
-        width: 1185px;
-        right: -1185px;
+        width: 1199px;
+        right: -1199px;
+        @include res-xl{
+            width: 100%;
+            right: -100%;
+        }
         .slide-modal-header{
            padding: 40px 40px 20px;
         }
