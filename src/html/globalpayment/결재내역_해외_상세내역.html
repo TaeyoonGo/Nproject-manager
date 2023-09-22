@@ -2,7 +2,7 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-cancel show">
+<div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-detail show">
     <div class="slide-modal slide-modal-lg">
         <div class="slide-modal-header">
             <h3 class="title font-weight-bold">상세내역</h3>
@@ -13,22 +13,22 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" data-toggle="tab" data-target="#dummy1" type="button" role="tab"
-                                aria-controls="dummy1">거래
+                        <button class="nav-link active" data-toggle="tab" data-target="#tab1" type="button" role="tab"
+                                aria-controls="tab1">거래
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" data-toggle="tab" data-target="#dummy2" aria-controls="dummy1">DM
+                        <button class="nav-link" data-toggle="tab" data-target="#tab2" aria-controls="tab1">DM
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" data-toggle="tab" data-target="#dummy3" type="button" role="tab">DCC
+                        <button class="nav-link" data-toggle="tab" data-target="#tab3" type="button" role="tab">DCC
                         </button>
                     </li>
                 </ul>
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div class="tab-pane active" id="dummy1" role="tabpanel">
+                    <div class="tab-pane active" id="tab1" role="tabpanel">
                         <p class="font-weight-semi-bold sub-title">거래 정보</p>
                         <div class="custom-response-table">
                             <div class="table-row">
@@ -71,44 +71,50 @@
                         <p class="font-weight-semi-bold sub-title">개인 정보</p>
                         <div class="custom-response-table">
                             <div class="table-row">
-                                <div class="data-area">
-                                    <div class="title"><span>주문번호</span></div>
-                                    <div class="content"><span>asdasd</span></div>
-                                </div>
-                                <div class="data-area">
-                                    <div class="title"><span>가맹점번호</span></div>
-                                    <div class="content"><span>asdasd</span></div>
-                                </div>
-                            </div>
-                            <div class="table-row">
-                                <div class="data-area">
-                                    <div class="title"><span>링크결제 여부</span></div>
-                                    <div class="content"><span>N</span></div>
-                                </div>
-                                <div class="data-area">
-                                    <div class="title"><span>브랜드</span></div>
-                                    <div class="content"><span>VISA Credit</span></div>
-                                </div>
-                            </div>
-                            <div class="table-row">
-                                <div class="data-area">
-                                    <div class="title"><span>매입사</span></div>
-                                    <div class="content"><span>하나카드</span></div>
-                                </div>
-                                <div class="data-area">
-                                    <div class="title"><span>카드 발행국가</span></div>
-                                    <div class="content"><span>US</span></div>
+                                <div class="data-area one">
+                                    <div class="title"><span>이름</span></div>
+                                    <div class="content"><span>HC Kim</span></div>
                                 </div>
                             </div>
                             <div class="table-row">
                                 <div class="data-area one">
-                                    <div class="title"><span>빌링키</span></div>
-                                    <div class="content"><span>kkkkkk</span></div>
+                                    <div class="title"><span>이메일</span></div>
+                                    <div class="content"><span>hc.kim@payple.kr</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area one">
+                                    <div class="title"><span>주소</span></div>
+                                    <div class="content"><span>73, Nonhyeon-ro 79-gill, Gangnam-gu</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area one">
+                                    <div class="title"><span>Country</span></div>
+                                    <div class="content"><span>KR</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area one">
+                                    <div class="title"><span>City</span></div>
+                                    <div class="content"><span>Seoul</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area one">
+                                    <div class="title"><span>State / Province</span></div>
+                                    <div class="content"><span>KR</span></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="data-area one">
+                                    <div class="title"><span>우편번호</span></div>
+                                    <div class="content"><span>62440</span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="dummy2" role="tabpanel">
+                    <div class="tab-pane" id="tab2" role="tabpanel">
                         <p class="font-weight-semi-bold sub-title">거래 정보</p>
                         <div class="custom-response-table">
                             <div class="table-row">
@@ -184,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="dummy3" role="tabpanel">
+                    <div class="tab-pane" id="tab3" role="tabpanel">
                         <p class="font-weight-semi-bold sub-title">DCC 정보</p>
                         <div class="custom-response-table w-50">
                             <div class="table-row">
