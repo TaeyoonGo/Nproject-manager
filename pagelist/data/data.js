@@ -230,6 +230,18 @@ data.globalPayment = {
         },
     ]
 }
+data.lnikpay = {
+    title:'링크결제',
+    list:[
+        {
+            stateClass: 'working',
+            url: '링크결제_상품내역',
+            category: 'linkpay',
+            page: '링크결제_상품내역'
+        },
+
+    ]
+}
 
 
 
