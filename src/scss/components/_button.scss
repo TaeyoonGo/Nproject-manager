@@ -17,7 +17,6 @@ a{
     font-size: 16px;
     font-weight: 400;
     border-radius: 7px;
-
     /*색상별 작업*/
     &-primary {
         border-color: $purple-100;
@@ -58,7 +57,15 @@ a{
         background-color: $gray-300;
         color: $gray-100;
         border-color: $gray-300;
-
+        &:not(:disabled):not(.disabled) {
+            &.active, &:active {
+                border-color: $gray-300;
+                background-color: $gray-300;
+                color: $gray-100;
+                outline: none;
+                box-shadow: none !important;
+            }
+        }
         &:hover, &:focus {
             border-color: $purple-100;
             background-color: $purple-100;
@@ -71,17 +78,14 @@ a{
         color: #fff;
         border-color: #28282E;
     }
-
     /*라운드 버튼*/
     &-round {
         border-radius: 38px;
     }
-
     /*버튼 크기*/
     &-md {
         min-width: 100px;
     }
-
     /*버튼초기화*/
     &-reset {
         background: inherit;
@@ -91,6 +95,18 @@ a{
         padding: 0;
         overflow: visible;
         cursor: pointer
+    }
+
+
+
+    /*copy 버튼*/
+    &-copy{
+        padding: 0;
+        font-size: 13px;
+        background-color: $purple-300;
+        color: $purple-100;
+        border-radius: 3px;
+        min-width: 40px;
     }
 }
 
