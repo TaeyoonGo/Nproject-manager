@@ -125,11 +125,92 @@
                 font-weight: 600;
             }
             .data{
-
+                word-break: keep-all;
+                flex: 0 0 calc(100% - 200px);
             }
         }
     }
     hr{
         margin-bottom: 24px;
+    }
+    .color-card-list{
+        margin-top: 12px;
+        margin-bottom: 24px;
+        &.global{
+            >div{
+                .color-card{
+                    &.account{
+                        .data{
+                            flex-direction: row-reverse;
+                            span{
+                                margin-right: 5px;
+
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+        >div{
+            display: flex;
+            @include res-xl{
+                flex-direction: column;
+            }
+            .color-card{
+                padding: 30px 25px;
+                display: flex;
+                border-radius: 10px;
+                margin-right: 20px;
+                align-items: center;
+                flex: 0 0 208px;
+                justify-content: space-between;
+                @include res-xl{
+                    margin-right: 0;
+                    margin-bottom: 12px;
+                    flex: 1 1 100%;
+                }
+                &:nth-last-child(1){
+                    margin-right: 0;
+                    @include res-xl{
+                        margin-bottom: 0;
+                    }
+                }
+                .title{
+                    font-weight: 600;
+                }
+                .data{
+                    display: flex;
+                    font-size: 20px;
+                    font-weight: 600;
+                    i{
+                        font-style: normal;
+                    }
+                }
+                &.account{
+                    flex: 0 0 308px;
+                    @include res-xl{
+                        flex: 1 1 100%;
+                    }
+                }
+                &.sky-blue{
+                    border: 1px solid #73C1FF;
+                    background-color: #E4F3FF;
+                    i{
+                        color: $blue-100;
+                    }
+                }
+                &.purple{
+                    border: 1px solid $purple-200;
+                    background-color: $purple-300;
+                    i{
+                        color: $purple-100;
+                    }
+                }
+            }
+        }
+
+
     }
 }

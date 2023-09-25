@@ -416,7 +416,515 @@
                     </div>
                     @@include('../include/pagination.html')
                 </div>
+                <div class="card">
+                    <div class="result-title-area d-flex justify-content-between align-items-center">
+                        <h5 class="result-title font-weight-semi-bold">
+                            <i class="icon ico_bs_list"></i>
+                            <span>링크 상세내역</span>
+                        </h5>
+                    </div>
+                    <div class="search-detail-content">
+                        <div class="row ml-0 mr-0">
+                            <p class="title">서비스</p>
+                            <p class="data">국내</p>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <p class="title">링크 생성일</p>
+                            <p class="data">2023-08-26</p>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <p class="title">결제통화</p>
+                            <p class="data">USD</p>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <p class="title">상품명</p>
+                            <p class="data">이미영님-뉴트리원 비비랩 더 콜라겐 트리플S 시즌3 12개월 ds11 (2023-09-03) 추가배송비 결제</p>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <p class="title">상품설명</p>
+                            <p class="data">-</p>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <p class="title">판매자 공지</p>
+                            <p class="data">2023년 10월 20일 만찬에 입장하기 위한 식사권입니다. </p>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <p class="title">메모</p>
+                            <p class="data">23307 여수웅천점 이불 단품 1개 </p>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <p class="title">결제자 유도 URL</p>
+                            <p class="data"><a target="_blank" href="www.naver.com"
+                                               class="underline-text">www.naver.com</a></p>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <p class="title">추가 파라미터</p>
+                            <p class="data">-</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="font-weight-semi-bold">결제 내역</p>
+                    <div class="color-card-list global">
+                        <div>
+                            <div class="color-card sky-blue">
+                                <p class="title">클릭</p>
+                                <div class="data">
+                                    <i>1</i>
+                                    <span>번</span>
+                                </div>
+                            </div>
+                            <div class="color-card purple">
+                                <p class="title">결제완료</p>
+                                <div class="data">
+                                    <i>10</i>
+                                    <span>건</span>
+                                </div>
+                            </div>
+                            <div class="color-card purple account">
+                                <p class="title">결제금액</p>
+                                <div class="data">
+                                    <i>540.000</i>
+                                    <span>USD</span>
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-spread table-fixed">
+                            <colgroup>
+                                <col style="width: 50px">
+                                <col style="width: 200px">
+                                <col style="width: 170px">
+                                <col style="width: 75px">
+                                <col style="width: 100px">
+                                <col style="width: 220px">
+                                <col style="width: 220px">
+                                <col style="width: 103px">
+                                <col style="width: 65px">
+                                <col style="width: 100px">
+                                <col style="width: 100px">
+                                <col style="width: 74px">
+                                <col style="width: 240px">
+                                <col style="width: 74px">
+                                <col style="width: 105px">
+                                <col style="width: 160px">
+                                <col style="width: 82px">
+                                <col style="width: 74px">
+                                <col style="width: 74px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th class="text-center">No</th>
+                                <th class="text-center">상호명/서비스명</th>
+                                <th class="text-center">서비스 MID</th>
+                                <th class="text-center">상태</th>
+                                <th class="text-center">결제수단</th>
+                                <th class="text-center">PID(OPID)</th>
+                                <th class="text-center">주문번호</th>
+                                <th class="text-center">거래일시</th>
+                                <th class="text-center">승인통화</th>
+                                <th class="text-center">거래액</th>
+                                <th class="text-center">수수료</th>
+                                <th class="text-center">DM</th>
+                                <th class="text-center">상품명</th>
+                                <th class="text-center">주문자명</th>
+                                <th class="text-center">브랜드</th>
+                                <th class="text-center">카드/계좌번호</th>
+                                <th class="text-center">DCC 여부</th>
+                                <th class="text-center">상담관리</th>
+                                <th class="text-center">취소하기</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="color-red-100">
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>취소</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle">
+                                    <span>193979811939798119397981199397981193979811939798119397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>KRW</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span
+                                        class="underline-text line-bg-red-200">100</span></td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>결제완료</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle"><span>19397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>KRW</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span>15</span></td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>결제완료</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle"><span>19397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>USD</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span>15</span></td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>결제완료</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle"><span>19397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>KRW</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span>15</span></td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>결제완료</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle"><span>19397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>KRW</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span
+                                        class="color-red-100 underline-text line-bg-red-200">99</span>
+                                </td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>결제완료</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle"><span>19397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>KRW</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span
+                                        class="color-red-100 underline-text line-bg-red-200">65</span>
+                                </td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>결제완료</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle"><span>19397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>KRW</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span>15</span></td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>결제완료</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle"><span>19397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>KRW</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span>15</span></td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="color-red-100">
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="align-middle">
+                                    <span>벨루가</span><br>
+                                    <span>kitems</span>
+                                </td>
+                                <td class="align-middle text-center"><span>Service0010012345678</span></td>
+                                <td class="align-middle text-center"><span>결제완료</span></td>
+                                <td class="align-middle text-center"><span>카드-앱카드</span></td>
+                                <td class="align-middle">
+                                    <a class=" color-blue-100" href="javascript:void(0)"
+                                       onclick="openSlideModal('_slide-modal-wrap','-detail')">abcdeabcdeabcdeabcdeabcde</a>
+                                    <span class="color-gray-000">(56465456456456)</span>
+                                </td>
+                                <td class="align-middle"><span>19397981</span></td>
+                                <td class="align-middle text-center">
+                                    <span>2023-07-28<br>12:05:55</span>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <span>KRW</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>2,500</span></td>
+                                <td class="text-center align-middle"><span>15</span></td>
+                                <td class="align-middle"><span>LEE+HELEN+HYOJUNG님의 2023년 08월 29일 진료비</span></td>
+                                <td class="align-middle text-center"><span>김*김</span></td>
+                                <td class="align-middle text-center"><span>VISA</span></td>
+
+                                <td class="align-middle text-center"><span>1234-56**-****-0987</span></td>
+                                <td class="align-middle text-center"><span>Y</span></td>
+                                <td class="text-center align-middle">
+                                    <button class="btn-reset"
+                                            onclick="openSlideModal('_slide-modal-wrap','-tab')"><i
+                                            class="icon ico_consulting"></i></button>
+                                </td>
+                                <td class="text-center  align-middle">
+                                    <button class="btn btn-danger btn-sm"
+                                            onclick="openSlideModal('_slide-modal-wrap','-cancel')">
+                                        취소
+                                    </button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    @@include('../include/pagination.html')
+                </div>
             </section>
         </article>
         <!-- 컨텐츠 e-->
