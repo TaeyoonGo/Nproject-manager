@@ -19,6 +19,26 @@
     table-layout: fixed;
 }
 
+.table-notice{
+    thead{
+        th{
+            background-color: #F5F5F5;
+            border-bottom: 1px solid $gray-400;
+        }
+    }
+    tbody{
+        tr{
+            &:nth-last-child(1){
+                border-bottom: 1px solid $gray-400;
+            }
+        }
+        td{
+
+        }
+    }
+}
+
+
 .table-spread {
     thead {
         tr {

@@ -39,6 +39,7 @@ function copyLibJs() {
         'src/js/lib/moment.min.js',
         'src/js/lib/daterangepicker.min.js',
         'src/js/lib/index.global.min.js',
+        'src/js/lib/toastUiEditor.min.js',
 
     ];
 

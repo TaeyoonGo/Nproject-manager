@@ -79,8 +79,14 @@
         @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_copy_purple.png');
     }
 }
-.ico_copy_purple{
-    @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_copy_purple.png');
+.ico_credit_card_purple{
+    @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_credit_card_purple.png');
+}
+.ico_start_purple{
+    @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_start_purple.png');
+}
+.ico_bell_purple{
+    @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_bell_purple.png');
 }
 
 

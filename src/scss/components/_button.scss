@@ -36,6 +36,7 @@ a{
                 outline: none;
                 box-shadow: none;
             }
+
     }
         &:disabled{
             background-color: $gray-200;
@@ -72,6 +73,11 @@ a{
             color: $gray-fff;
             box-shadow: none;
         }
+        &:disabled{
+            background-color: $gray-300;
+            color: $gray-200;
+            border-color: $gray-300;
+        }
     }
     &-dark {
         background-color: #28282E;
@@ -85,6 +91,9 @@ a{
     /*버튼 크기*/
     &-md {
         min-width: 100px;
+    }
+    &-lg{
+        min-width: 120px;
     }
     /*버튼초기화*/
     &-reset {
