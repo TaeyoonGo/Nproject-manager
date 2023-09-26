@@ -88,8 +88,29 @@
 .ico_bell_purple{
     @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_bell_purple.png');
 }
+.ico_paper_plane_blue{
+    @include background-img ($width: 16px, $height: 16px, $category: 'icon', $img: 'ico_paper_plane_blue.png');
+}
+
+.ico_checkBox {
+    background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox.svg");
+    width: 20px;
+    height: 20px;
+    background-size: 20px 80px;
+}
 
 
+.ico-new-red{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 4px;
+    font-style: normal;
+    vertical-align: middle;
+    text-align: center;
+    color: $red-100;
+    background-color: $red-200;
+}
 .ico-circle-red{
     background-color: $red-100;
     width: 6px;

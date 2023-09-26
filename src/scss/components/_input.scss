@@ -114,3 +114,23 @@
         bottom: -10px;
     }
 }
+
+[type="checkbox"]{
+    appearance: none;
+    display: none;
+    vertical-align: middle;
+    + .ico_checkBox{
+        cursor: pointer;
+        background-position: center top;
+    }
+    &:checked{
+        + .ico_checkBox{
+            background-position: center -20px;
+        }
+    }
+    &:disabled{
+        + .ico_checkBox{
+            background-position: center -40px;
+        }
+    }
+}

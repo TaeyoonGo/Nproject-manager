@@ -3,3 +3,18 @@
 |   페이지 관련 css 입니다.                   |
 #=========================================#
 */
+
+.notice-section{
+    .search-email-btn-area{
+        display: flex;
+        justify-content: space-between;
+    }
+    .search-btn-area{
+        display: flex;
+        margin-bottom: 24px;
+        .form-group{
+            margin-right: 12px;
+            margin-bottom: 0;
+        }
+    }
+}

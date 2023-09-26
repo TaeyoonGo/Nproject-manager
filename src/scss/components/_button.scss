@@ -84,6 +84,26 @@ a{
         color: #fff;
         border-color: #28282E;
     }
+    &-info{
+        background-color: #D3ECFF;
+        color: $blue-100;
+        border-color: #D3ECFF;
+        &:not(:disabled):not(.disabled) {
+            &.active, &:active {
+                border-color: #D3ECFF;
+                background-color: #D3ECFF;
+                color: $blue-100;
+                outline: none;
+                box-shadow: none !important;
+            }
+        }
+        &:hover, &:focus {
+            border-color: #D3ECFF;
+            background-color: #D3ECFF;
+            color: $blue-100;
+            box-shadow: none;
+        }
+    }
     /*라운드 버튼*/
     &-round {
         border-radius: 38px;
