@@ -373,6 +373,45 @@
 
     }
     .email-container{
-        border: 1px solid red;
+        .tab-button-container{
+            .nav{
+                margin-bottom: 20px;
+            }
+
+        }
+        .tab-content{
+            .title{
+                position: relative;
+                font-size: 16px;
+
+                &:after{
+                    position: absolute;
+                    content: '*';
+                    display: inline-block;
+                    color: $red-100;
+                    right: -10px;
+                    top: -5px;
+                }
+            }
+            .checkbox-wrap{
+                margin-top: 16px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: -16px;
+                padding-bottom: 45px;
+                &:nth-last-child(1){
+                    padding-bottom: 0;
+                }
+                label{
+                    cursor: pointer;
+                    flex: 1 1 50%;
+                    margin-bottom: 16px;
+                    span{
+                        font-size: 15px;
+                        margin-left: 9px;
+                    }
+                }
+            }
+        }
     }
 }

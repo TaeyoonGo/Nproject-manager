@@ -88,6 +88,8 @@
                     </div>
                     <p class="font-weight-semi-bold card-title">내용</p>
                     <div id="editor"></div>
+
+                    <div id="tui-color-picker-conatiner"></div>
                     <div class="clearfix mt-3">
                         <div class="float-right">
                             <button class="btn btn-primary btn-md btn-round">저장하기</button>
@@ -108,6 +110,17 @@
         initialEditType: 'wysiwyg',
         previewStyle: 'vertical'
     });
+
+
+
+    const colorpicker = colorPicker.create({
+        container: document.getElementById('color-picker-container'),
+        color: '#f9f9f9',
+        preset: ['#181818', '#292929', '#393939'],
+
+    });
+
+
 
     editor.getMarkdown();
 </script>

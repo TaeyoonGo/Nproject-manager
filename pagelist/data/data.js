@@ -243,13 +243,13 @@ data.lnikpay = {
             stateClass: 'confirm',
             url: '링크결제_상품내역_국내검색시',
             category: 'linkpay',
-            page: '링크결제_상품내역'
+            page: '링크결제_상품내역_국내검색시'
         },
         {
             stateClass: 'confirm',
             url: '링크결제_상품내역_해외검색시',
             category: 'linkpay',
-            page: '링크결제_상품내역'
+            page: '링크결제_상품내역_해외검색시'
         },
 
     ]
@@ -270,16 +270,16 @@ data.notice = {
             page: '공지사항_작성'
         },
         {
-            stateClass: 'working',
-            url: '이메일발송하기_해당서비스이용',
+            stateClass: 'confirm',
+            url: '이메일발송하기_체크박스체크전',
             category: 'notice',
-            page: '이메일발송하기_해당서비스이용'
+            page: '이메일발송하기_체크박스체크전'
         },
         {
-            stateClass: 'working',
-            url: '이메일발송하기_해당서비스이용X',
+            stateClass: 'confirm',
+            url: '이메일발송하기_체크박스체크후',
             category: 'notice',
-            page: '이메일발송하기_해당서비스이용X'
+            page: '이메일발송하기_체크박스체크후'
         },
         {
             stateClass: 'working',
