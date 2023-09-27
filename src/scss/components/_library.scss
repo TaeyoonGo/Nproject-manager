@@ -1,9 +1,11 @@
 /*
 #=========================================#
-|   정산달력 관련 CSS 입니다.              |
+|         라이브러리 관련 css 입니다.         |
 #=========================================#
 */
 
+
+/*정산 달력*/
 .fc-theme-standard{
     td{
         border-bottom: 1px solid #C2B5FF;
@@ -142,6 +144,7 @@
 }
 
 
+/*텍스트 에디터 관련*/
 .toastui-editor-contents{
     font-family: 'Pretendard-Regular';
     font-size: 16px;

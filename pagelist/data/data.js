@@ -269,6 +269,30 @@ data.notice = {
             category: 'notice',
             page: '공지사항_작성'
         },
+        {
+            stateClass: 'working',
+            url: '이메일발송하기_해당서비스이용',
+            category: 'notice',
+            page: '이메일발송하기_해당서비스이용'
+        },
+        {
+            stateClass: 'working',
+            url: '이메일발송하기_해당서비스이용X',
+            category: 'notice',
+            page: '이메일발송하기_해당서비스이용X'
+        },
+        {
+            stateClass: 'working',
+            url: '이메일발송하기_발송후_더블체크',
+            category: 'notice',
+            page: '이메일발송하기_발송후_더블체크'
+        },
+        {
+            stateClass: 'working',
+            url: '이메일발송하기_완료',
+            category: 'notice',
+            page: '이메일발송하기_완료'
+        },
 
 
     ]
