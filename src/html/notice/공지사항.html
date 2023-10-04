@@ -22,14 +22,14 @@
                                     <colgroup>
                                         <col style="width: 50px">
                                         <col style="width: 80px">
-                                        <col>
+                                        <col style="width: 440px">
                                         <col style="width: 80px">
                                         <col style="width: 80px">
                                     </colgroup>
                                     <thead>
                                     <tr>
-                                        <th class="text-center border-r-1 border-color-gray-400">No</th>
-                                        <th class="text-center border-r-1 border-color-gray-400">분류</th>
+                                        <th class="text-center">No</th>
+                                        <th class="text-center">분류</th>
                                         <th class="text-center">제목</th>
                                         <th class="text-center">작성자</th>
                                         <th class="text-center">작성일</th>
@@ -99,18 +99,18 @@
                                 <span>카드사 무이자 안내 </span>
                             </h5>
                             <div class="table-responsive">
-                                <table class="table table-fixed table-notice">
+                                <table class="table table-fixed table-not-spread">
                                     <colgroup>
                                         <col style="width: 50px">
                                         <col style="width: 80px">
-                                        <col>
+                                        <col style="width: 440px">
                                         <col style="width: 80px">
                                         <col style="width: 80px">
                                     </colgroup>
                                     <thead>
                                     <tr>
-                                        <th class="text-center border-r-1 border-color-gray-400">No</th>
-                                        <th class="text-center border-r-1 border-color-gray-400">분류</th>
+                                        <th class="text-center">No</th>
+                                        <th class="text-center">분류</th>
                                         <th class="text-center">제목</th>
                                         <th class="text-center">작성자</th>
                                         <th class="text-center">작성일</th>
@@ -208,12 +208,12 @@
                                 </div>
                             </div>
                             <div class="table-responsive">
-                                <table class="table table-fixed table-notice">
+                                <table class="table table-fixed table-not-spread">
                                     <colgroup>
                                         <col style="width: 50px">
                                         <col style="width: 50px">
                                         <col style="width: 80px">
-                                        <col>
+                                        <col style="width: 1100px">
                                         <col style="width: 80px">
                                         <col style="width: 100px">
                                         <col style="width: 80px">
@@ -221,9 +221,9 @@
                                     </colgroup>
                                     <thead>
                                     <tr>
-                                        <th class="text-center border-r-1 border-color-gray-400"></th>
-                                        <th class="text-center border-r-1 border-color-gray-400">No</th>
-                                        <th class="text-center border-r-1 border-color-gray-400">분류</th>
+                                        <th class="text-center"></th>
+                                        <th class="text-center">No</th>
+                                        <th class="text-center">분류</th>
                                         <th class="text-center">제목</th>
                                         <th class="text-center">작성자</th>
                                         <th class="text-center">작성일</th>
@@ -454,6 +454,8 @@
     function checkOnlyOne(target) {
         $("input[name='notice']").prop("checked", false);
         $(target).prop("checked", true);
+        $(target).closest("tr").siblings("tr").removeClass('bg-purple-300')
+        $(target).closest("tr").addClass('bg-purple-300')
     }
 </script>
 </html>
