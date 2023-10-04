@@ -91,6 +91,9 @@
 .ico_paper_plane_blue{
     @include background-img ($width: 16px, $height: 16px, $category: 'icon', $img: 'ico_paper_plane_blue.png');
 }
+.ico_edit_purple{
+    @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_edit_purple.png');
+}
 
 .ico_checkBox {
     background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox.svg");
