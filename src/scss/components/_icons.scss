@@ -99,6 +99,9 @@
     background-size: 20px 80px;
     @include background-img ($width: 20px, $height: 20px, $category: 'icon', $img: 'ico_checkBox.svg');
 }
+.ico_danger_gray {
+    @include background-img ($width: 13px, $height: 13px, $category: 'icon', $img: 'ico_danger_gray.png');
+}
 
 
 .ico-new-red{

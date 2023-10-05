@@ -59,7 +59,12 @@ data.guide = {
             category: 'guide',
             page: 'tab'
         },
-
+        {
+            stateClass: 'working',
+            url: 'icon',
+            category: 'guide',
+            page: 'icon'
+        },
         {
             stateClass: 'working',
             url: 'calender',
