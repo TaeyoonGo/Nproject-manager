@@ -293,7 +293,7 @@ data.notice = {
             page: '이메일발송하기_발송후_더블체크'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '이메일발송하기_완료',
             category: 'notice',
             page: '이메일발송하기_완료'

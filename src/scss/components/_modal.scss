@@ -168,6 +168,7 @@
     }
     .caption{
         color: $gray-000;
+        font-weight: 600;
         margin-top: 40px;
         font-size: 18px;
         line-height: 1.8;
@@ -177,6 +178,7 @@
         &.text{
             font-size: 13px;
             color: $gray-100;
+            font-weight: 500;
         }
     }
     .alert-error {
