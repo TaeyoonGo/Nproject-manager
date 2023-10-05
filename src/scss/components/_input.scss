@@ -123,13 +123,22 @@
         cursor: pointer;
         background-position: center top;
     }
+    &.checked-disabled{
+        &:disabled{
+            + .ico_checkBox{
+                background-position: center -80px;
+            }
+        }
+    }
     &:checked{
         + .ico_checkBox{
+            cursor: auto;
             background-position: center -20px;
         }
     }
     &:disabled{
         + .ico_checkBox{
+            cursor: auto;
             background-position: center -40px;
         }
     }
