@@ -40,6 +40,8 @@ function copyLibJs() {
         'src/js/lib/daterangepicker.min.js',
         'src/js/lib/index.global.min.js',
         'src/js/lib/toastUiEditor.min.js',
+        'src/js/lib/toastUiEditor-color-picker.min.js',
+        'src/js/lib/toastUiEditor-color-syntax.min.js',
 
     ];
 
