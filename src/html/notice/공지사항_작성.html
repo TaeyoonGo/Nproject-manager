@@ -102,16 +102,25 @@
     </main>
     @@include('../include/footer.html')
 </div>
+<!-- Color Picker -->
+<script src="https://uicdn.toast.com/tui-color-picker/latest/tui-color-picker.min.js"></script>
+<!-- Editor's Plugin -->
+<script src="https://uicdn.toast.com/editor-plugin-color-syntax/latest/toastui-editor-plugin-color-syntax.min.js"></script>
 <script>
-    const Editor = toastui.Editor;
+
+    /*에디터사용*/
+    const { Editor } = toastui;
+    const { colorSyntax } = Editor.plugin;
+    const colorSyntaxOptions = {
+        preset: ['#595959', '#745852', '#123123']
+    };
     const editor = new Editor({
         el: document.querySelector('#editor'),
         height: '800px',
         initialEditType: 'wysiwyg',
         previewStyle: 'vertical',
+        plugins: [[colorSyntax,colorSyntaxOptions]]
     });
-
-
     editor.getMarkdown();
 </script>
 </body>

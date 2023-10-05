@@ -28,7 +28,7 @@ data.guide = {
             page: 'layout'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'input',
             category: 'guide',
             page: 'input'
