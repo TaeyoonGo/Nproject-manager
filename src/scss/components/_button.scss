@@ -132,10 +132,14 @@ a{
     &-copy{
         padding: 0;
         font-size: 13px;
-        background-color: $purple-300;
-        color: $purple-100;
+        color: $gray-100;
+        background-color: $gray-400;
         border-radius: 3px;
         min-width: 40px;
+        &:hover{
+            color: $gray-fff;
+            background-color: $purple-100;
+        }
     }
 }
 
