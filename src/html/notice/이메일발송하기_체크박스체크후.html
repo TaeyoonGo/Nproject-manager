@@ -10,186 +10,94 @@
         </div>
         <div class="slide-modal-body">
             <div class="position-relative email-container">
-                <div class="tab-button-container">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" data-toggle="tab" data-target="#dummy1" type="button"
-                                    role="tab" aria-controls="dummy1">국내
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" data-toggle="tab" data-target="#dummy2" aria-controls="dummy1">해외
-                            </button>
-                        </li>
-                    </ul>
+                <span class="title">서비스 선택</span>
+                <div class="checkbox-wrap">
+                    <label>
+                        <input type="checkbox" name="payment" class="custom-checkbox"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>앱카드</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="payment" class="custom-checkbox"
+                               disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>키인 결제</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="payment" class="custom-checkbox checked-disabled"
+                               disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>빌링(정기결제)</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="payment" class="custom-checkbox checked-disabled"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>비밀번호 간편결제</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="payment" class="custom-checkbox"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>페이플 허브</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="payment" class="custom-checkbox"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>가상계좌</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="payment" class="custom-checkbox checked-disabled"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>네이버페이</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="payment" class="custom-checkbox checked-disabled"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>카카오페이</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="payment" class="custom-checkbox"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>애플페이</span>
+                    </label>
                 </div>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="dummy1" role="tabpanel">
-                        <span class="title">결제수단</span>
-                        <div class="checkbox-wrap">
-                            <label>
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       checked>
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>전체</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       checked>
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>앱카드</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>카드-빌링(정기)</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>카드-비밀번호 간편</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>계좌-빌링(정기)</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>계좌-비밀번호 간편</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>허브-계좌인증</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>허브-플랫폼 자동정산</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>간편-네이버페이</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>간편-카카오페이</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>간편-애플페이</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>기타-가상계좌</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>링크결제</span>
-                            </label>
-                        </div>
-                        <span class="title">발송 이메일 선택</span>
-                        <div class="checkbox-wrap">
-                            <label>
-                                <input type="checkbox" name="email" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>전체</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="email" class="custom-checkbox"
-                                checked>
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>회사공식. 고객센터</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="email" class="custom-checkbox"
-                                checked>
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>개발 담당자</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="email" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>정산 담당자</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="dummy2" role="tabpanel">
-                        <span class="title">결제수단</span>
-                        <div class="checkbox-wrap">
-                            <label>
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>전체</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>비인증 키인</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>카드-빌링(정기)</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="payment" class="custom-checkbox"
-                                       >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>링크결제</span>
-                            </label>
-                        </div>
-                        <span class="title">발송 이메일 선택</span>
-                        <div class="checkbox-wrap">
-                            <label>
-                                <input type="checkbox" name="email" class="custom-checkbox"
-                                       checked>
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>전체</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="email" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>회사공식. 고객센터</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="email" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>개발 담당자</span>
-                            </label>
-                            <label >
-                                <input type="checkbox" name="email" class="custom-checkbox"
-                                >
-                                <i class="icon ico_checkBox">체크박스</i>
-                                <span>정산 담당자</span>
-                            </label>
-                        </div>
-                    </div>
+                <span class="title">발송 이메일 선택</span>
+                <div class="checkbox-wrap mb-0">
+                    <label>
+                        <input type="checkbox" name="email" class="custom-checkbox" disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>전체</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="email" class="custom-checkbox checked-disabled"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>회사공식. 고객센터</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="email" class="custom-checkbox"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>개발 담당자</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="email" class="custom-checkbox"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>정산 담당자</span>
+                    </label>
+                    <label >
+                        <input type="checkbox" name="email" class="custom-checkbox"
+                        disabled>
+                        <i class="icon ico_checkBox">체크박스</i>
+                        <span>계약 담당자</span>
+                    </label>
                 </div>
                 <p class="caption text">
                     <i class="icon ico_danger_gray"></i>

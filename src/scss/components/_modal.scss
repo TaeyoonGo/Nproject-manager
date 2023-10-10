@@ -3,45 +3,54 @@
 |   modal 관련 css 입니다.              |
 #=========================================#
 */
-.calender_modal{
+.calender_modal {
     max-width: max-content;
-    .modal-content{
+
+    .modal-content {
         border-radius: 15px;
     }
-    .modal-body{
+
+    .modal-body {
         padding: 30px;
     }
-    .daterangepicker{
+
+    .daterangepicker {
         font-family: Pretendard;
         position: static;
         border: none;
         margin-top: 0;
 
-        &:before,&:after{
-           display: none;
+        &:before, &:after {
+            display: none;
         }
-        .drp-calendar{
+
+        .drp-calendar {
             padding: 0;
-            max-width:max-content;
-            &.left{
-                .calendar-table{
+            max-width: max-content;
+
+            &.left {
+                .calendar-table {
                     padding-right: 0;
                 }
             }
-            &.right{
+
+            &.right {
 
             }
         }
-        .calendar-table{
-            thead{
-                .month{
+
+        .calendar-table {
+            thead {
+                .month {
                     font-size: 20px;
                 }
-                tr{
-                    &:nth-child(2){
-                        th{
+
+                tr {
+                    &:nth-child(2) {
+                        th {
                             font-weight: 400;
-                            &:nth-child(1){
+
+                            &:nth-child(1) {
                                 color: $red-100;
                             }
                         }
@@ -49,12 +58,14 @@
                 }
 
             }
-            th{
+
+            th {
                 width: 50px;
                 height: 43px;
                 font-size: 16px;
             }
-            td{
+
+            td {
                 width: 50px;
                 height: 43px;
                 font-size: 16px;
@@ -65,122 +76,145 @@
 
     }
 }
-.slide-modal-wrap{
+
+.slide-modal-wrap {
     position: fixed;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     width: 100%;
     height: 100%;
     z-index: 1040;
     top: 0;
     left: 0;
     visibility: hidden;
-    &.show{
-        background: rgba(0,0,0,0.5);
+
+    &.show {
+        background: rgba(0, 0, 0, 0.5);
         visibility: visible;
-        .slide-modal{
+
+        .slide-modal {
             right: 0;
         }
     }
 }
-.slide-modal{
+
+.slide-modal {
     /*default 값*/
     position: absolute;
     right: -30%;
-    top:0;
+    top: 0;
     width: 30%;
     height: 100%;
     background-color: $gray-fff;
     transition: all 0.3s;
-    .slide-modal-header{
+
+    .slide-modal-header {
         padding: 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .title{
+
+        .title {
             margin-bottom: 0;
         }
-        .ico_close_btn{
+
+        .ico_close_btn {
             cursor: pointer;
         }
     }
-    .slide-modal-body{
+
+    .slide-modal-body {
         padding: 40px;
     }
-    .slide-modal-footer{
+
+    .slide-modal-footer {
         padding: 40px;
     }
 
     /*사이즈별*/
-    &-md{
+    &-md {
         width: 476px;
         right: -476px;
-        .slide-modal-header{
-            @include res-sm{
+
+        .slide-modal-header {
+            @include res-sm {
                 padding: 40px 20px;
             }
         }
-        .slide-modal-body{
-            @include res-sm{
+
+        .slide-modal-body {
+            @include res-sm {
                 padding: 40px 20px;
             }
         }
-        .slide-modal-footer{
+
+        .slide-modal-footer {
             padding: 0 40px;
-            @include res-sm{
+            @include res-sm {
                 padding: 0 20px;
             }
         }
-        @include res-sm{
+
+        @include res-sm {
             width: 100%;
             right: -100%;
         }
     }
-    &-lg{
+
+    &-lg {
         transition: all 0.5s;
         width: 1199px;
         right: -1199px;
-        @include res-xl{
+        @include res-xl {
             width: 100%;
             right: -100%;
         }
-        .slide-modal-header{
-           padding: 40px 40px 20px;
+
+        .slide-modal-header {
+            padding: 40px 40px 20px;
         }
-        .slide-modal-body{
+
+        .slide-modal-body {
             padding: 20px 40px 40px;
         }
-        .slide-modal-footer{
+
+        .slide-modal-footer {
             padding: 0 40px;
         }
     }
 
     /*기능별*/
-    .account-text{
+    .account-text {
         margin-bottom: 25px;
         font-size: 20px;
-        .title{
+
+        .title {
             margin-right: 15px;
         }
-        .unit{
-            margin-left:5px;
+
+        .unit {
+            margin-left: 5px;
             font-size: 18px;
         }
     }
-    .caption{
+
+    .caption {
         color: $gray-000;
         font-weight: 600;
         margin-top: 40px;
         font-size: 18px;
         line-height: 1.8;
-        .underline{
+
+        .underline {
             text-decoration: underline;
         }
-        &.text{
+
+        &.text {
             font-size: 13px;
             color: $gray-100;
             font-weight: 500;
         }
     }
+
     .alert-error {
         position: absolute;
         top: -60px;
@@ -189,9 +223,11 @@
         border-radius: 9px;
         transition: all 0.3s;
         visibility: hidden;
+
         p {
             font-size: 15px;
             text-align: center;
+
             .text {
                 display: inline-block;
                 line-height: 15px;
@@ -199,76 +235,91 @@
                 visibility: hidden;
             }
         }
+
         i {
             width: 15px;
             height: 15px;
             margin-right: 10px;
             visibility: hidden;
         }
+
         &.show {
             background-color: $red-200;
             color: $red-100;
             visibility: visible;
-            i{
+
+            i {
                 visibility: visible;
             }
-            .text{
+
+            .text {
                 visibility: visible;
             }
         }
     }
-    .tab-button-container{
-        .main-title{
+
+    .tab-button-container {
+        .main-title {
             font-size: 20px;
             margin-bottom: 24px;
         }
-        .tab-content{
+
+        .tab-content {
             margin-bottom: 24px;
         }
-        .list-row{
+
+        .list-row {
             display: flex;
             margin-bottom: 24px;
             align-items: center;
-            &:nth-last-child(1){
+
+            &:nth-last-child(1) {
                 margin-bottom: 0;
             }
-            .title{
+
+            .title {
                 flex: 1 1 25%;
                 font-size: 16px;
             }
-            .content{
+
+            .content {
                 flex: 1 1 75%;
 
             }
         }
-        .nav{
+
+        .nav {
             margin-bottom: 0;
-            .nav-item{
+
+            .nav-item {
                 width: 50%;
                 margin-bottom: 0;
                 border: none;
                 overflow: hidden;
-                &:first-child{
+
+                &:first-child {
                     border: 1px solid $gray-400;
-                    border-top-left-radius : 7px;
-                    border-bottom-left-radius:7px;
+                    border-top-left-radius: 7px;
+                    border-bottom-left-radius: 7px;
                 }
-                &:last-child{
+
+                &:last-child {
                     border: 1px solid $gray-400;
-                    border-top-right-radius : 7px;
-                    border-bottom-right-radius:7px;
+                    border-top-right-radius: 7px;
+                    border-bottom-right-radius: 7px;
                     border-left: none;
                 }
 
-                .nav-link{
+                .nav-link {
                     background-color: #fff;
-                    border-top-right-radius : 0;
-                    border-top-left-radius:0;
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 0;
                     width: 100%;
                     padding: 9px;
                     font-size: 16px;
                     color: $gray-000;
-                    &.active{
+
+                    &.active {
                         border-color: $purple-100;
                         background-color: $purple-100;
                         color: $gray-fff;
@@ -278,12 +329,14 @@
             }
         }
     }
-    .validation{
+
+    .validation {
         position: absolute;
         bottom: -40px;
         font-size: 15px;
         margin-left: 10px;
-        &:before{
+
+        &:before {
             content: '*';
             display: inline-block;
             top: 50%;
@@ -292,82 +345,103 @@
             position: absolute;
         }
     }
-    .tab-line-container{
-        .nav-tabs{
+
+    .tab-line-container {
+        .nav-tabs {
             width: 100%;
             border-bottom: 1px solid #babac2;
-            .nav-item{
+
+            .nav-item {
                 border: none;
             }
         }
-        .sub-title{
+
+        .sub-title {
             font-size: 16px;
             margin-bottom: 10px;
         }
-        .tab-content-area{
-            .select-box-container,.text-area_container{
+
+        .tab-content-area {
+            .select-box-container, .text-area_container {
                 margin-bottom: 42px;
             }
-            .form-group-list{
+
+            .form-group-list {
                 display: flex;
             }
-            .text-area{
+
+            .text-area {
                 height: 320px;
                 resize: none;
             }
-            .title{
+
+            .title {
                 font-size: 16px;
                 margin-bottom: 10px;
             }
-            .form-group-row{
-                .desc{
-                    margin-left:10px; margin-right: 42px
+
+            .form-group-row {
+                .desc {
+                    margin-left: 10px;
+                    margin-right: 42px
                 }
             }
         }
-        .custom-response-table{
+
+        .custom-response-table {
             margin-bottom: 40px;
-            &:nth-last-child(1){
+
+            &:nth-last-child(1) {
                 margin-bottom: 0;
             }
         }
     }
-    .details-container{
-        .list-area{
+
+    .details-container {
+        .list-area {
             margin-bottom: 60px;
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0;
             }
-            .title{
+
+            .title {
                 margin-bottom: 42px;
             }
-            .table-data{
-                thead{
-                    tr{
-                        &:first-child{
+
+            .table-data {
+                thead {
+                    tr {
+                        &:first-child {
                             border-top: 2px solid $gray-100;
                         }
-                        th{
+
+                        th {
                             font-size: 13px;
                             border-right: 1px solid $gray-400;
-                            &:last-child{
+
+                            &:last-child {
                                 border: none;
                             }
                         }
                     }
                 }
-                tbody{
-                    tr{
-                        &:first-child{
+
+                tbody {
+                    tr {
+                        &:first-child {
                             border: none;
                         }
-                        &:last-child{
+
+                        &:last-child {
                             border-bottom: 1px solid $gray-400;
                         }
-                        td{
+
+                        td {
                             font-size: 13px;
                             border-right: 1px solid $gray-400;
-                            &:last-child{
+
+                            &:last-child {
                                 border-right: none;
                             }
                         }
@@ -378,44 +452,37 @@
         }
 
     }
-    .email-container{
-        .tab-button-container{
-            .nav{
-                margin-bottom: 20px;
-            }
 
-        }
-        .tab-content{
-            .title{
-                position: relative;
+    .email-container {
+        .title {
+            position: relative;
+            font-size: 20px;
+            font-weight: 600;
+
+            &:after {
+                position: absolute;
+                font-weight: 300;
+                content: '*';
+                display: inline-block;
+                color: $red-100;
+                right: -12px;
                 font-size: 16px;
-
-                &:after{
-                    position: absolute;
-                    content: '*';
-                    display: inline-block;
-                    color: $red-100;
-                    right: -10px;
-                    top: -5px;
-                }
+                top: -6px;
             }
-            .checkbox-wrap{
-                margin-top: 16px;
-                display: flex;
-                flex-wrap: wrap;
-                margin-bottom: -16px;
-                padding-bottom: 45px;
-                &:nth-last-child(1){
-                    padding-bottom: 0;
-                }
-                label{
-                    cursor: pointer;
-                    flex: 1 1 50%;
-                    margin-bottom: 16px;
-                    span{
-                        font-size: 15px;
-                        margin-left: 9px;
-                    }
+        }
+        .checkbox-wrap {
+            margin-top: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            label {
+                cursor: pointer;
+                flex: 1 1 50%;
+                margin-bottom: 16px;
+
+                span {
+                    font-size: 15px;
+                    margin-left: 9px;
                 }
             }
         }

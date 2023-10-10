@@ -102,19 +102,10 @@
 .ico_danger_gray {
     @include background-img ($width: 13px, $height: 13px, $category: 'icon', $img: 'ico_danger_gray.png');
 }
-
-
-.ico-new-red{
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    border-radius: 4px;
-    font-style: normal;
-    vertical-align: middle;
-    text-align: center;
-    color: $red-100;
-    background-color: $red-200;
+.ico_new_red{
+    @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_new_red.png');
 }
+
 .ico-circle-red{
     background-color: $red-100;
     width: 6px;
