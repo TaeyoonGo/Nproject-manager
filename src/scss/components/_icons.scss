@@ -98,7 +98,7 @@
 .ico_checkbox {
     //ico_checkbox 파일명 클래스명 다름 서버에 반영시 이미지 재수정 예정
     background-size: 20px 80px;
-    @include background-img ($width: 20px, $height: 20px, $category: 'icon', $img: 'ico_checkbox_type2.svg');
+    @include background-img ($width: 20px, $height: 20px, $category: 'icon', $img: 'ico_checkbox_v2.svg');
 }
 .ico_danger_gray {
     @include background-img ($width: 13px, $height: 13px, $category: 'icon', $img: 'ico_danger_gray.png');
