@@ -4,6 +4,7 @@
 #=========================================#
 */
 
+/*공지사항*/
 .notice-section{
     .search-email-btn-area{
         display: flex;
@@ -15,6 +16,33 @@
         .form-group{
             margin-right: 12px;
             margin-bottom: 0;
+        }
+    }
+    .notice-detail-list{
+        font-size: 14px;
+        li{
+            margin-bottom: 20px;
+            .title{
+                color: $gray-100;
+            }
+            .desc{
+                margin-left: 20px;
+                color: $gray-000;
+            }
+        }
+
+    }
+    .text-container{
+        .title{
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: $gray-100;
+        }
+        .text-view{
+            padding: 30px 25px;
+            border: 1px solid #CED4DA;
+            border-radius: 7px;
+            min-height: 700px;
         }
     }
 }
