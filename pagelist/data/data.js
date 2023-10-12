@@ -276,6 +276,12 @@ data.notice = {
         },
         {
             stateClass: 'confirm',
+            url: '공지사항_수정',
+            category: 'notice',
+            page: '공지사항_수정'
+        },
+        {
+            stateClass: 'confirm',
             url: '이메일발송하기_체크박스체크전',
             category: 'notice',
             page: '이메일발송하기_체크박스체크전'

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    @@include('../include/header.html')
+    <main>
+        @@include('../include/aside.html')
+        <article class="content-container">
+            <!-- 컨텐츠 s-->
+            <section>
+                <h3 class="main-title font-weight-bold">공지사항 수정</h3>
+                <div class="card">
+                    <h5 class="filter-title font-weight-semi-bold">
+                        <i class="icon ico_edit_purple"></i>
+                        <span>에디터</span>
+                    </h5>
+                    <div class="row">
+                        <div class="col-xl-auto">
+                            <p class="font-weight-semi-bold card-title">분류</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <div class="btn-group w-100 custom-radio-container">
+                                            <div class="custom-radio-group">
+                                                <input class="radio-input" type="radio" name="example3" checked
+                                                       id="customRadio10">
+                                                <label for="customRadio10" class="btn btn-secondary btn-md">시스템</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example3"
+                                                       id="customRadio11">
+                                                <label for="customRadio11" class="btn btn-secondary btn-md">개발/연동</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example3"
+                                                       id="customRadio12">
+                                                <label for="customRadio12"
+                                                       class="btn btn-secondary btn-md">정산</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example3"
+                                                       id="customRadio13">
+                                                <label for="customRadio13"
+                                                       class="btn btn-secondary btn-md">프로모션</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto">
+                            <p class="font-weight-semi-bold card-title">상태</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <div class="btn-group w-100 custom-radio-container">
+                                            <div class="custom-radio-group">
+                                                <input class="radio-input" type="radio" name="example4" checked
+                                                       id="customRadio14">
+                                                <label for="customRadio14" class="btn btn-secondary btn-md">공개</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example4"
+                                                       id="customRadio15">
+                                                <label for="customRadio15" class="btn btn-secondary btn-md">비공개</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto">
+                            <p class="font-weight-semi-bold card-title">상단고정</p>
+                            <button class="btn btn-lg  btn-secondary btn-round fsz-14px mr-2">필수안내 <span>(3/5)</span></button>
+                            <button class="btn btn-lg  btn-secondary btn-round fsz-14px" disabled>무이자 안내 <span>(5/5)</span></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl">
+                            <p class="font-weight-semi-bold card-title">제목</p>
+                            <div class="form-group">
+                                <label class="w-100 mb-0">
+                                    <input class="form-control" type="text">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-weight-semi-bold card-title">내용</p>
+                    <div id="editor"></div>
+
+                    <div id="tui-color-picker-conatiner"></div>
+                    <div class="clearfix mt-3">
+                        <div class="float-right">
+                            <button class="btn btn-primary btn-md btn-round">저장하기</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 컨텐츠 e-->
+        </article>
+    </main>
+    @@include('../include/footer.html')
+</div>
+<script>
+
+    /*에디터사용*/
+    const { Editor } = toastui;
+    const { colorSyntax } = Editor.plugin;
+    const colorSyntaxOptions = {
+        preset: ['#000000', '#FF3131', '#7852E8','#0086F1']
+    };
+    const editor = new Editor({
+        el: document.querySelector('#editor'),
+        height: '800px',
+        initialEditType: 'wysiwyg',
+        previewStyle: 'vertical',
+        plugins: [[colorSyntax,colorSyntaxOptions]]
+    });
+    editor.getMarkdown();
+</script>
+</body>
+</html>

@@ -392,11 +392,13 @@
 <script>
     /*체크박스 단일 선택 */
     function checkOnlyOne(target) {
-        if($("input[name='notice']").length > 1){
-            $("input[name='notice']").prop("checked", false);
+        if($(target).is(":checked")){
             $(target).prop("checked", true);
+            $(target).closest("tr").siblings("tr").find($("input[name='notice']")).prop("checked",false);
             $(target).closest("tr").siblings("tr").removeClass('bg-purple-300')
             $(target).closest("tr").addClass('bg-purple-300')
+        }else{
+            $(target).prop("checked", false);
         }
     }
 </script>
