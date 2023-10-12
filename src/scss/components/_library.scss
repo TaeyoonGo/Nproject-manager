@@ -158,3 +158,9 @@
 .toastui-editor-popup-color button{
     position: static;
 }
+.toastui-editor-contents ul>li:before{
+    background-color: #222;
+}
+.toastui-editor-contents ol>li:before{
+    color: #222;
+}
