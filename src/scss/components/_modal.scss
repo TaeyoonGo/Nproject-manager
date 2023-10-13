@@ -471,20 +471,8 @@
             }
         }
         .checkbox-wrap {
-            margin-top: 16px;
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-            label {
-                cursor: pointer;
-                flex: 1 1 50%;
-                margin-bottom: 16px;
 
-                span {
-                    font-size: 15px;
-                    margin-left: 9px;
-                }
-            }
+
         }
     }
 }

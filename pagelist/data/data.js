@@ -205,15 +205,22 @@ data.globalPayment = {
         },
         {
             stateClass: 'working',
-            url: '결재내역_해외_상세내역',
+            url: '결제내역_해외_상세내역',
             category: 'globalpayment',
-            page: '결재내역_해외_상세내역'
+            page: '결제내역_해외_상세내역'
         },
+
         {
             stateClass: 'complete',
             url: '승인_요청_실패내역',
             category: 'globalpayment',
             page: '승인_요청_실패내역'
+        },
+        {
+            stateClass: 'complete',
+            url: '승인_요청_실패내역_상세내역',
+            category: 'globalpayment',
+            page: '승인_요청_실패내역_상세내역'
         },
         {
             stateClass: 'complete',
