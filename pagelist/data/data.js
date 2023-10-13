@@ -156,7 +156,7 @@ data.domesticPayment = {
             page: '카드_가상계좌_취소_완료'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '상담관리',
             category: 'domesticpayment',
             page: '상담관리'
@@ -204,7 +204,7 @@ data.globalPayment = {
             page: '취소_완료'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '결재내역_해외_상세내역',
             category: 'globalpayment',
             page: '결재내역_해외_상세내역'
@@ -281,7 +281,7 @@ data.notice = {
             page: '공지사항_수정'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '공지사항_상세',
             category: 'notice',
             page: '공지사항_상세'

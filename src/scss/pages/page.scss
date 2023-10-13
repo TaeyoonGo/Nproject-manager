@@ -9,13 +9,54 @@
     .search-email-btn-area{
         display: flex;
         justify-content: space-between;
+        @include res-lg{
+            flex-direction: column;
+        }
+    }
+    .email-btn-area{
+        button{
+            &:first-child{
+                margin-right: 12px;
+            }
+        }
+        @include res-lg{
+            margin-bottom: 24px;
+            button{
+                width: calc(50% - 2px);
+                &:first-child{
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @include res-md{
+            button{
+                width: 100%;
+                &:first-child{
+                    margin-bottom: 24px;
+                }
+            }
+        }
     }
     .search-btn-area{
         display: flex;
         margin-bottom: 24px;
+        @include res-md{
+            flex-direction: column;
+            width: 100%;
+
+        }
         .form-group{
             margin-right: 12px;
             margin-bottom: 0;
+            @include res-md{
+                margin-right: 0;
+                margin-bottom: 24px;
+            }
+            label{
+                width: 100%;
+            }
+
         }
     }
     .notice-detail-list{
@@ -23,6 +64,8 @@
         li{
             margin-bottom: 20px;
             .title{
+                width: 66px;
+                display: inline-block;
                 color: $gray-100;
             }
             .desc{
@@ -48,5 +91,42 @@
     .prev-next-text-list{
         border: 1px solid #CED4DA;
         border-top: none;
+        border-radius: 0 0 7px 7px;
+        li{
+            font-size: 13px;
+
+            &:hover{
+                background-color: $gray-500;
+            }
+
+            a{
+                padding: 18px 13px;
+
+                width: 100%;
+                height: 100%;
+                color: $gray-000;
+                display: flex;
+                i{
+                    font-style: normal;
+                    margin-right: 13px;
+                }
+                .title{
+                    flex: 0 0 auto;
+                    margin-right: 18px;
+                }
+                .content{
+                    @include ellipsis;
+                    width: 90%;
+                    display: inline-block;
+                }
+                &:hover{
+                    text-decoration: none;
+                    .content{
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
     }
 }
