@@ -294,25 +294,25 @@ data.notice = {
             page: '공지사항_상세'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '이메일발송하기_체크박스체크전',
             category: 'notice',
             page: '이메일발송하기_체크박스체크전'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '이메일발송하기_체크박스체크후',
             category: 'notice',
             page: '이메일발송하기_체크박스체크후'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '이메일발송하기_발송후_더블체크',
             category: 'notice',
             page: '이메일발송하기_발송후_더블체크'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '이메일발송하기_완료',
             category: 'notice',
             page: '이메일발송하기_완료'

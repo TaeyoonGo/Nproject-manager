@@ -117,8 +117,12 @@
         }
     }
     .search-detail-content{
-        >div{
+        .title-data-area{
+            display: flex;
             margin-bottom: 12px;
+            @include res-sm{
+                flex-direction: column;
+            }
             &:nth-last-child(1){
                 margin-bottom: 0;
             }
@@ -126,10 +130,17 @@
                 flex: 0 0 200px;
                 text-align: left;
                 font-weight: 600;
+                @include res-sm{
+                    margin-bottom: 5px;
+                    flex: auto;
+                }
             }
             .data{
-                word-break: keep-all;
+                word-break: break-all;
                 flex: 0 0 calc(100% - 200px);
+                @include res-sm{
+                    flex: auto;
+                }
             }
         }
     }
