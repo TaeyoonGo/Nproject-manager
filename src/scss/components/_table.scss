@@ -123,6 +123,24 @@
             }
         }
     }
+
+    &.table-thead-custom{
+        thead{
+            tr{
+                border-bottom: none;
+                &:first-child{
+                    border-top: 2px solid $gray-100;
+                }
+            }
+            th{
+                background-color: $gray-500;
+                padding: 0 10px;
+                border-bottom: none;
+                border-top: none;
+            }
+
+        }
+    }
 }
 
 
