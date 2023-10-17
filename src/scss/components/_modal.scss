@@ -469,25 +469,73 @@
 
     .email-container {
         .title {
-            position: relative;
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 25px;
-
-            &:after {
-                position: absolute;
-                font-weight: 300;
-                content: '*';
-                display: inline-block;
-                color: $red-100;
-                right: -12px;
-                font-size: 16px;
-                top: -6px;
+            span{
+                position: relative;
+                &:after {
+                    position: absolute;
+                    font-weight: 300;
+                    content: '*';
+                    display: inline-block;
+                    color: $red-100;
+                    right: -12px;
+                    font-size: 16px;
+                    top: -6px;
+                }
             }
+
         }
         .checkbox-wrap {
+            margin-bottom: 40px;
+            .domestic-checkbox-list-area{
+                padding: 20px 0;
+                margin-bottom: 20px;
+                border-top: 1px solid $gray-300;
+                border-bottom: 1px solid $gray-300;
+            }
+            .checkbox-list-area{
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                .sub-title{
+                    font-weight: 600;
+                    flex: 0 0 60px;
+                    margin-right: 25px;
+                }
+                ul{
+                    display: flex;
+                    li{
+                        flex: 0 0 120px;
+                        .ico_checkbox{
+                            margin-right: 10px;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
 
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &.email{
+                    margin-bottom: 20px;
+                    ul{
+                       li{
+                           flex: auto;
+                           margin-right: 30px;
 
+                       }
+                    }
+                }
+            }
+
+        }
+        .caption{
+            margin-top: 0;
         }
     }
 }
