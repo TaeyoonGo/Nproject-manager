@@ -10,6 +10,7 @@
         padding: 12px 10px;
         font-size: 13px;
         color: $gray-000;
+        word-break: break-all;
     }
 
 }
@@ -146,7 +147,6 @@
 
 .table-data {
     width: 100%;
-
     tr {
         font-size: 16px;
         font-weight: 500;

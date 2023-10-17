@@ -204,7 +204,7 @@ data.globalPayment = {
             page: '취소_완료'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '결제내역_해외_상세내역',
             category: 'globalpayment',
             page: '결제내역_해외_상세내역'
