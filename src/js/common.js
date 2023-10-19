@@ -58,8 +58,8 @@ function selectBox() {
 
 }
 
-
-function moreSearch(){
+/*필터 상세보기 버튼*/
+function showDetailBtn(){
     const moreSearchBtn = $('._more-search-btn')
     let count = 0;
     moreSearchBtn.on('click',function(){
@@ -73,8 +73,8 @@ function moreSearch(){
     })
 }
 
-// dataPickerRange
-function dataRangePicker() {
+// 달력 모달 생성
+function showRangeModal() {
     const modalDataPicker = $('._modalDataPicker');
     const dateRangePicker = $('._dataPickerRange');
     dateRangePicker.daterangepicker(
@@ -145,12 +145,13 @@ function dataRangePicker() {
     });
 }
 
-
-function nodataTable() {
+/*검색시 데이터가 없는 경우*/
+function checkNoData() {
+    let emptyData =  $('._empty-data')
    if($('tr').hasClass('_empty-data') === true){
-        $('._empty-data').closest('table').removeClass('table-fixed')
-        $('._empty-data').closest('table').find($('colgroup')).empty()
-        $('._empty-data').closest('table').find($('thead')).empty()
+       emptyData.closest('table').removeClass('table-fixed')
+       emptyData.closest('table').find($('colgroup')).empty()
+       emptyData.closest('table').find($('thead')).empty()
    }
 }
 
@@ -165,9 +166,10 @@ function closeSlideModal() {
     })
 }
 
-//Aside ToolTip
-function asideTooltip() {
+/*Aside 메뉴 호버 시 툴팁 호출*/
+function showAsideTooltip() {
     let links = $('.link');
+    
     links.mouseover(function () {
         const hoverTitle = $(this).find('a');
         const top = hoverTitle[0].getBoundingClientRect().top;
@@ -176,8 +178,8 @@ function asideTooltip() {
     });
 }
 
-//mobile Aside Btn
-function asideMobileBtn() {
+/*Aside 모바일에서 버튼 생성*/
+function showAsideMobileBtn() {
     $('._aside_button').on('click', function () {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
@@ -187,10 +189,8 @@ function asideMobileBtn() {
         }
     })
 }
-
-
-/*input buttno*/
-function inputIcoHover() {
+/*input caption 생성*/
+function showInputCaption() {
     $('._input_ico_hover').hover(
         function () {
             $(this).siblings('._input_cation').css('display', 'block')
@@ -200,25 +200,24 @@ function inputIcoHover() {
         }
     )
 }
-
-
-/*only-number*/
-function onlyNumber(){
+/*input 숫자만 입력*/
+function checkInputNumber(){
     $('._only-number').on('input',function(){
         this.value =  this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
     })
 }
 
+/*전체 실행*/
 $(document).ready(function () {
-    dataRangePicker();
+    showRangeModal();
     asideSlideBtn();
     openAsideBtn();
     selectBox();
     closeSlideModal();
-    asideTooltip();
-    asideMobileBtn();
-    inputIcoHover();
-    moreSearch();
-    nodataTable();
-    onlyNumber();
+    showAsideTooltip();
+    showAsideMobileBtn();
+    showInputCaption();
+    showDetailBtn();
+    checkNoData();
+    checkInputNumber();
 })
