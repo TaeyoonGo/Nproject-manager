@@ -8,11 +8,231 @@
         @@include('../include/aside.html')
         <article class="content-container">
             <!-- 컨텐츠 s-->
-            <section></section>
+            <section class="signup-section">
+                <div class>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-toggle="tab" data-target="#dummy1" type="button"
+                                    role="tab" aria-controls="dummy1">기본정보
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#dummy2" aria-controls="dummy1">카드
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#dummy3" type="button" role="tab">
+                                계좌
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#dummy4" type="button" role="tab">
+                                페이
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#dummy5" type="button" role="tab">
+                                가상계좌
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#dummy6" type="button" role="tab">
+                                허브
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="dummy1" role="tabpanel">탭리스트1</div>
+                        <div class="tab-pane" id="dummy2" role="tabpanel">탭리스트2</div>
+                        <div class="tab-pane" id="dummy3" role="tabpanel">탭리스트3</div>
+                        <div class="tab-pane" id="dummy4" role="tabpanel">탭리스트4</div>
+                        <div class="tab-pane" id="dummy5" role="tabpanel">탭리스트5</div>
+                        <div class="tab-pane" id="dummy6" role="tabpanel">탭리스트6</div>
+                    </div>
+                </div>
+            </section>
             <!-- 컨텐츠 e-->
         </article>
     </main>
     @@include('../include/footer.html')
+</div>
+<div class="modal fade _modal-calendar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered calender_modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="_modalDataPicker">
+                    <div class="daterangepicker ltr auto-apply show-calendar opensright"
+                         style="top: 290.469px; left: 840.208px; right: auto; display: none;">
+                        <div class="ranges"></div>
+                        <div class="drp-calendar left">
+                            <div class="calendar-table">
+                                <table class="table-condensed">
+                                    <thead>
+                                    <tr>
+                                        <th class="prev available"><span></span></th>
+                                        <th colspan="5" class="month">10월 2023</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th>일</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="weekend off ends available" data-title="r0c0">24</td>
+                                        <td class="off ends available" data-title="r0c1">25</td>
+                                        <td class="off ends available" data-title="r0c2">26</td>
+                                        <td class="off ends available" data-title="r0c3">27</td>
+                                        <td class="off ends available" data-title="r0c4">28</td>
+                                        <td class="off ends available" data-title="r0c5">29</td>
+                                        <td class="weekend off ends available" data-title="r0c6">30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r1c0">1</td>
+                                        <td class="available" data-title="r1c1">2</td>
+                                        <td class="available" data-title="r1c2">3</td>
+                                        <td class="available" data-title="r1c3">4</td>
+                                        <td class="available" data-title="r1c4">5</td>
+                                        <td class="available" data-title="r1c5">6</td>
+                                        <td class="weekend available" data-title="r1c6">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r2c0">8</td>
+                                        <td class="available" data-title="r2c1">9</td>
+                                        <td class="available" data-title="r2c2">10</td>
+                                        <td class="available" data-title="r2c3">11</td>
+                                        <td class="available" data-title="r2c4">12</td>
+                                        <td class="available" data-title="r2c5">13</td>
+                                        <td class="weekend available" data-title="r2c6">14</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r3c0">15</td>
+                                        <td class="available" data-title="r3c1">16</td>
+                                        <td class="available" data-title="r3c2">17</td>
+                                        <td class="today active start-date active end-date available" data-title="r3c3">
+                                            18
+                                        </td>
+                                        <td class="available" data-title="r3c4">19</td>
+                                        <td class="available" data-title="r3c5">20</td>
+                                        <td class="weekend available" data-title="r3c6">21</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r4c0">22</td>
+                                        <td class="available" data-title="r4c1">23</td>
+                                        <td class="available" data-title="r4c2">24</td>
+                                        <td class="available" data-title="r4c3">25</td>
+                                        <td class="available" data-title="r4c4">26</td>
+                                        <td class="available" data-title="r4c5">27</td>
+                                        <td class="weekend available" data-title="r4c6">28</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r5c0">29</td>
+                                        <td class="available" data-title="r5c1">30</td>
+                                        <td class="available" data-title="r5c2">31</td>
+                                        <td class="off ends available" data-title="r5c3">1</td>
+                                        <td class="off ends available" data-title="r5c4">2</td>
+                                        <td class="off ends available" data-title="r5c5">3</td>
+                                        <td class="weekend off ends available" data-title="r5c6">4</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="calendar-time" style="display: none;"></div>
+                        </div>
+                        <div class="drp-calendar right">
+                            <div class="calendar-table">
+                                <table class="table-condensed">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th colspan="5" class="month">11월 2023</th>
+                                        <th class="next available"><span></span></th>
+                                    </tr>
+                                    <tr>
+                                        <th>일</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="weekend off ends available" data-title="r0c0">29</td>
+                                        <td class="off ends available" data-title="r0c1">30</td>
+                                        <td class="off ends available" data-title="r0c2">31</td>
+                                        <td class="available" data-title="r0c3">1</td>
+                                        <td class="available" data-title="r0c4">2</td>
+                                        <td class="available" data-title="r0c5">3</td>
+                                        <td class="weekend available" data-title="r0c6">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r1c0">5</td>
+                                        <td class="available" data-title="r1c1">6</td>
+                                        <td class="available" data-title="r1c2">7</td>
+                                        <td class="available" data-title="r1c3">8</td>
+                                        <td class="available" data-title="r1c4">9</td>
+                                        <td class="available" data-title="r1c5">10</td>
+                                        <td class="weekend available" data-title="r1c6">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r2c0">12</td>
+                                        <td class="available" data-title="r2c1">13</td>
+                                        <td class="available" data-title="r2c2">14</td>
+                                        <td class="available" data-title="r2c3">15</td>
+                                        <td class="available" data-title="r2c4">16</td>
+                                        <td class="available" data-title="r2c5">17</td>
+                                        <td class="weekend available" data-title="r2c6">18</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r3c0">19</td>
+                                        <td class="available" data-title="r3c1">20</td>
+                                        <td class="available" data-title="r3c2">21</td>
+                                        <td class="available" data-title="r3c3">22</td>
+                                        <td class="available" data-title="r3c4">23</td>
+                                        <td class="available" data-title="r3c5">24</td>
+                                        <td class="weekend available" data-title="r3c6">25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend available" data-title="r4c0">26</td>
+                                        <td class="available" data-title="r4c1">27</td>
+                                        <td class="available" data-title="r4c2">28</td>
+                                        <td class="available" data-title="r4c3">29</td>
+                                        <td class="available" data-title="r4c4">30</td>
+                                        <td class="off ends available" data-title="r4c5">1</td>
+                                        <td class="weekend off ends available" data-title="r4c6">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="weekend off ends available" data-title="r5c0">3</td>
+                                        <td class="off ends available" data-title="r5c1">4</td>
+                                        <td class="off ends available" data-title="r5c2">5</td>
+                                        <td class="off ends available" data-title="r5c3">6</td>
+                                        <td class="off ends available" data-title="r5c4">7</td>
+                                        <td class="off ends available" data-title="r5c5">8</td>
+                                        <td class="weekend off ends available" data-title="r5c6">9</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="calendar-time" style="display: none;"></div>
+                        </div>
+                        <div class="drp-buttons"><span class="drp-selected">2023-10-18~2023-10-18</span>
+                            <button class="cancelBtn data_range_btn cancel_range_btn" type="button">Cancel</button>
+                            <button class="applyBtn data_range_btn apply_range_btn" type="button">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

@@ -12,7 +12,17 @@
         color: $gray-000;
         word-break: break-all;
     }
-
+    .two-word-list{
+        .two-word{
+            margin-bottom: 4px;
+            .title{
+                margin-right: 6px;
+            }
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 

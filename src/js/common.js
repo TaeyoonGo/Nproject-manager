@@ -2,7 +2,6 @@
 function asideSlideBtn() {
     let title = $('._title');
     let slide = $('._slide');
-
     title.on('click', function () {
         $(this).next(slide).stop().slideToggle(300);
         $(this).toggleClass('active').parent().siblings().find(title).removeClass('active');
@@ -22,6 +21,8 @@ function openAsideBtn() {
 //selectBox
 function selectBox() {
     let selectBox = $('._select-box')
+
+
     selectBox.on('click', function () {
         $(this).toggleClass('active');
     })
@@ -110,8 +111,6 @@ function showRangeModal() {
         dateRangePicker.data('daterangepicker').setStartDate(startDate);
         dateRangePicker.data('daterangepicker').setEndDate(endDate);
     });
-
-
     // Last Month 버튼 클릭 시 지난달 범위 선택
     $('#lastMonthBtn').on('click', function () {
         const startDate = moment().subtract(1, 'month');

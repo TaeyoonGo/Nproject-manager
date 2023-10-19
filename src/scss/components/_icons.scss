@@ -106,6 +106,9 @@
 .ico_new_red{
     @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_new_red.png');
 }
+.ico_partner_login{
+    @include background-img ($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_partner_login.png');
+}
 
 .ico-circle-red{
     background-color: $red-100;
