@@ -109,6 +109,10 @@ a{
         border-radius: 38px;
     }
     /*버튼 크기*/
+    &-sm{
+        max-width: 70px;
+        font-size: 15px;
+    }
     &-md {
         min-width: 100px;
     }

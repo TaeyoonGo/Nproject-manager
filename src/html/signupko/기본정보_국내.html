@@ -9,7 +9,8 @@
         <article class="content-container">
             <!-- 컨텐츠 s-->
             <section class="signup-section">
-                <div class>
+                <!--탭 버튼 s-->
+                <div class="nav-tabs-layout">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" data-toggle="tab" data-target="#dummy1" type="button"
@@ -41,8 +42,181 @@
                             </button>
                         </li>
                     </ul>
+                </div>
+                <!--탭 버튼 e-->
+
+                <div class="signup-layout">
                     <div class="tab-content">
-                        <div class="tab-pane active" id="dummy1" role="tabpanel">탭리스트1</div>
+                        <!--기본정보 s-->
+                        <div class="tab-pane active" id="dummy1" role="tabpanel">
+                            <!--기본정보 > 신청,이용 중인 서비스 s -->
+                            <div class="card">
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>신청,이용 중인 서비스</span></p>
+                                    <div class="btn-wrap">
+                                        <button class="btn btn-secondary btn-sm btn-round">수정하기</button>
+                                    </div>
+                                </div>
+                                <ul class="row signup-list-area">
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">구분</span>
+                                        <span class="data">국내</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">MID</span>
+                                        <span class="data">Service0010012345678</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">상태</span>
+                                        <span class="data">심사중</span>
+                                    </li>
+                                </ul>
+                                <p class="caption"><i class="icon ico_clock_gray"></i>최종 업데이트 일자<span>2023-09-26</span></p>
+                            </div>
+                            <!--기본정보 > 신청,이용 중인 서비스 e-->
+
+                            <!--기본정보 > 회원/사업자 s-->
+                            <div class="card">
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>회원</span></p>
+                                    <div class="btn-wrap">
+                                        <button class="btn btn-secondary btn-sm btn-round">수정하기</button>
+                                    </div>
+                                </div>
+                                <ul class="row signup-list-area">
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">이름</span>
+                                        <span class="data">가나다라</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">이메일</span>
+                                        <span class="data"><a href="mailto:dw.jungga@naver.com">dw.jungga@naver.com</a></span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">휴대폰번호</span>
+                                        <span class="data">010-****-1234</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">가입경로</span>
+                                        <span class="data">기타 / 지인소개 등 수기로 작성해준 내용...</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">선택(마케팅)<br>약관동의</span>
+                                        <span class="data">동의</span>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>사업자</span></p>
+                                </div>
+                                <ul class="row signup-list-area">
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">구분</span>
+                                        <span class="data color-orange-100">미입력</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">상호명(국문)</span>
+                                        <span class="data">(주)페이플</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">상호명(영문)</span>
+                                        <span class="data">Payple</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">사업자번호</span>
+                                        <span class="data">기타 / 지인소개 등 수기로 작성해준 내용...</span>
+                                    </li>
+                                    <li class="list col-md-6">
+                                        <span class="title font-weight-semi-bold">대표자명</span>
+                                        <span class="data color-orange-100">미입력</span>
+                                    </li>
+                                    <li class="list col-md-6">
+                                        <span class="title font-weight-semi-bold">법인등록번호<br><span>(또는 대표자 생년월일)</span></span>
+                                        <span class="data color-orange-100">미입력</span>
+                                    </li>
+                                    <li class="list col-md-6">
+                                        <span class="title font-weight-semi-bold">업태</span>
+                                        <span class="data color-orange-100">미입력</span>
+                                    </li>
+                                    <li class="list col-md-6">
+                                        <span class="title font-weight-semi-bold">종목</span>
+                                        <span class="data color-orange-100">미입력</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">사업장 주소</span>
+                                        <span class="data color-orange-100">미입력</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">연락처<br><span>(회사공식, 고객센터)</span></span>
+                                        <span class="data color-orange-100">미입력</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">이외 고객센터<br> 문의방법</span>
+                                        <span class="data color-orange-100">미입력</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!--기본정보 > 회원/사업자 e-->
+
+                            <!--기본정보 > 제품, 서비스 & 결제창 이미지 s-->
+                            <div class="card">
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>제품,서비스</span></p>
+                                    <div class="btn-wrap">
+                                        <button class="btn btn-secondary btn-sm btn-round">수정하기</button>
+                                    </div>
+                                </div>
+                                <ul class="row signup-list-area">
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">서비스명(국문)</span>
+                                        <span class="data">가나다라</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">서비스명(영문)</span>
+                                        <span class="data">미입력</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">홈페이지 주소</span>
+                                        <span class="data"><a href="payple.kr" target="_blank">payple.kr</a></span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">판매상품</span>
+                                        <span class="data">SaaS, 커머스, 반려동물용품</span>
+                                    </li>
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">월거래액</span>
+                                        <span class="data">신규(현재 거래없음)</span>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>결제창 이미지</span></p>
+                                </div>
+                                <ul class="row signup-list-area">
+                                    <li class="list list-column  col-md-6">
+                                        <span class="title font-weight-semi-bold">대표자명</span>
+                                        <div class="img empty-img logo">
+
+                                        </div>
+                                    </li>
+                                    <li class="list list-column col-md-6">
+                                        <span class="title font-weight-semi-bold">법인등록번호<br><span>(또는 대표자 생년월일)</span></span>
+                                        <div class="img empty-img thumbnail">
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--기본정보 > 제품, 서비스 & 결제창 이미지 s-->
+
+                        </div>
+                        <!--기본정보 e-->
                         <div class="tab-pane" id="dummy2" role="tabpanel">탭리스트2</div>
                         <div class="tab-pane" id="dummy3" role="tabpanel">탭리스트3</div>
                         <div class="tab-pane" id="dummy4" role="tabpanel">탭리스트4</div>
