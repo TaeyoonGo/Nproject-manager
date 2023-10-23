@@ -13,12 +13,12 @@
                 <div class="nav-tabs-layout">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" data-toggle="tab" data-target="#dummy1" type="button"
+                            <button class="nav-link" data-toggle="tab" data-target="#dummy1" type="button"
                                     role="tab" aria-controls="dummy1">기본정보
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" data-toggle="tab" data-target="#dummy2" aria-controls="dummy1">카드
+                            <button class="nav-link active" data-toggle="tab" data-target="#dummy2" aria-controls="dummy1">카드
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -48,7 +48,7 @@
                 <div class="signup-layout">
                     <div class="tab-content">
                         <!--기본정보 s-->
-                        <div class="tab-pane active" id="dummy1" role="tabpanel">
+                        <div class="tab-pane" id="dummy1" role="tabpanel">
                             <!--기본정보 > 신청,이용 중인 서비스 s -->
                             <div class="card">
                                 <div class="title-area">
@@ -464,7 +464,178 @@
 
                         </div>
                         <!--기본정보 e-->
-                        <div class="tab-pane" id="dummy2" role="tabpanel">탭리스트2</div>
+
+                        <!--카드 정보 s-->
+                        <div class="tab-pane active" id="dummy2" role="tabpanel" >
+                            <!--카드정보 > 결제수단 상태, 수수료 s -->
+                            <div class="card">
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>결제수단 상태, 수수료</span></p>
+                                    <div class="btn-wrap">
+                                        <button class="btn btn-secondary btn-md btn-round">상태 수정하기</button>
+                                        <button class="btn btn-secondary btn-md btn-round">수수료 수정하기</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive ">
+                                    <table class="table table-fixed table-data mb-0">
+                                        <colgroup>
+                                            <col style="width: 150px">
+                                            <col style="width: 120px">
+                                            <col style="width: 90px">
+                                            <col style="width: 90px">
+                                            <col style="width: 90px">
+                                            <col style="width: 90px">
+                                            <col style="width: 90px">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th class="text-center font-weight-semi-bold"></th>
+                                            <th class="text-center font-weight-semi-bold">상태</th>
+                                            <th class="text-center font-weight-semi-bold">영세</th>
+                                            <th class="text-center font-weight-semi-bold">중소1</th>
+                                            <th class="text-center font-weight-semi-bold">중소2</th>
+                                            <th class="text-center font-weight-semi-bold">중소3</th>
+                                            <th class="text-center font-weight-semi-bold">일반</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-center align-middle">
+                                                <span class="font-weight-semi-bold">키인</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span class="color-green-100">심사중</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>1.70%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.30%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.45%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.70%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.90%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center align-middle">
+                                                <span class="font-weight-semi-bold">카카오페이</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span class="color-blue-100">계약중</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>1.70%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.30%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.45%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.70%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.90%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center align-middle">
+                                                <span class="font-weight-semi-bold">비밀번호간편</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span class="color-red-100">입점불가</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>1.70%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.30%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.45%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.70%</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <span>2.90%</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button class="caption justify-content-end btn-reset text-decoration-underline color-gray-000"><i class="icon ico_clock_black"></i>수수료 수정이력</button>
+                            </div>
+                            <!--카드정보 > 결제수단 상태, 수수료 e-->
+
+                            <!--카드정보 > 정산 s-->
+                            <div class="card">
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>정산</span></p>
+                                    <div class="btn-wrap">
+                                        <button class="btn btn-secondary btn-md btn-round">주기 수정하기</button>
+                                        <button class="btn btn-secondary btn-md btn-round">계좌 수정하기</button>
+                                    </div>
+                                </div>
+                                <button class="caption justify-content-end btn-reset text-decoration-underline color-gray-000"><i class="icon ico_clock_black"></i>정산 주기 수정이력</button>
+                            </div>
+                            <!--카드정보 > 정산 e-->
+
+                            <!--카드정보 > 원천사 정보&나이스&다날-->
+                            <div class="card">
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>원천사 정보</span></p>
+                                    <div class="btn-wrap">
+                                        <button class="btn btn-secondary btn-md btn-round">수정하기</button>
+                                    </div>
+                                </div>
+                                <ul class="row signup-list-area">
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">원천사 선택</span>
+                                        <span class="data">나이스+다날</span>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>나이스</span></p>
+                                    <div class="btn-wrap">
+                                        <button class="caption mt-0 justify-content-end btn-reset text-decoration-underline color-gray-000"><i class="icon ico_clock_black"></i>수정이력</button>
+                                    </div>
+                                </div>
+                                <ul class="row signup-list-area">
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">MID(source_id)</span>
+                                        <div class="data-area"><span>나이스+다날</span><span>미적용</span></div>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="title-area">
+                                    <p class="title font-weight-semi-bold d-flex align-items-center">
+                                        <i class="icon ico_check_purple"></i><span>다날</span></p>
+                                    <div class="btn-wrap">
+                                        <button class="caption mt-0 justify-content-end btn-reset text-decoration-underline color-gray-000"><i class="icon ico_clock_black"></i>수정이력</button>
+                                    </div>
+                                </div>
+                                <ul class="row signup-list-area">
+                                    <li class="list col-md-12">
+                                        <span class="title font-weight-semi-bold">가맹점구분 정보<br>(영중소)</span>
+                                        <div class="data-area"><span>나이스+다날</span><span>미적용</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--카드 정보 e-->
                         <div class="tab-pane" id="dummy3" role="tabpanel">탭리스트3</div>
                         <div class="tab-pane" id="dummy4" role="tabpanel">탭리스트4</div>
                         <div class="tab-pane" id="dummy5" role="tabpanel">탭리스트5</div>

@@ -62,7 +62,7 @@
     .notice-detail-list{
         font-size: 14px;
         li{
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             .title{
                 width: 66px;
                 display: inline-block;
@@ -94,7 +94,9 @@
         border-radius: 0 0 7px 7px;
         li{
             font-size: 13px;
-
+            &.next{
+                border-bottom: 1px solid $gray-400;
+            }
             &:hover{
                 background-color: $gray-500;
             }
@@ -154,6 +156,14 @@
         max-width: 800px;
         margin: 0 auto;
         .card{
+            .btn-wrap{
+                button + button{
+                    margin-left: 5px;
+                }
+            }
+            button{
+                font-size: 13px;
+            }
             .title-area{
                 display: flex;
                 justify-content: space-between;
@@ -168,10 +178,8 @@
             }
             .signup-list-area{
                 .list{
-                    align-items: center;
                     margin-bottom: 20px;
                     display: flex;
-
                     .title{
                         flex: 0 0 100px;
                         color: $gray-100;
@@ -185,6 +193,9 @@
                         flex: 1 1 auto;
                         font-size: 14px;
                         word-break: break-all;
+                    }
+                    .data-list{
+
                     }
                     &.content-col-3{
                         align-items: flex-start;
@@ -241,6 +252,7 @@
 
 
                 }
+
             }
             .caption{
                 margin-top: 20px;

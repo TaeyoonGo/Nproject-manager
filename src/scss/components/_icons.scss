@@ -115,6 +115,9 @@
 .ico_clock_gray{
     @include background-img ($width: 13px, $height: 13px, $category: 'icon', $img: 'ico_clock_gray.png');
 }
+.ico_clock_black{
+    @include background-img ($width: 13px, $height: 12px, $category: 'icon', $img: 'ico_clock_black.png')
+}
 
 .ico-circle-red{
     background-color: $red-100;

@@ -246,13 +246,13 @@ data.lnikpay = {
     title:'링크결제',
     list:[
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '링크결제_상품내역',
             category: 'linkpay',
             page: '링크결제_상품내역'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '링크결제_상품내역_국내검색시',
             category: 'linkpay',
             page: '링크결제_상품내역_국내검색시'
