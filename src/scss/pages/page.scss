@@ -171,6 +171,17 @@
                 margin-bottom: 20px;
                 .title{
                     font-size: 18px;
+                    .title-speech-bubble-area{
+                        .ico_question_gray{
+                            margin-left: 5px;
+                        }
+                        .speech-bubble{
+                            width: 250px;
+                            top: -52px;
+                            font-weight: 500;
+                            left: -27px;
+                        }
+                    }
                     .icon{
                         margin-right: 5px;
                     }
@@ -202,6 +213,13 @@
                             margin-right: 10px;
                         }
 
+                    }
+                    .data-button-area{
+                        .data{
+                            +button{
+                                margin-left: 10px;
+                            }
+                        }
                     }
                     &.content-col-3{
                         align-items: flex-start;
