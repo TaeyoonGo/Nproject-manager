@@ -67,13 +67,13 @@
                                 <div class="col-xl">
                                     <div class="form-group min-w-190">
                                         <label class="select-box _select-box">
-                                            <input type="hidden" class="select-value _select-value" value="0">
+                                            <input type="hidden" class="select-value _select-value _service-value-status" value="0">
                                             <span class="value-text _value-text">전체</span>
                                             <i class="icon ico_select_arrow_down">아래화살표</i>
                                             <ul class="options h-auto">
-                                                <li class="option" value="0">전체</li>
-                                                <li class="option" value="1">국내</li>
-                                                <li class="option" value="2">해외</li>
+                                                <li class="option _all-select" value="0">전체</li>
+                                                <li class="option _domestic-select" value="1">국내</li>
+                                                <li class="option _domestic-global" value="2">해외</li>
                                             </ul>
                                         </label>
                                     </div>
@@ -98,7 +98,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="col-xl-auto">
                             <p class="card-title font-weight-semi-bold">결제수단 구분/상태</p>
@@ -107,12 +106,23 @@
                                     <div class="form-group min-w-190">
                                         <label class="select-box _select-box">
                                             <input type="hidden" class="select-value _select-value" value="0">
-                                            <span class="value-text _value-text">상태(전체)</span>
+                                            <span class="value-text _value-text">전체</span>
                                             <i class="icon ico_select_arrow_down">아래화살표</i>
-                                            <ul class="options h-auto">
-                                                <li class="option" value="0">상태(전체)</li>
-                                                <li class="option" value="1">등록</li>
-                                                <li class="option" value="2">해지</li>
+                                            <ul class="options h-320px">
+<!--                                                <li class="option _all" value="0">전체</li>-->
+<!--                                                <li class="option _domestic" value="1">카드 - 앱카드</li>-->
+<!--                                                <li class="option _domestic" value="2">카드 - 키인</li>-->
+<!--                                                <li class="option _domestic" value="2">카드 - 빌링</li>-->
+<!--                                                <li class="option _domestic" value="2">카드 - 간편</li>-->
+<!--                                                <li class="option _domestic" value="2">계좌 - 빌링</li>-->
+<!--                                                <li class="option _domestic" value="2">계좌 - 간편</li>-->
+<!--                                                <li class="option _domestic" value="2">네이버페이</li>-->
+<!--                                                <li class="option _domestic" value="2">카카오페이</li>-->
+<!--                                                <li class="option _domestic" value="2">애플페이</li>-->
+<!--                                                <li class="option _domestic" value="2">가상계좌</li>-->
+<!--                                                <li class="option _global" value="2">카드 - 키인</li>-->
+<!--                                                <li class="option _global" value="2">카드 - 빌링</li>-->
+<!--                                                <li class="option _global" value="2">카드 - 간편 </li>-->
                                             </ul>
                                         </label>
                                     </div>
@@ -121,11 +131,16 @@
                                     <div class="form-group min-w-190">
                                         <label class="select-box _select-box">
                                             <input type="hidden" class="select-value _select-value" value="0">
-                                            <span class="value-text _value-text">상태(전체)</span>
+                                            <span class="value-text _value-text">전체</span>
                                             <i class="icon ico_select_arrow_down">아래화살표</i>
                                             <ul class="options h-auto">
-                                                <li class="option" value="0">상태(전체)</li>
-                                                <li class="option" value="1">등록</li>
+                                                <li class="option" value="0">전체</li>
+                                                <li class="option" value="1">작성 중</li>
+                                                <li class="option" value="2">심사 중</li>
+                                                <li class="option" value="2">입점불가</li>
+                                                <li class="option" value="2">계약 중</li>
+                                                <li class="option" value="2">서비스 중</li>
+                                                <li class="option" value="2">정지</li>
                                                 <li class="option" value="2">해지</li>
                                             </ul>
                                         </label>
@@ -133,7 +148,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <p class="font-weight-semi-bold card-title">상세검색</p>
                     <div class="row">
@@ -863,5 +877,13 @@
         </div>
     </div>
 </div>
+
+<script>
+    /*
+    * 서비스 구분/상태 값에 따라 결제수단 구분/상태 구별
+    * 개발 시 value값 맞춰서 작업해주시면 됩니다. 현재는 숫자로 value 값 설정
+    * */
+
+</script>
 </body>
 </html>
