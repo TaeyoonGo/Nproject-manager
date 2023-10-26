@@ -324,7 +324,7 @@ data.signupko = {
     title:'가입,신청정보-국내',
     list:[
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '신청정보_공통',
             category: 'signupko',
             page: '신청정보_공통'
@@ -334,6 +334,12 @@ data.signupko = {
             url: '기본정보_국내',
             category: 'signupko',
             page: '기본정보_국내'
+        },
+        {
+            stateClass: 'working',
+            url: '기본정보_국내_수정',
+            category: 'signupko',
+            page: '기본정보_국내_수정'
         },
     ]
 }

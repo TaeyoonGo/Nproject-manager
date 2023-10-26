@@ -189,6 +189,7 @@
             }
             .signup-list-area{
                 .list{
+                    align-items: center;
                     margin-bottom: 20px;
                     display: flex;
                     .title{
@@ -275,7 +276,20 @@
                         }
 
                     }
+                    .address{
+                        flex: 1 1 100%;
+                        .row{
+                            >div{
+                                @include res-lg{
+                                    margin-bottom: 20px;
+                                    &:nth-last-child(1){
+                                        margin-bottom: 0;
+                                    }
+                                }
 
+                            }
+                        }
+                    }
 
 
                 }
