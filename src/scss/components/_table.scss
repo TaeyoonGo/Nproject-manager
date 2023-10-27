@@ -185,7 +185,7 @@
 }
 
 
-/**/
+/*custom이 붙은 테이블은 div로 구성된 테이블*/
 .custom-response-table {
     width: 100%;
     border-top: 2px solid $gray-100;
@@ -217,4 +217,9 @@
             }
         }
     }
+}
+
+
+.custom-data-table{
+
 }

@@ -171,19 +171,30 @@
                 margin-bottom: 20px;
                 .title{
                     font-size: 18px;
-                    .title-speech-bubble-area{
-                        .ico_question_gray{
-                            margin-left: 5px;
-                        }
-                        .speech-bubble{
-                            width: 250px;
-                            top: -52px;
-                            font-weight: 500;
-                            left: -27px;
-                        }
-                    }
                     .icon{
                         margin-right: 5px;
+                    }
+                    .hover-area{
+                        display: inline-block;
+                        margin-left: 5px;
+                        cursor: pointer;
+                        font-style: normal;
+                        .icon{
+                            margin-right: 0;
+                        }
+                        .speech-bubble{
+                            width: max-content;
+                            left: calc(50% - 10px);
+                            top: -45px;
+                            font-weight: 500;
+                            display: none;
+                            transform: translate(-50%,-0%);
+                        }
+                        &:hover{
+                            .speech-bubble{
+                                display: block;
+                            }
+                        }
                     }
                 }
             }
@@ -192,10 +203,28 @@
                     align-items: center;
                     margin-bottom: 20px;
                     display: flex;
+
                     .title{
                         flex: 0 0 100px;
                         color: $gray-100;
                         font-size: 14px;
+                        .hover-area{
+                            display: inline-block;
+                            margin-left: 5px;
+                            cursor: pointer;
+                            font-style: normal;
+                            .speech-bubble{
+                                width: max-content;
+                                right: -16px;
+                                top: -26px;
+                                display: none;
+                            }
+                            &:hover{
+                                .speech-bubble{
+                                    display: block;
+                                }
+                            }
+                        }
                         span{
                             font-size: 10px;
                             font-weight: 500;
