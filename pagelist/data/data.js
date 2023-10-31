@@ -347,7 +347,7 @@ data.signupen = {
     title:'가입,신청정보-해외',
     list:[
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '기본정보_해외',
             category: 'signupen',
             page: '기본정보_해외'
