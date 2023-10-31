@@ -215,9 +215,10 @@
                             font-style: normal;
                             .speech-bubble{
                                 width: max-content;
-                                right: -16px;
-                                top: -26px;
+                                top: -30px;
                                 display: none;
+                                font-size: 13px;
+                                right: -43px;
                             }
                             &:hover{
                                 .speech-bubble{
@@ -278,7 +279,8 @@
                             margin-bottom: 12px;
                         }
                         .img{
-
+                            border-radius: 7px;
+                            overflow: hidden;
                             &.logo{
                                 @include background-img ($width: 100%, $height: 66px, $category: 'common', $img: 'bg_empty_img_logo.png');
 
@@ -340,12 +342,12 @@
             .table-data{
                 thead{
                     tr{
-                        border-top: 1px solid $gray-100;
-
                         th{
-                                padding: 6px 12px;
+                            padding: 6px 12px;
                             border-top: none;
-
+                            &:nth-last-child(1){
+                                border-right: 0;
+                            }
                         }
                     }
                 }
