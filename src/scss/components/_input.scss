@@ -98,7 +98,8 @@
     position: absolute;
     font-size: 12px;
     color: $gray-100;
-    right: -72px;
+    right: -84px;
+    width: max-content;
     top: -20px;
     background-color: $gray-fff;
     border-radius: 10px;
@@ -106,13 +107,19 @@
     &:after{
         position: absolute;
         content: '';
-        border-top: 10px solid $gray-fff;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 0 solid transparent;
+        //border-top: 10px solid $gray-fff;
+        //border-left: 10px solid transparent;
+        //border-right: 10px solid transparent;
+        //border-bottom: 0 solid transparent;
+        transform: rotate(130deg) translateY(-50%);
+        box-shadow: 2px -2px 2px rgba(0,0,0,.1);
+        width: 10px;
+        height: 10px;
+        z-index: 1;
+        background-color: $gray-fff;
         left: 50%;
-        transform: translateY(-50%);
-        bottom: -10px;
+        border: 1px solid $gray-fff;
+        bottom: -2px;
     }
 }
 
