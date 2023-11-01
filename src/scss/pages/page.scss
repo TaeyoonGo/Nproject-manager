@@ -344,8 +344,6 @@
             }
             .caption{
                 margin-top: 20px;
-                display: flex;
-                align-items: center;
                 font-size: 12px;
                 color: $gray-200;
                 .icon{
@@ -353,6 +351,27 @@
                 }
                 span{
                     margin-left: 5px;
+                }
+                .alert-text{
+                    position: absolute;
+                    top: 50%;
+                    left: 100px;
+                    font-size: 13px;
+                    transform: translateY(-50%);
+                    span{
+                        vertical-align: middle;
+                        margin-left: 0;
+                    }
+                    &.color-purple-100{
+                        .icon{
+                             @include background-img ($width: 13px, $height: 13px, $category: 'icon', $img: 'ico_checked_purple.png')
+                        }
+                    }
+                    &.color-red-100{
+                        .icon{
+                             @include background-img ($width: 13px, $height: 13px, $category: 'icon', $img: 'ico_danger.png')
+                        }
+                    }
                 }
             }
             .table-data{
