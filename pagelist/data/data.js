@@ -330,7 +330,7 @@ data.signupko = {
             page: '신청정보_공통'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '기본정보_공통_정산',
             category: 'signupko',
             page: '기본정보_공통_정산'
