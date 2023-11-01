@@ -94,6 +94,9 @@
     .calender-input{
         width: 230px;
         position: relative;
+        .form-control{
+            padding: 6px 30px 6px 12px;
+        }
         .icon{
             top: 50%;
             transform: translateY(-50%);
