@@ -12,13 +12,16 @@
         color: $gray-000;
         word-break: break-all;
     }
-    .two-word-list{
-        .two-word{
+
+    .two-word-list {
+        .two-word {
             margin-bottom: 4px;
-            .title{
+
+            .title {
                 margin-right: 6px;
             }
-            &:nth-last-child(1){
+
+            &:nth-last-child(1) {
                 margin-bottom: 0;
             }
         }
@@ -30,7 +33,7 @@
     table-layout: fixed;
 }
 
-.table-not-spread{
+.table-not-spread {
     thead {
         tr {
             background-color: #F5F5F5;
@@ -39,6 +42,7 @@
             th {
                 border-bottom: none;
                 border-right: 1px solid $gray-400;
+
                 &:nth-last-child(1) {
                     border-right: none;
                 }
@@ -57,6 +61,7 @@
 
             td {
                 border-right: 1px solid $gray-400;
+
                 &:nth-last-child(1) {
                     border-right: none;
                 }
@@ -67,12 +72,12 @@
 }
 
 
-
 .table-spread {
     thead {
         tr {
             background-color: #E0E0E0;
             border-bottom: 1px solid $gray-400;
+
             th {
                 border-right: 1px solid $gray-400;
 
@@ -136,15 +141,17 @@
         }
     }
 
-    &.table-thead-custom{
-        thead{
-            tr{
+    &.table-thead-custom {
+        thead {
+            tr {
                 border-bottom: none;
-                &:first-child{
-                    border-top: 2px solid $gray-100;
+
+                &:first-child {
+                    border-top: 1px solid $gray-100;
                 }
             }
-            th{
+
+            th {
                 background-color: $gray-500;
                 padding: 0 10px;
                 border-bottom: none;
@@ -158,37 +165,42 @@
 
 .table-data {
     width: 100%;
-    tr {
-        font-size: 16px;
-        font-weight: 500;
-        border-top: 1px solid $gray-400;
-
-        &:first-child {
-            border-top: 2px solid $gray-100;
+    thead {
+        tr{
+            border-top: 1px solid $gray-100;
+            th {
+                font-size: 14px;
+                word-break: break-all;
+                padding: 12px 14px;
+                font-weight: 400;
+                background-color: $gray-500;
+                border-right: 1px solid $gray-400;
+            }
         }
 
-        &:last-child {
-            border-bottom: 1px solid $gray-400;
-        }
-
-        th, td {
-            word-break: break-all;
-            padding: 12px 14px;
-            font-weight: 400;
-        }
-
-        th {
-            background-color: $gray-500;
-            border-right: 1px solid $gray-400;
-        }
     }
+    tbody {
+        tr{
+            td {
+                font-size: 13px;
+                word-break: break-all;
+                padding: 12px 14px;
+                font-weight: 400;
+            }
+        }
+
+
+
+    }
+
+
 }
 
 
 /*custom이 붙은 테이블은 div로 구성된 테이블*/
 .custom-response-table {
     width: 100%;
-    border-top: 2px solid $gray-100;
+    border-top: 1px solid $gray-100;
 
     .table-row {
         display: flex;
@@ -209,6 +221,7 @@
                 font-size: 16px;
                 padding: 14px;
             }
+
             .content {
                 word-break: break-all;
                 font-size: 16px;
