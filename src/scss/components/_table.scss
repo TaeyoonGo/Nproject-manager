@@ -27,12 +27,9 @@
         }
     }
 }
-
-
 .table-fixed {
     table-layout: fixed;
 }
-
 .table-not-spread {
     thead {
         tr {
@@ -70,8 +67,6 @@
     }
 
 }
-
-
 .table-spread {
     thead {
         tr {
@@ -161,8 +156,6 @@
         }
     }
 }
-
-
 .table-data {
     width: 100%;
     thead {
@@ -175,6 +168,10 @@
                 font-weight: 400;
                 background-color: $gray-500;
                 border-right: 1px solid $gray-400;
+                border-bottom: 1px solid $gray-400;
+                &:nth-last-child(1){
+                    border-right: none;
+                }
             }
         }
 
@@ -192,10 +189,29 @@
 
 
     }
-
+}
+.table-data-row{
+    width: 100%;
+    tr{
+        &:first-child{
+            border-top: 2px solid $gray-100;
+        }
+        border-bottom: 1px solid $gray-400;
+        th{
+            font-size: 16px;
+            background-color: $gray-500;
+            padding: 12px 14px;
+            font-weight: 600;
+        }
+        td{
+            font-size: 16px;
+            word-break: break-all;
+            padding: 12px 14px;
+            font-weight: 400;
+        }
+    }
 
 }
-
 
 /*custom이 붙은 테이블은 div로 구성된 테이블*/
 .custom-response-table {
