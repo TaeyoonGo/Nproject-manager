@@ -269,25 +269,25 @@ data.notice = {
     title:'공지사항',
     list:[
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '공지사항',
             category: 'notice',
             page: '공지사항'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '공지사항_작성',
             category: 'notice',
             page: '공지사항_작성'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '공지사항_수정',
             category: 'notice',
             page: '공지사항_수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '공지사항_상세',
             category: 'notice',
             page: '공지사항_상세'
@@ -299,19 +299,19 @@ data.notice = {
             page: '이메일발송하기_체크박스체크전'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일발송하기_체크박스체크후',
             category: 'notice',
             page: '이메일발송하기_체크박스체크후'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일발송하기_발송후_더블체크',
             category: 'notice',
             page: '이메일발송하기_발송후_더블체크'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일발송하기_완료',
             category: 'notice',
             page: '이메일발송하기_완료'
@@ -400,16 +400,16 @@ data.emailfilter = {
             page: '이메일관리_상세내용확인'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '이메일관리_작성하기',
             category: 'emailfilter',
             page: '이메일관리_작성하기'
         },
         {
-            stateClass: 'working',
-            url: '이메일관리_작성완료팝업',
+            stateClass: 'confirm',
+            url: '이메일관리_작성하기팝업',
             category: 'emailfilter',
-            page: '이메일관리_작성완료팝업'
+            page: '이메일관리_작성하기팝업'
         },
 
     ]

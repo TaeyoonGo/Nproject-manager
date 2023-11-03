@@ -118,6 +118,10 @@
 .ico_clock_black{
     @include background-img ($width: 13px, $height: 12px, $category: 'icon', $img: 'ico_clock_black.png')
 }
+.ico_exclamation_purple{
+    @include background-img ($width: 20px, $height: 20px, $category: 'icon', $img: 'ico_exclamation_purple.png')
+}
+
 
 .ico-circle-red{
     background-color: $red-100;
