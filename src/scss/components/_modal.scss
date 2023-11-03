@@ -3,7 +3,7 @@
 |   modal 관련 css 입니다.              |
 #=========================================#
 */
-.calender_modal {
+.calender-modal {
     max-width: max-content;
 
     .modal-content {
@@ -86,11 +86,9 @@
     top: 0;
     left: 0;
     visibility: hidden;
-
     &.show {
         background: rgba(0, 0, 0, 0.5);
         visibility: visible;
-
         .slide-modal {
             right: 0;
         }
@@ -106,7 +104,6 @@
     height: 100%;
     background-color: $gray-fff;
     transition: all 0.3s;
-
     .slide-modal-header {
         padding: 40px;
         display: flex;
@@ -121,45 +118,50 @@
             cursor: pointer;
         }
     }
-
     .slide-modal-body {
         padding: 40px;
     }
-
     .slide-modal-footer {
         padding: 40px;
     }
-
     /*사이즈별*/
-    &-md {
+    &-sm {
         width: 476px;
         right: -476px;
-
         .slide-modal-header {
             @include res-sm {
                 padding: 40px 20px;
             }
         }
-
         .slide-modal-body {
             @include res-sm {
                 padding: 40px 20px;
             }
+            //height: 100%;
+            //overflow-y: auto;
+            //&::-webkit-scrollbar {
+            //    width: 2px;  /* 스크롤바의 너비 */
+            //}
+            //&::-webkit-scrollbar-thumb {
+            //    height: 30%; /* 스크롤바의 길이 */
+            //    background: #3B3B42; /* 스크롤바의 색상 */
+            //    border-radius: 10px;
+            //}
+            //&::-webkit-scrollbar-track {
+            //    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+            //}
         }
-
         .slide-modal-footer {
             padding: 0 40px;
             @include res-sm {
                 padding: 0 20px;
             }
         }
-
         @include res-sm {
             width: 100%;
             right: -100%;
         }
     }
-
     &-lg {
         transition: all 0.5s;
         width: 1199px;
@@ -175,25 +177,11 @@
 
         .slide-modal-body {
             padding: 20px 40px 40px;
-            height: 100%;
-            overflow-y: auto;
-            &::-webkit-scrollbar {
-                width: 2px;  /* 스크롤바의 너비 */
-            }
-            &::-webkit-scrollbar-thumb {
-                height: 30%; /* 스크롤바의 길이 */
-                background: #3B3B42; /* 스크롤바의 색상 */
-                border-radius: 10px;
-            }
-            &::-webkit-scrollbar-track {
-                background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
-            }
-
         }
-
-        .slide-modal-footer {
-            padding: 0 40px;
-        }
+    }
+    &-md{
+        width: 768px;
+        right: -768px;
     }
 
     /*기능별*/
@@ -210,7 +198,6 @@
             font-size: 18px;
         }
     }
-
     .caption {
         color: $gray-000;
         font-weight: 600;
@@ -228,59 +215,6 @@
             font-weight: 500;
         }
     }
-
-    .toast-popup {
-        position: absolute;
-        top: -60px;
-        width: 100%;
-        padding: 10px 16px;
-        border-radius: 9px;
-        transition: all 0.3s;
-        visibility: hidden;
-        i {
-            margin-right: 10px;
-            visibility: hidden;
-        }
-        p {
-            font-size: 15px;
-            text-align: center;
-
-            .text {
-                display: inline-block;
-                line-height: 15px;
-                vertical-align: middle;
-                visibility: hidden;
-            }
-        }
-        &.danger{
-            background-color: $red-200;
-            color: $red-100;
-            i{
-                @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_danger.png');
-            }
-        }
-        &.primary{
-            background-color: $purple-300;
-            color: $purple-100;
-            i{
-                @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_checked_purple.png');
-            }
-        }
-
-
-
-
-        &.show {
-            visibility: visible;
-            i {
-                visibility: visible;
-            }
-            .text {
-                visibility: visible;
-            }
-        }
-    }
-
     .tab-button-container {
         .main-title {
             font-size: 20px;
@@ -352,7 +286,6 @@
             }
         }
     }
-
     .validation {
         position: absolute;
         bottom: -40px;
@@ -368,7 +301,6 @@
             position: absolute;
         }
     }
-
     .tab-line-container {
         .nav-tabs {
             width: 100%;
@@ -419,7 +351,6 @@
             }
         }
     }
-
     .details-container {
         .list-area {
             margin-bottom: 60px;
@@ -475,7 +406,6 @@
         }
 
     }
-
     .email-container {
         .title {
             font-size: 20px;
@@ -546,6 +476,79 @@
         }
         .caption{
             margin-top: 40px;
+        }
+    }
+
+
+    //이메일 상세내용 확인
+    .email-send-container{
+        .sub-title{
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .email-text-area{
+            min-height: 550px;
+            resize: none;
+        }
+        .form-group{
+            margin-bottom: 24px;
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//Toast Popup
+.toast-popup {
+    position: absolute;
+    top: -60px;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 9px;
+    transition: all 0.3s;
+    visibility: hidden;
+    i {
+        margin-right: 10px;
+        visibility: hidden;
+    }
+    p {
+        font-size: 15px;
+        text-align: center;
+
+        .text {
+            display: inline-block;
+            line-height: 15px;
+            vertical-align: middle;
+            visibility: hidden;
+        }
+    }
+    &.danger{
+        background-color: $red-200;
+        color: $red-100;
+        i{
+            @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_danger.png');
+        }
+    }
+    &.primary{
+        background-color: $purple-300;
+        color: $purple-100;
+        i{
+            @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_checked_purple.png');
+        }
+    }
+
+
+
+
+    &.show {
+        visibility: visible;
+        i {
+            visibility: visible;
+        }
+        .text {
+            visibility: visible;
         }
     }
 }

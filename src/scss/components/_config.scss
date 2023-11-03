@@ -6,7 +6,6 @@
 
 @mixin ellipsis($line: 1) {
     overflow: hidden;
-
     @if $line==1 {
         white-space: nowrap;
         text-overflow: ellipsis;

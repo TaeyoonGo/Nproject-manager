@@ -384,6 +384,36 @@ data.signupen = {
         },
     ]
 }
+data.emailfilter = {
+    title:'이메일관리',
+    list:[
+        {
+            stateClass: 'confirm',
+            url: '이메일관리',
+            category: 'emailfilter',
+            page: '이메일관리'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일관리_상세내용확인',
+            category: 'emailfilter',
+            page: '이메일관리_상세내용확인'
+        },
+        {
+            stateClass: 'working',
+            url: '이메일관리_작성하기',
+            category: 'emailfilter',
+            page: '이메일관리_작성하기'
+        },
+        {
+            stateClass: 'working',
+            url: '이메일관리_작성완료팝업',
+            category: 'emailfilter',
+            page: '이메일관리_작성완료팝업'
+        },
+
+    ]
+}
 
 
 

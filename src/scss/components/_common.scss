@@ -81,9 +81,7 @@
     display: inline-block;
     @include ellipsis ($line: 1);
     width: 100%;
-}
-.ellipsis-90{
-    display: inline-block;
-    @include ellipsis ($line: 1);
-    width: 90%;
+    &.two-line{
+        @include ellipsis ($line: 2);
+    }
 }

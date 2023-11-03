@@ -11,6 +11,9 @@
         font-size: 13px;
         color: $gray-000;
         word-break: break-all;
+        span{
+            display: inline-block;
+        }
     }
 
     .two-word-list {
