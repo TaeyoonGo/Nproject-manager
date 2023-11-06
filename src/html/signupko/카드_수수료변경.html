@@ -10,106 +10,193 @@
             <!-- 컨텐츠 s-->
             <section class="signup-section">
                 <div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-cancel show">
-                    <div class="slide-modal slide-modal-sm">
+                    <div class="slide-modal slide-modal-lg">
                         <div class="slide-modal-header">
-                            <h3 class="title font-weight-bold">상태수정</h3>
+                            <h3 class="title font-weight-bold">수수료 변경이력</h3>
                             <i class="ico_close_btn _close-slide-modal-btn"></i>
                         </div>
                         <div class="slide-modal-body">
                             <div class="position-relative">
                                 <div class="toast-popup primary show">
-                                    <p class="text-left"><i class="icon"></i><span class="text">1건이 상태 변경 완료되었습니다.</span>
-                                    </p>
+                                    <p class="text-left"><i class="icon"></i><span
+                                            class="text">수수료 변경 대기가 취소처리 되었습니다.</span></p>
                                 </div>
-                                <div class="state-fix-area">
-                                    <div class="row main-title">
-                                        <div class="col">
-                                            <span>결제수단</span>
-                                        </div>
-                                        <div class="col">
-                                            <span>키인</span>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="row align-items-center">
-                                        <div class="title col">
-                                            <span>키인</span>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group mb-0 min-w-190">
-                                                <label class="select-box _select-box">
-                                                    <input type="hidden" class="select-value _select-value" value="0">
-                                                    <span class="value-text _value-text">작성중</span>
-                                                    <i class="icon ico_select_arrow_down">아래화살표</i>
-                                                    <ul class="options ">
-                                                        <li class="option" value="0">작성중</li>
-                                                        <li class="option" value="1">심사중</li>
-                                                        <li class="option" value="2">입정불가</li>
-                                                        <li class="option" value="2">계약중</li>
-                                                        <li class="option" value="2">서비스중</li>
-                                                        <li class="option" value="2">정지</li>
-                                                        <li class="option" value="2">해지</li>
-                                                    </ul>
-                                                </label>
+                                <div class="state-fix-history-area">
+                                    <div class="table-responsive">
+                                        <div class="custom-data-table">
+                                            <div class="thead">
+                                                <div class="custom-table-th">
+                                                    <span class="">변경일</span>
+                                                </div>
+                                                <div class="custom-table-th">
+                                                    <span class="">적용일</span>
+                                                </div>
+                                                <div class="custom-table-th">
+                                                    <span class="">상태</span>
+                                                </div>
+                                                <div class="custom-table-th">
+                                                    <span class="">구분</span>
+                                                </div>
+                                                <div class="custom-table-th">
+                                                    <span class="">영세</span>
+                                                </div>
+                                                <div class="custom-table-th">
+                                                    <span class="">중소1</span>
+                                                </div>
+                                                <div class="custom-table-th">
+                                                    <span class="">중소2</span>
+                                                </div>
+                                                <div class="custom-table-th">
+                                                    <span class="">중소3</span>
+                                                </div>
+                                                <div class="custom-table-th">
+                                                    <span class="">일반</span>
+                                                </div>
+                                            </div>
+                                            <div class="tbody">
+                                                <div class="custom-table-tr">
+                                                    <div class="custom-table-td">
+                                                        <span class="data ">2023-10-05</span>
+                                                    </div>
+                                                    <div class="custom-table-td">
+                                                        <span class="data ">2023-11-01</span>
+                                                    </div>
+                                                    <div class="custom-table-td">
+                                                        <span class="data ">대기</span>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="data-area">
+                                                            <div class="data">
+                                                                <span>키인</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>1.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.10%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.25%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.70%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data-area">
+                                                            <div class="data">
+                                                                <span>빌링</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>1.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.10%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.25%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.70%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data-area">
+                                                            <div class="data">
+                                                                <span>간편</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>1.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.10%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.25%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.70%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-table-tr">
+                                                    <div class="custom-table-td">
+                                                        <span class="data ">2023-10-05</span>
+                                                    </div>
+                                                    <div class="custom-table-td">
+                                                        <span class="data ">2023-11-01</span>
+                                                    </div>
+                                                    <div class="custom-table-td">
+                                                        <span class="data ">완료</span>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="data-area">
+                                                            <div class="data">
+                                                                <span>키인</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>1.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.10%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.25%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.70%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-table-tr">
+                                                    <div class="custom-table-td">
+                                                        <span class="data ">2023-10-05</span>
+                                                    </div>
+                                                    <div class="custom-table-td">
+                                                        <span class="data ">2023-11-01</span>
+                                                    </div>
+                                                    <div class="custom-table-td">
+                                                        <span class="data color-red-100">취소</span>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="data-area">
+                                                            <div class="data">
+                                                                <span>키인</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>1.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.10%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.25%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.50%</span>
+                                                            </div>
+                                                            <div class="data">
+                                                                <span>2.70%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
-                                    <div class="row align-items-center">
-                                        <div class="title col">
-                                            <span>카카오페이</span>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group mb-0 min-w-190">
-                                                <label class="select-box _select-box">
-                                                    <input type="hidden" class="select-value _select-value" value="0">
-                                                    <span class="value-text _value-text">작성중</span>
-                                                    <i class="icon ico_select_arrow_down">아래화살표</i>
-                                                    <ul class="options">
-                                                        <li class="option" value="0">작성중</li>
-                                                        <li class="option" value="1">심사중</li>
-                                                        <li class="option" value="2">입정불가</li>
-                                                        <li class="option" value="2">계약중</li>
-                                                        <li class="option" value="2">서비스중</li>
-                                                        <li class="option" value="2">정지</li>
-                                                        <li class="option" value="2">해지</li>
-                                                    </ul>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center">
-                                        <div class="title col">
-                                            <span>비밀번호 간편</span>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group mb-0 min-w-190">
-                                                <label class="select-box _select-box">
-                                                    <input type="hidden" class="select-value _select-value" value="0">
-                                                    <span class="value-text _value-text">작성중</span>
-                                                    <i class="icon ico_select_arrow_down">아래화살표</i>
-                                                    <ul class="options">
-                                                        <li class="option" value="0">작성중</li>
-                                                        <li class="option" value="1">심사중</li>
-                                                        <li class="option" value="2">입정불가</li>
-                                                        <li class="option" value="2">계약중</li>
-                                                        <li class="option" value="2">서비스중</li>
-                                                        <li class="option" value="2">정지</li>
-                                                        <li class="option" value="2">해지</li>
-                                                    </ul>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
-
-                            </div>
-                        </div>
-                        <div class="slide-modal-footer clearfix">
-                            <div class="float-right">
-                                <button class="btn btn-primary btn-md">변경하기</button>
                             </div>
                         </div>
                     </div>

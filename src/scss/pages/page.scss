@@ -478,11 +478,12 @@
                 text-align: center;
                 font-size: 13px;
                 .thead {
-                    border-top: 1px solid $gray-100;
-                    border-bottom: 1px solid $gray-400;
                     display: flex;
                     .custom-table-th {
+                        border-top: 1px solid $gray-100;
+                        border-bottom: 1px solid $gray-400;
                         border-right: 1px solid $gray-400;
+
                         background-color: #f5f5f5;
                         flex: 0 0 150px;
                         padding: 6px 12px;
@@ -505,7 +506,7 @@
                             border-bottom: none;
                         }
 
-                        .title-area {
+                        .custom-table-td {
                             padding: 6px 12px;
                             flex: 0 0 150px;
                             border-right: 1px solid $gray-400;
