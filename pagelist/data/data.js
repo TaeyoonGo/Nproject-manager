@@ -419,13 +419,13 @@ data.consulting = {
             page: '상담관리'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '상담관리_등록하기',
             category: 'consulting',
             page: '상담관리_등록하기'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '상담관리_수정하기',
             category: 'consulting',
             page: '상담관리_수정하기'
@@ -435,6 +435,18 @@ data.consulting = {
             url: '상담관리_모달',
             category: 'consulting',
             page: '상담관리_모달'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상호명조회_조회결과있음',
+            category: 'consulting',
+            page: '상호명조회_조회결과있음'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상호명조회_조회결과없음',
+            category: 'consulting',
+            page: '상호명조회_조회결과없음'
         },
 
     ]

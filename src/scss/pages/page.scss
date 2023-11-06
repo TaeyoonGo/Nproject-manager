@@ -552,7 +552,7 @@
         transform: translateX(-50%);
 
     }
-    .email-send-container{
+    .text-area-container{
         .sub-title{
             font-size: 14px;
             font-weight: 600;
@@ -599,6 +599,21 @@
             background-color: $purple-300;
             border: 1px solid $purple-200;
         }
+
+    }
+    .text-area-container{
+        .sub-title{
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .form-group{
+            margin-bottom: 24px;
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
+        }
+
 
     }
 }

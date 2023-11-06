@@ -478,10 +478,30 @@
             margin-top: 40px;
         }
     }
+    .consulting-service-search-area{
+        .sub-title{
+            font-size: 14px;
+            margin-bottom:15px;
+            color: $gray-100;
+        }
+        .search-area{
+            display: flex;
+            margin-bottom: 40px;
+            label{
+                min-width: 320px;
+                margin-right: 10px;
+            }
+        }
+        .table-responsive{
+            .table-not-spread thead tr th{
+                border-top: 1px solid $gray-100;
+            }
+        }
+    }
 
 
     //이메일 상세내용 확인
-    .email-send-container{
+    .text-area-container{
         .sub-title{
             font-size: 15px;
             font-weight: 600;
@@ -498,6 +518,7 @@
             }
         }
     }
+
 }
 
 //Toast Popup
