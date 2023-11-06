@@ -343,7 +343,7 @@ data.signupko = {
             page: '기본정보_국내_수정'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '카드_상태변경',
             category: 'signupko',
             page: '카드_상태변경'
