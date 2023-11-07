@@ -121,6 +121,18 @@
 .ico_exclamation_purple{
     @include background-img ($width: 20px, $height: 20px, $category: 'icon', $img: 'ico_exclamation_purple.png')
 }
+.ico_circle_ellipsis{
+    @include background-img ($width: 40px, $height: 40px, $category: 'icon', $img: 'ico_circle_ellipsis.png')
+}
+.ico_circle_email{
+    @include background-img ($width: 40px, $height: 40px, $category: 'icon', $img: 'ico_circle_email.png')
+}
+.ico_circle_phone{
+    @include background-img ($width: 40px, $height: 40px, $category: 'icon', $img: 'ico_circle_phone.png')
+}
+.ico_circle_speech_bubble{
+    @include background-img ($width: 40px, $height: 40px, $category: 'icon', $img: 'ico_circle_speech_bubble.png')
+}
 
 
 .ico-circle-red{

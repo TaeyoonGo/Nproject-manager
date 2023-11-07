@@ -54,7 +54,18 @@
     tbody {
         tr {
             border-bottom: 1px solid $gray-400;
+            &.empty-data{
+                border-bottom: 0;
+                td{
+                    padding: 65px 0;
+                    text-align: center;
+                    &:hover{
+                        background-color: $gray-fff
+                    }
+                }
 
+
+            }
             &:hover {
                 background-color: $purple-300;
             }

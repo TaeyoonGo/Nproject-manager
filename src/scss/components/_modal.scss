@@ -490,6 +490,10 @@
             }
         }
         .table-responsive{
+            th,td{
+                font-size: 16px;
+            }
+
             .table-not-spread thead tr th{
                 border-top: 1px solid $gray-100;
             }
@@ -545,7 +549,7 @@
                         border-bottom: none;
                     }
 
-                    .custom-table-td {
+                    >.custom-table-td {
                         padding: 6px 12px;
                         flex: 0 0 150px;
                         border-right: 1px solid $gray-400;
@@ -561,9 +565,9 @@
 
                     }
 
-                    .data-area {
+                    .custom-table-group-td {
                         display: flex;
-                        .data {
+                        .custom-table-td {
                             border-bottom: 1px solid $gray-400;
                             border-right: 1px solid $gray-400;
                             min-width: 110px;
