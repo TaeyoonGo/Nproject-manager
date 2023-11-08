@@ -373,10 +373,10 @@ data.signupko = {
             page: '카드_정산주기_수정이력'
         },
         {
-            stateClass: 'working',
-            url: '계좌_상태수정',
+            stateClass: 'confirm',
+            url: '계좌_상태변경',
             category: 'signupko',
-            page: '계좌_상태수정'
+            page: '계좌_상태변경'
         },
         {
             stateClass: 'working',
@@ -391,10 +391,10 @@ data.signupko = {
             page: '계좌_수수료_수정이력'
         },
         {
-            stateClass: 'working',
-            url: '페이_상태수정',
+            stateClass: 'confirm',
+            url: '페이_상태변경',
             category: 'signupko',
-            page: '페이_상태수정'
+            page: '페이_상태변경'
         },
         {
             stateClass: 'working',
@@ -409,7 +409,7 @@ data.signupko = {
             page: '페이_수수료_수정이력'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '가상계좌_상태수정',
             category: 'signupko',
             page: '가상계좌_상태수정'
