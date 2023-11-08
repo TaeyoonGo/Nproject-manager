@@ -344,6 +344,12 @@ data.signupko = {
         },
         {
             stateClass: 'confirm',
+            url: '카드_구분값_수정이력',
+            category: 'signupko',
+            page: '카드_구분값_수정이력'
+        },
+        {
+            stateClass: 'confirm',
             url: '카드_상태변경',
             category: 'signupko',
             page: '카드_상태변경'

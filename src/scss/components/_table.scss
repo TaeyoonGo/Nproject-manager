@@ -81,6 +81,16 @@
     }
 
 }
+.table-not-hover{
+    tbody{
+        tr{
+            &:hover{
+                background-color: inherit;
+            }
+
+        }
+    }
+}
 .table-spread {
     thead {
         tr {
