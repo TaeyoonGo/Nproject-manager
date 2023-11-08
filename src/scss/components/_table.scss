@@ -286,7 +286,6 @@
             &:nth-last-child(1) {
                 border-bottom: none;
             }
-
             >.custom-table-td {
                 padding: 6px 12px;
                 flex: 0 0 150px;
@@ -295,11 +294,12 @@
                 border-bottom: 1px solid $gray-400;
                 margin-bottom: 0;
                 align-items: center;
+                &:nth-last-child(1){
+                    border-right: none;
+                }
                 .title {
                     font-size: 13px;
                 }
-
-
             }
 
             .custom-table-group-td{
@@ -307,7 +307,6 @@
                 .custom-table-td {
                     border-bottom: 1px solid $gray-400;
                     border-right: 1px solid $gray-400;
-                    min-width: 110px;
                     padding: 6px 12px;
                     flex: 0 0 150px;
                     justify-content: center;
@@ -319,25 +318,64 @@
             }
         }
     }
+
     &.table-col-9{
         .thead{
-            .custom-table-th{
+            .custom-table-th {
                 flex: 0 0 124px;
             }
-
         }
-        .tbody{
-            .custom-table-tr{
-                >.custom-table-td{
+        .tbody {
+            .custom-table-tr {
+                >.custom-table-td {
                     flex: 0 0 124px;
                 }
-            }
-            .custom-table-group-td{
-                .custom-table-td{
-                    flex: 0 0 124px;
+                .custom-table-group-td{
+                    .custom-table-td {
+                        flex: 0 0 124px;
+                    }
                 }
             }
+        }
 
+    }
+    &.table-col-6{
+        .thead{
+            .custom-table-th {
+                flex: 0 0 186px;
+            }
+        }
+        .tbody {
+            .custom-table-tr {
+                >.custom-table-td {
+                    flex: 0 0 186px;
+                }
+                .custom-table-group-td{
+                    .custom-table-td {
+                        flex: 0 0 186px;
+                    }
+                }
+            }
+        }
+
+    }
+    &.table-col-5{
+        .thead{
+            .custom-table-th {
+                flex: 0 0 220px;
+            }
+        }
+        .tbody {
+            .custom-table-tr {
+                >.custom-table-td {
+                    flex: 0 0 220px;
+                }
+                .custom-table-group-td{
+                    .custom-table-td {
+                        flex: 0 0 220px;
+                    }
+                }
+            }
         }
 
     }
