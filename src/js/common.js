@@ -217,7 +217,7 @@ $(document).ready(function () {
     closeSlideModal();
     showAsideTooltip();
     showAsideMobileBtn();
-    showInputCaption();
+
     showDetailBtn();
     checkNoData();
     checkInputNumber();
