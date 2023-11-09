@@ -120,30 +120,24 @@
         }
     }
     .search-detail-content{
-        .title-data-area{
-            display: flex;
-            margin-bottom: 12px;
+        .title{
+            padding-right: 15px;
+            padding-left: 15px;
+            flex: 0 0 200px;
+            text-align: left;
+            font-weight: 600;
             @include res-sm{
-                flex-direction: column;
+                margin-bottom: 5px;
+                flex: auto;
             }
-            &:nth-last-child(1){
-                margin-bottom: 0;
-            }
-            .title{
-                flex: 0 0 200px;
-                text-align: left;
-                font-weight: 600;
-                @include res-sm{
-                    margin-bottom: 5px;
-                    flex: auto;
-                }
-            }
-            .data{
-                word-break: break-all;
-                flex: 0 0 calc(100% - 200px);
-                @include res-sm{
-                    flex: auto;
-                }
+        }
+        .data{
+            padding-right: 15px;
+            padding-left: 15px;
+            word-break: break-all;
+            flex: 0 0 calc(100% - 200px);
+            @include res-sm{
+                flex: auto;
             }
         }
     }

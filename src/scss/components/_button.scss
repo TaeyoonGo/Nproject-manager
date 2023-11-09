@@ -111,12 +111,15 @@ a{
     /*버튼 크기*/
     &-sm{
         min-width: 70px;
+        padding: 2px 4px;
     }
     &-md {
         min-width: 100px;
+        padding: 5px 10px;
     }
     &-lg{
         min-width: 120px;
+        padding: 5px 10px;
     }
     /*버튼초기화*/
     &-reset {
