@@ -487,14 +487,13 @@
     }
     .state-fix-area{
         .row{
-            margin-bottom: 20px;
             &.main-title{
                 font-size: 18px;
                 color: $gray-100;
             }
 
             &:nth-last-child(1){
-                margin-bottom: 0;
+                margin-bottom: 0 !important;
             }
         }
     }

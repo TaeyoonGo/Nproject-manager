@@ -88,10 +88,9 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-
 }
 .speech-bubble{
-    display: none;
+    visibility: hidden;
     z-index: 1004;
     word-break: keep-all;
     padding: 5px 10px;
@@ -122,6 +121,30 @@
         bottom: -2px;
     }
 }
+.input-ico-hover-area{
+    width: 14px;
+    height:14px;
+    display: inline-block;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    &:hover{
+        .speech-bubble{
+            visibility: visible;
+        }
+    }
+    .icon{
+        right: 0;
+    }
+    .speech-bubble{
+        top: -37px;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+}
+
 
 [type="checkbox"]{
     appearance: none;
