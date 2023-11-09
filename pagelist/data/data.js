@@ -48,7 +48,7 @@ data.guide = {
             page: 'table'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'modal',
             category: 'guide',
             page: 'modal'
@@ -60,7 +60,7 @@ data.guide = {
             page: 'tab'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'icon',
             category: 'guide',
             page: 'icon'
