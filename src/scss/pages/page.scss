@@ -210,24 +210,20 @@
                         margin-left: 5px;
                         cursor: pointer;
                         font-style: normal;
-
                         .icon {
                             margin-right: 0;
                         }
-
                         .speech-bubble {
-                            width: max-content;
                             padding: 12px;
                             left: calc(50% - 10px);
                             top: -45px;
                             font-weight: 500;
-                            display: none;
                             transform: translate(-50%, -0%);
                         }
 
                         &:hover {
                             .speech-bubble {
-                                display: block;
+                                visibility: visible;
                             }
                         }
                     }
@@ -249,26 +245,7 @@
                             flex: 0 0 120px;
                         }
 
-                        .hover-area {
-                            display: inline-block;
-                            margin-left: 5px;
-                            cursor: pointer;
-                            font-style: normal;
 
-                            .speech-bubble {
-                                width: max-content;
-                                top: -30px;
-                                display: none;
-                                font-size: 13px;
-                                right: -43px;
-                            }
-
-                            &:hover {
-                                .speech-bubble {
-                                    display: block;
-                                }
-                            }
-                        }
 
                         span {
                             font-size: 10px;
@@ -560,4 +537,3 @@
 
     }
 }
-

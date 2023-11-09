@@ -14,15 +14,6 @@
 .fsz-14px{
     font-size: 14px !important;
 }
-.fsz-13px{
-    font-size: 13px !important;
-}
-
-.border-r-1{
-    border-right: 1px solid;
-}
-
-
 
 .min-w-190{
     min-width: 190px !important;
@@ -39,27 +30,7 @@
 .text-decoration-underline{
     text-decoration: underline!important;
 }
-
-.col-xl-d-none{
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
-    @include res-xl{
-        display: none;
-    }
-}
-
-.h-320px{
-    height: 320px !important;
-}
-
-.underline-text{
+.bg-underline-text{
     position: relative;
     &:after{
         position: absolute;
@@ -76,6 +47,24 @@
 
     }
 }
+.col-xl-d-none{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    @include res-xl{
+        display: none;
+    }
+}
+.h-320px{
+    height: 320px !important;
+}
+
 
 .ellipsis{
     display: inline-block;
@@ -83,5 +72,37 @@
     width: 100%;
     &.two-line{
         @include ellipsis ($line: 2);
+    }
+}
+.speech-bubble{
+    visibility: hidden;
+    z-index: 1004;
+    word-break: keep-all;
+    padding: 5px 10px;
+    position: absolute;
+    font-size: 12px;
+    color: $gray-100;
+    right: -84px;
+    width: max-content;
+    top: -20px;
+    background-color: $gray-fff;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+    &:after{
+        position: absolute;
+        content: '';
+        //border-top: 10px solid $gray-fff;
+        //border-left: 10px solid transparent;
+        //border-right: 10px solid transparent;
+        //border-bottom: 0 solid transparent;
+        transform: rotate(130deg) translateY(-50%);
+        box-shadow: 2px -2px 2px rgba(0,0,0,.1);
+        width: 10px;
+        height: 10px;
+        z-index: 1;
+        background-color: $gray-fff;
+        left: 50%;
+        border: 1px solid $gray-fff;
+        bottom: -2px;
     }
 }
