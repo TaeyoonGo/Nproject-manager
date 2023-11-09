@@ -142,19 +142,8 @@
             &.empty-data {
                 border-bottom: 0;
                 background-color: $gray-fff;
-
                 td {
                     border: none;
-                }
-
-                .empty-data-area {
-                    margin: 60px 0 46px;
-
-                    .text {
-                        margin-top: 35px;
-                        font-size: 16px;
-                        color: $gray-000;
-                    }
                 }
             }
         }
