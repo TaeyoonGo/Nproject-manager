@@ -124,9 +124,7 @@
     .slide-modal-footer {
         padding: 40px;
     }
-    .toast-popup{
-        top: -70px;
-    }
+
     /*사이즈별*/
     &-sm {
         width: 476px;
@@ -151,6 +149,11 @@
             width: 100%;
             right: -100%;
         }
+        .toast-popup{
+            @include res-sm{
+                width: 100%;
+            }
+        }
     }
     &-lg {
         transition: all 0.5s;
@@ -168,63 +171,56 @@
         right: -768px;
     }
 
-    /*기능별*/
-    .account-text {
-        margin-bottom: 25px;
-        font-size: 20px;
-
-        .title {
-            margin-right: 15px;
-        }
-
-        .unit {
-            margin-left: 5px;
-            font-size: 18px;
-        }
-    }
+    /*문구 관련*/
     .caption {
         color: $gray-000;
         font-weight: 600;
         margin-top: 40px;
         font-size: 18px;
         line-height: 1.8;
-
         &.text {
             font-size: 13px;
             color: $gray-100;
             font-weight: 500;
         }
     }
-    .tab-button-container {
-        .main-title {
-            font-size: 20px;
-            margin-bottom: 24px;
-        }
+    .toast-popup{
+        top: -70px;
+    }
+    .validation {
+        position: absolute;
+        bottom: -40px;
+        font-size: 15px;
+        margin-left: 10px;
 
-        .tab-content {
-            margin-bottom: 24px;
+        &:before {
+            content: '*';
+            display: inline-block;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10px;
+            position: absolute;
         }
+    }
 
+
+    .tab-container {
         .list-row {
             display: flex;
             margin-bottom: 24px;
             align-items: center;
-
             &:nth-last-child(1) {
                 margin-bottom: 0;
             }
-
             .title {
                 flex: 1 1 25%;
                 font-size: 16px;
             }
-
             .content {
                 flex: 1 1 75%;
 
             }
         }
-
         .nav {
             margin-bottom: 0;
 
@@ -264,21 +260,6 @@
                     }
                 }
             }
-        }
-    }
-    .validation {
-        position: absolute;
-        bottom: -40px;
-        font-size: 15px;
-        margin-left: 10px;
-
-        &:before {
-            content: '*';
-            display: inline-block;
-            top: 50%;
-            transform: translateY(-50%);
-            left: -10px;
-            position: absolute;
         }
     }
     .tab-line-container {
@@ -325,7 +306,6 @@
 
         .payment-info-table {
             margin-bottom: 40px;
-
             &:nth-last-child(1) {
                 margin-bottom: 0;
             }
@@ -570,10 +550,6 @@
             @include background-img ($width: 15px, $height: 15px, $category: 'icon', $img: 'ico_checked_purple.png');
         }
     }
-
-
-
-
     &.show {
         visibility: visible;
         i {
