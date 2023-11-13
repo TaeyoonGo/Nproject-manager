@@ -311,60 +311,47 @@
             }
         }
     }
-    .details-container {
-        .list-area {
-            margin-bottom: 60px;
+    .history-table-group {
+        .table-data {
+            thead {
+                tr {
+                    &:first-child {
+                        border-top: 2px solid $gray-100;
+                    }
 
-            &:last-child {
-                margin-bottom: 0;
-            }
+                    th {
+                        font-size: 13px;
+                        border-right: 1px solid $gray-400;
 
-            .title {
-                margin-bottom: 42px;
-            }
-
-            .table-data {
-                thead {
-                    tr {
-                        &:first-child {
-                            border-top: 2px solid $gray-100;
-                        }
-
-                        th {
-                            font-size: 13px;
-                            border-right: 1px solid $gray-400;
-
-                            &:last-child {
-                                border: none;
-                            }
+                        &:last-child {
+                            border-right: none;
                         }
                     }
                 }
+            }
 
-                tbody {
-                    tr {
-                        &:first-child {
-                            border: none;
-                        }
+            tbody {
+                tr {
+                    &:first-child {
+                        border: none;
+                    }
+
+                    &:last-child {
+                        border-bottom: 1px solid $gray-400;
+                    }
+
+                    td {
+                        font-size: 13px;
+                        border-right: 1px solid $gray-400;
 
                         &:last-child {
-                            border-bottom: 1px solid $gray-400;
+                            border-right: none;
                         }
-
-                        td {
-                            font-size: 13px;
-                            border-right: 1px solid $gray-400;
-
-                            &:last-child {
-                                border-right: none;
-                            }
-                        }
-
                     }
+
                 }
             }
         }
-
     }
     .email-container {
         .title {
