@@ -533,7 +533,7 @@ data.mkt = {
             page: '제휴_참여신청'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '제휴_혜택신청',
             category: 'mkt',
             page: '제휴_혜택신청'
