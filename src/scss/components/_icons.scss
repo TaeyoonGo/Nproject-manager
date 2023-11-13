@@ -133,6 +133,9 @@
 .ico_circle_speech_bubble{
     @include background-img ($width: 40px, $height: 40px, $category: 'icon', $img: 'ico_circle_speech_bubble.png')
 }
+.ico_check_blue{
+    @include background-img ($width: 14px, $height: 14px, $category: 'icon', $img: 'ico_check_blue.png')
+}
 
 
 .ico-circle-red{

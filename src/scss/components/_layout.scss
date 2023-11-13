@@ -462,6 +462,7 @@ footer {
 
 /*content*/
 .content-container {
+    position: relative;
     margin-left: 240px;
     width: calc(100% - 264px);
     padding: 98px 24px 56px;
