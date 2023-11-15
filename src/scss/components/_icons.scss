@@ -135,6 +135,9 @@
 .ico_check_blue{
     @include background-img ($width: 14px, $height: 14px, $category: 'icon', $img: 'ico_check_blue.png')
 }
+.ico_edit_blue{
+    @include background-img ($width: 14px, $height: 14px, $category: 'icon', $img: 'ico_edit_blue.png')
+}
 
 
 .ico-circle-red{

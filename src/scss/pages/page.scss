@@ -488,12 +488,11 @@
 /*상담 관리*/
 .consulting-section{
     .box{
-        padding: 28px 40px 28px 30px;
+        padding: 18px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-radius: 10px;
-
         @include res-xl{
             margin-bottom: 20px;
         }
