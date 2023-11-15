@@ -460,10 +460,6 @@
 .email-filter-section{
     .toast-popup{
         top: 80px;
-        width: 360px;
-        left: 50%;
-        transform: translateX(-50%);
-
     }
     .text-area-container{
         .sub-title{
@@ -487,52 +483,40 @@
 
 /*상담 관리*/
 .consulting-section{
-    .box{
-        padding: 18px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 10px;
-        @include res-xl{
-            margin-bottom: 20px;
-        }
-        p{
-            font-size: 18px;
-            font-weight: 600;
-            .icon{
-                margin-right :10px;
+    .account-list-group{
+        .col-xl{
+            padding: 0;
+            @include res-xl{
+                padding-bottom: 15px;
             }
-        }
-        .data{
-            font-size: 25px;
-            margin-right: 5px;
-        }
-        &.secondary{
-            background-color: $gray-500;
-            border: 1px solid $gray-200;
-            .data{
-                color: $blue-100;
-            }
-        }
-        &.primary{
-            background-color: $purple-300;
-            border: 1px solid $purple-200;
-        }
+            .account-list{
+                border-right: 1px solid $gray-200;
+                @include res-xl{
+                    border-right: none;
+                    border-bottom: 1px solid $gray-200;
+                }
+                .title{
+                    margin-bottom: 20px;
+                    @include res-xl{
+                        margin-bottom: 12px;
+                    }
+                }
+                .count{
+                    @include res-xl{
+                        margin-bottom: 15px;
+                    }
+                }
 
-    }
-    .text-area-container{
-        .sub-title{
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .form-group{
-            margin-bottom: 24px;
+            }
             &:nth-last-child(1){
-                margin-bottom: 0;
+                @include res-xl{
+                    padding-bottom: 0;
+                }
+                .account-list{
+                    border-right: none;
+                }
             }
         }
-
 
     }
 }

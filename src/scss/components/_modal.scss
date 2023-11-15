@@ -122,7 +122,7 @@
         padding: 40px;
     }
     .slide-modal-footer {
-        padding: 40px;
+        padding: 0 40px;
     }
 
     /*사이즈별*/
@@ -140,7 +140,6 @@
             }
         }
         .slide-modal-footer {
-            padding: 0 40px;
             @include res-sm {
                 padding: 0 20px;
             }
@@ -155,7 +154,7 @@
             }
         }
     }
-    &-lg {
+    &-xl {
         transition: all 0.5s;
         width: 1199px;
         right: -1199px;
@@ -163,12 +162,47 @@
             width: 100%;
             right: -100%;
         }
+        .slide-modal-header {
+            @include res-xl {
+                padding: 40px 20px;
+            }
+        }
+        .slide-modal-body {
+            @include res-xl {
+                padding: 40px 20px;
+            }
+        }
+        .slide-modal-footer {
+            @include res-xl {
+                padding: 0 20px;
+            }
+        }
 
 
     }
     &-md{
         width: 768px;
         right: -768px;
+        .slide-modal-header {
+            @include res-md {
+                padding: 40px 20px;
+            }
+        }
+        .slide-modal-body {
+            @include res-md {
+                padding: 40px 20px;
+            }
+        }
+        .slide-modal-footer {
+            padding: 0 40px;
+            @include res-md {
+                padding: 0 20px;
+            }
+        }
+        @include res-md{
+            width: 100%;
+            right: -768px;
+        }
     }
 
     /*문구 관련*/
@@ -422,26 +456,13 @@
 
         }
     }
-    .consulting-service-search-area{
-        .sub-title{
-            font-size: 14px;
-            margin-bottom:15px;
-            color: $gray-100;
-        }
+    .search-table-group{
         .search-area{
             display: flex;
             margin-bottom: 40px;
-            label{
-                min-width: 320px;
+            .form-group{
+                flex: 1 1 100%;
                 margin-right: 10px;
-            }
-        }
-        .table-responsive{
-            th,td{
-                font-size: 16px;
-            }
-            .table-not-spread thead tr th{
-                border-top: 1px solid $gray-100;
             }
         }
     }
