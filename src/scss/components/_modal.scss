@@ -154,6 +154,25 @@
             }
         }
     }
+    &-lg{
+        width: 991px;
+        right: -991px;
+        .slide-modal-header {
+            @include res-lg {
+                padding: 40px 20px;
+            }
+        }
+        .slide-modal-body {
+            @include res-lg {
+                padding: 40px 20px;
+            }
+        }
+        .slide-modal-footer {
+            @include res-lg {
+                padding: 0 20px;
+            }
+        }
+    }
     &-xl {
         transition: all 0.5s;
         width: 1199px;
