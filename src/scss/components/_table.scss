@@ -11,7 +11,8 @@
         font-size: 13px;
         color: $gray-000;
         word-break: break-all;
-        span{
+
+        span {
             display: inline-block;
         }
     }
@@ -30,9 +31,11 @@
         }
     }
 }
+
 .table-fixed {
     table-layout: fixed;
 }
+
 .table-not-spread {
     thead {
         tr {
@@ -54,18 +57,22 @@
     tbody {
         tr {
             border-bottom: 1px solid $gray-400;
-            &.empty-data{
+
+            &.empty-data {
                 border-bottom: 0;
-                td{
+
+                td {
                     padding: 65px 0;
                     text-align: center;
-                    &:hover{
+
+                    &:hover {
                         background-color: $gray-fff
                     }
                 }
 
 
             }
+
             &:hover {
                 background-color: $purple-300;
             }
@@ -81,16 +88,18 @@
     }
 
 }
-.table-not-hover{
-    tbody{
-        tr{
-            &:hover{
+
+.table-not-hover {
+    tbody {
+        tr {
+            &:hover {
                 background-color: inherit;
             }
 
         }
     }
 }
+
 .table-spread {
     thead {
         tr {
@@ -142,6 +151,7 @@
             &.empty-data {
                 border-bottom: 0;
                 background-color: $gray-fff;
+
                 td {
                     padding: 65px 0;
                     border: none;
@@ -170,11 +180,14 @@
         }
     }
 }
+
 .table-data {
     width: 100%;
+
     thead {
-        tr{
+        tr {
             border-top: 1px solid $gray-100;
+
             th {
                 font-size: 14px;
                 word-break: break-all;
@@ -183,15 +196,17 @@
                 background-color: $gray-500;
                 border-right: 1px solid $gray-400;
                 border-bottom: 1px solid $gray-400;
-                &:nth-last-child(1){
+
+                &:nth-last-child(1) {
                     border-right: none;
                 }
             }
         }
 
     }
+
     tbody {
-        tr{
+        tr {
             td {
                 font-size: 13px;
                 word-break: break-all;
@@ -201,14 +216,14 @@
         }
 
 
-
     }
 }
-.table-th-gray-100{
-    thead{
-        tr{
-            &:first-child{
-                th{
+
+.table-th-gray-100 {
+    thead {
+        tr {
+            &:first-child {
+                th {
                     border-top: 1px solid $gray-100 !important;
                 }
             }
@@ -217,20 +232,25 @@
 
     }
 }
-.horizontal-info-table{
+
+.horizontal-info-table {
     width: 100%;
-    tr{
-        &:first-child{
+
+    tr {
+        &:first-child {
             border-top: 1px solid $gray-100;
         }
+
         border-bottom: 1px solid $gray-400;
-        th{
+
+        th {
             font-size: 16px;
             background-color: $gray-500;
             padding: 12px 14px;
             font-weight: 600;
         }
-        td{
+
+        td {
             font-size: 16px;
             word-break: break-all;
             padding: 12px 14px;
@@ -241,22 +261,23 @@
 }
 
 
-
-
 /*div로 구성된 테이블*/
 
 .payment-info-table {
     width: 100%;
     border-top: 1px solid $gray-100;
+
     .info-block-row {
         display: flex;
-        @include res-xl{
+        @include res-xl {
             flex-direction: column;
         }
+
         .info-block {
             display: flex;
             flex: 1 1 50%;
             border-bottom: 1px solid $gray-400;
+
             .title {
                 border-right: 1px solid $gray-400;
                 flex: 0 0 200px;
@@ -264,6 +285,7 @@
                 font-size: 16px;
                 padding: 14px;
             }
+
             .data {
                 word-break: break-all;
                 font-size: 16px;
@@ -273,26 +295,33 @@
         }
     }
 }
+
 .custom-data-table {
     text-align: center;
     font-size: 13px;
-    .thead{
+
+    .thead {
         display: flex;
+
         .custom-table-th {
             border-top: 1px solid $gray-100;
             border-bottom: 1px solid $gray-400;
             border-right: 1px solid $gray-400;
             background-color: #f5f5f5;
-           flex: 0 0 150px;
+            flex: 0 0 150px;
             padding: 6px 12px;
+
             &:nth-last-child(1) {
                 border-right: 0;
+               
             }
+
             span {
                 font-weight: 600;
             }
         }
     }
+
     .tbody {
         .custom-table-tr {
             display: flex;
@@ -300,71 +329,89 @@
             &:nth-last-child(1) {
                 border-bottom: none;
             }
+
             .custom-table-td {
                 padding: 6px 12px;
-               flex: 0 0 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 0 150px;
                 border-right: 1px solid $gray-400;
                 border-bottom: 1px solid $gray-400;
                 justify-content: center;
                 margin-bottom: 0;
-             
-                &:nth-last-child(1){
+
+                &:nth-last-child(1) {
                     border-right: none;
+
                 }
+
                 .title {
                     font-size: 13px;
                 }
-                span{
+
+                span {
                     vertical-align: middle;
                 }
             }
 
-            .custom-table-group-td{
+            .custom-table-group-td {
                 display: flex;
             }
         }
     }
 
-    &.table-col-9{
-        .thead{
+    &.table-col-10 {
+        .thead {
             .custom-table-th {
-               flex: 0 0 124px;
+                flex: 0 0 107px;
+                &.lg{
+                    flex: 0 0 150px;
+                }
             }
         }
+
         .tbody {
             .custom-table-tr {
                 .custom-table-td {
-                   flex: 0 0 124px;
+                    flex: 0 0 107px;
+                    &.lg{
+                        flex: 0 0 150px;
+                    }
                 }
             }
         }
 
     }
-    &.table-col-6{
-        .thead{
+
+    &.table-col-7 {
+        .thead {
             .custom-table-th {
-               flex: 0 0 186px;
+                flex: 0 0 159px;
             }
         }
+
         .tbody {
             .custom-table-tr {
                 .custom-table-td {
-                   flex: 0 0 186px;
+                    flex: 0 0 159px;
                 }
             }
         }
 
     }
-    &.table-col-5{
-        .thead{
+
+    &.table-col-6 {
+        .thead {
             .custom-table-th {
-               flex: 0 0 220px;
+                flex: 0 0 186px;
             }
         }
+
         .tbody {
             .custom-table-tr {
                 .custom-table-td {
-                   flex: 0 0 220px;
+                    flex: 0 0 186px;
                 }
             }
         }

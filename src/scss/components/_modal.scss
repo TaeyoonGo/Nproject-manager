@@ -498,21 +498,6 @@
         }
     }
 
-    /*테이블 수정 작업*/
-    .table-view-area{
-        .custom-data-table {
-            .tbody {
-                .custom-table-tr {
-                    >.custom-table-td {
-                        justify-content: center;
-                        display: flex;
-                        align-items: center;
-                    }
-                }
-            }
-        }
-    }
-
     //이메일 상세내용 확인
     .text-area-container{
         .sub-title{
