@@ -124,6 +124,19 @@
     .slide-modal-footer {
         padding: 0 40px;
     }
+    .date-fix-area{
+        display: flex;
+        .title{
+            flex: 1 1 180px;
+        }
+        @include res-sm{
+            flex-direction: column;
+            .title{
+                flex: 1 1 50px;
+            }
+        }
+
+    }
 
     /*사이즈별*/
     &-sm {
@@ -171,6 +184,10 @@
             @include res-lg {
                 padding: 0 20px;
             }
+        }
+        @include res-lg {
+            width: 100%;
+            right: -100%;
         }
     }
     &-xl {

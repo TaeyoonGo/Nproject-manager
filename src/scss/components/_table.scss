@@ -418,3 +418,42 @@
 
     }
 }
+.custom-input-table{
+    margin: 0 -12px;
+    display: table;
+    .thead{
+        display: table-header-group;
+        .custom-table-th{
+            display: table-cell;
+            padding: 10px 12px;
+            width: 150px;
+            min-width: 150px;
+            text-align: center;
+
+        }
+    }
+    .tbody{ display: table-row-group;
+        .custom-table-tr{
+            display: table-row;
+            .custom-table-td{
+                display: table-cell;
+                padding: 10px 12px;
+                width: 150px;
+                min-width: 150px;
+                .form-control{
+                    padding: 6px 24px 6px 12px;
+                   text-align: center;
+                }
+                .util{
+                    font-size: 16px;
+                    color: $gray-200;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 8px;
+                }
+            }
+        }
+    }
+
+}

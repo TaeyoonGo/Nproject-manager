@@ -146,3 +146,31 @@
         }
     }
 }
+.calender-input{
+    width: 230px;
+    position: relative;
+    .form-control{
+        padding: 6px 30px 6px 12px;
+    }
+    .icon{
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right:5px;
+        cursor: pointer;
+    }
+
+}
+.card-number-input{
+    display: flex;
+    justify-content: space-between;
+    .first-number{
+        min-width: 160px;
+        flex: 0 1 100%;
+    }
+    .last-number{
+        min-width: 112px;
+        max-width: 112px;
+        margin-left: 10px;
+    }
+}
