@@ -161,11 +161,7 @@
             width: 100%;
             right: -100%;
         }
-        .toast-popup{
-            @include res-sm{
-                width: 100%;
-            }
-        }
+
     }
     &-lg{
         width: 991px;
@@ -189,6 +185,7 @@
             width: 100%;
             right: -100%;
         }
+
     }
     &-xl {
         transition: all 0.5s;
@@ -584,6 +581,9 @@
         .text {
             visibility: visible;
         }
+    }
+    @include res-sm{
+        width: 100%;
     }
 }
 
