@@ -288,7 +288,7 @@ data.notice = {
             page: '공지사항_상세'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '이메일발송하기_체크박스체크전',
             category: 'notice',
             page: '이메일발송하기_체크박스체크전'
