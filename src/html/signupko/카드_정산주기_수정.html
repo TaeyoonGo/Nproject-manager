@@ -1,10 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html lang="ko">
+@@include('../include/head.html')
 <body>
+<div class="wrap">
+    @@include('../include/header.html')
+    <main>
+        @@include('../include/aside.html')
+        <article class="content-container">
+            <!-- 컨텐츠 s-->
+            <section class="signup-section">
+                <div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-cancel show">
+                    <div class="slide-modal slide-modal-sm">
+                        <div class="slide-modal-header">
+                            <h3 class="font-h1 mb0 font-weight-bold">정산주기 수정</h3>
+                            <i class="ico_close_btn _close-slide-modal-btn"></i>
+                        </div>
+                        <div class="slide-modal-body">
+                            <div class="position-relative">
+                                <div class="toast-popup primary show">
+                                    <p class="text-left"><i class="icon"></i><span
+                                            class="text">정산 주기 스케쥴이 등록되었습니다.</span></p>
+                                </div>
+                                <div>
+                                    <p class="font-h2 font-weight-semi-bold mb24">수정할 정산주기 입력</p>
+                                    <div class="mb80">
+                                        <div class="d-flex align-items-center mb20">
+                                            <div class="flex-1 w-30 mb0" ><span class=" font-weight-semi-bold font-h3">구분</span></div>
+                                            <div class="flex-1 w-70" >
+                                                <div class="form-group mb0">
+                                                    <label class="select-box _select-box">
+                                                        <input type="hidden" class="select-value _select-value"
+                                                               value="0">
+                                                        <span class="value-text _value-text"
+                                                              >선택</span>
+                                                        <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                        <ul class="options h-auto">
+                                                            <li class="option" value="0">선택</li>
+                                                            <li class="option" value="1">일정산</li>
+                                                            <li class="option" value="2">일정산</li>
+                                                        </ul>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mb0">
+                                            <div class="flex-1 w-30"><span class=" font-weight-semi-bold font-h3">선택</span></div>
+                                            <div class="flex-1 w-70">
+                                                <div class="form-group mb0">
+                                                    <label class="select-box _select-box">
+                                                        <input type="hidden" class="select-value _select-value"
+                                                               value="0">
+                                                        <span class="value-text _value-text">선택</span>
+                                                        <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                        <ul class="options h-auto">
+                                                            <li class="option" value="0">1일</li>
+                                                            <li class="option" value="1">1일</li>
+                                                            <li class="option" value="2">1일</li>
+                                                        </ul>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="date-fix-area">
+                                        <span class="title font-h3 font-weight-semi-bold">수정 적용일</span>
+                                        <div class="form-group mb0 w-100">
+                                            <label class="calender-input mb0">
+                                                <input class="form-control _inputSingleDate" type="text"
+                                                       style="font-size: 12px">
+                                                <i class="icon ico_calendar">달력이미지</i>
+                                            </label>
+                                            <div class="mt10 color-blue-100 font-p3"><i
+                                                    class="ico_danger_blue icon mr8"></i>적용일 00:0:00 거래부터 변경 수수료가 적용됩니다.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-modal-footer clearfix">
+                            <div class="float-right">
+                                <button class="btn btn-primary btn-md">스케쥴 등록하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 컨텐츠 e-->
+        </article>
+    </main>
+    @@include('../include/footer.html')
+</div>
 
 </body>
 </html>
+
