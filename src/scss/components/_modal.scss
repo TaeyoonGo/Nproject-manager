@@ -460,8 +460,10 @@
                 }
                 ul{
                     display: flex;
+                    flex: 1 1 100%;
+                    flex-wrap: wrap;
                     li{
-                        flex: 0 0 120px;
+                        flex: 0 0 160px;
                         .ico_checkbox{
                             margin-right: 10px;
                         }
@@ -474,17 +476,7 @@
                 &:last-child{
                     margin-bottom: 0;
                 }
-                &.email{
-                    margin-bottom: 20px;
-                    ul{
-                       li{
 
-                           flex: auto;
-                           margin-right: 30px;
-
-                       }
-                    }
-                }
             }
 
         }
