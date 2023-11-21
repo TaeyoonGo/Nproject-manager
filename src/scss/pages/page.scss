@@ -462,22 +462,10 @@
         top: 80px;
     }
     .text-area-container{
-        .sub-title{
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .form-group{
-            margin-bottom: 24px;
-            &:nth-last-child(1){
-                margin-bottom: 0;
-            }
-        }
         .text-area{
             min-height: 575px;
             resize: none;
         }
-
     }
 }
 
