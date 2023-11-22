@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    @@include('../include/header.html')
+    <main>
+        @@include('../include/aside.html')
+        <article class="content-container">
+            <!-- 컨텐츠 s-->
+            <section class="signup-section">
+                <div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-cancel show">
+                    <div class="slide-modal slide-modal-sm">
+                        <div class="slide-modal-header">
+                            <h3 class="font-h1 mb0 font-weight-bold">상태수정</h3>
+                            <i class="ico_close_btn _close-slide-modal-btn"></i>
+                        </div>
+                        <div class="slide-modal-body">
+                            <div class="position-relative">
+                                <div class="toast-popup primary show">
+                                    <p class="text-left"><i class="icon"></i><span class="text">1건이 상태 변경 완료되었습니다.</span>
+                                    </p>
+                                </div>
+                                <div class="state-fix-area">
+                                    <div class="row mb20 main-title">
+                                        <div class="col">
+                                            <span>결제수단</span>
+                                        </div>
+                                        <div class="col">
+                                            <span>키인</span>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row mb20 align-items-center">
+                                        <div class="font-h3 font-weight-semi-bold col mb0">
+                                            <span>키인</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group mb0 min-w-190">
+                                                <label class="select-box _select-box">
+                                                    <input type="hidden" class="select-value _select-value" value="0">
+                                                    <span class="value-text _value-text">심사중</span>
+                                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                    <ul class="options h-auto">
+                                                        <li class="option" value="0">심사중</li>
+                                                        <li class="option" value="1">계약중</li>
+                                                        <li class="option" value="1">서비스중</li>
+                                                        <li class="option" value="1">입점불가</li>
+                                                        <li class="option" value="1">정지</li>
+                                                    </ul>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row mb20 align-items-center">
+                                        <div class="font-h3 font-weight-semi-bold col mb0">
+                                            <span>빌링</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group mb0 min-w-190">
+                                                <label class="select-box _select-box">
+                                                    <input type="hidden" class="select-value _select-value" value="0">
+                                                    <span class="value-text _value-text">사용</span>
+                                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                    <ul class="options h-auto">
+                                                        <li class="option" value="0">심사중</li>
+                                                        <li class="option" value="1">계약중</li>
+                                                        <li class="option" value="1">서비스중</li>
+                                                        <li class="option" value="1">입점불가</li>
+                                                        <li class="option" value="1">정지</li>
+                                                    </ul>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb20 align-items-center">
+                                        <div class="font-h3 font-weight-semi-bold col mb0">
+                                            <span>비밀번호간편</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group mb0 min-w-190">
+                                                <label class="select-box _select-box">
+                                                    <input type="hidden" class="select-value _select-value" value="0">
+                                                    <span class="value-text _value-text">사용</span>
+                                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                    <ul class="options h-auto">
+                                                        <li class="option" value="0">심사중</li>
+                                                        <li class="option" value="1">계약중</li>
+                                                        <li class="option" value="1">서비스중</li>
+                                                        <li class="option" value="1">입점불가</li>
+                                                        <li class="option" value="1">정지</li>
+                                                    </ul>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="slide-modal-footer clearfix">
+                            <div class="float-right">
+                                <button class="btn btn-primary btn-md">변경하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 컨텐츠 e-->
+        </article>
+    </main>
+    @@include('../include/footer.html')
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

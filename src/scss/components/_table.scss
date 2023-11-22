@@ -417,6 +417,22 @@
         }
 
     }
+
+    &.table-col-8{
+        .thead {
+            .custom-table-th {
+                flex: 0 0 138px;
+            }
+        }
+
+        .tbody {
+            .custom-table-tr {
+                .custom-table-td {
+                    flex: 0 0 138px;
+                }
+            }
+        }
+    }
 }
 .custom-input-table{
     margin: 0 -12px;

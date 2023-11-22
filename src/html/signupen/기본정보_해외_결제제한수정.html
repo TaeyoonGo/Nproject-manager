@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    @@include('../include/header.html')
+    <main>
+        @@include('../include/aside.html')
+        <article class="content-container">
+            <!-- 컨텐츠 s-->
+            <section class="signup-section">
+                <div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-cancel show">
+                    <div class="slide-modal slide-modal-md">
+                        <div class="slide-modal-header">
+                            <h3 class="font-h1 mb0 font-weight-bold">결제제한 수정</h3>
+                            <i class="ico_close_btn _close-slide-modal-btn"></i>
+                        </div>
+                        <div class="slide-modal-body">
+                            <div class="position-relative">
+                                <div class="toast-popup primary show">
+                                    <p class="text-left"><i class="icon"></i><span
+                                            class="text">결제제한이 수정되었습니다.</span></p>
+                                </div>
+                                <div>
+                                    <p class="font-h2 font-weight-semi-bold mb24">통화별 결제제한 입력</p>
+                                    <div class="table-responsive">
+                                        <div class="custom-input-table">
+                                            <div class="thead">
+                                                <div class="custom-table-th min-w-175"><span></span></div>
+                                                <div class="custom-table-th min-w-175"><span class="font-h3">적용여부</span></div>
+                                                <div class="custom-table-th min-w-175"><span class="font-h3">건당 최소금액</span></div>
+                                                <div class="custom-table-th min-w-175"><span class="font-h3">건당 최대금액</span></div>
+
+                                            </div>
+                                            <div class="tbody">
+                                                <div class="custom-table-tr">
+                                                    <div class="custom-table-td min-w-175"><span class="font-h3">KRW</span></div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <div class="btn-group w-100 custom-radio-container">
+                                                                <div class="custom-radio-group">
+                                                                    <input class="radio-input" type="radio" name="example2" checked="" id="customRadio3">
+                                                                    <label for="customRadio3" class="btn btn-secondary btn-sm">설정</label>
+                                                                </div>
+                                                                <div class="custom-radio-group ">
+                                                                    <input class="radio-input" type="radio" name="example2" id="customRadio4">
+                                                                    <label for="customRadio4" class="btn btn-secondary btn-sm">미설정</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <label class="w-100 mb0 position-relative">
+                                                                <input class="form-control pr38" type="text">
+                                                                <span class="position-absolute util">KRW</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <label class="w-100 mb0 position-relative">
+                                                                <input class="form-control pr38" type="text">
+                                                                <span class="position-absolute util">KRW</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-table-tr">
+                                                    <div class="custom-table-td min-w-175"><span class="font-h3">USD</span></div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <div class="btn-group w-100 custom-radio-container">
+                                                                <div class="custom-radio-group">
+                                                                    <input class="radio-input" type="radio" name="example1" checked="" id="customRadio2">
+                                                                    <label for="customRadio2" class="btn btn-secondary btn-sm">설정</label>
+                                                                </div>
+                                                                <div class="custom-radio-group ">
+                                                                    <input class="radio-input" type="radio" name="example1" id="customRadio1">
+                                                                    <label for="customRadio1" class="btn btn-secondary btn-sm">미설정</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <label class="w-100 mb0 position-relative">
+                                                                <input class="form-control pr38" type="text" >
+                                                                <span class="position-absolute util">USD</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <label class="w-100 mb0 position-relative">
+                                                                <input class="form-control pr38" type="text">
+                                                                <span class="position-absolute util">USD</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-table-tr">
+                                                    <div class="custom-table-td min-w-175"><span class="font-h3">JPY</span></div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <div class="btn-group w-100 custom-radio-container">
+                                                                <div class="custom-radio-group">
+                                                                    <input class="radio-input" type="radio" name="example3" checked="" id="customRadio5">
+                                                                    <label for="customRadio5" class="btn btn-secondary btn-sm">설정</label>
+                                                                </div>
+                                                                <div class="custom-radio-group ">
+                                                                    <input class="radio-input" type="radio" name="example3" id="customRadio6">
+                                                                    <label for="customRadio6" class="btn btn-secondary btn-sm">미설정</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <label class="w-100 mb0 position-relative">
+                                                                <input class="form-control pr38" type="text" disabled>
+                                                                <span class="position-absolute util">JPY</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-table-td min-w-175">
+                                                        <div class="form-group mb0">
+                                                            <label class="w-100 mb0 position-relative">
+                                                                <input class="form-control pr38" type="text" disabled>
+                                                                <span class="position-absolute util">JPY</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-modal-footer clearfix">
+                            <div class="float-right">
+                                <button class="btn btn-primary btn-md">수정하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 컨텐츠 e-->
+        </article>
+    </main>
+    @@include('../include/footer.html')
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
