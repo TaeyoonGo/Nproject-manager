@@ -456,7 +456,7 @@ data.signupen = {
             page: '기본정보_해외_상태수정'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '기본정보_해외_결제제한수정',
             category: 'signupen',
             page: '기본정보_해외_결제제한수정'
