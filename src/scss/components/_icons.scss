@@ -142,7 +142,6 @@
     @include background-img ($width: 13px, $height: 13px, $category: 'icon', $img: 'ico_danger_blue.png')
 }
 
-
 .ico-circle-red{
     background-color: $red-100;
     width: 6px;
@@ -153,4 +152,73 @@
     width: 6px;
     height: 6px;
     background-color: transparent;
+}
+
+
+/*aside 관련 아이콘 모음*/
+.ico_aside_calculate{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_calculate.png')
+}
+.ico_aside_calculate_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_calculate_hover.png')
+}
+.ico_aside_domestic{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_domestic.png')
+}
+.ico_aside_domestic_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_domestic_hover.png')
+}
+.ico_aside_global{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_global.png')
+}
+.ico_aside_global_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_global_hover.png')
+}
+.ico_aside_heart{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_heart.png')
+}
+.ico_aside_heart_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_heart_hover.png')
+}
+.ico_aside_hub{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_hub.png')
+}
+.ico_aside_hub_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_hub_hover.png')
+}
+.ico_aside_link{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_link.png')
+}
+.ico_aside_link_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_link_hover.png')
+}
+.ico_aside_memo{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_memo.png')
+}
+.ico_aside_memo_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_memo_hover.png')
+}
+.ico_aside_partner{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_partner.png')
+}
+.ico_aside_partner_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_partner_hover.png')
+}
+.ico_aside_speech_bubble{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_speech_bubble.png')
+}
+.ico_aside_speech_bubble_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_speech_bubble_hover.png')
+}
+.ico_aside_statistics{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_statistics.png')
+}
+.ico_aside_statistics_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_statistics_hover.png')
+}
+.ico_aside_stic{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_stic.png')
+}
+.ico_aside_stic_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_stic_hover.png')
 }

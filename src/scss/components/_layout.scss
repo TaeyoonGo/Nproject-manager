@@ -138,34 +138,32 @@ main{
 
             }
             .title {
+                font-weight: 400;
                 cursor: pointer;
                 border-radius: 7px;
                 width: 100%;
                 padding: 10px 16px;
-                font-size: 15px;
+                font-size: 18px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
-                &.active {
-                    svg {
-                        rotate: -180deg;
-                        stroke: #fff;
-                    }
-                }
-
-                &:hover {
-                    background-color: #3B3B42;
-                }
                 svg {
                     transition: all 0.3s;
                     stroke-width: 2;
                     stroke: #565359;
                 }
+                &:hover {
+                    background-color: #3B3B42;
+                }
+                &.active {
+                    svg {
+                        rotate: -180deg;
+                        stroke: $gray-fff;
+                    }
+                }
             }
             &.main-link {
                 padding: 10px 5px;
-
                 span {
                     display: flex;
                     width: 42px;
@@ -191,101 +189,33 @@ main{
         .two-depth {
             display: none;
             .link {
-                font-size: 15px;
+
                 padding: 10px 16px;
                 @include res-sm{
                     padding: 10px 30px;
                 }
-
                 a {
                     display: flex;
                     align-items: center;
                     width: 100%;
-
+                    text-decoration: none;
                     span {
+                        font-size: 16px;
                         color: $gray-fff;
                     }
-
-
                 }
-
-                svg {
-                    fill: #5C595F;
-                    margin-right: 9px;
-                }
-
-                &:hover {
-                    a {
+                &:hover{
+                    a{
                         span {
-                            color: $purple-200;
+                            color: $purple-100;
                         }
                     }
-
-                    svg {
-                        fill: $purple-200;
-
-                    }
                 }
-
             }
-            .link-title{
-                font-size: 15px;
-                padding: 10px 16px;
-                display: flex;
-                align-items: center;
-                @include res-sm{
-                    padding: 10px 30px;
-                }
-                svg {
-                    fill: #5C595F;
-                    margin-right: 9px;
-                }
-
-            }
-
             &.active {
                 overflow: visible;
                 height: 100%;
                 visibility: visible;
-            }
-        }
-        .three-depth {
-            .link {
-                font-size: 15px;
-                padding: 10px 0 10px 40px;
-                @include res-sm{
-                    padding: 10px 0 10px 54px;
-                }
-                a {
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-                    span {
-                        color: $gray-fff;
-                    }
-
-
-                }
-
-                svg {
-                    fill: #5C595F;
-                    margin-right: 9px;
-                }
-
-                &:hover {
-                    a {
-                        span {
-                            color: $purple-200;
-                        }
-                    }
-
-                    svg {
-
-                        fill: $purple-200;
-                        stroke: $purple-200;
-                    }
-                }
-
             }
         }
     }
@@ -364,7 +294,6 @@ main{
                     justify-content: center;
                     svg{
                         margin-right: 0;
-
                     }
                     .text{
                         display: none;
@@ -383,16 +312,6 @@ main{
                             display: none;
                         }
                     }
-                }
-            }
-            .three-depth{
-                background-color: #3B3B42;
-                border-radius: 44px;
-                margin: 10px 14px;
-
-                .link{
-                    padding: 10px 0;
-                    text-align: center;
                 }
             }
             .link{
