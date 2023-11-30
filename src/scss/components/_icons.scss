@@ -216,9 +216,16 @@
 .ico_aside_statistics_hover{
     @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_statistics_hover.png')
 }
-.ico_aside_stic{
-    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_stic.png')
+.ico_aside_stick{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_stick.png')
 }
-.ico_aside_stic_hover{
-    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_stic_hover.png')
+.ico_aside_stick_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_stick_hover.png')
 }
+.ico_aside_danger{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_danger.png')
+}
+.ico_aside_danger_hover{
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_danger_hover.png')
+}
+
