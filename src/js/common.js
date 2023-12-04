@@ -4,7 +4,7 @@ function asideSlideBtn() {
     let slide = $('._slide');
     title.on('click', function () {
         $(this).next(slide).stop().slideToggle(300);
-        $(this).toggleClass('active').parent().siblings().find(title).removeClass('active');
+        $(this).toggleClass('show').parent().siblings().find(title).removeClass('show');
         $(this).parent().siblings().find(slide).slideUp(300);
     })
 }
@@ -13,8 +13,8 @@ function asideSlideBtn() {
 function openAsideBtn() {
     let openAsideBtn = $('._btn-open-depths')
     openAsideBtn.on('click', function () {
-        $(this).parent('.aside').toggleClass('on')
-        $('.footer').toggleClass('on')
+        $(this).parent('.aside').toggleClass('active')
+        $('.footer').toggleClass('active')
     })
 }
 
@@ -185,7 +185,7 @@ function showAsideTooltip() {
         const hoverTitle = $(this).find('a');
         const top = hoverTitle[0].getBoundingClientRect().top;
         const arrow = $(this).find('.arrow-box');
-        arrow.css('top', top + 10 + 'px');
+        arrow.css('top', top + 18 + 'px');
     });
 }
 

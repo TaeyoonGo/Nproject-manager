@@ -20,7 +20,7 @@
     @include background-img ($width: 63px, $height: 19px, $category: 'icon', $img: 'ico_footer_logo.png');
 }
 .ico_white_home{
-    @include background-img ($width: 24px, $height: 22px, $category: 'icon', $img: 'ico_white_home.png');
+    @include background-img ($width: 20px, $height: 20px, $category: 'icon', $img: 'ico_white_home.png');
 }
 
 .ico_select_arrow_down{
@@ -225,7 +225,13 @@
 .ico_aside_danger{
     @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_danger.png')
 }
-.ico_aside_danger_hover{
-    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_danger_hover.png')
+.ico_aside_danger_hover {
+    @include background-img($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_danger_hover.png')
+}
+.ico-circle-white{
+    background-color: $gray-fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
