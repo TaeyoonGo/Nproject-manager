@@ -564,6 +564,46 @@ data.mkt = {
         },
     ]
 }
+data.account = {
+    title:'현금영수증',
+    list:[
+        {
+            stateClass: 'working',
+            url: '현금영수증_조회_발행하기',
+            category: 'account',
+            page: '현금영수증_조회_발행하기'
+        },
+        {
+            stateClass: 'working',
+            url: '현금영수증_발행하기',
+            category: 'account',
+            page: '현금영수증_발행하기'
+        },
+        {
+            stateClass: 'working',
+            url: '현금영수증_이력',
+            category: 'account',
+            page: '현금영수증_이력'
+        },
+    ]
+}
+data.tax = {
+    title:'세금계산서',
+    list:[
+        {
+            stateClass: 'confirm',
+            url: '제휴_참여신청',
+            category: 'mkt',
+            page: '제휴_참여신청'
+        },
+        {
+            stateClass: 'confirm',
+            url: '제휴_혜택신청',
+            category: 'mkt',
+            page: '제휴_혜택신청'
+        },
+    ]
+}
 
 
 
