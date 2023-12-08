@@ -599,15 +599,51 @@ data.tax = {
     list:[
         {
             stateClass: 'confirm',
-            url: '제휴_참여신청',
-            category: 'mkt',
-            page: '제휴_참여신청'
+            url: '세금계산서_발행',
+            category: 'tax',
+            page: '세금계산서_발행'
         },
         {
             stateClass: 'confirm',
-            url: '제휴_혜택신청',
-            category: 'mkt',
-            page: '제휴_혜택신청'
+            url: '공인인증서_등록팝업',
+            category: 'tax',
+            page: '공인인증서_등록팝업'
+        },
+        {
+            stateClass: 'confirm',
+            url: '공인인증서_등록완료팝업',
+            category: 'tax',
+            page: '공인인증서_등록완료팝업'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일발송_팝업',
+            category: 'tax',
+            page: '이메일발송_팝업'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상호명_조회_데이터_체크',
+            category: 'tax',
+            page: '상호명_조회_데이터_체크'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상호명_조회_데이터_체크_정상',
+            category: 'tax',
+            page: '상호명_조회_데이터_체크_정상'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상호명_조회_데이터_체크_폐업',
+            category: 'tax',
+            page: '상호명_조회_데이터_체크_폐업'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상호명_조회_데이터없음',
+            category: 'tax',
+            page: '상호명_조회_데이터없음'
         },
     ]
 }
