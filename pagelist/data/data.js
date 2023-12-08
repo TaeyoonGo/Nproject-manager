@@ -587,7 +587,7 @@ data.account = {
         },
 
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '현금영수증_이력',
             category: 'account',
             page: '현금영수증_이력'

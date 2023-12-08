@@ -399,10 +399,7 @@
 
             tbody {
                 tr {
-                    &:first-child {
-                        border: none;
-                    }
-
+                    border-bottom: 1px solid $gray-400;
                     &:last-child {
                         border-bottom: 1px solid $gray-400;
                     }
