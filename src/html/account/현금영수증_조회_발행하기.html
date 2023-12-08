@@ -42,19 +42,40 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl">
-                            <p class="font-p2 mb12 font-weight-semi-bold">서비스 구분</p>
-                            <div class="form-group">
-                                <label class="select-box _select-box">
-                                    <input type="hidden" class="select-value _select-value" value="0">
-                                    <span class="value-text _value-text">전체</span>
-                                    <i class="icon ico_select_arrow_down">아래화살표</i>
-                                    <ul class="options h-auto _service-status">
-                                        <li class="option _all-select" value="0">전체</li>
-                                        <li class="option _domestic-select" value="1">국내</li>
-                                        <li class="option _domestic-global" value="2">해외</li>
-                                    </ul>
-                                </label>
+                        <div class="col-xl-auto">
+                            <p class="font-p2 mb12 font-weight-semi-bold">상태 구분/상세</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group min-w-190">
+                                        <label class="select-box _select-box">
+                                            <input type="hidden" class="select-value _select-value" value="0">
+                                            <span class="value-text _value-text">전체</span>
+                                            <i class="icon ico_select_arrow_down">아래화살표</i>
+                                            <ul class="options h-auto">
+                                                <li class="option" value="0">전체</li>
+                                                <li class="option" value="1">승인</li>
+                                                <li class="option" value="2">취소</li>
+                                                <li class="option" value="3">미발행</li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl">
+                                    <div class="form-group min-w-190">
+                                        <label class="select-box _select-box">
+                                            <input type="hidden" class="select-value _select-value" value="0">
+                                            <span class="value-text _value-text">전체</span>
+                                            <i class="icon ico_select_arrow_down">아래화살표</i>
+                                            <ul class="options h-auto">
+                                                <li class="option" value="0">전체</li>
+                                                <li class="option" value="1">발행요청 성공</li>
+                                                <li class="option" value="2">발행요청 실패</li>
+                                                <li class="option" value="3">국세청전송 성공</li>
+                                                <li class="option" value="3">국세청전송 실패</li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xl-auto">
@@ -71,12 +92,14 @@
                                             <div class="custom-radio-group ">
                                                 <input class="radio-input" type="radio" name="example1"
                                                        id="customRadio2">
-                                                <label for="customRadio2" class="btn btn-secondary btn-md">소득공제(개인)</label>
+                                                <label for="customRadio2"
+                                                       class="btn btn-secondary btn-md">소득공제(개인)</label>
                                             </div>
                                             <div class="custom-radio-group ">
                                                 <input class="radio-input" type="radio" name="example1"
                                                        id="customRadio3">
-                                                <label for="customRadio3" class="btn btn-secondary btn-md">지출증빙(사업자)</label>
+                                                <label for="customRadio3"
+                                                       class="btn btn-secondary btn-md">지출증빙(사업자)</label>
                                             </div>
                                         </div>
                                     </div>
@@ -216,184 +239,451 @@
                         <table class="table table-spread table-fixed">
                             <colgroup>
                                 <col style="width: 50px">
-                                <col style="width: 110px">
-                                <col style="width: 95px">
-                                <col style="width: 95px">
-                                <col style="width: 95px">
-                                <col style="width: 200px">
-                                <col style="width: 170px">
-                                <col style="width: 90px">
+                                <col style="width: 210px">
+                                <col style="width: 180px">
+                                <col style="width: 390px">
                                 <col style="width: 100px">
-                                <col style="width: 110px">
-                                <col style="width: 220px">
-                                <col style="width: 125px">
-                                <col style="width: 250px">
-                                <col style="width: 250px">
+                                <col style="width: 100px">
                                 <col style="width: 120px">
-                                <col style="width: 105px">
-                                <col style="width: 105px">
+                                <col style="width: 120px">
+                                <col style="width: 120px">
+                                <col style="width: 230px">
+                                <col style="width: 230px">
+                                <col style="width: 100px">
+                                <col style="width: 100px">
+                                <col style="width: 74px">
+                                <col style="width: 100px">
                             </colgroup>
                             <thead>
                             <tr>
                                 <th class="text-center">No</th>
-                                <th class="text-center">등록일시</th>
-                                <th class="text-center">상태</th>
-                                <th class="text-center">유입채널</th>
-                                <th class="text-center">문의자</th>
                                 <th class="text-center">상호명 / 서비스명</th>
                                 <th class="text-center">서비스 MID</th>
-                                <th class="text-center">서비스 구분</th>
-                                <th class="text-center">결제수단</th>
+                                <th class="text-center">
+                                    상태
+                                </th>
                                 <th class="text-center">거래일시</th>
-                                <th class="text-center">주문번호</th>
-                                <th class="text-center">문의유형</th>
-                                <th class="text-center">문의상세</th>
-                                <th class="text-center">처리결과</th>
-                                <th class="text-center">연락처</th>
-                                <th class="text-center">담당자</th>
-                                <th class="text-center">최종 업데이트</th>
+                                <th class="text-center">발행일시</th>
+                                <th class="text-center">구분</th>
+                                <th class="text-center">휴대폰/사업자 번호</th>
+                                <th class="text-center">국세청 승인번호</th>
+                                <th class="text-center">PID(OPID)</th>
+                                <th class="text-center">상품명</th>
+                                <th class="text-center">거래액</th>
+                                <th class="text-center">발행액</th>
+                                <th class="text-center">출력</th>
+                                <th class="text-center">발행</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="text-center align-middle"><span>No</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-center align-middle"><a target="_blank" href="#"
-                                                                        class="color-gray-000 text-underline">처리완료</a>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
                                 </td>
-                                <td class="text-center align-middle"><span>이메일</span></td>
-                                <td class="text-center align-middle"><span>기존 파트너</span></td>
-                                <td class="text-left align-middle"><span>(주)하임인터내셔널<br>하임인터내셔널</span></td>
-                                <td class="text-center align-middle"><span>Service0010012345678</span></td>
-                                <td class="text-center align-middle"><span>국내</span></td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-left align-middle"><span>collection_20230829011724409401_46503</span>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
                                 </td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span
-                                        class="ellipsis">고객센터 연락받지 않아 강성불만 접수고객...</span></td>
-                                <td class="text-center align-middle"><span class="ellipsis">변경처리 후 파트너 안내 완료</span></td>
-                                <td class="text-center align-middle"><span>010-7308-3111</span></td>
-                                <td class="text-center align-middle"><span>신지혜</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
                             </tr>
                             <tr>
-                                <td class="text-center align-middle"><span>No</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-center align-middle"><a target="_blank" href="#"
-                                                                        class="color-orange-100 text-underline">처리중</a>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
                                 </td>
-                                <td class="text-center align-middle"><span>이메일</span></td>
-                                <td class="text-center align-middle"><span>기존 파트너</span></td>
-                                <td class="text-left align-middle"><span>(주)하임인터내셔널<br>하임인터내셔널</span></td>
-                                <td class="text-center align-middle"><span>Service0010012345678</span></td>
-                                <td class="text-center align-middle"><span>국내</span></td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-left align-middle"><span>collection_20230829011724409401_46503</span>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
                                 </td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span
-                                        class="ellipsis">고객센터 연락받지 않아 강성불만 접수고객...</span></td>
-                                <td class="text-center align-middle"><span class="ellipsis">변경처리 후 파트너 안내 완료</span></td>
-                                <td class="text-center align-middle"><span>010-7308-3111</span></td>
-                                <td class="text-center align-middle"><span>신지혜</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>김문정님의 2023년 08월 29일 처방전 11500원 (배송비: 11000원)</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
                             </tr>
                             <tr>
-                                <td class="text-center align-middle"><span>No</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-center align-middle"><a target="_blank" href="#"
-                                                                        class="color-gray-000 text-underline">처리완료</a>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
                                 </td>
-                                <td class="text-center align-middle"><span>이메일</span></td>
-                                <td class="text-center align-middle"><span>기존 파트너</span></td>
-                                <td class="text-left align-middle"><span>(주)하임인터내셔널<br>하임인터내셔널</span></td>
-                                <td class="text-center align-middle"><span>Service0010012345678</span></td>
-                                <td class="text-center align-middle"><span>국내</span></td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-left align-middle"><span>collection_20230829011724409401_46503</span>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
                                 </td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span
-                                        class="ellipsis">고객센터 연락받지 않아 강성불만 접수고객...</span></td>
-                                <td class="text-center align-middle"><span class="ellipsis">변경처리 후 파트너 안내 완료</span></td>
-                                <td class="text-center align-middle"><span>010-7308-3111</span></td>
-                                <td class="text-center align-middle"><span>신지혜</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
                             </tr>
                             <tr>
-                                <td class="text-center align-middle"><span>No</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-center align-middle"><a target="_blank" href="#"
-                                                                        class="color-gray-000 text-underline">처리완료</a>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
                                 </td>
-                                <td class="text-center align-middle"><span>이메일</span></td>
-                                <td class="text-center align-middle"><span>기존 파트너</span></td>
-                                <td class="text-left align-middle"><span>(주)하임인터내셔널<br>하임인터내셔널</span></td>
-                                <td class="text-center align-middle"><span>Service0010012345678</span></td>
-                                <td class="text-center align-middle"><span>국내</span></td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-left align-middle"><span>collection_20230829011724409401_46503</span>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
                                 </td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span
-                                        class="ellipsis">고객센터 연락받지 않아 강성불만 접수고객...</span></td>
-                                <td class="text-center align-middle"><span class="ellipsis">변경처리 후 파트너 안내 완료</span></td>
-                                <td class="text-center align-middle"><span>010-7308-3111</span></td>
-                                <td class="text-center align-middle"><span>신지혜</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
                             </tr>
                             <tr>
-                                <td class="text-center align-middle"><span>No</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-center align-middle"><a target="_blank" href="#"
-                                                                        class="color-gray-000 text-underline">처리완료</a>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
                                 </td>
-                                <td class="text-center align-middle"><span>이메일</span></td>
-                                <td class="text-center align-middle"><span>기존 파트너</span></td>
-                                <td class="text-left align-middle"><span>(주)하임인터내셔널<br>하임인터내셔널</span></td>
-                                <td class="text-center align-middle"><span>Service0010012345678</span></td>
-                                <td class="text-center align-middle"><span>국내</span></td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-left align-middle"><span>collection_20230829011724409401_46503</span>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
                                 </td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span
-                                        class="ellipsis">고객센터 연락받지 않아 강성불만 접수고객...</span></td>
-                                <td class="text-center align-middle"><span class="ellipsis">변경처리 후 파트너 안내 완료</span></td>
-                                <td class="text-center align-middle"><span>010-7308-3111</span></td>
-                                <td class="text-center align-middle"><span>신지혜</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
                             </tr>
                             <tr>
-                                <td class="text-center align-middle"><span>No</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-center align-middle"><a target="_blank" href="#"
-                                                                        class="color-gray-000 text-underline">처리완료</a>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
                                 </td>
-                                <td class="text-center align-middle"><span>이메일</span></td>
-                                <td class="text-center align-middle"><span>기존 파트너</span></td>
-                                <td class="text-left align-middle"><span>(주)하임인터내셔널<br>하임인터내셔널</span></td>
-                                <td class="text-center align-middle"><span>Service0010012345678</span></td>
-                                <td class="text-center align-middle"><span>국내</span></td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
-                                <td class="text-left align-middle"><span>collection_20230829011724409401_46503</span>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
                                 </td>
-                                <td class="text-center align-middle"><span>카드-비밀번호</span></td>
-                                <td class="text-center align-middle"><span
-                                        class="ellipsis">고객센터 연락받지 않아 강성불만 접수고객...</span></td>
-                                <td class="text-center align-middle"><span class="ellipsis">변경처리 후 파트너 안내 완료</span></td>
-                                <td class="text-center align-middle"><span>010-7308-3111</span></td>
-                                <td class="text-center align-middle"><span>신지혜</span></td>
-                                <td class="text-center align-middle"><span>2023-07-26<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
                             </tr>
-
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -417,73 +707,6 @@
 </div>
 <!--달력 e-->
 </body>
-<script>
-    /*
-    * 서비스 구분/상태 값에 따라 결제수단 구분/상태 구별
-    * 클릭 시 상위에 요소 값으로 변경
-    * 개발 시 value값 수정 필요
-    * 기본값은 전체로 맞춰져있어서 html ._service-status-value에 있는 전체의  vlaue값도 맞춰주셔야 합니다.
-    * */
-    let serviceStatus = $('._service-status');
-    let servicestatusValue = $('._service-status-value');
-    let stateSelectValue = $('._state-label').find('._select-value');
-    let stateValueText = $('._state-label').find('._value-text');
 
-    let all = [
-        {name: '전체', value: '1'}
-    ]
-    let domestic = [
-        {name: '카드 - 앱카드', value: '2-1'},
-        {name: '카드 - 키인', value: '2-2'},
-        {name: '카드 - 빌링', value: '2-3.'},
-        {name: '카드 - 간편', value: '2-4'},
-        {name: '계좌 - 빌링', value: 'gg'},
-        {name: '카드 - 앱카드', value: 'hh'},
-        {name: '계좌 - 간편', value: 'ss'},
-        {name: '카드 - 앱카드', value: 'dd'},
-        {name: '네이버페이', value: 'ff'},
-        {name: '카카오페이', value: 'gg'},
-        {name: '애플페이', value: 'hh'},
-        {name: '가상계좌', value: 'rr'},
-    ]
-    let global = [
-        {name: '카드 - 키인', value: 'asdassssd'},
-        {name: '카드 - 빌링', value: 'asdasd'},
-        {name: '카드 - 간편', value: 'dddd'}
-
-    ]
-    let option
-
-    serviceStatus.on('click', 'li.option', function () {
-        var value = $(this).attr('value');
-
-        //전체
-        if (value == 0) {
-            option = all
-            stateValueText.html(option[0].name);
-            stateSelectValue.attr("value", option[0].value);
-
-        }
-        //국내
-        else if (value == 1) {
-            option = domestic
-            stateValueText.html(option[0].name);
-            stateSelectValue.attr("value", option[0].value);
-        }
-        // 해외
-        else {
-            option = global
-            stateValueText.html(option[0].name);
-            stateSelectValue.attr("value", option[0].value);
-        }
-        // 초기화
-        servicestatusValue.empty();
-        //클릭시 반복문 돌려서 value 호출
-        for (let i = 0; i < option.length; i++) {
-            servicestatusValue.append('<option class="option _domestic" value="' + option[i].value + '">' + option[i].name + '</option>');
-        }
-    });
-
-</script>
 </html>
 

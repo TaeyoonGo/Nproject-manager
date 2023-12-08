@@ -568,7 +568,7 @@ data.account = {
     title:'현금영수증',
     list:[
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '현금영수증_조회_발행하기',
             category: 'account',
             page: '현금영수증_조회_발행하기'
