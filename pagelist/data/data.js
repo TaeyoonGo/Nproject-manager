@@ -574,11 +574,18 @@ data.account = {
             page: '현금영수증_조회_발행하기'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '현금영수증_발행하기',
             category: 'account',
             page: '현금영수증_발행하기'
         },
+        {
+            stateClass: 'confirm',
+            url: '현금영수증_발행이력_더블체크',
+            category: 'account',
+            page: '현금영수증_발행이력_더블체크'
+        },
+
         {
             stateClass: 'working',
             url: '현금영수증_이력',

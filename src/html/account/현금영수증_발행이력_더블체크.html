@@ -33,7 +33,7 @@
                 <!--취소 영수증 테이블 e-->
                 <div class="tab-container">
                     <p class="font-h2 mb24 font-weight-semi-bold">발행방법</p>
-                    <div class="tab-list">
+                    <div class="tab-list mb40">
                         <div class="list-row">
                             <div class="title">구분</div>
                             <div class="content">
@@ -45,20 +45,20 @@
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-toggle="tab" data-target="#dummy2"
-                                                aria-controls="dummy1">지출증빙(사업자)
+                                                aria-controls="dummy1" disabled>지출증빙(사업자)
                                         </button>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="tab-content ">
+                        <div class="tab-content">
                             <!--개인(사업자) -  s-->
                             <div class="tab-pane active" id="dummy1" role="tabpanel">
                                 <div class="list-row">
                                     <div class="title">발행액</div>
                                     <div class="content">
                                         <label class="mb0 w-100">
-                                            <input class="form-control">
+                                            <input class="form-control" value="8,000" disabled>
                                         </label>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                                     <div class="title">휴대폰 번호</div>
                                     <div class="content">
                                         <label class="mb0 w-100">
-                                            <input class="form-control">
+                                            <input class="form-control" value="010-7635-6425" disabled>
                                         </label>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@
                                     <div class="title">이메일</div>
                                     <div class="content">
                                         <label class="mb0 w-100">
-                                            <input class="form-control">
+                                            <input class="form-control" value="asdfsafd@gmail.com" disabled>
                                         </label>
                                     </div>
                                 </div>
@@ -112,12 +112,14 @@
                         </div>
 
                     </div>
+                    <p class="font-h3">위 내용으로 현금영수증을 발행할까요?</p>
                 </div>
             </div>
         </div>
         <div class="slide-modal-footer clearfix">
             <div class="float-right">
-                <button class="btn btn-primary btn-md" disabled>입력완료</button>
+                <a class="align-bottom mr16" href="">수정하기</a>
+                <button class="btn btn-primary btn-md">입력완료</button>
             </div>
         </div>
     </div>
