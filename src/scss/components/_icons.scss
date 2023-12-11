@@ -148,6 +148,9 @@
 .ico_circle_check_purple{
     @include background-img($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_circle_check_purple.png')
 }
+.ico_book_blue{
+    @include background-img($width: 12px, $height: 14px, $category: 'icon', $img: 'ico_book_blue.png')
+}
 
 .ico-circle-red{
     background-color: $red-100;

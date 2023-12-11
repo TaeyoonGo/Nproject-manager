@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    @@include('../include/header.html')
+    <main>
+        @@include('../include/aside.html')
+        <!-- 컨텐츠 s-->
+        <article class="content-container">
+            <section>
+                <h3 class="font-h1 mb30 font-weight-bold">세금계산서 발행</h3>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-toggle="tab" data-target="#dummy1" type="button" role="tab"
+                                aria-controls="dummy1">월별 정산내역 불러오기
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-toggle="tab" data-target="#dummy2" aria-controls="dummy1">직접
+                            발행하기
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="dummy1" role="tabpanel">
+                        <div class="card">
+                            <h5 class="d-flex align-items-center font-h3 mb20">
+                                <i class="icon ico_filter"></i>
+                                <span class="ml9 font-weight-semi-bold">필터</span>
+                            </h5>
+
+                            <p class="font-weight-semi-bold font-p2 mb12">상세검색</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <label class="select-box _select-box">
+                                            <input type="hidden" class="select-value _select-value" value="0">
+                                            <span class="value-text _value-text">진행상태(전체)</span>
+                                            <i class="icon ico_select_arrow_down">아래화살표</i>
+                                            <ul class="options h-auto _service-status">
+                                                <li class="option _all-select" value="0">전체</li>
+                                                <li class="option _domestic-select" value="1">접수</li>
+                                                <li class="option _domestic-global" value="2">협의중</li>
+                                                <li class="option _domestic-global" value="2">협의불가</li>
+                                                <li class="option _domestic-global" value="2">진행중</li>
+                                                <li class="option _domestic-global" value="2">진행종료</li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <label class="w-100 mb0">
+                                            <input class="form-control search" type="text" placeholder="상호명">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <label class="w-100 mb0">
+                                            <input class="form-control search" type="text" placeholder="서비스명">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <label class="w-100 mb0">
+                                            <input class="form-control search" type="text" placeholder="담당자명">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <label class="w-100 mb0">
+                                            <input class="form-control search" type="text" placeholder="이메일">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clearfix filter-button-area position-static">
+                                <div class="float-right">
+                                    <a class=" align-bottom" href="">Clear all</a>
+                                    <button class="btn btn-dark btn-round ml-3 btn-md">조회하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="mb25 d-flex justify-content-between align-items-center">
+                                <h5 class="font-h2 d-flex align-items-center mb0 font-weight-semi-bold">
+                                    <i class="icon ico_bs_list"></i>
+                                    <span class="ml9">조회결과</span>
+                                </h5>
+                                <div class="btn-wrap d-flex align-items-center">
+
+                                    <button class="btn btn-md btn-info btn-round mr20">
+                                        <i class="icon ico_book_blue mr5"></i>
+                                        발행하기
+                                    </button>
+                                    <button class="btn-reset"><i class="icon ico_excel">엑셀출력</i></button>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-spread table-fixed">
+                                    <colgroup>
+                                        <col style="width: 40px">
+                                        <col style="width: 60px">
+                                        <col style="width: 210px">
+                                        <col style="width: 180px">
+                                        <col style="width: 90px">
+                                        <col style="width: 90px">
+                                        <col style="width: 90px">
+                                        <col style="width: 100px">
+                                        <col style="width: 100px">
+                                        <col style="width: 100px">
+                                        <col style="width: 100px">
+                                        <col style="width: 70px">
+                                        <col style="width: 100px">
+                                        <col style="width: 100px">
+                                        <col style="width: 100px">
+                                        <col style="width: 70px">
+                                        <col style="width: 100px">
+
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center" rowspan="2">
+                                            <label class="mb20">
+                                                <input type="checkbox" name="notice" class="custom-checkbox _check_all"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">No</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb10">공급받는자<br>상호명 / 서비스명</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">서비스 MID</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">서비스 구분</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">결제수단</span></th>
+                                        <th class="text-center" rowspan="2" style="border-right: 1px solid #52525B"><span class="mb20">정산월</span></th>
+                                        <th class="text-center" colspan="3" style="border-bottom: 1px solid #ced4da;border-right: 1px solid #52525B"><span>발행할 수수료</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">매매기준율</span></th>
+                                        <th class="text-center" rowspan="2" style="border-right: 1px solid #52525B;"><span class="mb20">정산통화</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">실지급액</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">정산액</span></th>
+                                        <th class="text-center" rowspan="2" style="border-right: 1px solid #52525B"><span class="mb20" >보류액</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">결제통화</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20">거래액</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">합계</th>
+                                        <th class="text-center">공급가</th>
+                                        <th class="text-center" style="border-right: 1px solid #52525B">부가세</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle ">
+                                            <label class="mb0">
+                                                <input type="checkbox" name="notice" class="custom-checkbox"
+                                                       >
+                                                <i class="icon ico_checkbox">체크박스</i>
+                                            </label>
+                                        </td>
+                                        <td class="text-center align-middle"><span>20</span></td>
+                                        <td class="text-left align-middle">
+                                            <span>(주)하임인터내셔널</span><br>
+                                            <span>하임인터내셔널</span>
+                                        </td>
+                                        <td class="text-left align-middle"><span>Service0010012345678</span></td>
+                                        <td class="text-center align-middle"><span>국내</span></td>
+                                        <td class="text-center align-middle"><span>카드</span></td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>2023년 10월</span>
+                                        </td>
+                                        <td class="text-right align-middle"><span class="color-purple-100">₩100,000</span></td>
+                                        <td class="text-right align-middle"><span>₩100,000</span></td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-center align-middle" style="border-right: 1px solid #52525B">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩100,000</span>
+                                        </td>
+                                        <td class="text-right align-middle" style="border-right: 1px solid #52525B">
+                                            <span>₩0</span>
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <span>KRW</span>
+                                        </td>
+                                        <td class="text-right align-middle">
+                                            <span>₩0</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            @@include('../include/pagination.html')
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="dummy2" role="tabpanel">탭리스트2</div>
+                </div>
+
+            </section>
+        </article>
+        <!-- 컨텐츠 e-->
+    </main>
+    @@include('../include/footer.html')
+</div>
+<!--달력 s-->
+<div class="modal fade _modal-calendar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered calender-modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="_modalRangeDate"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--달력 e-->
+</body>
+<script>
+    $('._check_all').on('click',function(){
+        if($("._check_all").is(":checked")){
+            $("input[name=notice]").prop("checked", true);
+        }else{
+            $("input[name=notice]").prop("checked", false);
+        }
+
+    })
+    $("input[name=notice]").click(function() {
+        let total = $("input[name=notice]").length;
+        let checked = $("input[name=notice]:checked").length;
+
+        if(total != checked) $("._check_all").prop("checked", false);
+        else $("._check_all").prop("checked", true);
+    });
+</script>
+</html>
