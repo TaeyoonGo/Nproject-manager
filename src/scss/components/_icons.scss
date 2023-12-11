@@ -145,6 +145,9 @@
 .ico_print {
     @include background-img($width: 21px, $height: 21px, $category: 'icon', $img: 'ico_print.png')
 }
+.ico_circle_check_purple{
+    @include background-img($width: 18px, $height: 18px, $category: 'icon', $img: 'ico_circle_check_purple.png')
+}
 
 .ico-circle-red{
     background-color: $red-100;
@@ -232,6 +235,8 @@
 .ico_aside_danger_hover {
     @include background-img($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_danger_hover.png')
 }
+
+
 
 .ico-circle-white{
     background-color: $gray-fff;

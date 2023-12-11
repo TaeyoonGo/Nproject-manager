@@ -12,12 +12,12 @@
 <div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-cancel show">
     <div class="slide-modal slide-modal-md">
         <div class="slide-modal-header">
-            <h3 class="font-h1 mb0 font-weight-bold">상호명/서비스명 조회</h3>
+            <h3 class="font-h1 mb0 font-weight-bold">상호명/사업자번호 조회</h3>
             <i class="ico_close_btn _close-slide-modal-btn"></i>
         </div>
         <div class="slide-modal-body">
             <div class="search-table-group">
-                <p class="font-weight-semi-bold mb15 color-gray-100 font-p2">상호명/서비스명</p>
+                <p class="font-weight-semi-bold mb15 color-gray-100 font-p2">상호명</p>
                 <div class="search-area">
                     <div class="form-group mb0">
                         <label class="w-100 mb0">
@@ -61,17 +61,4 @@
     </div>
 </div>
 </body>
-<script>
-    /*체크박스 단일 선택 */
-    function checkOnlyOne(target) {
-        if ($(target).is(":checked")) {
-            $(target).prop("checked", true);
-            $(target).closest("tr").siblings("tr").find($("input[name='notice']")).prop("checked", false);
-            $(target).closest("tr").siblings("tr").removeClass('bg-purple-300')
-            $(target).closest("tr").addClass('bg-purple-300')
-        } else {
-            $(target).prop("checked", false);
-        }
-    }
-</script>
 </html>
