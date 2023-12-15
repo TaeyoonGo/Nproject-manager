@@ -831,52 +831,138 @@
                                     <i class="icon ico_check_purple"></i><span class="font-h3 ml6">발행정보</span>
                                 </p>
                             </div>
-
-                            <p class="font-weight-semi-bold font-p2 mb12">상세검색</p>
                             <div class="row">
-                                <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="select-box _select-box">
-                                            <input type="hidden" class="select-value _select-value" value="0">
-                                            <span class="value-text _value-text">진행상태(전체)</span>
-                                            <i class="icon ico_select_arrow_down">아래화살표</i>
-                                            <ul class="options h-auto _service-status">
-                                                <li class="option _all-select" value="0">전체</li>
-                                                <li class="option _domestic-select" value="1">접수</li>
-                                                <li class="option _domestic-global" value="2">협의중</li>
-                                                <li class="option _domestic-global" value="2">협의불가</li>
-                                                <li class="option _domestic-global" value="2">진행중</li>
-                                                <li class="option _domestic-global" value="2">진행종료</li>
-                                            </ul>
-                                        </label>
+                                <div class="col-xl-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="font-p2 color-gray-100 font-weight-semi-bold mb14"
+                                              style="flex: 0 0 80px">세부설정</span>
+                                        <div class="row row-col-3">
+                                            <div class="col-xl-4">
+                                                <div class="form-group ">
+                                                    <div class="btn-group w-100 custom-radio-container">
+                                                        <div class="custom-radio-group fsz-0">
+                                                            <input class="radio-input" type="radio" name="example1"
+                                                                   checked
+                                                                   id="customRadio1">
+                                                            <label for="customRadio1"
+                                                                   class="btn btn-secondary btn-md">정발행</label>
+                                                        </div>
+                                                        <div class="custom-radio-group fsz-0">
+                                                            <input class="radio-input" type="radio" name="example1"
+                                                                   id="customRadio2">
+                                                            <label for="customRadio2"
+                                                                   class="btn btn-secondary btn-md">역발행</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="form-group ">
+                                                    <div class="btn-group w-100 custom-radio-container">
+                                                        <div class="custom-radio-group fsz-0">
+                                                            <input class="radio-input" type="radio" name="example2"
+                                                                   checked
+                                                                   id="customRadio3">
+                                                            <label for="customRadio3"
+                                                                   class="btn btn-secondary btn-md">영세</label>
+                                                        </div>
+                                                        <div class="custom-radio-group fsz-0">
+                                                            <input class="radio-input" type="radio" name="example2"
+                                                                   id="customRadio4">
+                                                            <label for="customRadio4"
+                                                                   class="btn btn-secondary btn-md">면세</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="form-group">
+                                                    <div class="btn-group w-100 custom-radio-container">
+                                                        <div class="custom-radio-group fsz-0">
+                                                            <input class="radio-input" type="radio" name="example3"
+                                                                   checked
+                                                                   id="customRadio5">
+                                                            <label for="customRadio5"
+                                                                   class="btn btn-secondary btn-md">영수</label>
+                                                        </div>
+                                                        <div class="custom-radio-group fsz-0">
+                                                            <input class="radio-input" type="radio" name="example3"
+                                                                   id="customRadio6">
+                                                            <label for="customRadio6"
+                                                                   class="btn btn-secondary btn-md">청구</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="w-100 mb0">
-                                            <input class="form-control " type="text" placeholder="상호명">
-                                        </label>
+                                <div class="col-xl-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="font-p2 color-gray-100 font-weight-semi-bold mb14" style="flex: 0 0 80px">작성일자</span>
+                                        <div class="form-group">
+                                            <label class="calender-input mb0">
+                                                <input class="form-control _inputRangeDate" type="text">
+                                                <i class="icon ico_calendar" onclick="$('._modal-calendar').modal('show')">달력이미지</i>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="w-100 mb0">
-                                            <input class="form-control " type="text" placeholder="서비스명">
-                                        </label>
+                            </div>
+                            <div class="row flex-wrap">
+                                <div class="col-xl-4">
+                                    <div class="d-flex align-items-center mb20">
+                                        <span class="font-p2 color-gray-100 font-weight-semi-bold"
+                                              style="flex: 0 0 80px">공급가액</span>
+                                        <div class="form-group mb0" style="flex: 1 1 100%;">
+                                            <label class="w-100 mb0">
+                                                <input class="form-control " type="text">
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="w-100 mb0">
-                                            <input class="form-control " type="text" placeholder="담당자명">
-                                        </label>
+                                <div class="col-xl-4">
+                                    <div class="d-flex align-items-center mb20">
+                                        <span class="font-p2 color-gray-100 font-weight-semi-bold"
+                                              style="flex: 0 0 80px">세액</span>
+                                        <div class="form-group mb0" style="flex: 1 1 100%;">
+                                            <label class="w-100 mb0">
+                                                <input class="form-control " type="text">
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="w-100 mb0">
-                                            <input class="form-control " type="text" placeholder="이메일">
-                                        </label>
+                                <div class="col-xl-4">
+                                    <div class="d-flex align-items-center mb20">
+                                        <span class="font-p2 color-gray-100 font-weight-semi-bold"
+                                              style="flex: 0 0 80px">합계</span>
+                                        <div class="form-group mb0" style="flex: 1 1 100%;">
+                                            <label class="w-100 mb0">
+                                                <input class="form-control " type="text">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="d-flex align-items-center mb20">
+                                        <span class="font-p2 color-gray-100 font-weight-semi-bold"
+                                              style="flex: 0 0 80px">상품명</span>
+                                        <div class="form-group mb0" style="flex: 1 1 100%;">
+                                            <label class="w-100 mb0">
+                                                <input class="form-control " type="text">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="d-flex align-items-center mb20">
+                                        <span class="font-p2 color-gray-100 font-weight-semi-bold"
+                                              style="flex: 0 0 80px">비고</span>
+                                        <div class="form-group mb0" style="flex: 1 1 100%;">
+                                            <label class="w-100 mb0">
+                                                <input class="form-control " type="text">
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
