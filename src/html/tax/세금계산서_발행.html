@@ -23,58 +23,105 @@
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane " id="dummy1" role="tabpanel">
+                    <div class="tab-pane active" id="dummy1" role="tabpanel">
                         <div class="card">
                             <h5 class="d-flex align-items-center font-h3 mb20">
                                 <i class="icon ico_filter"></i>
                                 <span class="ml9 font-weight-semi-bold">필터</span>
                             </h5>
-
-                            <p class="font-weight-semi-bold font-p2 mb12">상세검색</p>
                             <div class="row">
-                                <div class="col-xl">
-                                    <div class="form-group">
+                                <div class="col-xl-auto">
+                                    <p class="font-weight-semi-bold font-p2 mb12">연월일 설정</p>
+                                    <div class="row row-col-2">
+                                        <div class="col-xl">
+                                            <div class="form-group min-w-190">
+                                                <label class="select-box _select-box">
+                                                    <input type="hidden" class="select-value _select-value" value="0">
+                                                    <span class="value-text _value-text">2023</span>
+                                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                    <ul class="options h-auto _service-status">
+                                                        <li class="option" value="0">2024</li>
+                                                        <li class="option" value="1">2023</li>
+                                                    </ul>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl">
+                                            <div class="form-group min-w-190">
+                                                <label class="select-box _select-box">
+                                                    <input type="hidden" class="select-value _select-value" value="0">
+                                                    <span class="value-text _value-text">11월</span>
+                                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                    <ul class="options h-320px _service-status">
+                                                        <li class="option _all-select" value="0">1월</li>
+                                                        <li class="option " value="1">1월</li>
+                                                        <li class="option " value="1">2월</li>
+                                                        <li class="option " value="1">3월</li>
+                                                        <li class="option " value="1">4월</li>
+                                                        <li class="option " value="1">5월</li>
+                                                        <li class="option " value="1">6월</li>
+                                                        <li class="option " value="1">7월</li>
+                                                        <li class="option " value="1">8월</li>
+                                                        <li class="option " value="1">9월</li>
+                                                        <li class="option" value="1">10월</li>
+                                                        <li class="option" value="1">11월</li>
+                                                        <li class="option " value="1">12월</li>
+                                                    </ul>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-auto">
+                                    <p class="font-weight-semi-bold font-p2 mb12">서비스 구분</p>
+                                    <div class="form-group min-w-190">
                                         <label class="select-box _select-box">
                                             <input type="hidden" class="select-value _select-value" value="0">
-                                            <span class="value-text _value-text">진행상태(전체)</span>
+                                            <span class="value-text _value-text">11월</span>
                                             <i class="icon ico_select_arrow_down">아래화살표</i>
-                                            <ul class="options h-auto _service-status">
-                                                <li class="option _all-select" value="0">전체</li>
-                                                <li class="option _domestic-select" value="1">접수</li>
-                                                <li class="option _domestic-global" value="2">협의중</li>
-                                                <li class="option _domestic-global" value="2">협의불가</li>
-                                                <li class="option _domestic-global" value="2">진행중</li>
-                                                <li class="option _domestic-global" value="2">진행종료</li>
+                                            <ul class="options h-320px _service-status">
+                                                <li class="option _all-select" value="0">1월</li>
+                                                <li class="option " value="1">1월</li>
+                                                <li class="option " value="1">2월</li>
+                                                <li class="option " value="1">3월</li>
+                                                <li class="option " value="1">4월</li>
+                                                <li class="option " value="1">5월</li>
+                                                <li class="option " value="1">6월</li>
+                                                <li class="option " value="1">7월</li>
+                                                <li class="option " value="1">8월</li>
+                                                <li class="option " value="1">9월</li>
+                                                <li class="option" value="1">10월</li>
+                                                <li class="option" value="1">11월</li>
+                                                <li class="option " value="1">12월</li>
                                             </ul>
                                         </label>
                                     </div>
                                 </div>
+
                                 <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="w-100 mb0">
-                                            <input class="form-control " type="text" placeholder="상호명">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="w-100 mb0">
-                                            <input class="form-control " type="text" placeholder="서비스명">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="w-100 mb0">
-                                            <input class="form-control " type="text" placeholder="담당자명">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xl">
-                                    <div class="form-group">
-                                        <label class="w-100 mb0">
-                                            <input class="form-control " type="text" placeholder="이메일">
-                                        </label>
+                                    <p class="font-weight-semi-bold font-p2 mb12">상세 설정</p>
+                                    <div class="row row-col-3">
+                                        <div class="col-xl">
+                                            <div class="form-group">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" placeholder="서비스명">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl">
+                                            <div class="form-group">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" placeholder="담당자명">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl">
+                                            <div class="form-group">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" placeholder="이메일">
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -777,7 +824,7 @@
                             @@include('../include/pagination.html')
                         </div>
                     </div>
-                    <div class="tab-pane active" id="dummy2" role="tabpanel">
+                    <div class="tab-pane " id="dummy2" role="tabpanel">
                         <div class="card mb30">
                             <div class="mb24">
                                 <p class="title font-weight-semi-bold d-flex align-items-center">
@@ -848,6 +895,104 @@
                                         <p class="title font-weight-semi-bold d-flex align-items-center">
                                             <i class="icon ico_check_purple"></i><span class="font-h3 ml6">공급자</span>
                                         </p>
+                                    </div>
+                                    <div class="row align-items-center mb20">
+                                        <div class="col-xl-2">
+                                            <p class="font-p2 font-weight-semi-bold color-gray-100">등록번호</p>
+                                        </div>
+                                        <div class="col-xl-10">
+                                            <div class="form-group mb0">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" disabled
+                                                           value="331-87-10149">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb20">
+                                        <div class="col-xl-2">
+                                            <p class="font-p2 font-weight-semi-bold color-gray-100">상호</p>
+                                        </div>
+                                        <div class="col-xl-10">
+                                            <div class="form-group mb0">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" disabled value="주식회사 페이플">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb20">
+                                        <div class="col-xl-2">
+                                            <p class="font-p2 font-weight-semi-bold color-gray-100">대표자</p>
+                                        </div>
+                                        <div class="col-xl-10">
+                                            <div class="form-group mb0">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" disabled value="김현철">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb20">
+                                        <div class="col-xl-2">
+                                            <p class="font-p2 font-weight-semi-bold color-gray-100">주소</p>
+                                        </div>
+                                        <div class="col-xl-10">
+                                            <div class="form-group mb0">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" disabled
+                                                           value="서울시 강남구 논현로79길 73 2층(수연빌딩)">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb20">
+                                        <div class="col-xl-2">
+                                            <p class="font-p2 font-weight-semi-bold color-gray-100">업태</p>
+                                        </div>
+                                        <div class="col-xl-10">
+                                            <div class="form-group mb0">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" disabled value="서비스">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb20">
+                                        <div class="col-xl-2">
+                                            <p class="font-p2 font-weight-semi-bold color-gray-100">종목</p>
+                                        </div>
+                                        <div class="col-xl-10">
+                                            <div class="form-group mb0">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" disabled
+                                                           value="소프트웨어 개발 및 공급">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb0">
+                                        <div class="col-xl-2">
+                                            <p class="font-p2 font-weight-semi-bold color-gray-100">이메일</p>
+                                        </div>
+                                        <div class="col-xl-10">
+                                            <div class="form-group mb0">
+                                                <label class="w-100 mb0">
+                                                    <input class="form-control " type="text" disabled
+                                                           value="finance@payple.kr">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="mb24 d-flex align-items-center justify-content-sm-between">
+                                        <p class="title font-weight-semi-bold d-flex align-items-center">
+                                            <i class="icon ico_check_purple"></i><span class="font-h3 ml6">공급받는자</span>
+                                        </p>
+                                        <button class="btn btn-secondary btn-round btn-sm font-p3">선택하기</button>
                                     </div>
                                     <div class="row align-items-center mb20">
                                         <div class="col-xl-2">
@@ -935,19 +1080,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
-                                <div class="card">
-                                    <div class="mb24">
-                                        <p class="title font-weight-semi-bold d-flex align-items-center">
-                                            <i class="icon ico_check_purple"></i><span class="font-h3 ml6">공급받는자</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="d-flex mt30 justify-content-end">
+                    <button class="btn btn-md btn-primary btn-round">발행하기</button>
+                </div>
             </section>
         </article>
         <!-- 컨텐츠 e-->
