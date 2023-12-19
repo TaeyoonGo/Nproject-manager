@@ -77,22 +77,12 @@
                                     <div class="form-group min-w-190">
                                         <label class="select-box _select-box">
                                             <input type="hidden" class="select-value _select-value" value="0">
-                                            <span class="value-text _value-text">11월</span>
+                                            <span class="value-text _value-text">전체</span>
                                             <i class="icon ico_select_arrow_down">아래화살표</i>
-                                            <ul class="options h-320px _service-status">
-                                                <li class="option _all-select" value="0">1월</li>
-                                                <li class="option " value="1">1월</li>
-                                                <li class="option " value="1">2월</li>
-                                                <li class="option " value="1">3월</li>
-                                                <li class="option " value="1">4월</li>
-                                                <li class="option " value="1">5월</li>
-                                                <li class="option " value="1">6월</li>
-                                                <li class="option " value="1">7월</li>
-                                                <li class="option " value="1">8월</li>
-                                                <li class="option " value="1">9월</li>
-                                                <li class="option" value="1">10월</li>
-                                                <li class="option" value="1">11월</li>
-                                                <li class="option " value="1">12월</li>
+                                            <ul class="options h-auto _service-status">
+                                                <li class="option _all-select" value="0">전체</li>
+                                                <li class="option " value="1">국내</li>
+                                                <li class="option " value="1">해외</li>
                                             </ul>
                                         </label>
                                     </div>
@@ -193,8 +183,20 @@
                                         <th class="text-center" rowspan="2"><span class="mb20">매매기준율</span></th>
                                         <th class="text-center" rowspan="2" style="border-right: 1px solid #52525B;">
                                             <span class="mb20">정산통화</span></th>
-                                        <th class="text-center" rowspan="2"><span class="mb20">실지급액</span></th>
-                                        <th class="text-center" rowspan="2"><span class="mb20">정산액</span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20 position-relative">실지급액
+                                          <div class="input-ico-hover-area table-tr bottom">
+                                        <i class="icon ico_question_gray input-ico-hover"></i>
+                                        <span class="speech-bubble ">
+                                            <p class="text-left color-gray-100">실지급액 = 정산액-보류액</p>
+                                        </span>
+                                    </div></span></th>
+                                        <th class="text-center" rowspan="2"><span class="mb20 position-relative">정산액
+                                          <div class="input-ico-hover-area table-tr bottom">
+                                        <i class="icon ico_question_gray input-ico-hover"></i>
+                                        <span class="speech-bubble ">
+                                            <p class="text-left color-gray-100">정산액 = 거래액 - 수수료</p>
+                                        </span>
+                                    </div></span></th>
                                         <th class="text-center" rowspan="2" style="border-right: 1px solid #52525B">
                                             <span class="mb20">보류액</span></th>
                                         <th class="text-center" rowspan="2"><span class="mb20">결제통화</span></th>

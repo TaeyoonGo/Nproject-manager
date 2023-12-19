@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    @@include('../include/header.html')
+    <main>
+        @@include('../include/aside.html')
+        <!-- 컨텐츠 s-->
+        <article class="content-container">
+            <section>
+                <h3 class="font-h1 mb30 font-weight-bold">세금계산서 발행</h3>
+                <div class="card">
+                    <h5 class="d-flex align-items-center font-h3 mb20">
+                        <i class="icon ico_filter"></i>
+                        <span class="ml9 font-weight-semi-bold">필터</span>
+                    </h5>
+                </div>
+                <div class="card">
+                    <div class="mb25 d-flex justify-content-between align-items-center">
+                        <h5 class="font-h2 d-flex align-items-center mb0 font-weight-semi-bold">
+                            <i class="icon ico_bs_list"></i>
+                            <span class="ml9">조회결과</span>
+                        </h5>
+                        <div class="btn-wrap">
+                            <button class="btn-reset"><i class="icon ico_excel">엑셀출력</i></button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-spread table-fixed">
+                            <colgroup>
+                                <col style="width: 50px">
+                                <col style="width: 200px">
+                                <col style="width: 180px">
+                                <col style="width: 390px">
+                                <col style="width: 110px">
+                                <col style="width: 120px">
+                                <col style="width: 150px">
+                                <col style="width: 100px">
+                                <col style="width: 100px">
+                                <col style="width: 100px">
+                                <col style="width: 240px">
+                                <col style="width: 70px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th class="align-middle text-center">No</th>
+                                <th class="align-middle text-center">공급받는자<br>상호명 / 서비스명</th>
+                                <th class="align-middle text-center">서비스 MID</th>
+                                <th class="align-middle text-center">상태</th>
+                                <th class="align-middle text-center">작성일자</th>
+                                <th class="align-middle text-center">국세청 승인번호</th>
+                                <th class="align-middle text-center">사업자번호/주민번호</th>
+                                <th class="align-middle text-center">합계금액</th>
+                                <th class="align-middle text-center">공금가액</th>
+                                <th class="align-middle text-center">발행액</th>
+                                <th class="align-middle text-center">상품명</th>
+                                <th class="align-middle text-center">출력</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle"><span>승인 - 발행요청 성공</span></td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr class="color-red-100">
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 국세청전송 실패</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle"><span>승인 - 발행요청 성공</span></td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle"><span>승인 - 발행요청 성공</span></td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle"><span>승인 - 발행요청 성공</span></td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr class="color-red-100">
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 국세청전송 실패</span><br>
+                                    <span>[TS02]식별번호 오류 - 현금 영수증 전용 카드</span>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle"><span>승인 - 발행요청 성공</span></td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle"><span>승인 - 발행요청 성공</span></td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle"><span>승인 - 발행요청 성공</span></td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle"><span>10</span></td>
+                                <td class="text-left align-middle">
+                                    <span>(주)하임인터내셔널</span><br>
+                                    <span>하임인터내셔널</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle"><span>승인 - 발행요청 성공</span></td>
+                                <td class="text-center align-middle"><span>2023-07-21</span></td>
+                                <td class="text-center align-middle"><span>K00048909</span></td>
+                                <td class="text-center align-middle"><span>12346812595463</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-center align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span></td>
+                                <td class="text-center align-middle"><span>
+                                    <i class="pointer-cursor icon ico_print">출력</i>
+                                </span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination-area">
+                        <ul class="pagination-list">
+                            <li class="pagination-icon">
+                                <i class="icon ico_first_page">처음으로가기</i>
+                            </li>
+                            <li class="pagination-icon">
+                                <i class="icon ico_previous_page">이전으로가기</i>
+                            </li>
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li class="pagination-icon">
+                                <i class="icon ico_next_page">다음으로가기</i>
+                            </li>
+                            <li class="pagination-icon">
+                                <i class="icon ico_last_page">맨뒤로가기</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- 컨텐츠 e-->
+    </main>
+    @@include('../include/footer.html')
+</div>
+<!--달력 s-->
+<div class="modal fade _modal-calendar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered calender-modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="_modalRangeDate"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--달력 e-->
+</body>
+<script>
+    $('._check_all').on('click', function () {
+        if ($("._check_all").is(":checked")) {
+            $("input[name=notice]").prop("checked", true);
+        } else {
+            $("input[name=notice]").prop("checked", false);
+        }
+
+    })
+    $("input[name=notice]").click(function () {
+        let total = $("input[name=notice]").length;
+        let checked = $("input[name=notice]:checked").length;
+
+        if (total != checked) $("._check_all").prop("checked", false);
+        else $("._check_all").prop("checked", true);
+    });
+</script>
+</html>

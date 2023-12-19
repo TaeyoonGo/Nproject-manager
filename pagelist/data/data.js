@@ -598,6 +598,18 @@ data.tax = {
     title:'세금계산서',
     list:[
         {
+            stateClass: 'working',
+            url: '세금계산서_발행내역',
+            category: 'tax',
+            page: '세금계산서_발행내역'
+        },
+        {
+            stateClass: 'confirm',
+            url: '세금계산서_발행내역_상세내역',
+            category: 'tax',
+            page: '세금계산서_발행내역_상세내역'
+        },
+        {
             stateClass: 'confirm',
             url: '세금계산서_발행',
             category: 'tax',

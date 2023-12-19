@@ -152,6 +152,7 @@
     @include background-img($width: 12px, $height: 14px, $category: 'icon', $img: 'ico_book_blue.png')
 }
 
+
 .ico-circle-red{
     background-color: $red-100;
     width: 6px;
@@ -163,6 +164,7 @@
     height: 6px;
     background-color: transparent;
 }
+
 
 
 /*aside 관련 아이콘 모음*/
@@ -238,6 +240,7 @@
 .ico_aside_danger_hover {
     @include background-img($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_danger_hover.png')
 }
+
 
 
 
