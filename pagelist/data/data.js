@@ -598,7 +598,7 @@ data.tax = {
     title:'세금계산서',
     list:[
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '세금계산서_발행내역',
             category: 'tax',
             page: '세금계산서_발행내역'
