@@ -210,9 +210,11 @@
                         margin-left: 5px;
                         cursor: pointer;
                         font-style: normal;
+
                         .icon {
                             margin-right: 0;
                         }
+
                         .speech-bubble {
                             padding: 12px;
                             left: calc(50% - 10px);
@@ -244,7 +246,6 @@
                         &.title-lg {
                             flex: 0 0 120px;
                         }
-
 
 
                         span {
@@ -430,12 +431,15 @@
                         }
                     }
                 }
+
                 tbody {
                     tr {
                         border-bottom: 1px solid $gray-400;
+
                         &:first-child {
                             border-top: none;
                         }
+
                         td {
                             padding: 6px 12px;
                             border-top: none;
@@ -451,18 +455,18 @@
             }
 
 
-
         }
     }
 }
 
 /*이메일 발송하기 */
-.email-filter-section{
-    .toast-popup{
+.email-filter-section {
+    .toast-popup {
         top: 80px;
     }
-    .text-area-container{
-        .text-area{
+
+    .text-area-container {
+        .text-area {
             min-height: 575px;
             resize: none;
         }
@@ -470,41 +474,53 @@
 }
 
 /*상담 관리*/
-.consulting-section{
-    .account-list-group{
-        .col-xl{
+.consulting-section {
+    .account-list-group {
+        .col-xl {
             padding: 0;
-            @include res-xl{
+            @include res-xl {
                 padding-bottom: 15px;
             }
-            .account-list{
+
+            .account-list {
                 border-right: 1px solid $gray-200;
-                @include res-xl{
+                @include res-xl {
                     border-right: none;
                     border-bottom: 1px solid $gray-200;
                 }
-                .title{
+
+                .title {
                     margin-bottom: 20px;
-                    @include res-xl{
+                    @include res-xl {
                         margin-bottom: 12px;
                     }
                 }
-                .count{
-                    @include res-xl{
+
+                .count {
+                    @include res-xl {
                         margin-bottom: 15px;
                     }
                 }
 
             }
-            &:nth-last-child(1){
-                @include res-xl{
+
+            &:nth-last-child(1) {
+                @include res-xl {
                     padding-bottom: 0;
                 }
-                .account-list{
+
+                .account-list {
                     border-right: none;
                 }
             }
         }
 
+    }
+}
+
+/*세금 계산서*/
+.row{
+    .hide{
+        display: none;
     }
 }
