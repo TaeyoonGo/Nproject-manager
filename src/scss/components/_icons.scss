@@ -181,10 +181,10 @@
     @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_domestic_hover.png')
 }
 .ico_aside_global{
-    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_global.png')
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_global.svg')
 }
 .ico_aside_global_hover{
-    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_global_hover.png')
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_global_hover.svg')
 }
 .ico_aside_heart{
     @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_heart.png')
@@ -193,10 +193,10 @@
     @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_heart_hover.png')
 }
 .ico_aside_hub{
-    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_hub.png')
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_hub.svg')
 }
 .ico_aside_hub_hover{
-    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_hub_hover.png')
+    @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_hub_hover.svg')
 }
 .ico_aside_link{
     @include background-img ($width: 20px, $height: 20px, $category: 'layout', $img: 'ico_aside_link.png')
