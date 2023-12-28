@@ -180,7 +180,31 @@
     .signup-layout {
         max-width: 800px;
         margin: 0 auto;
+        .hover-area {
+            display: inline-block;
+            margin-left: 5px;
+            cursor: pointer;
+            font-style: normal;
 
+            .icon {
+                margin-right: 0;
+            }
+
+            .speech-bubble {
+                padding: 12px;
+                left: calc(50% - 8px);
+                right: auto;
+                top: -50px;
+                font-weight: 500;
+                transform: translate(-50%, -0%);
+            }
+
+            &:hover {
+                .speech-bubble {
+                    visibility: visible;
+                }
+            }
+        }
         .card {
             .btn-wrap {
                 button + button {
@@ -205,30 +229,7 @@
                         margin-right: 5px;
                     }
 
-                    .hover-area {
-                        display: inline-block;
-                        margin-left: 5px;
-                        cursor: pointer;
-                        font-style: normal;
 
-                        .icon {
-                            margin-right: 0;
-                        }
-
-                        .speech-bubble {
-                            padding: 12px;
-                            left: calc(50% - 10px);
-                            top: -45px;
-                            font-weight: 500;
-                            transform: translate(-50%, -0%);
-                        }
-
-                        &:hover {
-                            .speech-bubble {
-                                visibility: visible;
-                            }
-                        }
-                    }
                 }
             }
 
@@ -285,7 +286,7 @@
                         margin-bottom: 0;
 
                         .title {
-                            flex: 0 0 40px;
+                            flex: 0 0 80px;
                         }
 
                         .data-group {
