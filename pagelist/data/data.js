@@ -288,7 +288,7 @@ data.notice = {
             page: '공지사항_상세'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일발송하기_체크박스체크전',
             category: 'notice',
             page: '이메일발송하기_체크박스체크전'
@@ -319,13 +319,13 @@ data.signupko = {
     title:'가입,신청정보-국내',
     list:[
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '신청정보_공통',
             category: 'signupko',
             page: '신청정보_공통'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '기본정보_공통_정산',
             category: 'signupko',
             page: '기본정보_공통_정산'
@@ -343,91 +343,91 @@ data.signupko = {
             page: '기본정보_국내_수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '카드_구분값_수정이력',
             category: 'signupko',
             page: '카드_구분값_수정이력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '카드_상태변경',
             category: 'signupko',
             page: '카드_상태변경'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '카드_수수료변경',
             category: 'signupko',
             page: '카드_수수료변경'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '카드_수수료_수정이력',
             category: 'signupko',
             page: '카드_수수료_수정이력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '카드_정산주기_수정',
             category: 'signupko',
             page: '카드_정산주기_수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '카드_정산주기_수정이력',
             category: 'signupko',
             page: '카드_정산주기_수정이력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '계좌_상태변경',
             category: 'signupko',
             page: '계좌_상태변경'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '계좌_수수료수정',
             category: 'signupko',
             page: '계좌_수수료수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '계좌_수수료_수정이력',
             category: 'signupko',
             page: '계좌_수수료_수정이력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '페이_상태변경',
             category: 'signupko',
             page: '페이_상태변경'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '페이_수수료수정',
             category: 'signupko',
             page: '페이_수수료수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '페이_수수료_수정이력',
             category: 'signupko',
             page: '페이_수수료_수정이력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '가상계좌_상태수정',
             category: 'signupko',
             page: '가상계좌_상태수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '가상계좌_수수료수정',
             category: 'signupko',
             page: '가상계좌_수수료수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '가상계좌_수수료_수정이력',
             category: 'signupko',
             page: '가상계좌_수수료_수정이력'
@@ -450,25 +450,25 @@ data.signupen = {
             page: '기본정보_해외_수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '기본정보_해외_상태수정',
             category: 'signupen',
             page: '기본정보_해외_상태수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '기본정보_해외_결제제한수정',
             category: 'signupen',
             page: '기본정보_해외_결제제한수정'
         },
+        // {
+        //     stateClass: 'working',
+        //     url: '기본정보_해외_수수료수정',
+        //     category: 'signupen',
+        //     page: '기본정보_해외_수수료수정'
+        // },
         {
-            stateClass: 'working',
-            url: '기본정보_해외_수수료수정',
-            category: 'signupen',
-            page: '기본정보_해외_수수료수정'
-        },
-        {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '기본정보_해외_수수료수정이력',
             category: 'signupen',
             page: '기본정보_해외_수수료수정이력'
@@ -479,25 +479,25 @@ data.emailfilter = {
     title:'이메일관리',
     list:[
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일관리',
             category: 'emailfilter',
             page: '이메일관리'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일관리_상세내용확인',
             category: 'emailfilter',
             page: '이메일관리_상세내용확인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일관리_작성하기',
             category: 'emailfilter',
             page: '이메일관리_작성하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일관리_작성하기팝업',
             category: 'emailfilter',
             page: '이메일관리_작성하기팝업'
@@ -509,37 +509,37 @@ data.consulting = {
     title:'상담관리',
     list:[
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상담관리',
             category: 'consulting',
             page: '상담관리'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상담관리_등록하기',
             category: 'consulting',
             page: '상담관리_등록하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상담관리_수정하기',
             category: 'consulting',
             page: '상담관리_수정하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상담관리_모달',
             category: 'consulting',
             page: '상담관리_모달'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상호명조회_조회결과있음',
             category: 'consulting',
             page: '상호명조회_조회결과있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상호명조회_조회결과없음',
             category: 'consulting',
             page: '상호명조회_조회결과없음'
@@ -551,13 +551,13 @@ data.mkt = {
     title:'마케팅',
     list:[
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '제휴_참여신청',
             category: 'mkt',
             page: '제휴_참여신청'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '제휴_혜택신청',
             category: 'mkt',
             page: '제휴_혜택신청'
@@ -568,26 +568,26 @@ data.account = {
     title:'현금영수증',
     list:[
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '현금영수증_조회_발행하기',
             category: 'account',
             page: '현금영수증_조회_발행하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '현금영수증_발행하기',
             category: 'account',
             page: '현금영수증_발행하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '현금영수증_발행이력_더블체크',
             category: 'account',
             page: '현금영수증_발행이력_더블체크'
         },
 
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '현금영수증_이력',
             category: 'account',
             page: '현금영수증_이력'
@@ -598,61 +598,61 @@ data.tax = {
     title:'세금계산서',
     list:[
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '세금계산서_발행내역',
             category: 'tax',
             page: '세금계산서_발행내역'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '세금계산서_발행내역_상세내역',
             category: 'tax',
             page: '세금계산서_발행내역_상세내역'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '세금계산서_발행',
             category: 'tax',
             page: '세금계산서_발행'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '공인인증서_등록팝업',
             category: 'tax',
             page: '공인인증서_등록팝업'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '공인인증서_등록완료팝업',
             category: 'tax',
             page: '공인인증서_등록완료팝업'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일발송_팝업',
             category: 'tax',
             page: '이메일발송_팝업'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상호명_조회_데이터_체크',
             category: 'tax',
             page: '상호명_조회_데이터_체크'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상호명_조회_데이터_체크_정상',
             category: 'tax',
             page: '상호명_조회_데이터_체크_정상'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상호명_조회_데이터_체크_폐업',
             category: 'tax',
             page: '상호명_조회_데이터_체크_폐업'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상호명_조회_데이터없음',
             category: 'tax',
             page: '상호명_조회_데이터없음'
