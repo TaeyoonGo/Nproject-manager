@@ -166,12 +166,19 @@ a{
                 overflow: hidden;
             }
             &:last-child{
-                border-radius: 0 28px 28px 0;
+                border-radius: 0 12px 12px 0;
                 overflow: hidden;
                 border-right: none;
             }
             label{
                 width: 100%;
+                &.btn-md{
+                    padding: 5px 15px;
+                    min-width: 100px;
+                    @include res-xl{
+                        min-width: auto;
+                    }
+                }
             }
             .radio-input {
                 appearance: none;
