@@ -181,6 +181,7 @@ a{
                 }
             }
             .radio-input {
+                position: absolute;
                 appearance: none;
                 &:checked{
                     +label{
