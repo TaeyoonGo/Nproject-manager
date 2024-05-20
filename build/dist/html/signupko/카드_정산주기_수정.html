@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://image.payple.kr/common/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="./../../css/payple_component.css?v2.4">
+    <link rel="stylesheet" href="./../../css/payple_pages.css?v2.4">
+    <script src="../../js/bundle.js?v2.4"></script>
+    <script src="../../js/common.js?v2.4"></script>
+    <title>페이플 관리자 페이지</title>
+</head>
+
+<body>
+<div class="wrap">
+    <header>
+    <div class="header">
+        <div class="aside_button _aside_button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1 class="logo">
+            <a href="#">
+                <div class="img">
+                    <img src="../../img/layout/payple_admin__logo.svg" alt="페이플로고">
+                </div>
+            </a>
+        </h1>
+        <span class="btn-area">
+            <i class="icon ico_account_btn _account_btn">계정설정</i>
+        </span>
+    </div>
+</header>
+    <main>
+        <div class="aside">
+    <div class="btn-open-depths _btn-open-depths">
+        <img src="../../img/layout/aside_btn.png" alt="열기">
+    </div>
+    <div class="layout">
+        <ul>
+            <li class="one-depth main-link">
+                <span>
+                    <a href="#">
+                        <i class="icon ico_white_home">메인으로</i>
+                    </a>
+                </span>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_statistics mr10">통계</i><span class="text">통계</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                     <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">서비스별</span>
+                        </a>
+                        <i class="arrow-box">서비스별</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">일별</span>
+                        </a>
+                        <i class="arrow-box">일별</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">월별</span>
+                        </a>
+                        <i class="arrow-box">월별</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_partner mr10">파트너</i><span class="text">파트너</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">가입, 신청정보</span>
+                        </a>
+                        <i class="arrow-box">가입, 신청정보</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_calculate mr10"></i><span
+                            class="text">정산</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산달력</span>
+                        </a>
+                        <i class="arrow-box">정산달력</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역 국내</span>
+                        </a>
+                        <i class="arrow-box">정산내역 국내</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역 해외</span>
+                        </a>
+                        <i class="arrow-box">정산내역 해외</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                       <span class="text-area"><i class="icon ico_aside_domestic mr10"></i><span
+                               class="text">결제 - 국내</span></span>
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                            <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제내역</span>
+                        </a>
+                        <i class="arrow-box">결제내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">요청/실패 내역</span>
+                        </a>
+                        <i class="arrow-box">요청/실패 내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">등록/해지 정보</span>
+                        </a>
+                        <i class="arrow-box">등록/해지 정보</i>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_global mr10"></i><span class="text">결제 - 해외</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제내역</span>
+                        </a>
+                        <i class="arrow-box">결제내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">승인-요청/실패 내역</span>
+
+                        </a>
+                        <i class="arrow-box">승인-요청/실패 내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">매입-실패내역</span>
+
+                        </a>
+                        <i class="arrow-box">매입-실패내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">등록/해지 정보</span>
+                        </a>
+                        <i class="arrow-box">등록/해지 정보</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">$1.00 인증</span>
+                        </a>
+                        <i class="arrow-box">$1.00 인증</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title ">
+                    <span class="text-area">
+                        <i class="icon ico_aside_hub mr10"></i>
+                        <span class="text">허브</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역</span>
+                        </a>
+                        <i class="arrow-box">정산내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">이체내역</span>
+                        </a>
+                        <i class="arrow-box">이체내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">인증내역</span>
+                        </a>
+                        <i class="arrow-box">인증내역</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title ">
+                     <span class="text-area">
+                         <i class="icon ico_aside_link mr10"></i>
+                         <span class="text">링크</span>
+                     </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">상품내역</span>
+                        </a>
+                        <i class="arrow-box">상품내역</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area">
+                        <i class="icon ico_aside_speech_bubble mr10"></i>
+                        <span class="text">고객센터</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">상담관리</span>
+                        </a>
+                        <i class="arrow-box">상담관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">분쟁(차지백) 관리</span>
+                        </a>
+                        <i class="arrow-box">분쟁(차지백) 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">공지사항 관리</span>
+                        </a>
+                        <i class="arrow-box">공지사항 관리</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title ">
+                  <span class="text-area">
+                      <i class="icon ico_aside_danger mr10"></i>
+                      <span class="text">위험관리</span>
+                  </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">파트너 이탈 관리</span>
+                        </a>
+                        <i class="arrow-box">파트너 이탈 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">DM 관리/이상거래내역</span>
+                        </a>
+                        <i class="arrow-box">DM 관리/이상거래내역</i>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area">
+                        <i class="icon ico_aside_stick mr10"></i>
+                        <span class="text">운영</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">이메일</span>
+                        </a>
+                        <i class="arrow-box">이메일</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">현금영수증</span>
+                        </a>
+                        <i class="arrow-box">현금영수증</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">전자세금계산서</span>
+                        </a>
+                        <i class="arrow-box">전자세금계산서</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">보증보험 관리</span>
+                        </a>
+                        <i class="arrow-box">보증보험 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">환율정보</span>
+                        </a>
+                        <i class="arrow-box">환율정보</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_memo mr10"></i>
+                        <span class="text">매출관리</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">매출</span>
+                        </a>
+                        <i class="arrow-box">매출</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제수단별 원가</span>
+                        </a>
+                        <i class="arrow-box">결제수단별 원가</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">원천사 정산-국내</span>
+                        </a>
+                        <i class="arrow-box">원천사 정산-국내</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">원천사 정산-해외</span>
+                        </a>
+                        <i class="arrow-box">원천사 정산-해외</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title">
+                   <span class="text-area"><i class="icon ico_aside_heart mr10"></i>
+                       <span class="text">마케팅</span>
+                   </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">제휴-참여신청</span>
+                        </a>
+                        <i class="arrow-box">제휴-참여신청</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">제휴-혜택신청</span>
+                        </a>
+                        <i class="arrow-box">제휴-혜택신청</i>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+        <article class="content-container">
+            <!-- 컨텐츠 s-->
+            <section class="signup-section">
+                <div class="slide-modal-wrap _slide-modal-wrap _slide-modal-wrap-cancel show">
+                    <div class="slide-modal slide-modal-sm">
+                        <div class="slide-modal-header">
+                            <h3 class="font-h1 mb0 font-weight-bold">정산주기 수정</h3>
+                            <i class="ico_close_btn _close-slide-modal-btn"></i>
+                        </div>
+                        <div class="slide-modal-body">
+                            <div class="position-relative">
+                                <div class="toast-popup primary show">
+                                    <p class="text-left"><i class="icon"></i><span
+                                            class="text">정산 주기 스케쥴이 등록되었습니다.</span></p>
+                                </div>
+                                <div>
+                                    <p class="font-h2 font-weight-semi-bold mb24">수정할 정산주기 입력</p>
+                                    <div class="mb80">
+                                        <div class="d-flex align-items-center mb20">
+                                            <div class="flex-1 w-30 mb0" ><span class=" font-weight-semi-bold font-h3">구분</span></div>
+                                            <div class="flex-1 w-70" >
+                                                <div class="form-group mb0">
+                                                    <label class="select-box _select-box">
+                                                        <input type="hidden" class="select-value _select-value"
+                                                               value="0">
+                                                        <span class="value-text _value-text"
+                                                              >선택</span>
+                                                        <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                        <ul class="options h-auto">
+                                                            <li class="option" value="0">선택</li>
+                                                            <li class="option" value="1">일정산</li>
+                                                            <li class="option" value="2">일정산</li>
+                                                        </ul>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mb0">
+                                            <div class="flex-1 w-30"><span class=" font-weight-semi-bold font-h3">선택</span></div>
+                                            <div class="flex-1 w-70">
+                                                <div class="form-group mb0">
+                                                    <label class="select-box _select-box">
+                                                        <input type="hidden" class="select-value _select-value"
+                                                               value="0">
+                                                        <span class="value-text _value-text">선택</span>
+                                                        <i class="icon ico_select_arrow_down">아래화살표</i>
+                                                        <ul class="options h-auto">
+                                                            <li class="option" value="0">1일</li>
+                                                            <li class="option" value="1">1일</li>
+                                                            <li class="option" value="2">1일</li>
+                                                        </ul>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="date-fix-area">
+                                        <span class="title font-h3 font-weight-semi-bold">수정 적용일</span>
+                                        <div class="form-group mb0 w-100">
+                                            <label class="calender-input mb0">
+                                                <input class="form-control _inputSingleDate" type="text"
+                                                       style="font-size: 12px">
+                                                <i class="icon ico_calendar">달력이미지</i>
+                                            </label>
+                                            <div class="mt10 color-blue-100 font-p3"><i
+                                                    class="ico_danger_blue icon mr8"></i>적용일 00:0:00 거래부터 변경 수수료가 적용됩니다.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-modal-footer clearfix">
+                            <div class="float-right">
+                                <button class="btn btn-primary btn-md">스케쥴 등록하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 컨텐츠 e-->
+        </article>
+    </main>
+    <footer>
+    <div class="footer">
+        <p class="copyright">© Payple Inc. All rights reserved.</p>
+        <p class="logo-text">Powered by<a href="#"><i class="icon ico_footer_logo"></i></a></p>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>
+

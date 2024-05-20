@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://image.payple.kr/common/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="./../../css/payple_component.css?v2.4">
+    <link rel="stylesheet" href="./../../css/payple_pages.css?v2.4">
+    <script src="../../js/bundle.js?v2.4"></script>
+    <script src="../../js/common.js?v2.4"></script>
+    <title>페이플 관리자 페이지</title>
+</head>
+
+<body>
+<div class="wrap">
+    <header>
+    <div class="header">
+        <div class="aside_button _aside_button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1 class="logo">
+            <a href="#">
+                <div class="img">
+                    <img src="../../img/layout/payple_admin__logo.svg" alt="페이플로고">
+                </div>
+            </a>
+        </h1>
+        <span class="btn-area">
+            <i class="icon ico_account_btn _account_btn">계정설정</i>
+        </span>
+    </div>
+</header>
+    <main>
+        <div class="aside">
+    <div class="btn-open-depths _btn-open-depths">
+        <img src="../../img/layout/aside_btn.png" alt="열기">
+    </div>
+    <div class="layout">
+        <ul>
+            <li class="one-depth main-link">
+                <span>
+                    <a href="#">
+                        <i class="icon ico_white_home">메인으로</i>
+                    </a>
+                </span>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_statistics mr10">통계</i><span class="text">통계</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                     <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">서비스별</span>
+                        </a>
+                        <i class="arrow-box">서비스별</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">일별</span>
+                        </a>
+                        <i class="arrow-box">일별</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">월별</span>
+                        </a>
+                        <i class="arrow-box">월별</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_partner mr10">파트너</i><span class="text">파트너</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">가입, 신청정보</span>
+                        </a>
+                        <i class="arrow-box">가입, 신청정보</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_calculate mr10"></i><span
+                            class="text">정산</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산달력</span>
+                        </a>
+                        <i class="arrow-box">정산달력</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역 국내</span>
+                        </a>
+                        <i class="arrow-box">정산내역 국내</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역 해외</span>
+                        </a>
+                        <i class="arrow-box">정산내역 해외</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                       <span class="text-area"><i class="icon ico_aside_domestic mr10"></i><span
+                               class="text">결제 - 국내</span></span>
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                            <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제내역</span>
+                        </a>
+                        <i class="arrow-box">결제내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">요청/실패 내역</span>
+                        </a>
+                        <i class="arrow-box">요청/실패 내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">등록/해지 정보</span>
+                        </a>
+                        <i class="arrow-box">등록/해지 정보</i>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_global mr10"></i><span class="text">결제 - 해외</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제내역</span>
+                        </a>
+                        <i class="arrow-box">결제내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">승인-요청/실패 내역</span>
+
+                        </a>
+                        <i class="arrow-box">승인-요청/실패 내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">매입-실패내역</span>
+
+                        </a>
+                        <i class="arrow-box">매입-실패내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">등록/해지 정보</span>
+                        </a>
+                        <i class="arrow-box">등록/해지 정보</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">$1.00 인증</span>
+                        </a>
+                        <i class="arrow-box">$1.00 인증</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title ">
+                    <span class="text-area">
+                        <i class="icon ico_aside_hub mr10"></i>
+                        <span class="text">허브</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역</span>
+                        </a>
+                        <i class="arrow-box">정산내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">이체내역</span>
+                        </a>
+                        <i class="arrow-box">이체내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">인증내역</span>
+                        </a>
+                        <i class="arrow-box">인증내역</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title ">
+                     <span class="text-area">
+                         <i class="icon ico_aside_link mr10"></i>
+                         <span class="text">링크</span>
+                     </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">상품내역</span>
+                        </a>
+                        <i class="arrow-box">상품내역</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area">
+                        <i class="icon ico_aside_speech_bubble mr10"></i>
+                        <span class="text">고객센터</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">상담관리</span>
+                        </a>
+                        <i class="arrow-box">상담관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">분쟁(차지백) 관리</span>
+                        </a>
+                        <i class="arrow-box">분쟁(차지백) 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">공지사항 관리</span>
+                        </a>
+                        <i class="arrow-box">공지사항 관리</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title ">
+                  <span class="text-area">
+                      <i class="icon ico_aside_danger mr10"></i>
+                      <span class="text">위험관리</span>
+                  </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">파트너 이탈 관리</span>
+                        </a>
+                        <i class="arrow-box">파트너 이탈 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">DM 관리/이상거래내역</span>
+                        </a>
+                        <i class="arrow-box">DM 관리/이상거래내역</i>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area">
+                        <i class="icon ico_aside_stick mr10"></i>
+                        <span class="text">운영</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">이메일</span>
+                        </a>
+                        <i class="arrow-box">이메일</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">현금영수증</span>
+                        </a>
+                        <i class="arrow-box">현금영수증</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">전자세금계산서</span>
+                        </a>
+                        <i class="arrow-box">전자세금계산서</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">보증보험 관리</span>
+                        </a>
+                        <i class="arrow-box">보증보험 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">환율정보</span>
+                        </a>
+                        <i class="arrow-box">환율정보</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_memo mr10"></i>
+                        <span class="text">매출관리</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">매출</span>
+                        </a>
+                        <i class="arrow-box">매출</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제수단별 원가</span>
+                        </a>
+                        <i class="arrow-box">결제수단별 원가</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">원천사 정산-국내</span>
+                        </a>
+                        <i class="arrow-box">원천사 정산-국내</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">원천사 정산-해외</span>
+                        </a>
+                        <i class="arrow-box">원천사 정산-해외</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title">
+                   <span class="text-area"><i class="icon ico_aside_heart mr10"></i>
+                       <span class="text">마케팅</span>
+                   </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">제휴-참여신청</span>
+                        </a>
+                        <i class="arrow-box">제휴-참여신청</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">제휴-혜택신청</span>
+                        </a>
+                        <i class="arrow-box">제휴-혜택신청</i>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+        <!-- 컨텐츠 s-->
+        <article class="content-container">
+            <section class="mkt-section">
+                <div class="toast-popup show primary">
+                    <p class="text-center"><i class="icon"></i><span class="text">1건이 상태 변경 완료되었습니다.</span></p>
+                </div>
+                <h3 class="font-h1 mb30 font-weight-bold">제휴-참여 신청</h3>
+                <div class="card">
+                    <h5 class="d-flex align-items-center font-h3 mb20">
+                        <i class="icon ico_filter"></i>
+                        <span class="ml9 font-weight-semi-bold">필터</span>
+                    </h5>
+                    <div class="row">
+                        <div class="col-xl-auto">
+                            <p class="font-p2 mb12 font-weight-semi-bold">기간</p>
+                            <div class="row row-col-2">
+                                <div class="col-xl-auto">
+                                    <div class="form-group">
+                                        <div class="time-range-btn-group">
+                                            <button class="btn btn-secondary" id="threeMonthAgoBtn">3개월</button>
+                                            <button class="btn btn-secondary" id="lastMonthBtn">지난달</button>
+                                            <button class="btn btn-secondary" id="thisMonthBtn">이번달</button>
+                                            <button class="btn btn-secondary" id="yesterdayBtn">어제</button>
+                                            <button class="btn btn-secondary" id="todayBtn">오늘</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-auto">
+                                    <div class="form-group">
+                                        <label class="calender-input mb0">
+                                            <input class="form-control _inputRangeDate" type="text">
+                                            <i class="icon ico_calendar" onclick="$('._modal-calendar').modal('show')">달력이미지</i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto">
+                            <p class="font-weight-semi-bold font-p2 mb12">신청혜택 유형</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <div class="btn-group w-100 custom-radio-container">
+                                            <div class="custom-radio-group">
+                                                <input class="radio-input" type="radio" name="example2" checked=""
+                                                       id="customRadio3">
+                                                <label for="customRadio3" class="btn btn-secondary btn-md">전체</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example2"
+                                                       id="customRadio4">
+                                                <label for="customRadio4" class="btn btn-secondary btn-md">파트너</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example2"
+                                                       id="customRadio5">
+                                                <label for="customRadio5" class="btn btn-secondary btn-md">방문자</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example2"
+                                                       id="customRadio6">
+                                                <label for="customRadio6" class="btn btn-secondary btn-md">방문자</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-weight-semi-bold font-p2 mb12">상세검색</p>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="select-box _select-box">
+                                    <input type="hidden" class="select-value _select-value" value="0">
+                                    <span class="value-text _value-text">진행상태(전체)</span>
+                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                    <ul class="options h-auto _service-status">
+                                        <li class="option _all-select" value="0">전체</li>
+                                        <li class="option _domestic-select" value="1">접수</li>
+                                        <li class="option _domestic-global" value="2">협의중</li>
+                                        <li class="option _domestic-global" value="2">협의불가</li>
+                                        <li class="option _domestic-global" value="2">진행중</li>
+                                        <li class="option _domestic-global" value="2">진행종료</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="상호명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="서비스명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="담당자명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="이메일">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix filter-button-area position-static">
+                        <div class="float-right">
+                            <a class=" align-bottom" href="">Clear all</a>
+                            <button class="btn btn-dark btn-round ml-3 btn-md">조회하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="mb25 d-flex justify-content-between align-items-center">
+                        <h5 class="font-h2 d-flex align-items-center mb0 font-weight-semi-bold">
+                            <i class="icon ico_bs_list"></i>
+                            <span class="ml9">조회결과</span>
+                        </h5>
+                        <div class="btn-wrap d-flex align-items-center">
+                            <div class="form-group min-w-120 mb0 mr11">
+                                <label class="select-box _select-box">
+                                    <input type="hidden" class="select-value _select-value" value="0">
+                                    <span class="value-text _value-text">선택</span>
+                                    <i class="icon ico_select_arrow_down">아래화살표</i>
+                                    <ul class="options h-auto _service-status">
+                                        <li class="option _all-select" value="0">선택</li>
+                                        <li class="option _domestic-select" value="1">협의중</li>
+                                        <li class="option _domestic-global" value="2">협의불가</li>
+                                        <li class="option _domestic-global" value="2">진행중</li>
+                                        <li class="option _domestic-global" value="2">진행종료</li>
+                                    </ul>
+                                </label>
+                            </div>
+                            <button class="btn btn-md btn-info btn-round mr20">
+                                <i class="icon ico_check_blue mr5">상태변경</i>
+                                상태변경
+                            </button>
+                            <button class="btn-reset"><i class="icon ico_excel">엑셀출력</i></button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-spread table-fixed">
+                            <colgroup>
+                                <col style="width: 40px">
+                                <col style="width: 100px">
+                                <col style="width: 70px">
+                                <col style="width: 160px">
+                                <col style="width: 130px">
+                                <col style="width: 150px">
+                                <col style="width: 90px">
+                                <col style="width: 100px">
+                                <col style="width: 160px">
+                                <col style="width: 500px">
+
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th class="text-center"></th>
+                                <th class="text-center">발송일시</th>
+                                <th class="text-center">진행상태</th>
+                                <th class="text-center">상호명/서비스명</th>
+                                <th class="text-center">담당자명/직책</th>
+                                <th class="text-center">이메일</th>
+                                <th class="text-center">파트너 여부</th>
+                                <th class="text-center">신청혜택 유형</th>
+                                <th class="text-center">홈페이지 URL</th>
+                                <th class="text-center">상세내용</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의불가</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의중</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr고객 획득 홈페이지 URL : https://1point.kr고객 획득 홈페이지 URL : https://1point.kr고객 획득 홈페이지 URL : https://1point.kr고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 스 크레딧(전문가 고용비) 스 크레딧(전문가 고용비) 스 크레딧(전문가 고용비) 스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ 페이지(https://quotabook.com/ 페이지(https://quotabook.com/ 페이지(https://quotabook.com/ 페이지(https://quotabook.com/ 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>진행중</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의불가</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의불가</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>진행종료</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의불가</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의불가</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의불가</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의불가</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle ">
+                                    <label class="mb0">
+                                        <input type="checkbox" name="notice" class="custom-checkbox"
+                                               onclick="checkOnlyOne(this)">
+                                        <i class="icon ico_checkbox">체크박스</i>
+                                    </label>
+                                </td>
+                                <td class="text-center align-middle"><span>2023-07-28<br>12:05:55</span></td>
+                                <td class="text-center align-middle">
+                                    <span>협의불가</span>
+                                </td>
+                                <td class="text-left align-middle"><span>(주)피클</span><br><span>피클플러스플러스플러스</span></td>
+                                <td class="text-center align-middle"><span>정다운</span>/<span>대표</span></td>
+                                <td class="text-center align-middle"><span>send.me@payple.kr</span></td>
+                                <td class="text-center align-middle">
+                                    <span>N</span>
+                                </td>
+                                <td class="text-center align-middle"><span>파트너</span></td>
+                                <td class="text-center align-middle"><span>payple.kr</span></td>
+                                <td class="text-left align-middle">
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공 목적 : </span><span>고객 획득 홈페이지 URL : https://1point.kr</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 혜택내용 : </span><span>서비스 크레딧(전문가 고용비) 총 30만원 제공</span></div>
+                                    <div class="mb4"><span class="font-weight-semi-bold">&#183; 제공기간 : </span><span>협의 </span></div>
+                                    <div><span class="font-weight-semi-bold">&#183; 참고 : </span><span>쿼타북 제휴 페이지(https://quotabook.com/ko-benefit/1point)</span></div>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination-area">
+    <ul class="pagination-list">
+        <li class="pagination-icon">
+            <i class="icon ico_first_page">처음으로가기</i>
+        </li>
+        <li class="pagination-icon">
+            <i class="icon ico_previous_page">이전으로가기</i>
+        </li>
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="pagination-icon">
+            <i class="icon ico_next_page">다음으로가기</i>
+        </li>
+        <li class="pagination-icon">
+            <i class="icon ico_last_page">맨뒤로가기</i>
+        </li>
+    </ul>
+</div>
+                </div>
+            </section>
+        </article>
+        <!-- 컨텐츠 e-->
+    </main>
+    <footer>
+    <div class="footer">
+        <p class="copyright">© Payple Inc. All rights reserved.</p>
+        <p class="logo-text">Powered by<a href="#"><i class="icon ico_footer_logo"></i></a></p>
+    </div>
+</footer>
+</div>
+<!--달력 s-->
+<div class="modal fade _modal-calendar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered calender-modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="_modalRangeDate"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--달력 e-->
+</body>
+<script>
+    /*체크박스 단일 선택 */
+    function checkOnlyOne(target) {
+        if ($(target).is(":checked")) {
+            $(target).prop("checked", true);
+            $(target).closest("tr").siblings("tr").find($("input[name='notice']")).prop("checked", false);
+            $(target).closest("tr").siblings("tr").removeClass('bg-purple-300')
+            $(target).closest("tr").addClass('bg-purple-300')
+        } else {
+            $(target).prop("checked", false);
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://image.payple.kr/common/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="./../../css/payple_component.css?v2.4">
+    <link rel="stylesheet" href="./../../css/payple_pages.css?v2.4">
+    <script src="../../js/bundle.js?v2.4"></script>
+    <script src="../../js/common.js?v2.4"></script>
+    <title>페이플 관리자 페이지</title>
+</head>
+
+<body>
+<div class="wrap">
+
+</div>
+<!--발송 팝업 s-->
+<div class="modal fade confirm-modal _confirm-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="content">
+                    <i class="icon ico_exclamation_purple"></i>
+                    <p class="text-center">전자세금계산서 발행을 위해<br>
+                        전자세금계산서용 공동인증서 등록이 필요합니다.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary">등록하기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--발송 팝업 e-->
+<script>
+    $('._confirm-modal').modal('show')
+</script>
+</body>
+
+</html>
+
+
+
+
+

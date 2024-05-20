@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://image.payple.kr/common/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="./../../css/payple_component.css?v2.4">
+    <link rel="stylesheet" href="./../../css/payple_pages.css?v2.4">
+    <script src="../../js/bundle.js?v2.4"></script>
+    <script src="../../js/common.js?v2.4"></script>
+    <title>페이플 관리자 페이지</title>
+</head>
+
+<body>
+<div class="wrap">
+    <header>
+    <div class="header">
+        <div class="aside_button _aside_button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1 class="logo">
+            <a href="#">
+                <div class="img">
+                    <img src="../../img/layout/payple_admin__logo.svg" alt="페이플로고">
+                </div>
+            </a>
+        </h1>
+        <span class="btn-area">
+            <i class="icon ico_account_btn _account_btn">계정설정</i>
+        </span>
+    </div>
+</header>
+    <main>
+        <div class="aside">
+    <div class="btn-open-depths _btn-open-depths">
+        <img src="../../img/layout/aside_btn.png" alt="열기">
+    </div>
+    <div class="layout">
+        <ul>
+            <li class="one-depth main-link">
+                <span>
+                    <a href="#">
+                        <i class="icon ico_white_home">메인으로</i>
+                    </a>
+                </span>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_statistics mr10">통계</i><span class="text">통계</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                     <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">서비스별</span>
+                        </a>
+                        <i class="arrow-box">서비스별</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">일별</span>
+                        </a>
+                        <i class="arrow-box">일별</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">월별</span>
+                        </a>
+                        <i class="arrow-box">월별</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_partner mr10">파트너</i><span class="text">파트너</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">가입, 신청정보</span>
+                        </a>
+                        <i class="arrow-box">가입, 신청정보</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_calculate mr10"></i><span
+                            class="text">정산</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산달력</span>
+                        </a>
+                        <i class="arrow-box">정산달력</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역 국내</span>
+                        </a>
+                        <i class="arrow-box">정산내역 국내</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역 해외</span>
+                        </a>
+                        <i class="arrow-box">정산내역 해외</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                       <span class="text-area"><i class="icon ico_aside_domestic mr10"></i><span
+                               class="text">결제 - 국내</span></span>
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                            <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제내역</span>
+                        </a>
+                        <i class="arrow-box">결제내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">요청/실패 내역</span>
+                        </a>
+                        <i class="arrow-box">요청/실패 내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">등록/해지 정보</span>
+                        </a>
+                        <i class="arrow-box">등록/해지 정보</i>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_global mr10"></i><span class="text">결제 - 해외</span></span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제내역</span>
+                        </a>
+                        <i class="arrow-box">결제내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">승인-요청/실패 내역</span>
+
+                        </a>
+                        <i class="arrow-box">승인-요청/실패 내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">매입-실패내역</span>
+
+                        </a>
+                        <i class="arrow-box">매입-실패내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">등록/해지 정보</span>
+                        </a>
+                        <i class="arrow-box">등록/해지 정보</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">$1.00 인증</span>
+                        </a>
+                        <i class="arrow-box">$1.00 인증</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title ">
+                    <span class="text-area">
+                        <i class="icon ico_aside_hub mr10"></i>
+                        <span class="text">허브</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">정산내역</span>
+                        </a>
+                        <i class="arrow-box">정산내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">이체내역</span>
+                        </a>
+                        <i class="arrow-box">이체내역</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">인증내역</span>
+                        </a>
+                        <i class="arrow-box">인증내역</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title ">
+                     <span class="text-area">
+                         <i class="icon ico_aside_link mr10"></i>
+                         <span class="text">링크</span>
+                     </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">상품내역</span>
+                        </a>
+                        <i class="arrow-box">상품내역</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area">
+                        <i class="icon ico_aside_speech_bubble mr10"></i>
+                        <span class="text">고객센터</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">상담관리</span>
+                        </a>
+                        <i class="arrow-box">상담관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">분쟁(차지백) 관리</span>
+                        </a>
+                        <i class="arrow-box">분쟁(차지백) 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">공지사항 관리</span>
+                        </a>
+                        <i class="arrow-box">공지사항 관리</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth">
+                <span class="title _title ">
+                  <span class="text-area">
+                      <i class="icon ico_aside_danger mr10"></i>
+                      <span class="text">위험관리</span>
+                  </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">파트너 이탈 관리</span>
+                        </a>
+                        <i class="arrow-box">파트너 이탈 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">DM 관리/이상거래내역</span>
+                        </a>
+                        <i class="arrow-box">DM 관리/이상거래내역</i>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="one-depth">
+                <span class="title _title">
+                    <span class="text-area">
+                        <i class="icon ico_aside_stick mr10"></i>
+                        <span class="text">운영</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">이메일</span>
+                        </a>
+                        <i class="arrow-box">이메일</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">현금영수증</span>
+                        </a>
+                        <i class="arrow-box">현금영수증</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">전자세금계산서</span>
+                        </a>
+                        <i class="arrow-box">전자세금계산서</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">보증보험 관리</span>
+                        </a>
+                        <i class="arrow-box">보증보험 관리</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">환율정보</span>
+                        </a>
+                        <i class="arrow-box">환율정보</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title">
+                    <span class="text-area"><i class="icon ico_aside_memo mr10"></i>
+                        <span class="text">매출관리</span>
+                    </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">매출</span>
+                        </a>
+                        <i class="arrow-box">매출</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">결제수단별 원가</span>
+                        </a>
+                        <i class="arrow-box">결제수단별 원가</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">원천사 정산-국내</span>
+                        </a>
+                        <i class="arrow-box">원천사 정산-국내</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">원천사 정산-해외</span>
+                        </a>
+                        <i class="arrow-box">원천사 정산-해외</i>
+                    </li>
+                </ul>
+            </li>
+            <li class="one-depth ">
+                <span class="title _title">
+                   <span class="text-area"><i class="icon ico_aside_heart mr10"></i>
+                       <span class="text">마케팅</span>
+                   </span>
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                        <path d="M13 1L7 6L1 0.999999" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <ul class="two-depth _slide">
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">제휴-참여신청</span>
+                        </a>
+                        <i class="arrow-box">제휴-참여신청</i>
+                    </li>
+                    <li class="link">
+                        <a href="#">
+                            <i class="icon ico-circle-white"></i>
+                            <span class="text">제휴-혜택신청</span>
+                        </a>
+                        <i class="arrow-box">제휴-혜택신청</i>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+        <!-- 컨텐츠 s-->
+        <article class="content-container">
+            <section class="consulting-section">
+                <h3 class="font-h1 mb30 font-weight-bold">현금영수증-발행관리</h3>
+                <div class="card">
+                    <h5 class="d-flex align-items-center mb20">
+                        <i class="icon ico_filter"></i>
+                        <span class="ml9 font-weight-semi-bold font-h3">필터</span>
+                    </h5>
+                    <div class="row">
+                        <div class="col-xl-auto">
+                            <p class="font-p2 mb12 font-weight-semi-bold">기간</p>
+                            <div class="row row-col-2">
+                                <div class="col-xl-auto">
+                                    <div class="form-group">
+                                        <div class="time-range-btn-group">
+                                            <button class="btn btn-secondary" id="threeMonthAgoBtn">3개월</button>
+                                            <button class="btn btn-secondary" id="lastMonthBtn">지난달</button>
+                                            <button class="btn btn-secondary" id="thisMonthBtn">이번달</button>
+                                            <button class="btn btn-secondary" id="yesterdayBtn">어제</button>
+                                            <button class="btn btn-secondary" id="todayBtn">오늘</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-auto">
+                                    <div class="form-group">
+                                        <label class="calender-input mb0">
+                                            <input class="form-control _inputRangeDate" type="text">
+                                            <i class="icon ico_calendar" onclick="$('._modal-calendar').modal('show')">달력이미지</i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-auto">
+                            <p class="font-p2 mb12 font-weight-semi-bold">상태 구분/상세</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group min-w-190">
+                                        <label class="select-box _select-box">
+                                            <input type="hidden" class="select-value _select-value" value="0">
+                                            <span class="value-text _value-text">전체</span>
+                                            <i class="icon ico_select_arrow_down">아래화살표</i>
+                                            <ul class="options h-auto">
+                                                <li class="option" value="0">전체</li>
+                                                <li class="option" value="1">승인</li>
+                                                <li class="option" value="2">취소</li>
+                                                <li class="option" value="3">미발행</li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl">
+                                    <div class="form-group min-w-190">
+                                        <label class="select-box _select-box">
+                                            <input type="hidden" class="select-value _select-value" value="0">
+                                            <span class="value-text _value-text">전체</span>
+                                            <i class="icon ico_select_arrow_down">아래화살표</i>
+                                            <ul class="options h-auto">
+                                                <li class="option" value="0">전체</li>
+                                                <li class="option" value="1">발행요청 성공</li>
+                                                <li class="option" value="2">발행요청 실패</li>
+                                                <li class="option" value="3">국세청전송 성공</li>
+                                                <li class="option" value="3">국세청전송 실패</li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto">
+                            <p class="font-weight-semi-bold font-p2 mb12">상태</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <div class="btn-group w-100 custom-radio-container">
+                                            <div class="custom-radio-group">
+                                                <input class="radio-input" type="radio" name="example1" checked=""
+                                                       id="customRadio1">
+                                                <label for="customRadio1" class="btn btn-secondary btn-md">전체</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example1"
+                                                       id="customRadio2">
+                                                <label for="customRadio2"
+                                                       class="btn btn-secondary btn-md">소득공제(개인)</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example1"
+                                                       id="customRadio3">
+                                                <label for="customRadio3"
+                                                       class="btn btn-secondary btn-md">지출증빙(사업자)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto">
+                            <p class="font-weight-semi-bold font-p2 mb12">유입채널</p>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <div class="form-group">
+                                        <div class="btn-group w-100 custom-radio-container">
+                                            <div class="custom-radio-group">
+                                                <input class="radio-input" type="radio" name="example2" checked=""
+                                                       id="customRadio4">
+                                                <label for="customRadio4" class="btn btn-secondary btn-md">전체</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example2"
+                                                       id="customRadio5">
+                                                <label for="customRadio5" class="btn btn-secondary btn-md">계좌결제</label>
+                                            </div>
+                                            <div class="custom-radio-group ">
+                                                <input class="radio-input" type="radio" name="example2"
+                                                       id="customRadio8">
+                                                <label for="customRadio8" class="btn btn-secondary btn-md">가상계좌</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-weight-semi-bold font-p2 mb12">상세검색</p>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="상호명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="서비스명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="서비스 MID">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0 position-relative">
+                                    <input class="form-control search question" type="text"
+                                           placeholder="OPID(원거래 ID)">
+                                    <div class="input-ico-hover-area">
+                                        <i class="icon ico_question_gray input-ico-hover"></i>
+                                        <span class="speech-bubble ">거래마다 다르며 결제, 취소(환불)의 OPID는 동일</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0 position-relative">
+                                    <input class="form-control search" type="text" placeholder="PID(거래 ID)">
+                                    <div class="input-ico-hover-area">
+                                        <i class="icon ico_question_gray input-ico-hover "></i>
+                                        <span class="speech-bubble ">거래마다 다르며 결제, 취소 모두 다른 PID</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="휴대폰/사업자 번호">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="주문자명">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="주문번호">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="거래액">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="form-group">
+                                <label class="w-100 mb0">
+                                    <input class="form-control search" type="text" placeholder="국세청 승인번호">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix filter-button-area position-static">
+                        <div class="float-right">
+                            <a class=" align-bottom" href="">Clear all</a>
+                            <button class="btn btn-dark btn-round ml-3 btn-md">조회하기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="mb25 d-flex justify-content-between align-items-center">
+                        <h5 class="d-flex align-items-center mb0 font-weight-semi-bold">
+                            <i class="icon ico_bs_list"></i>
+                            <span class="font-h3 ml9">조회결과</span>
+                        </h5>
+                        <div class="btn-wrap">
+                            <button class="btn-reset"><i class="icon ico_excel">엑셀출력</i></button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-spread table-fixed">
+                            <colgroup>
+                                <col style="width: 50px">
+                                <col style="width: 210px">
+                                <col style="width: 180px">
+                                <col style="width: 390px">
+                                <col style="width: 100px">
+                                <col style="width: 100px">
+                                <col style="width: 120px">
+                                <col style="width: 120px">
+                                <col style="width: 120px">
+                                <col style="width: 230px">
+                                <col style="width: 230px">
+                                <col style="width: 100px">
+                                <col style="width: 100px">
+                                <col style="width: 74px">
+                                <col style="width: 100px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th class="text-center">No</th>
+                                <th class="text-center">상호명 / 서비스명</th>
+                                <th class="text-center">서비스 MID</th>
+                                <th class="text-center">
+                                    <span class="position-relative">상태
+                                    <div class="input-ico-hover-area table-tr bottom">
+                                        <i class="icon ico_question_gray input-ico-hover"></i>
+                                        <span class="speech-bubble ">
+                                            <p class="text-left color-gray-100 font-weight-semi-bold">상태</p>
+                                            <p class="text-left color-gray-100">&#183; 발행요청 성공(실패) - 현금영수증을 정상적으로 발행하고 국세청 신고 대기 중인 상태</p>
+                                            <p class="text-left color-gray-100">&#183; 국세청전송 성공 - 국세청 전송이 정상적으로 완료된 상태</p>
+                                            <p class="text-left color-gray-100">&#183; 국세청전송 실패 - 국세청 전송이 특정 사유에 의하여 실패된 상태</p>
+                                        </span>
+                                    </div>
+                                    </span>
+                                </th>
+                                <th class="text-center">거래일시</th>
+                                <th class="text-center">발행일시</th>
+                                <th class="text-center">구분</th>
+                                <th class="text-center">휴대폰/사업자 번호</th>
+                                <th class="text-center">국세청 승인번호</th>
+                                <th class="text-center">PID(OPID)</th>
+                                <th class="text-center">상품명</th>
+                                <th class="text-center">거래액</th>
+                                <th class="text-center">발행액</th>
+                                <th class="text-center">출력</th>
+                                <th class="text-center">발행</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>김문정님의 2023년 08월 29일 처방전 11500원 (배송비: 11000원)</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <span>20</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <span>에이비성형외과의원</span>
+                                    <span>에이비성형외과의원</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>Service0010012345678</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>승인 - 발행요청 성공</span><br>
+                                    <span>[TS01]식별번호 오류 - 주민등록번호/사업자번호/휴대폰번호</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>2023-07-28</span><br>
+                                    <span>12:05:55</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>소득공제(개인)</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>01073083111</span>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <span>K00048909</span>
+                                </td>
+                                <td class="text-left align-middle">
+                                    <a href="#">
+                                        12345678912345645
+                                    </a>
+                                </td>
+                                <td class="text-left align-middle"><span>[컬렉션] ★★★★★ (5-STAR) 메이크스타</span>
+                                </td>
+                                <td class="text-right align-middle"><span>100,000</span></td>
+                                <td class="text-right align-middle">
+                                    <span>100,000</span></td>
+                                <td class="text-center align-middle">
+                                    <i class="icon ico_print pointer-cursor">출력</i>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-primary btn-sm">
+                                        발행
+                                    </button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination-area">
+    <ul class="pagination-list">
+        <li class="pagination-icon">
+            <i class="icon ico_first_page">처음으로가기</i>
+        </li>
+        <li class="pagination-icon">
+            <i class="icon ico_previous_page">이전으로가기</i>
+        </li>
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="pagination-icon">
+            <i class="icon ico_next_page">다음으로가기</i>
+        </li>
+        <li class="pagination-icon">
+            <i class="icon ico_last_page">맨뒤로가기</i>
+        </li>
+    </ul>
+</div>
+                </div>
+            </section>
+        </article>
+        <!-- 컨텐츠 e-->
+    </main>
+    <footer>
+    <div class="footer">
+        <p class="copyright">© Payple Inc. All rights reserved.</p>
+        <p class="logo-text">Powered by<a href="#"><i class="icon ico_footer_logo"></i></a></p>
+    </div>
+</footer>
+</div>
+<!--달력 s-->
+<div class="modal fade _modal-calendar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered calender-modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="_modalRangeDate"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--달력 e-->
+</body>
+
+</html>
+
